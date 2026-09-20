@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Wrap — Indian Markets</title>
+<meta name="description" content="Indian stock markets, explained in plain English. Daily wrap of indices, sectors, movers and what to watch.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf7f2;
+    --surface: #ffffff;
+    --surface-dim: #f3efe7;
+    --border: rgba(30, 58, 95, 0.14);
+    --ink: #1a2332;
+    --text: #24303f;
+    --text-dim: #6b7684;
+    --navy: #1e3a5f;
+    --navy-deep: #14283f;
+    --gold: #b8860b;
+    --gold-bright: #d4a73a;
+    --gold-dim: rgba(212, 167, 58, 0.14);
+    --green: #157f4c;
+    --green-dim: rgba(21, 127, 76, 0.10);
+    --red: #b3261e;
+    --red-dim: rgba(179, 38, 30, 0.08);
+    --font-display: "Instrument Serif", Georgia, serif;
+    --font-body: "IBM Plex Sans", "Segoe UI", sans-serif;
+    --font-mono: "JetBrains Mono", "Courier New", monospace;
+    --maxw: 1100px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #10161f;
+      --surface: #171f2b;
+      --surface-dim: #1c2635;
+      --border: rgba(212, 167, 58, 0.18);
+      --ink: #ede8dd;
+      --text: #d8d5cc;
+      --text-dim: #8b95a3;
+      --navy: #d4a73a;
+      --navy-deep: #f0e2b8;
+      --gold: #d4a73a;
+      --gold-dim: rgba(212, 167, 58, 0.10);
+      --green: #3ecf8e;
+      --green-dim: rgba(62, 207, 142, 0.10);
+      --red: #f0716a;
+      --red-dim: rgba(240, 113, 106, 0.10);
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: "";
+    position: fixed; inset: 0;
+    background:
+      radial-gradient(1200px 500px at 85% -5%, var(--gold-dim), transparent 60%),
+      radial-gradient(900px 400px at 0% 0%, rgba(30,58,95,0.05), transparent 55%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+
+  /* ---------- MASTHEAD ---------- */
+  header.masthead { padding: 28px 0 0; }
+  .mast-top {
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 16px; flex-wrap: wrap;
+    border-bottom: 3px solid var(--ink); padding-bottom: 14px;
+  }
+  .brand { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+  .brand h1 {
+    font-family: var(--font-display);
+    font-size: clamp(34px, 5vw, 52px);
+    font-weight: 400;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+    line-height: 1;
+  }
+  .brand .tagline {
+    font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--gold); white-space: nowrap;
+  }
+  .mast-meta { font-family: var(--font-mono); font-size: 11.5px; color: var(--text-dim); text-align: right; }
+  .mast-meta b { color: var(--ink); font-weight: 500; }
+  .mast-sub {
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 12px; padding: 8px 2px 0; flex-wrap: wrap;
+  }
+  .mast-sub .asof { font-size: 13.5px; color: var(--text-dim); font-style: italic; font-family: var(--font-display); font-size: 16px; }
+
+  /* ---------- SECTION LABELS ---------- */
+  .section-label {
+    display: flex; align-items: center; gap: 10px;
+    font-family: var(--font-mono); font-size: 12px; font-weight: 500;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--navy);
+    margin: 44px 0 18px;
+  }
+  .section-label::before {
+    content: ""; width: 10px; height: 10px; border-radius: 50%;
+    background: var(--gold-bright); flex-shrink: 0;
+  }
+  .section-label .rule { flex: 1; height: 1px; background: var(--border); }
+
+  /* ---------- DASHBOARD CARDS ---------- */
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+  .idx-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 18px 18px 14px; position: relative; overflow: hidden;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .idx-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(20, 40, 63, 0.10); }
+  .idx-card.hero { background: linear-gradient(150deg, var(--surface), var(--surface-dim)); border-top: 3px solid var(--gold-bright); }
+  .idx-name { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-dim); }
+  .idx-value { font-family: var(--font-mono); font-size: 26px; font-weight: 700; color: var(--ink); margin: 6px 0 2px; font-variant-numeric: tabular-nums; }
+  .idx-delta { font-family: var(--font-mono); font-size: 13px; font-weight: 500; }
+  .up { color: var(--green); } .down { color: var(--red); } .flat { color: var(--text-dim); }
+  .idx-week { font-size: 12px; color: var(--text-dim); margin-top: 2px; font-family: var(--font-mono); }
+  .idx-note { font-size: 12px; color: var(--text-dim); margin-top: 10px; border-top: 1px dashed var(--border); padding-top: 8px; line-height: 1.45; }
+  .idx-spark { position: absolute; right: 12px; top: 14px; opacity: 0.9; }
+  @media (max-width: 480px) { .idx-spark { display: none; } }
+
+  /* ---------- WEEK THAT WAS ---------- */
+  .wrap-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .story {
+    background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--navy);
+    border-radius: 0 10px 10px 0; padding: 20px 22px;
+  }
+  .story h3 { font-family: var(--font-display); font-size: 21px; font-weight: 400; color: var(--ink); line-height: 1.25; margin-bottom: 8px; }
+  .story p { font-size: 14.5px; color: var(--text); }
+  .story .kicker { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 6px; }
+
+  /* ---------- TABLES ---------- */
+  .table-shell { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  .table-scroll { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  thead th {
+    font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--text-dim); text-align: left; padding: 12px 16px;
+    background: var(--surface-dim); border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+  }
+  tbody td { padding: 12px 16px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:nth-child(even) { background: rgba(30, 58, 95, 0.025); }
+  tbody tr:hover { background: var(--gold-dim); }
+  td.day { font-family: var(--font-mono); font-size: 12.5px; color: var(--ink); white-space: nowrap; font-weight: 500; }
+  td.num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td .tnote { display: block; font-size: 12px; color: var(--text-dim); margin-top: 2px; }
+  .holiday td { color: var(--text-dim); font-style: italic; }
+
+  /* ---------- SECTOR BOARD ---------- */
+  .sector-list { display: flex; flex-direction: column; gap: 8px; }
+  .sector {
+    display: grid; grid-template-columns: 130px 34px 1fr; gap: 14px; align-items: baseline;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+    padding: 12px 16px;
+  }
+  .sector .sname { font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: var(--ink); }
+  .sector .sdir { font-family: var(--font-mono); font-size: 13px; font-weight: 700; }
+  .sector .snote { font-size: 13.5px; color: var(--text); }
+  .sector .snote .leaders { color: var(--text-dim); font-size: 12.5px; }
+  .sector.up-row { border-left: 3px solid var(--green); }
+  .sector.down-row { border-left: 3px solid var(--red); }
+  @media (max-width: 560px) {
+    .sector { grid-template-columns: 100px 28px 1fr; gap: 8px; }
+    .sector .snote { grid-column: 1 / -1; }
+  }
+
+  /* ---------- MOVERS ---------- */
+  .movers-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 640px) { .movers-grid { grid-template-columns: 1fr; } }
+  .mover-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 18px 20px; }
+  .mover-panel.gain { border-top: 3px solid var(--green); }
+  .mover-panel.loss { border-top: 3px solid var(--red); }
+  .mover-panel h3 { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 10px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    font-family: var(--font-mono); font-size: 12.5px; padding: 5px 12px; border-radius: 999px;
+    background: var(--green-dim); color: var(--green); border: 1px solid rgba(21,127,76,0.25);
+  }
+  .chip.red { background: var(--red-dim); color: var(--red); border-color: rgba(179,38,30,0.25); }
+  .movers-note { font-size: 13px; color: var(--text-dim); margin-top: 12px; }
+
+  /* ---------- WATCH & READS ---------- */
+  .watch-list { counter-reset: watch; display: flex; flex-direction: column; gap: 10px; }
+  .watch-item {
+    counter-increment: watch; position: relative;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 16px 18px 16px 58px;
+  }
+  .watch-item::before {
+    content: counter(watch, decimal-leading-zero);
+    position: absolute; left: 16px; top: 14px;
+    font-family: var(--font-mono); font-size: 15px; font-weight: 700; color: var(--gold);
+  }
+  .watch-item p { font-size: 14.5px; }
+  .reads { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; }
+  .read {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 16px 18px; transition: transform 0.15s ease, box-shadow 0.15s ease;
+    text-decoration: none; color: inherit; display: block;
+  }
+  .read:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(20,40,63,0.10); }
+  .read .r-title { font-family: var(--font-display); font-size: 18px; line-height: 1.3; color: var(--ink); }
+  .read .r-src { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); display: block; margin-top: 8px; }
+  .read:hover .r-title { text-decoration: underline; text-decoration-color: var(--gold-bright); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+
+  /* ---------- GLOSSARY ---------- */
+  details.gloss {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 0; margin-bottom: 10px; overflow: hidden;
+  }
+  details.gloss summary {
+    cursor: pointer; padding: 14px 18px; font-family: var(--font-mono); font-size: 13.5px;
+    font-weight: 500; color: var(--ink); list-style: none; display: flex; justify-content: space-between; align-items: center;
+  }
+  details.gloss summary::-webkit-details-marker { display: none; }
+  details.gloss summary::after { content: "+"; font-family: var(--font-mono); color: var(--gold); font-size: 16px; }
+  details.gloss[open] summary::after { content: "–"; }
+  details.gloss[open] summary { border-bottom: 1px dashed var(--border); }
+  details.gloss .def { padding: 12px 18px 16px; font-size: 14px; color: var(--text); }
+
+  /* ---------- FOOTER ---------- */
+  footer { margin-top: 60px; border-top: 3px solid var(--ink); padding: 24px 0 40px; }
+  .foot-grid { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+  .foot-note { font-size: 12.5px; color: var(--text-dim); max-width: 620px; }
+  .foot-note b { color: var(--ink); }
+  .disclaimer {
+    margin-top: 18px; background: var(--red-dim); border: 1px solid rgba(179,38,30,0.2);
+    border-radius: 8px; padding: 12px 16px; font-size: 12.5px; color: var(--text);
+  }
+
+  /* ---------- ENTRANCE ---------- */
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  .cards .idx-card, .wrap-grid .story, .watch-item, .read { animation: fadeUp 0.5s ease both; }
+  .cards .idx-card:nth-child(2), .wrap-grid .story:nth-child(2) { animation-delay: 0.06s; }
+  .cards .idx-card:nth-child(3) { animation-delay: 0.12s; }
+  .cards .idx-card:nth-child(4) { animation-delay: 0.18s; }
+  .cards .idx-card:nth-child(5) { animation-delay: 0.24s; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="mast-top">
+      <div class="brand">
+        <h1 id="site-name">The Daily Wrap</h1>
+        <span class="tagline" id="site-tagline">Indian markets, explained in plain English</span>
+      </div>
+      <div class="mast-meta">
+        Updated <b id="updated-label"></b><br>
+        <span id="asof-label"></span>
+      </div>
+    </div>
+    <div class="mast-sub">
+      <span class="asof" id="asof-line"></span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- DASHBOARD -->
+  <div class="section-label"><span class="rule" style="order:2"></span>The Scoreboard<span class="rule"></span></div>
+  <div class="cards" id="index-cards"></div>
+
+  <!-- WEEK THAT WAS -->
+  <div class="section-label">The Week That Was<span class="rule"></span></div>
+  <div class="wrap-grid" id="weekly-wrap"></div>
+
+  <!-- DAY BY DAY -->
+  <div class="section-label">Day By Day<span class="rule"></span></div>
+  <div class="table-shell">
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th><th>Nifty 50</th><th>Move</th><th>Sensex</th><th>Move</th><th>What happened</th>
+          </tr>
+        </thead>
+        <tbody id="day-by-day"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SECTORS -->
+  <div class="section-label">Sector Scoreboard<span class="rule"></span></div>
+  <div class="sector-list" id="sector-list"></div>
+
+  <!-- MOVERS -->
+  <div class="section-label">Stocks On The Move<span class="rule"></span></div>
+  <div class="movers-grid">
+    <div class="mover-panel gain">
+      <h3 class="up">Friday's Gainers</h3>
+      <div class="chips" id="gainer-chips"></div>
+    </div>
+    <div class="mover-panel loss">
+      <h3 class="down">Friday's Losers</h3>
+      <div class="chips" id="loser-chips"></div>
+    </div>
+  </div>
+  <p class="movers-note" id="movers-note"></p>
+
+  <!-- WHAT TO WATCH -->
+  <div class="section-label">What To Watch Next<span class="rule"></span></div>
+  <div class="watch-list" id="watch-list"></div>
+
+  <!-- READING LIST -->
+  <div class="section-label">The Reading List<span class="rule"></span></div>
+  <div class="reads" id="reads-list"></div>
+
+  <!-- GLOSSARY -->
+  <div class="section-label">Jargon Decoder<span class="rule"></span></div>
+  <div id="glossary"></div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-note">
+        <b>The Daily Wrap</b> — a plain-English daily brief on the Indian stock market.
+        Built and updated with the help of AI. Figures are from official exchange closes and
+        published market reports; always verify before acting on anything.
+      </div>
+    </div>
+    <div class="disclaimer">
+      <b>Disclaimer:</b> Nothing on this page is investment advice. Markets are risky, past
+      performance means nothing about the future, and you should talk to a registered financial
+      advisor before investing a single rupee.
+    </div>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script>
+(function () {
+  const d = window.SITE_DATA;
+  if (!d) return;
+
+  // ----- masthead -----
+  document.getElementById("site-name").textContent = d.site.name;
+  document.getElementById("site-tagline").textContent = d.site.tagline;
+  document.getElementById("updated-label").textContent = d.updatedLabel;
+  document.getElementById("asof-label").textContent = d.asOfLabel;
+  document.getElementById("asof-line").textContent = "— " + d.asOfLabel + " —";
+
+  const fmtPct = (p) => (p > 0 ? "+" : "") + p.toFixed(2) + "%";
+  const fmtPts = (p) => (p > 0 ? "+" : "") + p.toFixed(2) + " pts";
+  const cls = (p) => (p > 0.001 ? "up" : p < -0.001 ? "down" : "flat");
+
+  // ----- sparkline -----
+  function spark(values, w, h) {
+    const min = Math.min.apply(null, values), max = Math.max.apply(null, values);
+    const range = (max - min) || 1;
+    const pts = values.map((v, i) => {
+      const x = (i / (values.length - 1)) * w;
+      const y = h - ((v - min) / range) * h;
+      return x.toFixed(1) + "," + y.toFixed(1);
+    }).join(" ");
+    const up = values[values.length - 1] >= values[0];
+    const color = up ? getComputedStyle(document.documentElement).getPropertyValue("--green").trim()
+                     : getComputedStyle(document.documentElement).getPropertyValue("--red").trim();
+    return '<svg width="' + w + '" height="' + h + '" viewBox="0 0 ' + w + " " + h + '">' +
+      '<polyline points="' + pts + '" fill="none" stroke="' + color + '" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/></svg>';
+  }
+
+  // ----- index cards -----
+  const cardsEl = document.getElementById("index-cards");
+  d.indices.forEach((ix, i) => {
+    const card = document.createElement("div");
+    card.className = "idx-card" + (i === 0 ? " hero" : "");
+    card.innerHTML =
+      '<div class="idx-name">' + ix.name + "</div>" +
+      '<div class="idx-value">' + ix.value + "</div>" +
+      '<div class="idx-delta ' + cls(ix.dayPct) + '">' + fmtPct(ix.dayPct) +
+        " <span style=\u0022font-size:11.5px;opacity:0.8\u0022>(" + fmtPts(ix.dayPts) + ")</span></div>" +
+      '<div class="idx-week">Week: <span class="' + cls(ix.weekPct) + '">' + fmtPct(ix.weekPct) + "</span></div>" +
+      (ix.note ? '<div class="idx-note">' + ix.note + "</div>" : "") +
+      '<div class="idx-spark">' + spark(ix.spark, 72, 26) + "</div>";
+    cardsEl.appendChild(card);
+  });
+
+  // ----- weekly wrap -----
+  const wrapEl = document.getElementById("weekly-wrap");
+  d.weeklyWrap.forEach((s, i) => {
+    const el = document.createElement("article");
+    el.className = "story";
+    el.innerHTML =
+      '<span class="kicker">Story ' + String(i + 1).padStart(2, "0") + "</span>" +
+      "<h3>" + s.headline + "</h3><p>" + s.body + "</p>";
+    wrapEl.appendChild(el);
+  });
+
+  // ----- day by day -----
+  const tbody = document.getElementById("day-by-day");
+  d.dayByDay.forEach((r) => {
+    const tr = document.createElement("tr");
+    if (r.nifty === null) {
+      tr.className = "holiday";
+      tr.innerHTML = '<td class="day">' + r.day + '</td><td colspan="5">' + r.note + "</td>";
+    } else {
+      const nMove = parseFloat(r.niftyMove), sMove = parseFloat(r.sensexMove);
+      tr.innerHTML =
+        '<td class="day">' + r.day + "</td>" +
+        '<td class="num">' + r.nifty + '</td><td class="num ' + cls(nMove) + '">' + r.niftyMove + "</td>" +
+        '<td class="num">' + r.sensex + '</td><td class="num ' + cls(sMove) + '">' + r.sensexMove + "</td>" +
+        "<td>" + r.note + "</td>";
+    }
+    tbody.appendChild(tr);
+  });
+
+  // ----- sectors -----
+  const secEl = document.getElementById("sector-list");
+  d.sectors.forEach((s) => {
+    const el = document.createElement("div");
+    el.className = "sector " + (s.dir === "up" ? "up-row" : "down-row");
+    el.innerHTML =
+      '<div class="sname">' + s.name + "</div>" +
+      '<div class="sdir ' + (s.dir === "up" ? "up" : "down") + '">' + (s.dir === "up" ? "\u25B2" : "\u25BC") + "</div>" +
+      '<div class="snote">' + s.note + ' <span class="leaders">— ' + s.leaders + "</span></div>";
+    secEl.appendChild(el);
+  });
+
+  // ----- movers -----
+  const gEl = document.getElementById("gainer-chips");
+  d.movers.gainers.forEach((n) => {
+    const c = document.createElement("span"); c.className = "chip"; c.textContent = n; gEl.appendChild(c);
+  });
+  const lEl = document.getElementById("loser-chips");
+  d.movers.losers.forEach((n) => {
+    const c = document.createElement("span"); c.className = "chip red"; c.textContent = n; lEl.appendChild(c);
+  });
+  document.getElementById("movers-note").textContent = d.movers.note;
+
+  // ----- watch -----
+  const wEl = document.getElementById("watch-list");
+  d.watch.forEach((t) => {
+    const el = document.createElement("div"); el.className = "watch-item";
+    const p = document.createElement("p"); p.textContent = t; el.appendChild(p); wEl.appendChild(el);
+  });
+
+  // ----- reads -----
+  const rEl = document.getElementById("reads-list");
+  d.reads.forEach((r) => {
+    const a = document.createElement("a");
+    a.className = "read"; a.href = r.url; a.target = "_blank"; a.rel = "noopener";
+    a.innerHTML = '<div class="r-title">' + r.title + '</div><span class="r-src">' + r.source + "</span>";
+    rEl.appendChild(a);
+  });
+
+  // ----- glossary -----
+  const gEl2 = document.getElementById("glossary");
+  d.glossary.forEach((g) => {
+    const det = document.createElement("details"); det.className = "gloss";
+    det.innerHTML = "<summary>" + g.term + '</summary><div class="def">' + g.def + "</div>";
+    gEl2.appendChild(det);
+  });
+})();
+</script>
+</body>
+</html>
