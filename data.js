@@ -13,127 +13,126 @@ window.SITE_DATA = {
     tagline: "Indian markets, explained in plain English",
   },
 
-  updatedLabel: "Sunday, 20 September 2026",
-  asOfLabel: "Week ended Friday, 18 September 2026",
+  updatedLabel: "Monday, 21 September 2026",
+  asOfLabel: "Market close, Monday 21 September 2026",
 
   // ---------- INDEX DASHBOARD ----------
   // dayPct / weekPct are percentages. Positive = green, negative = red.
-  // spark = the last 5 closes (Fri, Tue, Wed, Thu, Fri) — drawn as a mini chart.
+  // spark = the last 5 closes — drawn as a mini chart.
   indices: [
     {
       name: "BSE Sensex",
-      value: "74,294.96",
-      dayPts: -19.63, dayPct: -0.03,
-      weekPct: -0.65,
-      spark: [74782.26, 74003.82, 74336.45, 74314.59, 74294.96],
-      note: "Sixth straight weekly fall — longest streak since 2020"
+      value: "74,858.99",
+      dayPts: 564.03, dayPct: 0.76,
+      weekPct: 0.76,
+      spark: [74003.82, 74336.45, 74314.59, 74294.96, 74858.99],
+      note: "Best day in weeks — heavyweight UltraTech led the charge"
     },
     {
       name: "Nifty 50",
-      value: "23,346.40",
-      dayPts: 75.80, dayPct: 0.33,
-      weekPct: -0.22,
-      spark: [23398.10, 23118.60, 23217.60, 23270.60, 23346.40],
-      note: "Recovered after Tuesday's 5-month low, but week still down"
+      value: "23,414.30",
+      dayPts: 67.90, dayPct: 0.29,
+      weekPct: 0.29,
+      spark: [23118.60, 23217.60, 23270.60, 23346.40, 23414.30],
+      note: "Fourth straight session of gains — closed above 23,400"
     },
     {
-      name: "Nifty Midcap 100",
-      value: "62,191.25",
-      dayPts: 759.15, dayPct: 1.24,
-      weekPct: -0.9,
-      spark: [62700, 61500, 61800, 61432, 62191],
-      note: "Third consecutive weekly decline, despite Friday bounce"
+      name: "BSE 150 MidCap",
+      value: "16,855.8",
+      dayPts: -3.4, dayPct: -0.02,
+      weekPct: -0.02,
+      spark: [16850, 16860, 16855, 16859, 16856],
+      note: "Barely moved — the rally belonged to the big boys today"
     },
     {
-      name: "Nifty Smallcap 100",
-      value: "19,875.70",
-      dayPts: 340.00, dayPct: 1.74,
-      weekPct: -0.6,
-      spark: [19900, 19600, 19700, 19536, 19876],
-      note: "Second straight weekly decline"
+      name: "BSE 250 SmallCap",
+      value: "7,209.4",
+      dayPts: 6.5, dayPct: 0.09,
+      weekPct: 0.09,
+      spark: [7190, 7200, 7205, 7203, 7209],
+      note: "Small stocks stayed on the sidelines"
     },
     {
       name: "GIFT Nifty",
-      value: "23,360",
+      value: "23,338",
       dayPts: 0, dayPct: 0.0,
       weekPct: 0,
-      spark: [23360, 23360, 23360, 23360, 23360],
-      note: "Flat — early signal for Monday's open"
+      spark: [23338, 23338, 23338, 23338, 23338],
+      note: "Monday morning reading — signal for Tuesday's open"
     }
   ],
 
-  // ---------- THE WEEK THAT WAS ----------
+  // ---------- TODAY'S STORIES ----------
   weeklyWrap: [
     {
-      headline: "Six down weeks in a row — longest losing streak since 2020",
-      body: "The Sensex and Nifty fell for the sixth consecutive week, their longest weekly losing run since 2020. The Sensex lost 0.65% over the week to close at 74,294.96; the Nifty slipped 0.22% to 23,346.40. Monday was a holiday for Ganesh Chaturthi, so the week had just four trading sessions."
+      headline: "Markets bounce after six losing weeks",
+      body: "The Sensex jumped 564.03 points (0.76%) to close at 74,858.99 — its best session in weeks — while the Nifty rose for a fourth straight day to end above 23,400 at 23,414.30. After six consecutive weekly declines, their longest losing streak since 2020, bargain-hunters finally stepped in. The new week begins on a green note."
     },
     {
-      headline: "The US Federal Reserve raised interest rates",
-      body: "The Fed hiked its benchmark rate by 25 basis points to 3.75%–4% — its first increase since 2023 — and left the door open to one more this year. Higher US rates pull money away from emerging markets like India, and the US 10-year Treasury yield crossed 5%, its highest level since 2007."
+      headline: "Crude oil cooled, and that changed everything",
+      body: "Brent crude fell 2.36% to about $101.40 a barrel as investors saw signs of recovering Saudi shipments and hoped for diplomatic engagement in the Iran-US conflict. India imports most of its oil, so cheaper crude means less pressure on the rupee, inflation and imported costs — and oil-sensitive stocks rallied on the news."
     },
     {
-      headline: "Crude oil above $108 kept the pressure on",
-      body: "Brent crude climbed above $108 a barrel amid continuing Middle East tensions and supply concerns. India imports most of its crude, so expensive oil pressures the rupee, fuels inflation, and hurts sentiment. Friday's partial recovery came as crude eased a touch."
+      headline: "Foreign investors came back as buyers",
+      body: "Foreign institutional investors (FIIs) bought Indian equities worth Rs 599.54 crore on Friday, per exchange data — their first meaningful buying after weeks of relentless selling that drove the six-week slump. Asian and European markets were also up today, giving the recovery global support."
     },
     {
-      headline: "Foreign money kept flowing out",
-      body: "Foreign institutional investors (FIIs) continued to sell Indian equities through the week, adding to the pressure. Domestic mutual funds — powered by record SIP inflows — have been absorbing much of this selling, which is why the fall has been gradual rather than a crash."
+      headline: "NSE IPO: the Rs 22,561-crore giant closed today",
+      body: "The National Stock Exchange's own IPO — India's second-largest ever — closed its subscription today, booked about 3.8 times overall, with institutions bidding 7.8x their quota and retail investors 1.09x. Nearly 31 lakh applications came in. Allotment is expected September 22 and listing on September 24. The grey market hints at a modest 3-4% listing pop."
     }
   ],
 
-  // ---------- DAY BY DAY ----------
+  // ---------- LAST 5 SESSIONS ----------
   dayByDay: [
-    { day: "Mon, Sep 14", nifty: null, niftyMove: null, sensex: null, sensexMove: null, note: "Market holiday — Ganesh Chaturthi" },
-    { day: "Tue, Sep 15", nifty: "23,118.60", niftyMove: "-1.19%", sensex: "74,003.82", sensexMove: "-1.04%", note: "Worst day — crude and US yields spiked; Nifty's lowest close in 5 months" },
+    { day: "Tue, Sep 15", nifty: "23,118.60", niftyMove: "-1.19%", sensex: "74,003.82", sensexMove: "-1.04%", note: "Crude and US yields spiked; Nifty's lowest close in 5 months" },
     { day: "Wed, Sep 16", nifty: "23,217.60", niftyMove: "+0.43%", sensex: "74,336.45", sensexMove: "+0.45%", note: "Recovery as crude paused and bond yields eased" },
     { day: "Thu, Sep 17", nifty: "23,270.60", niftyMove: "+0.23%", sensex: "74,314.59", sensexMove: "-0.03%", note: "Mixed — investors digested the Fed's rate decision" },
-    { day: "Fri, Sep 18", nifty: "23,346.40", niftyMove: "+0.33%", sensex: "74,294.96", sensexMove: "-0.03%", note: "Nifty's third straight gain; Tata and IT stocks dragged the Sensex" }
+    { day: "Fri, Sep 18", nifty: "23,346.40", niftyMove: "+0.33%", sensex: "74,294.96", sensexMove: "-0.03%", note: "Nifty's third straight gain; Tata and IT stocks dragged the Sensex" },
+    { day: "Mon, Sep 21", nifty: "23,414.30", niftyMove: "+0.29%", sensex: "74,858.99", sensexMove: "+0.76%", note: "Today — the bounce after six losing weeks; breadth roughly even (2,224 up vs 2,232 down)" }
   ],
 
   // ---------- SECTOR SCOREBOARD ----------
   sectors: [
-    { name: "FMCG", dir: "up",   note: "Top sector gainer — snapped a 5-week losing streak", leaders: "Patanjali, Colgate" },
-    { name: "Pharma", dir: "up",  note: "Green for a second straight week", leaders: "Alkem, Abbott" },
-    { name: "Oil & Gas", dir: "up", note: "Gained despite expensive crude", leaders: "Adani Total Gas, Aegis Logistics" },
-    { name: "Banking", dir: "down", note: "Fourth consecutive weekly fall", leaders: "Federal Bank, ICICI among the laggards" },
-    { name: "IT", dir: "down", note: "Third straight weekly decline", leaders: "TCS, Persistent" },
-    { name: "Realty", dir: "down", note: "Fourth weekly fall in a row", leaders: "Prestige, Godrej Properties" },
-    { name: "Defence", dir: "down", note: "Worst sector of the week", leaders: "Solar Industries, Apollo Microsystems" }
+    { name: "Pharma", dir: "up",   note: "Advanced again — extending its winning run", leaders: "One of the day's strongest sectors" },
+    { name: "Realty", dir: "up",  note: "Rebounded after four weekly declines", leaders: "Recovery from oversold levels" },
+    { name: "FMCG", dir: "up",     note: "Kept climbing — ITC among the Sensex winners", leaders: "ITC" },
+    { name: "Metals", dir: "down", note: "Declined despite the broader rally", leaders: "Global demand worries" },
+    { name: "IT", dir: "down",     note: "Sector slipped, though HCL Tech stood out with ~3% gains", leaders: "HCL Tech defied the slide" },
+    { name: "PSU Banks", dir: "down", note: "State-run banks ended lower", leaders: "Waited out the rally" }
   ],
 
   // ---------- MOVERS ----------
   movers: {
-    gainers: ["Adani Ports", "Adani Enterprises", "HDFC Bank", "AU Bank", "Poonawalla", "Welspun Corp"],
-    losers: ["TCS", "Tata Motors PV", "Titan", "NetWeb Tech", "IFCI"],
-    note: "Friday's biggest Nifty movers. Adani group stocks led the recovery; TCS and Tata Motors dragged the Sensex down."
+    gainers: ["UltraTech Cement +4.1%", "HCL Tech +3%", "Eternal", "Titan", "ITC", "Tech Mahindra"],
+    losers: ["Bharti Airtel", "Power Grid", "Infosys", "Adani Ports"],
+    note: "Monday's Sensex standouts. UltraTech Cement surged 4.11% to top the 30-stock index, while Bharti Airtel, Power Grid and Infosys were the biggest drags."
   },
 
   // ---------- WHAT TO WATCH ----------
   watch: [
-    "NSE's own IPO — subscription closes Monday, Sep 21; expected listing around Sep 24. The price band is set at Rs 1,700–1,785 per share.",
-    "Whether the Nifty can hold above the 23,300 zone after Friday's recovery — below it, the next support sits near 23,100.",
-    "Crude oil and US bond yields — Friday's bounce came as both eased. If they climb again, expect the pressure to return.",
-    "Foreign investor (FII) flows — six weeks of selling has been the market's biggest drag."
+    "NSE IPO allotment tomorrow (Tuesday, Sep 22) — and its BSE listing on Thursday, Sep 24. The grey market is hinting at a modest 3-4% opening gain.",
+    "Can the Nifty build on 23,400 and finally snap the six-week losing streak by Friday's close?",
+    "Crude oil's direction — Brent around $101 after today's fall. If it cools further, the recovery has room to run.",
+    "Whether foreign investors keep buying after Friday's return — one green day is a data point, two is a trend."
   ],
 
   // ---------- READING LIST ----------
   reads: [
-    { title: "Weekly Stock Market Report: Sensex & Nifty Extend Loss for Sixth Week", source: "Finance Outlook India", url: "https://www.financeoutlookindia.com/news/weekly-stock-market-report-sensex-nifty-extend-loss-for-sixth-week-nwid-8785.html" },
-    { title: "Markets end on a mixed note; Nifty up 76 points, Sensex dips", source: "The Hindu", url: "https://www.thehindu.com/business/markets/markets-end-on-a-mixed-note-nifty-up-sensex-dips-on-september-18-2026/article71480440.ece" },
-    { title: "Indices end lower as crude, global yields weigh on sentiment", source: "Capital Market", url: "https://www.capitalmarket.com/markets/news/live-news/indices-end-lower-as-crude-global-yields-weigh-on-sentiment/1733010" },
-    { title: "Sensex, Nifty end flat as Tata stocks tumble, crude oil eases", source: "India Today", url: "https://www.indiatoday.in/business/market/story/sensex-today-flat-nifty-today-up-76-tata-stocks-tumble-crude-oil-eases-2997674-2026-09-18" },
-    { title: "Stock Market Closing Today, Sep 18: top gainers and losers", source: "ET Now", url: "https://www.etnownews.com/markets/stock-market-closing-today-sep-18-sensex-ends-marginally-down-nifty-near-23350-check-top-gainers-and-losers-article-156181310" },
-    { title: "Weekend Mega Linkfest — curated long-form reads", source: "Alpha Ideas", url: "https://alphaideas.in/" }
+    { title: "Sensex settles 564 pts higher; Nifty ends above 23,400 level", source: "Business Standard", url: "https://www.business-standard.com/markets/capital-market-news/sensex-settles-564-pts-higher-nifty-ends-above-23-400-level-126092100713_1.html" },
+    { title: "Sensex, Nifty end higher; crude falls as markets recover from six-week slide", source: "India Today", url: "https://www.indiatoday.in/business/market/story/sensex-ends-564-points-higher-nifty-above-23400-hcltech-up-3-why-markets-rose-today-2999495-2026-09-21" },
+    { title: "Sensex jumps 564 pts, Nifty rallies on easing oil, FII inflows (PTI)", source: "Rediff Money", url: "https://money.rediff.com/news/market/sensex-jumps-564-pts-nifty-rallies-on-easing-oil-fii-inflows/54718820260921" },
+    { title: "NSE IPO subscribed 3.8x on Day 3 amid strong QIB demand", source: "Business Today", url: "https://www.businesstoday.in/markets/ipo-corner/story/nse-ipo-subscribed-3-8x-on-day-3-amid-strong-qib-demand-key-details-556800-2026-09-21" },
+    { title: "NSE IPO closes today: 15 brokers say 'subscribe'", source: "Business Today", url: "https://www.businesstoday.in/markets/ipo-corner/story/nse-ipo-closes-today-top-15-brokers-say-subscribe-as-issue-attracts-20-4-lakh-applications-556741-2026-09-21" },
+    { title: "Nifty ends above 23,400 level amid easing crude prices", source: "Capital Market", url: "https://www.capitalmarket.com/markets/news/live-news/sensex-settles-564-pts-higher;-nifty-ends-above-23-400-level/1733252" }
   ],
 
   // ---------- PLAIN-ENGLISH DECODER ----------
   glossary: [
-    { term: "Index (Sensex / Nifty)", def: "A scorecard for the market. The Sensex tracks 30 big companies on the BSE; the Nifty 50 tracks 50 big companies on the NSE. When people say 'the market fell', they mean these scores fell." },
-    { term: "Points vs percent", def: "The Nifty gaining 76 points sounds big, but 76 out of 23,346 is just 0.33%. Percent is what matters; points are the raw scoreboard ticks." },
-    { term: "FII / DII", def: "Foreign Institutional Investors (big foreign funds) and Domestic Institutional Investors (Indian mutual funds, insurers). When FIIs sell and DIIs buy, the market stays balanced." },
+    { term: "Index (Sensex / Nifty)", def: "A scorecard for the market. The Sensex tracks 30 big companies on the BSE; the Nifty 50 tracks 50 big companies on the NSE. When people say 'the market rose', they mean these scores rose." },
+    { term: "Points vs percent", def: "The Sensex gaining 564 points sounds huge, but 564 out of 74,859 is 0.76%. Percent is what matters; points are the raw scoreboard ticks." },
+    { term: "FII / DII", def: "Foreign Institutional Investors (big foreign funds) and Domestic Institutional Investors (Indian mutual funds, insurers). Today's story was FIIs turning buyers after weeks of selling." },
     { term: "Basis point (bps)", def: "One hundredth of one percent. A '25 bps' rate hike = 0.25%. Small number, big consequences for where money flows." },
-    { term: "Brent crude", def: "The world's benchmark oil price. India imports ~85% of its oil, so when Brent rises, the rupee, inflation and stock market all feel it." },
-    { term: "IPO", def: "Initial Public Offering — when a company sells shares to the public for the first time and lists on an exchange. The NSE's own IPO is this month's biggest event." }
+    { term: "Brent crude", def: "The world's benchmark oil price. India imports ~85% of its oil, so when Brent rises, the rupee, inflation and stock market all feel it. Today it fell 2.36% to ~$101 — a big reason the market rallied." },
+    { term: "IPO & GMP", def: "An IPO is when a company sells shares to the public for the first time. GMP (grey market premium) is the unofficial price traders bet the shares will list at — today, Rs 48 above NSE's Rs 1,785 cap, hinting at a ~3% listing gain. It's street sentiment, not a guarantee." }
   ]
 };
