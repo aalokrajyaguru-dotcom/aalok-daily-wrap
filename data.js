@@ -28,27 +28,27 @@ const dailyWrapData = {
       name: "S&P BSE 150 Midcap",
       close: null,
       dayChange: null,
-      dayChangePct: 0.63,
+      dayChangePct: 0.43,
       weekChangePct: null,
       spark: null,
-      note: "Midcaps outperformed as the Nifty Midcap 100 rose 0.70% to 62,396.45. SAIL (+6.57%), PB Fintech (+4.50%) and Motilal Oswal (+3.53%) led, while Persistent Systems (-2.35%) and Paytm (-2.17%) lagged."
+      note: "Midcaps rose with the market. The Nifty Midcap 100 climbed 0.70% to 62,396.45; SAIL (+6.57%), PB Fintech and Motilal Oswal led, while Persistent Systems, Paytm and Swiggy lagged."
     },
     {
       name: "S&P BSE 250 Smallcap",
       close: null,
       dayChange: null,
-      dayChangePct: 0.65,
+      dayChangePct: 0.52,
       weekChangePct: null,
       spark: null,
-      note: "Smallcaps gained as the Nifty Smallcap 100 climbed 0.89% to 19,991.50. Whirlpool of India (+20%) and Ola Electric (+10.69%) surged, while Pine Labs (-4.29%) and Inox Wind (-3.70%) fell."
+      note: "Smallcaps outpaced largecaps. The Nifty Smallcap 100 rose 0.89% to 19,991.50; Whirlpool of India (+20%), Ola Electric and Wockhardt led, while Pine Labs, Inox Wind and Devyani International lagged."
     }
   ],
 
   weeklyWrap: {
-    headline: "Benchmarks back in the green at a two-week high as metals rally on record copper and crude eases below $100",
+    headline: "Benchmarks rebound to a two-week high as metals rally on record copper",
     niftyFiveSessionPct: 0.99,   // vs 16 Sep close of 23,217.60
     sensexFiveSessionPct: 0.66,  // vs 16 Sep close of 74,336.45
-    summary: "Tuesday's slip proved brief: the Nifty rose 117.80 points to 23,446.80 and the Sensex 299.17 points to 74,828.25 on Wednesday, both finishing at two-week highs. The rally was powered by metal stocks after copper hit a fresh all-time high of $6.92 a pound (its seventh straight session of gains) and by crude oil slipping below $100 a barrel on hopes of progress in US-Iran talks at the UN. Bank Nifty gained about 333 points to 56,549 and India VIX eased 6.41% to 10.29. Over the last five sessions the Nifty is up 0.99% and the Sensex 0.66%; week-to-date the Nifty is +0.43% and the Sensex +0.72%. FIIs sold a net Rs 3,810 crore on Tuesday even as DIIs bought Rs 4,120 crore, and IT remained the weak spot, falling for a fourth session on demand-outlook concerns."
+    summary: "The Nifty snapped back on Wednesday, rising 0.50% to 23,446.80 - a two-week high - as metal stocks rallied on record copper prices and Brent crude slipped below $100 a barrel on hopes of US-Iran talks at the UN. Over the last five sessions the Nifty is up 0.99% and the Sensex 0.66%; week-to-date (from Friday's close) the Nifty is up 0.43% and the Sensex 0.72%. Market breadth was firmly positive at roughly 2:1 (2,344 advances vs 1,232 declines on the NSE), the Bank Nifty gained 0.59% to about 56,549, and India VIX eased 6.4% to 10.29. S&P and Fitch raised their India FY27 GDP growth forecasts to 7% and 6.9% respectively, while FIIs sold Rs 3,810 crore on Tuesday - once again absorbed by DII buying of Rs 4,120 crore. IT was the lone weak major sector for a fourth session. Three IPOs - Hero Motors, Jindal Supreme and SS Retail - listed with debut gains of 17-76%."
   },
 
   dayByDay: [
@@ -56,58 +56,58 @@ const dailyWrapData = {
     { date: "2026-09-18", label: "Fri 18 Sep", niftyClose: 23346.40, niftyChangePct: 0.33, sensexChangePct: -0.03, note: "Third straight Nifty gain; midcaps +1.24% and smallcaps +1.74% outperform. FIIs sell Rs 3,209 cr, DIIs absorb." },
     { date: "2026-09-21", label: "Mon 21 Sep", niftyClose: 23414.30, niftyChangePct: 0.29, sensexChangePct: 0.76, note: "Fourth straight gain on easing crude; NSE IPO closes 5.7x subscribed with ~Rs 90,000 cr of demand." },
     { date: "2026-09-22", label: "Tue 22 Sep", niftyClose: 23329.00, niftyChangePct: -0.36, sensexChangePct: -0.44, note: "Streak snapped: early gains fade into the weekly F&O expiry as IT, FMCG and PSU banks drag; media, realty and metals gain." },
-    { date: "2026-09-23", label: "Wed 23 Sep", niftyClose: 23446.80, niftyChangePct: 0.50, sensexChangePct: 0.40, note: "Two-week high close as metals surge on record copper prices and crude eases below $100 on US-Iran talk hopes; IT lags again." }
+    { date: "2026-09-23", label: "Wed 23 Sep", niftyClose: 23446.80, niftyChangePct: 0.50, sensexChangePct: 0.40, note: "Rebound to a two-week high as metals rally on record copper and sub-$100 crude on US-Iran diplomacy hopes; IT the only major laggard." }
   ],
 
   sectors: [
-    { name: "BSE Commodities", changePct: 2.83, note: "Best sector of the day as copper hit an all-time high and steel names rallied" },
-    { name: "Nifty Metal", changePct: 2.40, note: "Driven by SAIL, Nalco, Hindalco, Tata Steel and Vedanta" },
-    { name: "Nifty FMCG", changePct: 1.32, note: "ITC up around 2% among index heavyweights" },
+    { name: "BSE Commodities", changePct: 2.83, note: "Best sector of the day as copper prices hit a fresh all-time high" },
+    { name: "Nifty Metal", changePct: 2.4, note: "SAIL, Nalco, Hindalco, Tata Steel and Vedanta led the charge" },
+    { name: "Nifty FMCG", changePct: 1.32 },
     { name: "Nifty PSU Bank", changePct: 1.14 },
-    { name: "Nifty Realty", changePct: 1.10 },
-    { name: "Nifty Pharma", changePct: 0.90 },
-    { name: "Nifty Media", changePct: -0.50 },
-    { name: "Nifty IT", changePct: -0.87, note: "Fourth straight red session on demand-outlook concerns; Persistent, LTIM and Oracle Financial pressured the pack" }
+    { name: "Nifty Realty", changePct: 1.1 },
+    { name: "Nifty Pharma", changePct: 0.9 },
+    { name: "Nifty Media", changePct: -0.5 },
+    { name: "Nifty IT", changePct: -0.87, note: "Worst sector of the day; a fourth straight weak session on demand-outlook concerns" }
   ],
 
   movers: {
     gainers: [
-      { name: "Bajaj Finance", changePct: 3.41, cap: "Largecap", note: "Top large-cap gainer, rebounding after two days of declines" },
-      { name: "Steel Authority of India", changePct: 6.57, cap: "Midcap", note: "Top mid-cap gainer on record copper prices and improving steel demand" },
-      { name: "Whirlpool of India", changePct: 20.00, cap: "Smallcap", note: "Top small-cap and BSE 500 gainer of the day" }
+      { name: "Bajaj Finance", changePct: 3.41, cap: "Largecap", note: "Top large-cap gainer, leading the financials rebound" },
+      { name: "SAIL", changePct: 6.57, cap: "Midcap", note: "Top mid-cap gainer on the record copper price rally" },
+      { name: "Whirlpool of India", changePct: 20.0, cap: "Smallcap", note: "Top small-cap gainer on the Nifty Smallcap 100" }
     ],
     losers: [
-      { name: "HCL Technologies", changePct: -1.08, cap: "Largecap", note: "Top large-cap loser as IT stayed under pressure" },
-      { name: "Persistent Systems", changePct: -2.35, cap: "Midcap", note: "Top mid-cap loser on IT-services profit booking" },
-      { name: "Pine Labs", changePct: -4.29, cap: "Smallcap", note: "Top small-cap loser on the Nifty Smallcap 100" }
+      { name: "HCL Technologies", changePct: -1.08, cap: "Largecap", note: "Top large-cap loser as IT lagged for yet another session" },
+      { name: "Persistent Systems", changePct: -2.35, cap: "Midcap", note: "Top mid-cap loser despite strong Q1 revenue growth" },
+      { name: "Pine Labs", changePct: -4.29, cap: "Smallcap", note: "Top small-cap loser amid profit booking in new-age names" }
     ],
-    sensexWinners: ["Tata Steel", "Bajaj Finance", "ITC", "UltraTech Cement", "Power Grid", "Larsen & Toubro", "Bajaj Finserv"],
-    sensexLaggards: ["HCL Technologies", "Titan Company", "Tata Consultancy Services", "Infosys", "Mahindra & Mahindra", "ICICI Bank"]
+    sensexWinners: ["Tata Steel", "Bajaj Finance", "Hindalco Industries", "JSW Steel", "ITC", "Power Grid Corporation of India", "UltraTech Cement"],
+    sensexLaggards: ["HCL Technologies", "Infosys", "Coal India", "Tata Consultancy Services", "Titan Company", "Mahindra & Mahindra"]
   },
 
   watch: [
     {
       title: "NSE IPO lists tomorrow",
-      detail: "Shares in the Rs 22,561-crore NSE IPO (subscribed 5.7x) were credited to allottees today; the stock makes its BSE debut on Thursday, 24 September - the exchange's first listing in over a decade."
+      detail: "The Rs 22,561-crore NSE IPO (subscribed 5.7x) makes its market debut on the BSE on Thursday, 24 September - the exchange's listing after a decade-long wait. Shares were quoting around Rs 55 (about 3%) above the Rs 1,785 upper band in the grey market."
+    },
+    {
+      title: "Nifty back above 23,400",
+      detail: "Wednesday's close of 23,446.80 is a two-week high. The 23,500-23,600 zone remains the key resistance that capped Tuesday's recovery; immediate support sits at 23,300, with 23,200 below that."
     },
     {
       title: "Crude and the US-Iran talks",
-      detail: "Brent slipped below $100 a barrel for a second straight session on expectations of a diplomatic solution to the US-Iran conflict through talks at the UN in New York. Watch whether the relief for India's import bill and inflation holds."
-    },
-    {
-      title: "Copper at record highs",
-      detail: "US copper futures touched an all-time high of $6.92 a pound, rising for a seventh consecutive session amid demand strength and supply disruptions. The metal pack's momentum - SAIL, Hindalco, Tata Steel, Vedanta - hinges on whether it extends."
+      detail: "Brent traded below $100 a barrel for a second straight session on hopes of a diplomatic solution to the US-Iran conflict through talks at the UN in New York - watch whether the de-escalation holds, as it drives import costs, inflation and the rupee."
     },
     {
       title: "IT weakness and FII flows",
-      detail: "Nifty IT has now fallen four sessions in a row on global tech-spending worries, with the Nasdaq's AI-led record run doing little to lift Indian IT. FIIs sold a net Rs 3,810 crore on Tuesday; DII buying of Rs 4,120 crore continues to cushion the market."
+      detail: "Nifty IT fell again on Wednesday, a fourth straight weak session on global tech-spending concerns. FIIs sold Rs 3,810 crore on Tuesday while DIIs bought Rs 4,120 crore - continued domestic institutional support is cushioning the market."
     }
   ],
 
   reads: [
     {
       title: "Sensex, Nifty close at 2-week high: Crude, metals and financials drive gains",
-      source: "CNBC TV18",
+      source: "CNCTV18",
       url: "https://www.cnbctv18.com/market/sensex-nifty-close-at-2-week-high-crude-metals-and-financials-drive-gains-19996687.htm"
     },
     {
@@ -116,7 +116,7 @@ const dailyWrapData = {
       url: "https://www.etnownews.com/markets/stock-market-closing-today-sep-23-sensex-up-299-pts-nifty-near-23450-metal-fmcg-psu-bank-stocks-surge-article-156209145"
     },
     {
-      title: "Market wrap, Sept 23: SENSEX, NIFTY50 gain as metal stocks rally, crude oil price eases; Bajaj Fin, Hindalco top gainers",
+      title: "Market wrap, Sept 23: SENSEX, NIFTY50 gain as metal stocks rally, crude oil price ease; Bajaj Fin, Hindalco top gainers",
       source: "Upstox",
       url: "https://upstox.com/news/market-news/stocks/market-wrap-sept-23-sensex-nifty-50-gain-as-metal-stocks-rally-crude-oil-price-ease-bajaj-fin-hindalco-top-gainers/article-200759/"
     },
@@ -126,9 +126,9 @@ const dailyWrapData = {
       url: "https://upstox.com/news/market-news/stocks/top-gainers-and-losers-september-23-bajaj-finance-hindalco-jump-3-hcl-tech-titan-fall-1-check-list/article-200761/"
     },
     {
-      title: "Sensex closes 299 points higher, Nifty nears 23,450; ITC up 2%",
-      source: "India Today",
-      url: "https://www.indiatoday.in/business/market/story/market-closing-sensex-closes-299-points-higher-nifty-nears-23450-itc-shares-up-3-3001079-2026-09-23"
+      title: "Nifty Ends Higher at 23,446; Gems & Media Lead Rally",
+      source: "ScanX (Dhan)",
+      url: "https://scanx.trade/stock-market-news/markets/market-today-closing-bell-update-nifty50-share-price-sensex-share-price-crude-fii-gift-nifty-rupee-latest-23-09-2026/51703979"
     }
   ],
 
