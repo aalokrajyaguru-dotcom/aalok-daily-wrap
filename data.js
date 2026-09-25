@@ -4,135 +4,135 @@ const dailyWrapData = {
     edition: "Market Close — India",
     tagline: "The day on Dalal Street, in one scroll"
   },
-  updatedLabel: "Updated: Thursday, 24 September 2026, 5:30 PM IST",
-  asOfLabel: "Closing levels as of market close (3:30 PM IST), Thursday, 24 September 2026",
+  updatedLabel: "Updated: Friday, 25 September 2026, 5:30 PM IST",
+  asOfLabel: "Closing levels as of market close (3:30 PM IST), Friday, 25 September 2026",
 
   indices: [
     {
       name: "Nifty 50",
-      close: 23063.10,
-      dayChange: -383.70,
-      dayChangePct: -1.64,
-      weekChangePct: -1.21, // week-to-date vs Fri, 18 Sep close of 23,346.40
-      spark: [23346.40, 23414.30, 23329.00, 23446.80, 23063.10] // last 5 closes: 18, 21, 22, 23, 24 Sep
+      close: 23140.50,
+      dayChange: 77.40,
+      dayChangePct: 0.34,
+      weekChangePct: -0.88, // week-to-date vs Fri, 18 Sep close of 23,346.40
+      spark: [23414.30, 23329.00, 23446.80, 23063.10, 23140.50] // last 5 closes: 21, 22, 23, 24, 25 Sep
     },
     {
       name: "Sensex",
-      close: 73580.54,
-      dayChange: -1247.71,
-      dayChangePct: -1.67,
-      weekChangePct: -0.96, // week-to-date vs Fri, 18 Sep close of 74,294.96
-      spark: [74294.96, 74858.99, 74529.08, 74828.25, 73580.54] // last 5 closes: 18, 21, 22, 23, 24 Sep
+      close: 73895.74,
+      dayChange: 315.20,
+      dayChangePct: 0.43,
+      weekChangePct: -0.54, // week-to-date vs Fri, 18 Sep close of 74,294.96
+      spark: [74858.99, 74529.08, 74828.25, 73580.54, 73895.74] // last 5 closes: 21, 22, 23, 24, 25 Sep
     },
     {
       name: "S&P BSE 150 Midcap",
       close: null,
       dayChange: null,
-      dayChangePct: -2.25,
+      dayChangePct: -0.25,
       weekChangePct: null,
       spark: null,
-      note: "Midcaps bore the brunt of the selloff. The Nifty Midcap 100 was the day's worst major index, falling 2.25% to 60,990.15; PB Fintech (-36%) crashed on the IRDAI commission-cap proposal while Avantel and Vikran Engineering gained on order wins."
+      note: "Midcaps missed the bounce. The S&P BSE 150 Midcap fell 0.25% and the Nifty Midcap 100 slipped 0.14%, with large caps clearly favoured; Max Financial (+3.42%) was the best midcap while Meesho (-6.87%) slumped."
     },
     {
       name: "S&P BSE 250 Smallcap",
       close: null,
       dayChange: null,
-      dayChangePct: -1.53,
+      dayChangePct: -0.01,
       weekChangePct: null,
       spark: null,
-      note: "Smallcaps fell less than midcaps. The Nifty Smallcap 100 declined about 1.5%; newly listed insurtech Turtlemint (-20%) hit its lower circuit on the IRDAI draft, while Vikran Engineering (+9.5%) jumped on new Power Grid orders."
+      note: "Smallcaps were flattish: the Nifty Smallcap 100 added 0.15% while the S&P BSE 250 Smallcap eased just 0.01%. Whirlpool India (+7.3%) and Welspun Corp (+4.9%, record order win) led; Ola Electric (-9.5%) was the day's biggest BSE 500 loser."
     }
   ],
 
   weeklyWrap: {
-    headline: "Worst session since March as US yields top 5% and crude hits $106; Nifty cracks 23,100",
-    niftyFiveSessionPct: -0.89,   // vs 17 Sep close of 23,270.60
-    sensexFiveSessionPct: -0.99,  // vs 17 Sep close of 74,314.59
-    summary: "The Nifty crashed 1.64% to 23,063.10 and the Sensex 1.67% to 73,580.54 on Thursday - the worst single-day fall since March 9 - after the US 10-year Treasury yield jumped about 14 basis points to 5.11%, its highest since 2007, and Brent crude surged back above $106 a barrel with no sign of the US-Iran standoff easing. Traders now price a 66% chance of an October Fed hike. Every major sectoral index ended in the red - Nifty IT (-0.44%) was the least-bad while financial services (-2.4%) and private banks (-2.2%) fell hardest - and all 30 Sensex constituents were in the red at the close. The IRDAI's proposal to bring back hard caps on insurance commissions crushed insurance-linked names: PB Fintech plunged 36%, newly listed Turtlemint hit its lower circuit (-20%) and HDFC Life (-6.2%) was the top Nifty loser. The Bank Nifty fell 1.7% to below 56,000, the Nifty Midcap 100 dropped 2.25% to 60,990.15, and India VIX spiked 22.8% to 12.70. Over the last five sessions the Nifty is down 0.89% and the Sensex 0.99%. The day's silver lining: the NSE finally made its market debut, listing at Rs 1,800 (0.8% above the Rs 1,785 issue price) and extending gains to trade around Rs 1,850-1,875 - a market value of roughly Rs 4.6 lakh crore, placing India's largest exchange among the country's ten most-valued listed companies."
+    headline: "Value buying pulls Nifty back above 23,100, but a seventh straight weekly loss keeps the bears in charge",
+    niftyFiveSessionPct: -0.56,   // vs 17 Sep close of 23,270.60
+    sensexFiveSessionPct: -0.56,  // vs 17 Sep close of 74,314.59
+    summary: "The Nifty 50 rose 0.34% to 23,140.50 and the Sensex 0.43% to 73,895.74 on Friday, as value hunting after Thursday's rout combined with reports that the US and Iran are working on a plan to end the war, plus a modest cooling in Brent crude to about $105, lifted the benchmarks off their morning lows. The recovery was selective rather than broad: 8 of 11 key sectoral indices advanced, led by consumer durables (+0.95%) and realty (+0.92%), while IT was the biggest laggard with the US 10-year yield near a 19-year high - Infosys fell 1.41%. Axis Bank (+3.03%) was the top Nifty stock and the biggest index contributor (+22.49 points), rebounding from Thursday's IRDAI-driven slide, while Max Healthcare (-3.06%) brought up the rear on hospital charge-capping worries. The Bank Nifty rose just 0.26%, the Nifty Midcap 100 slipped 0.14% and the Nifty Smallcap 100 eked out 0.15%; India VIX cooled about 4% to 12.16 after Thursday's 23% spike. The bounce, though, couldn't rescue the week: the Nifty fell 0.88% over the five sessions - a seventh consecutive weekly decline - and remains near a five-and-a-half-month low, with FIIs still selling (₹5,027 crore out on Thursday) and only domestic institutions absorbing the flow."
   },
 
   dayByDay: [
-    { date: "2026-09-18", label: "Fri 18 Sep", niftyClose: 23346.40, niftyChangePct: 0.33, sensexChangePct: -0.03, note: "Third straight Nifty gain; midcaps +1.24% and smallcaps +1.74% outperform. FIIs sell Rs 3,209 cr, DIIs absorb." },
     { date: "2026-09-21", label: "Mon 21 Sep", niftyClose: 23414.30, niftyChangePct: 0.29, sensexChangePct: 0.76, note: "Fourth straight gain on easing crude; NSE IPO closes 5.7x subscribed with ~Rs 90,000 cr of demand." },
     { date: "2026-09-22", label: "Tue 22 Sep", niftyClose: 23329.00, niftyChangePct: -0.36, sensexChangePct: -0.44, note: "Streak snapped: early gains fade into the weekly F&O expiry as IT, FMCG and PSU banks drag; media, realty and metals gain." },
     { date: "2026-09-23", label: "Wed 23 Sep", niftyClose: 23446.80, niftyChangePct: 0.50, sensexChangePct: 0.40, note: "Rebound to a two-week high as metals rally on record copper and sub-$100 crude on US-Iran diplomacy hopes; IT the only major laggard." },
-    { date: "2026-09-24", label: "Thu 24 Sep", niftyClose: 23063.10, niftyChangePct: -1.64, sensexChangePct: -1.67, note: "Worst session since 9 March: US 10-year yield tops 5.1% and Brent hits $106 as the US-Iran standoff simmers; IRDAI commission-cap draft sinks insurers (PB Fintech -36%); VIX jumps 23%; NSE lists at a small premium and extends gains." }
+    { date: "2026-09-24", label: "Thu 24 Sep", niftyClose: 23063.10, niftyChangePct: -1.64, sensexChangePct: -1.67, note: "Worst session since 9 March: US 10-year yield tops 5.1% and Brent hits $106 as the US-Iran standoff simmers; IRDAI commission-cap draft sinks insurers (PB Fintech -36%); VIX jumps 23%; NSE lists at a small premium and extends gains." },
+    { date: "2026-09-25", label: "Fri 25 Sep", niftyClose: 23140.50, niftyChangePct: 0.34, sensexChangePct: 0.43, note: "Calm rebound after the rout: value buying and US-Iran truce hopes lift the Nifty back above 23,100; realty and consumer durables lead while IT lags on US yields; VIX cools 4% - but a seventh straight weekly loss is sealed." }
   ],
 
   sectors: [
-    { name: "Nifty IT", changePct: -0.44, note: "The 'best' sector of a terrible day - every major sectoral index ended in the red" },
-    { name: "Nifty Pharma", changePct: -0.46, note: "Defensives held up best; Cipla (+1.16%) was the top Nifty stock" },
-    { name: "Nifty Media", changePct: -0.75 },
-    { name: "Nifty FMCG", changePct: -1.18 },
-    { name: "Nifty Auto", changePct: -1.46 },
-    { name: "Nifty Bank", changePct: -1.7, note: "Bank Nifty slipped about 1.7% to below 56,000 as private banks slid" },
-    { name: "Nifty Metal", changePct: -1.9, note: "Sharp reversal from Wednesday's 2.4% copper-led rally as the dollar and yields surged" },
-    { name: "Nifty Private Bank", changePct: -2.2, note: "Worst major sector as the IRDAI proposal and rate fears hit banks and insurers" }
+    { name: "Nifty Consumer Durables", changePct: 0.95, note: "Best major index of the day; Whirlpool India (+7.3%) topped the BSE 500 gainers" },
+    { name: "Nifty Realty", changePct: 0.92, note: "Top Nifty sectoral gainer, with DLF up more than 1.8%" },
+    { name: "Nifty Auto", changePct: 0.46, note: "Held in the green through the close; M&M (+1.75%) and the Bajaj names firmed up" },
+    { name: "Nifty Metal", changePct: 0.45, note: "Recovered some of Thursday's 1.9% slide as the dollar paused" },
+    { name: "Nifty Bank", changePct: 0.26, note: "Bank Nifty underperformed the benchmarks in only a mild rebound from Thursday's IRDAI-led rout" },
+    { name: "Nifty Media", changePct: -0.23, note: "Third straight session of losses" },
+    { name: "Nifty Healthcare", changePct: -0.51, note: "Max Healthcare (-3.06%) and Fortis (-4.97%) slid on hospital charge-capping reports" },
+    { name: "Nifty IT", changePct: -0.71, note: "Biggest sectoral laggard: with the US 10-year yield near a 19-year high, Infosys fell 1.41% and TCS ended in the red" }
   ],
 
   movers: {
     gainers: [
-      { name: "Cipla", changePct: 1.16, cap: "Largecap", note: "Top Nifty gainer, closing at 1,399 - one of the only Nifty stocks in the green; ONGC, NTPC and BEL also held gains" },
-      { name: "Vikran Engineering", changePct: 9.5, cap: "Smallcap", note: "Jumped after winning new orders worth about Rs 154 crore from Power Grid Corporation" },
-      { name: "Avantel", changePct: 6.5, cap: "Smallcap", note: "Surged after securing an order worth Rs 177.35 crore" }
+      { name: "Axis Bank", changePct: 3.03, cap: "Largecap", note: "Top Nifty gainer, closing at 1,222.40, and the biggest index contributor (+22.49 points) as it rebounded from Thursday's IRDAI-driven slide; Asian Paints (+2.14%) and M&M (+1.75%) also stood out" },
+      { name: "Whirlpool India", changePct: 7.30, cap: "Smallcap", note: "Top gainer in the BSE 500, powering consumer durables; Aether Industries (+7.15%) and Engineers India (+6.37%) followed" },
+      { name: "Welspun Corp", changePct: 4.91, cap: "Smallcap", note: "Jumped after winning its largest-ever order - $412.5 million of high-frequency-induction-welded pipes; Vascon Engineers (+4.42%) also rose on a $69 million order win" }
     ],
     losers: [
-      { name: "HDFC Life Insurance", changePct: -6.2, cap: "Largecap", note: "Top Nifty loser, closing around 527, as the IRDAI draft on insurance commissions hit life insurers" },
-      { name: "PB Fintech", changePct: -36.0, cap: "Midcap", note: "Record single-day fall - closed at 1,207, erasing over Rs 25,000 crore of market value on the IRDAI commission-cap proposal" },
-      { name: "Turtlemint Fintech Solutions", changePct: -20.0, cap: "Smallcap", note: "Newly listed insurtech hit its lower circuit, closing at 109, on the IRDAI draft" }
+      { name: "Max Healthcare", changePct: -3.06, cap: "Largecap", note: "Biggest Nifty laggard, closing at 1,014, as hospital stocks slid on reports of proposed charge capping" },
+      { name: "Meesho", changePct: -6.87, cap: "Midcap", note: "Among the worst BSE 500 decliners as midcaps stayed out of favour; the Nifty Midcap 100 fell 0.14%" },
+      { name: "Ola Electric", changePct: -9.48, cap: "Smallcap", note: "Worst performer in the BSE 500 on a brutal day for the EV maker; Fortis Healthcare (-4.97%) also slumped on hospital charge-cap worries" }
     ],
-    sensexWinners: [],
-    sensexLaggards: ["Bajaj Finance", "Axis Bank", "Bajaj Finserv", "InterGlobe Aviation (IndiGo)", "Asian Paints", "Trent"]
+    sensexWinners: ["Axis Bank", "Asian Paints", "Mahindra & Mahindra", "Bajaj Finance", "Power Grid", "HCL Technologies"],
+    sensexLaggards: ["Infosys", "ONGC", "Trent", "Bharti Airtel", "ICICI Bank", "Tata Consumer Products"]
   },
 
   watch: [
     {
-      title: "Nifty's make-or-break at 23,000",
-      detail: "Thursday's close of 23,063.10 is the lowest since mid-June and the worst single-day fall since March 9. Immediate support sits at 23,000, then 22,800; any bounce faces resistance at 23,200-23,300 - the zone the index broke down from during the session."
+      title: "Seven weeks of losses",
+      detail: "Friday's bounce couldn't save the week: the Nifty fell 0.88% over the five sessions - a seventh consecutive weekly decline - and sits near a five-and-a-half-month low. The next big test is whether the 23,000 support holds; below it, analysts see 22,900-22,700."
     },
     {
-      title: "US yields at a 19-year high",
-      detail: "The US 10-year Treasury yield jumped about 14 basis points to 5.11% - its highest since 2007 - after US business-activity data came in at a five-year high, and traders now assign a 66% probability to an October Fed rate hike. Watch whether the global bond rout extends."
+      title: "US-Iran: talks, but no truce yet",
+      detail: "Reports that Washington and Tehran are working on a plan to end the war lifted Friday's mood, but President Trump has indicated a deal could come only after the November US midterms. Brent held near $105-106 a barrel - watch India's import bill and the rupee, around 95.85-96 per dollar."
     },
     {
-      title: "Crude and the US-Iran standoff",
-      detail: "Brent spiked as much as 3.2% to about $106 a barrel after Iran's president told the UN General Assembly that Tehran would never surrender to US pressure. Crude drives India's import bill, inflation and the rupee, which slipped to about 95.87 per dollar."
+      title: "US yields at 19-year highs",
+      detail: "The US 10-year Treasury yield sits near 5.1-5.2% and the 30-year is at its highest since 2004, keeping rate-sensitive IT stocks under pressure (Infosys -1.41% Friday) and traders assigning roughly a two-in-three chance of an October Fed hike."
     },
     {
-      title: "IRDAI's commission-cap proposal",
-      detail: "The insurance regulator's consultation paper proposing lower Expenses of Management caps and hard, product-level commission caps hit distributors hard - PB Fintech fell 36% and Turtlemint 20%. Banks and NBFCs with higher insurance fee income (Axis Bank, Bajaj Finance among names JM Financial flagged) stay in focus; watch for industry feedback on the draft."
+      title: "The IRDAI hangover",
+      detail: "After Thursday's carnage (PB Fintech -36%), insurance-linked names stayed under a cloud - PB Fintech slipped another 3.68% Friday. Hospital stocks joined in: Max Healthcare (-3.06%) and Fortis (-4.97%) fell on charge-capping reports. Watch for industry feedback on the drafts."
     },
     {
-      title: "NSE settles in after its debut",
-      detail: "NSE listed at Rs 1,800 on the BSE - just 0.8% above the Rs 1,785 issue price - then extended gains to trade around Rs 1,850-1,875, valuing India's largest exchange at roughly Rs 4.6 lakh crore, the ninth-largest listed company in India. Macquarie started coverage with Outperform (target Rs 1,965) and Emkay with Buy (target Rs 2,050)."
+      title: "FII selling vs DII support",
+      detail: "Foreign investors sold Rs 5,027 crore of Indian equities on Thursday - the latest in a persistent run of outflows - while domestic institutions bought Rs 4,301 crore. Which side blinks first will decide whether 23,000 holds."
     }
   ],
 
   reads: [
     {
-      title: "Sensex, Nifty crash; fear index shoots up 23%: Key factors weighing on the market",
-      source: "Business Today",
-      url: "https://www.businesstoday.in/markets/stocks/story/sensex-nifty-crash-fear-index-shoots-up-24-key-factors-weighing-on-the-market-557562-2026-09-24"
+      title: "Stock Market Closing Today, Sep 25: Sensex closes 315 pts higher, Nifty above 23,100; check top gainers and losers",
+      source: "ET Now",
+      url: "https://www.etnownews.com/markets/stock-market-closing-today-sep-25-sensex-closes-315-pts-higher-nifty-above-23100-check-top-gainers-and-losers-article-156223937"
     },
     {
-      title: "Taking Stock: Nifty breaches 23,100 for first time since June 11; Sensex tanks 1,248 pts",
+      title: "Stock Market Closing Bell: Sensex gains over 300 points, Nifty ends above 23,100; Auto, realty shine",
+      source: "Zee Business",
+      url: "https://www.zeebiz.com/market-news/news-stock-market-closing-bell-sensex-gains-over-300-points-nifty-ends-above-23100-auto-realty-shine-402864"
+    },
+    {
+      title: "Sensex gains 300 pts from day's low, Nifty above 23,100: Value buying among key factors behind market rise",
       source: "Moneycontrol",
-      url: "https://www.moneycontrol.com/news/business/markets/taking-stock-nifty-breaches-23-100-for-first-time-since-june-11-sensex-tanks-1-248-pts-14037384.html"
+      url: "https://www.moneycontrol.com/news/business/markets/sensex-gains-300-pts-from-day-s-low-nifty-above-23-100-value-buying-among-key-factors-behind-market-rise-14037935.html"
     },
     {
-      title: "SENSEX, NIFTY50 posts worst day in over six months as crude surges, US bond yield tops 5%",
-      source: "Upstox",
-      url: "https://upstox.com/news/market-news/stocks/sensex-nifty-50-posts-worst-day-in-over-six-months-as-crude-surges-us-bond-yield-tops-5/article-200831/"
+      title: "Nifty ends above 23,100 level; consumer durables shares climb",
+      source: "Business Standard",
+      url: "https://www.business-standard.com/markets/capital-market-news/nifty-ends-above-23-100-level-consumer-durables-shares-climb-126092500786_1.html"
     },
     {
-      title: "Stock market crash today: Sensex ends over 1,200 points, Nifty goes below 23,100 - top reasons for fall",
-      source: "Times of India",
-      url: "https://timesofindia.indiatimes.com/business/india-business/stock-market-crash-today-why-are-sensex-nifty-down-on-september-24-2026-op-reasons-for-fall/articleshow/134456699.cms"
-    },
-    {
-      title: "NSE shares defy the over Rs 20,000-crore IPO curse by listing at a premium",
-      source: "Moneycontrol",
-      url: "https://www.moneycontrol.com/news/business/markets/nse-defies-the-over-rs-20-000-crore-ipo-curse-by-listing-at-a-premium-14037111.html"
+      title: "Stock markets turn volatile as oil prices, rising bond yields weigh on sentiments",
+      source: "The Hindu",
+      url: "https://www.thehindu.com/business/markets/stock-market-updates-sept-25-2026/article71507144.ece"
     }
   ],
 
