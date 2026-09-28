@@ -31,7 +31,7 @@ const dailyWrapData = {
       dayChangePct: -1.63,
       weekChangePct: null,
       spark: null,
-      note: "Midcaps were hammered along with the banks: the Nifty Midcap 100 crashed 991.80 points to 59,914.20 as the 10-year US yield sat near a 20-year high of 5.2%. Yes Bank (-5.87%), Bank of India (-5.76%) and Vodafone Idea (-5.54%) led the slide, while Dixon Technologies (+1.87%) and Voltas (+1.55%) gained after appliance makers announced a third round of price hikes for October 1."
+      note: "Midcaps sank with the market: the Nifty Midcap 100 fell 1.63% to 59,914.20 and the Nifty Next 50 dropped 2.05%, with the slide driven more by long unwinding than outright selling ahead of the monthly expiry. Zydus Lifesciences bucked the trend, hitting a 52-week high after a clean USFDA inspection of its New Jersey pharmacovigilance system, while Aster DM fell about 2.7% despite Motilal Oswal initiating coverage with a Buy (target Rs 910) and Godrej Properties slipped after bagging a Rs 6,000-crore Mumbai project."
     },
     {
       name: "S&P BSE 250 Smallcap",
@@ -40,15 +40,15 @@ const dailyWrapData = {
       dayChangePct: -1.85,
       weekChangePct: null,
       spark: null,
-      note: "Smallcaps bore the brunt of the risk-off: the Nifty Smallcap 100 slid 364.15 points to 19,351.10. Manappuram Finance (-6.29%) and Physicswallah (-4.80%) were the biggest losers, while MRPL (+3.31%) and Great Eastern Shipping (+2.46%) stayed afloat. Analysts read the correction as long unwinding rather than outright selling ahead of the monthly expiry."
+      note: "Smallcaps bore the brunt: the Nifty Smallcap 100 slid 1.85% to 19,351.10. Manappuram Finance (-6.29%), Physicswallah (-4.80%), IFCI (-4.46%), City Union Bank (-4.24%) and Urban Company (-4.15%) led the fall, while refiner MRPL (+3.31%), Great Eastern Shipping (+2.46%) and Brainbees Solutions (+2.36%) gained as crude and shipping rates firmed."
     }
   ],
 
   weeklyWrap: {
-    headline: "Nifty cracks below 22,800 as crude, US yields and Iran worries trigger a Rs 7.5 lakh crore rout",
+    headline: "Bears stampede: crude above $107 and 5.2% US yields knock the Nifty below 22,800 to a three-month low",
     niftyFiveSessionPct: -2.71,   // vs 21 Sep close of 23,414.30
     sensexFiveSessionPct: -2.79,  // vs 21 Sep close of 74,858.99
-    summary: "The Nifty tumbled 1.56% to 22,780.25 and the Sensex 1.52% to 72,771.72 on Monday - a three-month low for the benchmarks - as nearly Rs 7.5 lakh crore of BSE market capitalisation was wiped out in a single session. Brent crude surged about 3.8% past $108 a barrel after the US rejected an Iranian ceasefire proposal, dashing hopes of an early de-escalation, while the US 10-year yield held near 5.2%, a near 20-year high, keeping foreign money flowing out of Indian equities. Banks led the carnage: Bank Nifty sank 1.99% to 54,471.65 with the PSU Bank index down 3.24% (HDFC Bank -2.30%, SBI -2.10%, ICICI Bank -1.90%), and the Nifty Next 50 lost 2.05%. Only three of 50 Nifty stocks advanced - Dr. Reddy's (+1.67%), Infosys (+0.30%) and HDFC Life (+0.11%) - while Tata Motors PV (-3%), Adani Enterprises (-2.93%) and Jio Financial (-2.86%) brought up the rear. IT was the day's relative shelter (Nifty IT -0.26%), with Infosys the sole major Sensex gainer (+0.20%). India VIX spiked about 12% to 13.64, and breadth was ugly: 2,716 of 3,676 NSE stocks declined, with 177 hitting 52-week lows. Midcaps (Nifty Midcap 100 -1.63%) and smallcaps (-1.85%) fell harder than the benchmarks. FIIs sold another Rs 3,694 crore on Friday, taking September outflows past Rs 25,000 crore even as DIIs kept buying. Over the last five sessions the Nifty is down 2.71% and the Sensex 2.79%."
+    summary: "Monday brought the week's worst fears forward: the Sensex crashed 1,124.02 points (1.52%) to 72,771.72 and the Nifty 50 fell 360.25 points (1.56%) to 22,780.25 - its first close below 23,000 since April and a fresh three-month low - wiping out nearly Rs 7.5 lakh crore of BSE market capitalisation. Only three of 50 Nifty stocks (Dr Reddy's, Infosys, HDFC Life) ended higher, and India VIX spiked more than 12% to around 13.6, a one-month high. The triggers: Brent surged past $107 after President Trump rejected Iran's proposal for a seven-day ceasefire and reopening of the Strait of Hormuz, the US 10-year Treasury yield pushed further above 5.2% with traders pricing roughly two-thirds odds of another Fed hike in October, and the rupee slid toward 96 a dollar. Banks led the damage - Bank Nifty lost 1.99% to 54,471.65 and PSU banks crashed 3.24% - while realty (-2.12%), metals (-1.78%) and autos (-1.64%) also sank; IT fell the least (-0.26%) as Infosys ended as the only Sensex stock in the green. Midcaps (Midcap 100 -1.63%) and smallcaps (Smallcap 100 -1.85%) were hit by long unwinding ahead of this week's monthly expiry, and FIIs, who sold Rs 3,694 crore on Friday (Rs 25,682 crore so far this month), stayed on the sell side. Over the last five sessions the Nifty is down 2.71% and the Sensex 2.79%."
   },
 
   dayByDay: [
@@ -56,55 +56,55 @@ const dailyWrapData = {
     { date: "2026-09-23", label: "Wed 23 Sep", niftyClose: 23446.80, niftyChangePct: 0.50, sensexChangePct: 0.40, note: "Rebound to a two-week high as metals rally on record copper and sub-$100 crude on US-Iran diplomacy hopes; IT the only major laggard." },
     { date: "2026-09-24", label: "Thu 24 Sep", niftyClose: 23063.10, niftyChangePct: -1.64, sensexChangePct: -1.67, note: "Worst session since 9 March: US 10-year yield tops 5.1% and Brent hits $106 as the US-Iran standoff simmers; IRDAI commission-cap draft sinks insurers (PB Fintech -36%); VIX jumps 23%; NSE lists at a small premium and extends gains." },
     { date: "2026-09-25", label: "Fri 25 Sep", niftyClose: 23140.50, niftyChangePct: 0.34, sensexChangePct: 0.43, note: "Rebound after the rout: value buying, softer crude (~$105) and US-Iran truce talk lift the Nifty back above 23,100; IT falls for a sixth straight day; still a seventh consecutive weekly loss (-0.88%)." },
-    { date: "2026-09-28", label: "Mon 28 Sep", niftyClose: 22780.25, niftyChangePct: -1.56, sensexChangePct: -1.52, note: "Brent surges ~3.8% past $108 after the US rejects an Iran ceasefire proposal and the US 10-year yield sits near 5.2%; banks lead a Rs 7.5 lakh crore mcap rout, VIX jumps 12%, Nifty ends below 22,800 at a three-month low." }
+    { date: "2026-09-28", label: "Mon 28 Sep", niftyClose: 22780.25, niftyChangePct: -1.56, sensexChangePct: -1.52, note: "Rout: Trump rejects Iran's Hormuz ceasefire proposal, Brent tops $107 and the US 10-year yield sits above 5.2%; Nifty closes below 23,000 for the first time since April as Rs 7.5 lakh cr of mcap is wiped out; VIX spikes ~12%; PSU banks crash 3.2%." }
   ],
 
   sectors: [
-    { name: "Nifty IT", changePct: -0.26, note: "The day's relative shelter after six straight sessions of falls - Infosys (+0.20%) was the only major Sensex stock to end higher, though TCS (-0.59%), HCL Tech (-0.45%) and Tech Mahindra (-0.24%) stayed in the red" },
-    { name: "Nifty Pharma", changePct: -0.89, note: "Dr. Reddy's (+1.67%) was the top Nifty gainer of the day as defensive names found buyers" },
-    { name: "Nifty FMCG", changePct: -1.47, note: "Consumer staples slid with the market; appliance makers were the exception - Dixon (+1.87%) and Voltas (+1.55%) rose on an October 1 price-hike round (ACs up 5-8%)" },
-    { name: "Nifty Private Bank", changePct: -1.51, note: "HDFC Bank -2.30%, ICICI Bank -1.90% as bond yields climbed" },
-    { name: "Nifty Auto", changePct: -1.64, note: "Tata Motors PV (-3%) was the worst Nifty stock of the session" },
-    { name: "Nifty Metal", changePct: -1.78, note: "Fell despite the commodity surge as risk appetite drained" },
-    { name: "Nifty Realty", changePct: -2.12, note: "Rate-sensitives gave back all of Friday's gains as US yields hit multi-decade highs" },
-    { name: "Nifty PSU Bank", changePct: -3.24, note: "Day's worst sector - Bank of India (-5.76%) and IDFC First Bank (-3.88%) among the battered" }
+    { name: "Nifty IT", changePct: -0.26, note: "Least-bad sector as defensives held up - Infosys (+0.30%) was the only major IT name in the green; TCS, HCL Tech and Tech Mahindra slipped but far less than the market" },
+    { name: "Nifty Pharma", changePct: -0.89, note: "Dr Reddy's (+1.67%) topped the Nifty as investors hid in defensive pharma; Zydus Lifesciences hit a 52-week high after a clean USFDA inspection" },
+    { name: "Nifty FMCG", changePct: -1.47, note: "Staples fell roughly in line with the benchmarks" },
+    { name: "Nifty Auto", changePct: -1.64, note: "Tata Motors PV (-3.0%, a three-year low) and Bajaj Auto (-2.8%) dragged; Hero MotoCorp (+0.26%) was the lone gainer" },
+    { name: "Nifty Metal", changePct: -1.78, note: "Metals slid despite record copper prices as the risk-off wave and strong dollar outweighed commodity strength" },
+    { name: "Nifty Bank", changePct: -1.99, note: "Bank Nifty tumbled 1,108.75 points to 54,471.65; private banks fell 1.51% with HDFC Bank (-2.30%), ICICI Bank (-1.90%) and SBI (-2.10%) all lower" },
+    { name: "Nifty Realty", changePct: -2.12, note: "Rate-sensitive realty slumped as US yields climbed past 5.2%" },
+    { name: "Nifty PSU Bank", changePct: -3.24, note: "Day's worst sector - Bank of India, Bank of Maharashtra and Union Bank led the collapse" }
   ],
 
   movers: {
     gainers: [
-      { name: "Dr. Reddy's Laboratories", changePct: 1.67, cap: "Largecap", note: "Top Nifty gainer on a day when only three of the 50 index constituents advanced" },
-      { name: "Dixon Technologies", changePct: 1.87, cap: "Midcap", note: "Best Nifty Midcap 100 stock - appliance and consumer-electronics makers announced a third 2026 round of price hikes from October 1, with AC prices set to rise 5-8%" },
-      { name: "Mangalore Refinery & Petrochemicals", changePct: 3.31, cap: "Smallcap", note: "Top Nifty Smallcap 100 gainer as refining names rode the crude surge" }
+      { name: "Dr Reddy's Laboratories", changePct: 1.67, cap: "Largecap", note: "Top Nifty gainer, closing at 1,221 - one of only three Nifty 50 stocks (with Infosys and HDFC Life) to end higher as investors rushed into defensive pharma" },
+      { name: "Infosys", changePct: 0.30, cap: "Largecap", note: "Closed at 1,003.20 - the only Sensex constituent in the green - as IT (-0.26%) fell the least of all sectors amid the carnage" },
+      { name: "MRPL", changePct: 3.31, cap: "Smallcap", note: "Top gainer in the Nifty Smallcap 100 as refiners and energy names rallied with crude above $107; Great Eastern Shipping (+2.46%) and Brainbees Solutions (+2.36%) followed" }
     ],
     losers: [
-      { name: "Tata Motors Passenger Vehicles", changePct: -3.0, cap: "Largecap", note: "Worst Nifty stock of the day, ahead of Adani Enterprises (-2.93%), Jio Financial (-2.86%), Power Grid (-2.84%) and L&T (-2.83%); among Sensex names L&T (-2.70%) led the fall" },
-      { name: "Yes Bank", changePct: -5.87, cap: "Midcap", note: "Worst Nifty Midcap 100 stock as banking stocks crumbled under the weight of near-20-year-high US yields, followed by Bank of India (-5.76%) and Vodafone Idea (-5.54%)" },
-      { name: "Manappuram Finance", changePct: -6.29, cap: "Smallcap", note: "Worst Nifty Smallcap 100 stock despite the bullish technical setup brokerages flagged in the morning; Physicswallah (-4.80%) and IFCI (-4.46%) also plunged" }
+      { name: "Jio Financial Services", changePct: -3.35, cap: "Largecap", note: "Worst Nifty 50 stock, closing at 219.40 - a fresh 52-week low - as financials bore the brunt of the sell-off" },
+      { name: "Adani Enterprises", changePct: -3.31, cap: "Largecap", note: "Closed at 2,820 after falling as much as 2.7% intraday; Adani Ports (-2.6%) and Tata Motors PV (-3.0%, a three-year low) also slumped" },
+      { name: "Manappuram Finance", changePct: -6.29, cap: "Smallcap", note: "Biggest fall in the Nifty Smallcap 100; Physicswallah (-4.80%), IFCI (-4.46%) and City Union Bank (-4.24%) also tumbled" }
     ],
     sensexWinners: ["Infosys"],
-    sensexLaggards: ["Larsen & Toubro", "Power Grid", "Adani Ports", "HDFC Bank", "Reliance Industries"]
+    sensexLaggards: ["Larsen & Toubro", "Power Grid", "Tata Motors", "HDFC Bank", "Reliance Industries"]
   },
 
   watch: [
     {
-      title: "Nifty staring at 22,600 after breaking 22,800",
-      detail: "Monday's close at 22,780.25 sits right on the 22,675-22,785 support zone Zee Business's Anil Singhvi flagged; a sustained close below 22,800, he warns, opens the door to about 22,600, with 22,200 the next major level. Hedged.in sees immediate support at 22,700-22,650, then a stronger floor near 22,550, with resistance stacked at 22,850-22,950 (Sensex support 72,600-72,400, resistance 73,000-73,300). Resistance above that sits at 23,000-23,750."
+      title: "How far below 22,800 can the Nifty slide?",
+      detail: "Monday's close at 22,780.25 sits right on the first support zone of 22,675-22,785. Analysts flag 22,700-22,650 as the next cushion and 22,550 as stronger support, with 22,200 a major level below that; resistance is stacked at 22,850-22,950, then 23,000. For the Sensex, watch 72,600-72,400 support against 73,000-73,300 resistance. A close below 22,800, some warn, risks a slide toward 22,600."
     },
     {
-      title: "Crude and the collapsed US-Iran truce hopes",
-      detail: "Brent jumped about 3.8% to $108.30 a barrel (WTI $95.93) after the US rejected a ceasefire proposal - Geojit's Vinod Nair says this raises fears that West Asia tensions, supply disruptions and higher commodity prices could persist. Winter demand in Europe and China's stock-building are adding real demand to the supply-side squeeze, dimming hopes of an early price decline. Crude drives India's import bill, inflation and the rupee."
+      title: "Crude and the US-Iran standoff",
+      detail: "Brent surged past $107 a barrel (WTI near $96) after President Trump rejected Iran's proposal for a seven-day ceasefire plus reopening of the Strait of Hormuz, and Tehran vowed not to back down. JPMorgan says it no longer has a defined baseline oil scenario - a first since the war began in February - and winter demand plus China's stockpiling may keep prices elevated. Crude drives India's import bill, inflation and the rupee."
     },
     {
-      title: "US yields near 20-year highs and FPI outflows",
-      detail: "The US 10-year Treasury yield hovered around 5.2%, its highest in nearly 20 years, and traders are bracing for another Fed rate hike - expectations of which have kept the dollar firm. The narrowing India-US yield spread is encouraging foreign outflows: FIIs sold Rs 3,694 crore on Friday, taking September's total equity outflows past Rs 25,000 crore even as DIIs kept buying. Watch whether the global bond rout extends."
+      title: "US yields at multi-decade highs",
+      detail: "The US 10-year Treasury yield pushed further above 5.2% - its highest in over two decades - with the 30-year above 5.5% and the 2-year above 4.9%, and traders pricing roughly two-thirds odds of another Fed hike in October. The narrowing India-US yield spread risks accelerating FII outflows (already Rs 25,682 crore this month) and pressure on the rupee, which closed near 96.24 a dollar."
     },
     {
       title: "Monthly F&O expiry on Wednesday",
-      detail: "Much of Monday's selling was long unwinding and position-cutting ahead of the monthly derivatives expiry on 30 September, with investors postponing fresh buying. Expect choppy trade until the expiry clears; some of Monday's late stabilisation was already short-covering."
+      detail: "Much of Monday's midcap and smallcap damage was long unwinding rather than outright selling ahead of this week's monthly derivatives expiry, and some late buying was short-covering. Expect choppy, headline-driven sessions until expiry clears - especially with heavy put open interest at 22,800 and call writing at 22,900-23,000."
     },
     {
-      title: "Bank Nifty tests 54,300-54,600 support",
-      detail: "Bank Nifty fell 1.99% to 54,471.65 - its worst sector showing was PSU banks at -3.24%. Singhvi sees the next support at 54,300-54,600 with position-lightening likely near 55,000-55,300 on any bounce; a close below 55,300 would be unfavourable, and the index is already well under it. RBI's upcoming policy decision adds another overhang for rate-sensitives."
+      title: "FIIs vs DIIs, and the RBI's next move",
+      detail: "FIIs sold Rs 3,694 crore on Friday, taking September's outflows to about Rs 25,682 crore, while DIIs bought roughly Rs 2,838 crore. With markets also gearing up for the RBI's policy decision, watch whether domestic flows keep absorbing foreign selling - and whether the central bank signals anything on crude-driven inflation risks."
     }
   ],
 
@@ -120,29 +120,29 @@ const dailyWrapData = {
       url: "https://www.zeebiz.com/market-news/news-closing-bell-rs-75-lakh-crore-mcap-wiped-out-as-sensex-tanks-1124-points-nifty-below-22800-key-reasons-explained-402976"
     },
     {
-      title: "Top gainers and losers, September 28: Tata Motors PV, AEL, Jio Financials tumble 3%; Dr. Reddy's up 2%",
-      source: "Upstox",
-      url: "https://upstox.com/news/market-news/stocks/top-gainers-and-losers-september-28-tata-motors-pv-ael-jio-financials-tumble-3-dr-reddy-s-up-2/article-200997/"
-    },
-    {
       title: "Stock market crash today: BSE Sensex crashes over 1,000 points, Nifty50 below 22,850 - top reasons for fall",
       source: "Times of India",
       url: "https://timesofindia.indiatimes.com/business/india-business/stock-market-crash-today-why-bse-sensex-and-nifty50-have-crashed-on-september-28-2026-us-iran-war-crude-oil-rupee-top-reasons-for-fall/articleshow/134532562.cms"
     },
     {
-      title: "India shares lower at close of trade; Nifty 50 down 1.56%",
-      source: "Investing.com",
-      url: "https://in.investing.com/news/stock-market-news/india-shares-lower-at-close-of-trade-nifty-50-down-156-5608476"
-    },
-    {
-      title: "Sensex, Nifty 50 Today | Stock Market LIVE, 28 September 2026",
+      title: "Stock Market Crash Today: 3 Reasons Sensex, Nifty Fell on Sep 28 Amid Crude Oil Surge, US Yields, FII Outflow",
       source: "ET Now",
-      url: "https://www.etnownews.com/markets/sensex-nifty-50-stock-today-market-live-updates-28-september-2026-sensex-nifty-today-share-price-action-gainers-losers-and-sector-performance-liveblog-156238372"
+      url: "https://www.etnownews.com/markets/stock-market-crash-today-3-reasons-sensex-nifty-fell-on-sep-28-crude-oil-us-yields-fii-outflow-article-156238870"
     },
     {
-      title: "Sensex today | Stock Market Live: Markets sink - BusinessLine live blog, 28 September 2026",
+      title: "Top gainers and losers, September 28: Tata Motors PV, AEL, Jio Financials tumble 3%; Dr. Reddy's up 2%",
+      source: "Upstox",
+      url: "https://upstox.com/news/market-news/stocks/top-gainers-and-losers-september-28-tata-motors-pv-ael-jio-financials-tumble-3-dr-reddy-s-up-2/article-200997/"
+    },
+    {
+      title: "Markets sink to April lows at noon; crude surge, FII selling batter sentiment across sectors",
       source: "Hindu BusinessLine",
-      url: "https://www.thehindubusinessline.com/markets/sensex-nifty50-today-stock-market-live-updates-28-septmeber-2026/article71515691.ece"
+      url: "https://www.thehindubusinessline.com/markets/markets-sink-to-april-lows-at-noon-crude-surge-fii-selling-batter-sentiment-across-sectors/article71518803.ece"
+    },
+    {
+      title: "Crude Above $107 Adds To Market Jitters, Sensex Plunges 1,124 Points As Nifty Drops 1.56% And PSU Banks Sink",
+      source: "Free Press Journal",
+      url: "https://www.freepressjournal.in/business/crude-above-107-adds-to-market-jitters-sensex-plunges-1124-points-as-nifty-drops-156-and-psu-banks-sink"
     }
   ],
 
