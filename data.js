@@ -13,7 +13,7 @@ const dailyWrapData = {
       close: 22716.20,
       dayChange: -64.05,
       dayChangePct: -0.28,
-      weekChangePct: -0.28, // week-to-date vs Mon, 28 Sep close of 22,780.25
+      weekChangePct: -1.83, // week-to-date vs Fri, 25 Sep close of 23,140.50
       spark: [23446.80, 23063.10, 23140.50, 22780.25, 22716.20] // last 5 closes: 23, 24, 25, 28, 29 Sep
     },
     {
@@ -21,7 +21,7 @@ const dailyWrapData = {
       close: 72529.07,
       dayChange: -242.65,
       dayChangePct: -0.33,
-      weekChangePct: -0.33, // week-to-date vs Mon, 28 Sep close of 72,771.72
+      weekChangePct: -1.85, // week-to-date vs Fri, 25 Sep close of 73,895.74
       spark: [74828.25, 73580.54, 73895.74, 72771.72, 72529.07] // last 5 closes: 23, 24, 25, 28, 29 Sep
     },
     {
@@ -31,7 +31,7 @@ const dailyWrapData = {
       dayChangePct: -0.99,
       weekChangePct: null,
       spark: null,
-      note: "Midcaps fell harder than the benchmarks again: the Nifty Midcap 100 dropped 0.99% on monthly-expiry day. Mankind Pharma (up about 2%) rode the pharma rally and Kalyan Jewellers gained 1.7%, but United Spirits (-2.7%) and ICICI Prudential Life (-2.4%) were among the bigger losers, and NCC fell 1.76% despite winning a Rs 1,077-crore order from the Andhra Pradesh government."
+      note: "Midcaps stayed on the back foot: the Nifty Midcap 100 fell 0.99% (the Midcap 150 lost 0.68%) and the Nifty Next 50 slipped about 0.31%, deepening a September-series slide of roughly 7% for midcaps as the correction that began in largecaps spread market-wide. Hindustan Aeronautics (-3.98%) was among the day's biggest single-stock falls, while Adani Power (+1.07%) and Tata Elxsi (+0.65%) found buyers on volume spikes."
     },
     {
       name: "S&P BSE 250 Smallcap",
@@ -40,15 +40,15 @@ const dailyWrapData = {
       dayChangePct: -0.81,
       weekChangePct: null,
       spark: null,
-      note: "Smallcaps extended their slide: the Nifty Smallcap 100 slipped 0.81%. Vishal Mega Mart hit the upper circuit (+3.46% to Rs 104.30) and Ellenbarrie Industrial Gases rose 2.72% on a Rs 481-crore BHEL order, but breadth stayed negative - 2,039 declines to 1,529 advances on the NSE, with 227 stocks hitting 52-week lows against 66 new highs and 130 stocks locked in lower circuits."
+      note: "Smallcaps slipped again, though far less than Monday's rout: the Nifty Smallcap 100 shed 0.81% after losing 1.85% a day earlier. Breadth was negative but not brutal - 1,529 NSE stocks advanced against 2,039 declines - and Vishal Mega Mart (+3.46%) hit its upper circuit at Rs 104.30 to headline a short list of winners."
     }
   ],
 
   weeklyWrap: {
-    headline: "Expiry-day escape act: Nifty slices through its 200-week moving average to 22,569, then claws back to close just 0.3% lower at a fresh six-month low",
+    headline: "September series signs off in the red: Nifty dives to a fresh six-month low on its 200-week moving average before a pharma-led fightback trims the damage",
     niftyFiveSessionPct: -2.63,   // vs 22 Sep close of 23,329.00
     sensexFiveSessionPct: -2.68,  // vs 22 Sep close of 74,529.08
-    summary: "Tuesday was an expiry-day rollercoaster: the Nifty sliced through its 200-week moving average to an intraday low of 22,569.65 - its first brush with that Covid-crash line since 2020 - before a pharma-led pullback pared the damage to a 64.05-point (0.28%) loss at 22,716.20, a fresh six-month low. The Sensex slumped as much as 707.72 points (0.97%) to an intraday low of 72,064 before recovering to end 242.65 points (0.33%) down at 72,529.07, its second straight losing session. The September F&O series expired with the Nifty down roughly 6% for the month. Metal, pharma and healthcare were the only sectors in the green - Dr Reddy's (+2.02%) topped the Nifty for a second day - while consumer durables (-2.14%), IT (-1.48%), realty and autos sank as Brent held near $106 on the deadlocked US-Iran standoff and the US 10-year yield stayed above 5.2%. India VIX spiked above 14.7 intraday before cooling to end about 2% lower near 13.4, and the rupee cracked 96 a dollar before RBI action and index-rebalancing inflows steadied it. FIIs sold for a third straight session. Adani Ports (+13.4 points) and HDFC Bank (+12.2 points) supported the Nifty while Reliance (-22.8 points), ICICI Bank (-15.3) and Titan (-13.1) dragged. Over the last five sessions the Nifty is down 2.63% and the Sensex 2.68%."
+    summary: "Tuesday's monthly expiry was a wild round trip: the Nifty plunged as much as 0.9% to 22,569.65 - a fresh six-month low that put the index on its 200-week moving average near 22,600 for the first time since the Covid crash - before a pharma-and-metal-led fightback lifted it to 22,716.20 (-0.28%), while the Sensex clawed back from an intraday low of 72,064 to close at 72,529.07 (-0.33%). India VIX spiked to about 14.8 in the morning before cooling to roughly 13.4. The September F&O series thus ended with the Nifty and Sensex down about 6% each - midcaps roughly 7% and smallcaps about 3% - as elevated crude (Brent near $106-107 on US-Iran uncertainty, with both sides now talking separately to mediators), US 10-year yields near a 19-year high of about 5.27% and persistent FII selling (Monday's Rs 5,353-crore outflow was the month's biggest single-day) kept risk appetite muted. The month's damage was broad: auto and IT fell about 9% each, realty, infrastructure and PSU banks about 7%, and Bank Nifty about 5%, while pharma eked out a marginal gain. Over the last five sessions the Nifty is down 2.63% and the Sensex 2.68%; from Friday's close they are down 1.83% and 1.85% week-to-date. Attention now turns to the October series, Q2 earnings and the Nifty 50 reshuffle effective 30 September that brings BSE Ltd in place of Wipro."
   },
 
   dayByDay: [
@@ -56,67 +56,61 @@ const dailyWrapData = {
     { date: "2026-09-24", label: "Thu 24 Sep", niftyClose: 23063.10, niftyChangePct: -1.64, sensexChangePct: -1.67, note: "Worst session since 9 March: US 10-year yield tops 5.1% and Brent hits $106 as the US-Iran standoff simmers; IRDAI commission-cap draft sinks insurers (PB Fintech -36%); VIX jumps 23%; NSE lists at a small premium and extends gains." },
     { date: "2026-09-25", label: "Fri 25 Sep", niftyClose: 23140.50, niftyChangePct: 0.34, sensexChangePct: 0.43, note: "Rebound after the rout: value buying, softer crude (~$105) and US-Iran truce talk lift the Nifty back above 23,100; IT falls for a sixth straight day; still a seventh consecutive weekly loss (-0.88%)." },
     { date: "2026-09-28", label: "Mon 28 Sep", niftyClose: 22780.25, niftyChangePct: -1.56, sensexChangePct: -1.52, note: "Rout: Trump rejects Iran's Hormuz ceasefire proposal, Brent tops $107 and the US 10-year yield sits above 5.2%; Nifty closes below 23,000 for the first time since April as Rs 7.5 lakh cr of mcap is wiped out; VIX spikes ~12%; PSU banks crash 3.2%." },
-    { date: "2026-09-29", label: "Tue 29 Sep", niftyClose: 22716.20, niftyChangePct: -0.28, sensexChangePct: -0.33, note: "Expiry-day swing: Nifty plunges through its 200-week moving average to 22,569.65 before pharma-led buying claws back most of the loss; metal, pharma and healthcare the only green sectors; VIX cools ~2% to ~13.4 after spiking above 14.7 intraday." }
+    { date: "2026-09-29", label: "Tue 29 Sep", niftyClose: 22716.20, niftyChangePct: -0.28, sensexChangePct: -0.33, note: "Expiry-day rollercoaster: the Nifty dives to a new six-month low of 22,569.65 - touching its 200-week moving average for the first time since the Covid crash - before pharma, metal and PSU-bank buying claws back nearly all the losses; IT and consumer durables (-2.14%) lag; VIX spikes to ~14.8 intraday, then cools to ~13.4; September series ends with the Nifty down about 6%." }
   ],
 
   sectors: [
-    { name: "Nifty Pharma", changePct: 0.65, note: "Dr Reddy's (+2.02%) led the Nifty for a second straight session as crude above $106 sent investors into defensives; Cipla, Sun Pharma and Apollo Hospitals also gained, with Mankind Pharma up about 2% in the midcap space" },
-    { name: "Nifty Metal", changePct: 0.39, note: "Tata Steel (+1.10%) was among the top five Nifty gainers and Adani Enterprises rallied hard as the sector clawed back part of Monday's 1.78% slide" },
-    { name: "Nifty PSU Bank", changePct: 0.07, note: "A marginal, fragile rebound after Monday's 3.24% crash - the market's most beaten-down sector caught its breath on expiry day" },
-    { name: "Nifty Bank", changePct: -0.59, note: "Bank Nifty underperformed the benchmarks as ICICI Bank weighed; Kotak Mahindra (+1.28%) and HDFC Bank turned around late after a weak morning for the pack" },
-    { name: "Nifty Auto", changePct: -0.81, note: "Rate-sensitive autos slid with consumer names; the sector has lost roughly 9% across the September series - among the worst of any sector" },
-    { name: "Nifty FMCG", changePct: -0.94, note: "Hindustan Unilever was among the Sensex laggards and Colgate-Palmolive fell 2.05% to Rs 1,808.10 in the closing session" },
-    { name: "Nifty Realty", changePct: -1.12, note: "All 10 realty constituents ended negative and the index closed below all its key moving averages, extending the slide that began with US yields pushing past 5.2%" },
-    { name: "Nifty IT", changePct: -1.48, note: "HCL Tech (-1.93%), Infosys and Wipro (-2.33%) all fell hard; Wipro's exit from the Nifty 50 - making way for BSE Ltd - takes effect with Thursday's session, an estimated $152 million of passive outflow" },
-    { name: "Nifty Consumer Durables", changePct: -2.14, note: "Day's worst sector - Titan (-2.54%) was the biggest Nifty loser as jewellery and discretionary demand took the brunt of the risk-off" }
+    { name: "Nifty Pharma", changePct: 0.65, note: "The day's best sector: Dr Reddy's (+2.02%) topped the Nifty for a second straight session and Sun Pharma featured among the Sensex winners as investors kept favouring defensives" },
+    { name: "Nifty Metal", changePct: 0.39, note: "Adani Enterprises (+1.95%, the index's heaviest weight) and Tata Steel (+1.10%) kept metals in the green even as the risk-off tone persisted elsewhere" },
+    { name: "Nifty PSU Bank", changePct: 0.07, note: "Caught its breath after Monday's 3.24% collapse: Bank of Baroda (+0.89%), PNB (+0.47%) and SBI (+0.17%) edged higher to leave the index flat" },
+    { name: "Nifty Bank", changePct: -0.20, note: "Bank Nifty slipped below 54,000 in the morning before recovering to end around 54,365 (-0.2%); Kotak Mahindra Bank rose about 1% while IndusInd (-1.42%), Union Bank (-1.23%) and Canara Bank (-1.03%) lagged" },
+    { name: "Nifty Auto", changePct: -0.81, note: "Tata Motors PV, still near Monday's three-year low, was among the early laggards; the sector has lost roughly 9% in the September series, among the worst of any sector" },
+    { name: "Nifty FMCG", changePct: -0.94, note: "Hindustan Unilever - which hit a fresh 52-week low in morning trade - and Colgate Palmolive (-2.05%) weighed on staples" },
+    { name: "Nifty Realty", changePct: -1.12, note: "All 10 constituents ended lower and the index closed below its key moving averages, extending the rate-sensitive slide; realty is down about 7% for the September series" },
+    { name: "Nifty IT", changePct: -1.48, note: "Day's weakest major sector: Infosys (-2.16%) and HCL Tech (-1.93%) slumped as US Treasury yields near two-decade highs hit rate-sensitive tech; IT has shed about 9% in the September series" }
   ],
 
   movers: {
     gainers: [
-      { name: "Dr Reddy's Laboratories", changePct: 2.02, cap: "Largecap", note: "Top Nifty gainer for a second straight session - crude above $106 and a sliding rupee sent investors rushing into export-heavy defensive pharma" },
-      { name: "Adani Enterprises", changePct: 1.95, cap: "Largecap", note: "Bounced hard from Monday's 3.3% slump, rising as much as 5% intraday before settling up about 2%; Adani Ports (+1.38%) was also strong and contributed a Nifty-topping 13.44 points" },
-      { name: "Vishal Mega Mart", changePct: 3.46, cap: "Midcap", note: "Hit the upper circuit at Rs 104.30 in the closing session - one of the few broader-market names with firm buying even as 2,039 NSE stocks declined" }
+      { name: "Dr Reddy's Laboratories", changePct: 2.02, cap: "Largecap", note: "Top Nifty gainer for a second straight session as investors kept rushing into defensive pharma; Adani Enterprises (+1.95%) and Adani Ports (+1.38%) followed, with the Adani duo contributing about 24 Nifty points between them" },
+      { name: "Tata Steel", changePct: 1.10, cap: "Largecap", note: "Among the top five Nifty gainers on expiry day, helping the metal index (+0.39%) stay in the green; NTPC and Kotak Mahindra Bank (about +1%) also featured among the winners" },
+      { name: "Vishal Mega Mart", changePct: 3.46, cap: "Midcap", note: "Hit the upper circuit to close at Rs 104.30 - the standout broader-market move on a weak day; Adani Power (+1.07%) and Tata Elxsi (+0.65%) also ended higher on volume spikes" }
     ],
     losers: [
-      { name: "Titan Company", changePct: -2.54, cap: "Largecap", note: "Worst Nifty 50 stock of the day as the consumer durables sector (-2.14%) took the hardest hit of any sector" },
-      { name: "Wipro", changePct: -2.33, cap: "Largecap", note: "Second-worst on the Nifty in its final session as a constituent - it exits the index on 30 September, replaced by BSE Ltd, with an estimated $152 million of passive outflow" },
-      { name: "Hindustan Aeronautics", changePct: -3.98, cap: "Largecap", note: "Ended at Rs 4,549.30, the steepest fall among heavyweights as defence and capital-goods names joined the slide" }
+      { name: "Titan Company", changePct: -3.00, cap: "Largecap", note: "Worst Nifty 50 stock, closing at Rs 4,675 as the consumer-durables index (-2.14%) was the day's worst sector; Eternal (-2.02%) and HDFC Life (-1.94%) also sank" },
+      { name: "Infosys", changePct: -2.16, cap: "Largecap", note: "Closed at Rs 981.50 as IT (-1.48%) was the weakest major sector; HCL Tech (-1.93%, Rs 1,228.40) followed, and TCS, UltraTech Cement, HUL and Tech Mahindra featured among the Sensex laggards" },
+      { name: "Hindustan Aeronautics", changePct: -3.98, cap: "Largecap", note: "Ended at Rs 4,549.30 - one of the sharpest single-stock falls of the session as defence names stayed out of favour" }
     ],
     sensexWinners: ["Adani Ports", "Sun Pharma", "Tata Steel", "Kotak Mahindra Bank"],
-    sensexLaggards: ["Titan", "HCL Tech", "TCS", "UltraTech Cement", "Tech Mahindra"]
+    sensexLaggards: ["Titan", "HCL Tech", "Tata Consultancy Services", "UltraTech Cement", "Hindustan Unilever"]
   },
 
   watch: [
     {
-      title: "The 200-week moving average - the Covid-crash line",
-      detail: "The Nifty slipped to its 200-week moving average, placed around 22,600, for the first time since the Covid crash (LKP Securities). A decisive break below it could trigger a sharper correction; holding above it opens a recovery toward the higher end. Immediate resistance sits at 22,800, with Axis Direct flagging 22,700-22,550 as support and 23,000-23,050 as resistance. Kotak Securities' Shrikant Chouhan calls the market temporarily oversold, with 22,800 the key level to reclaim."
+      title: "Nifty's line in the sand: the 200-week moving average",
+      detail: "Tuesday's low of 22,569.65 landed right on the 200-week moving average near 22,600 - a level the index hasn't tested since the Covid crash. LKP Securities' Rupak De says a decisive break below it risks a sharper correction, while holding it could fuel a recovery towards 22,800, the immediate resistance. Kotak Securities' Shrikant Chouhan calls the market temporarily oversold, with 22,800 the key level and support at 22,650-22,550."
     },
     {
-      title: "Crude and the Strait of Hormuz",
-      detail: "Brent climbed toward $106 a barrel (WTI near $93) as US-Iran negotiations stayed deadlocked, though Saudi Arabia's East-West pipeline resumed flows after repairs - a partial supply offset. Sanctions relief for Iran hinges on nuclear-talks progress. JPMorgan says it no longer has a defined baseline oil scenario - a first since the war began in February. Every dollar of crude feeds directly into India's import bill, inflation and the rupee."
+      title: "BSE Ltd replaces Wipro in the Nifty 50",
+      detail: "The index change takes effect from 30 September, with the adjustment done after Tuesday's close. BSE's 6-month average free-float market cap of Rs 1,40,879 crore is about 2.5x Wipro's Rs 55,930 crore; analysts estimate passive inflows of about $630 million into BSE and outflows of $152 million from Wipro."
     },
     {
-      title: "Index rebalancing: BSE Ltd in, Wipro out",
-      detail: "BSE Ltd enters the Nifty 50 on 30 September, replacing Wipro, with its 6-month average free-float market cap of Rs 1,40,879 crore easily clearing the 1.5x threshold (Wipro: Rs 55,930 crore). Estimated passive flows: BSE +$630 million, Wipro -$152 million. The Nifty 100 also adds Hitachi Energy India, Polycab India, Vedanta Aluminium Metal and Vodafone Idea. Expiry-day rebalancing inflows already helped steady the rupee on Tuesday."
+      title: "Crude and the US-Iran backchannel",
+      detail: "Brent held above $106 a barrel as the US and Iran engaged separately with mediators in renewed efforts to end the conflict, after Washington rejected Iran's seven-day Strait of Hormuz ceasefire proposal on Monday. Geojit's Vinod Nair says a meaningful de-escalation could trigger a sharp relief rally - until then, elevated crude keeps feeding India's import bill, inflation and rupee worries."
     },
     {
-      title: "The rupee at 96 and the FII treadmill",
-      detail: "The rupee cracked 96 a dollar intraday before RBI action, a pullback in global crude and rebalancing-driven foreign inflows restored some stability; watch 96.30 as resistance and 95.80 as support (HDFC Securities). FIIs have now sold for a third straight session - more than Rs 5,300 crore on Monday alone - keeping the pressure on domestic institutions to absorb the outflows."
+      title: "US yields at a 19-year high, FIIs still leaving",
+      detail: "The US 10-year Treasury yield is near 5.27% - its highest in about 19 years - keeping global risk assets under pressure and narrowing the India-US spread. FIIs sold Rs 5,353 crore on Monday, September's biggest single-day outflow, taking the month's tally to roughly Rs 24,000 crore, though DIIs absorbed nearly all of it with Rs 5,189 crore of buying."
     },
     {
-      title: "October series: earnings, the Fed and oversold bounces",
-      detail: "With the September series expired (Nifty down ~6% for the month), focus shifts to Q2 earnings - expectations already tempered versus Q1 (Geojit) - plus US GDP data and monthly auto sales numbers flagged by analysts ahead. Geojit's Anand James sees a near-term pullback toward 23,020 possible from oversold momentum readings, though the broader trend stays weak below 23,150."
+      title: "October series: Q2 earnings, the rupee and the RBI",
+      detail: "With the September series closed, focus shifts to Q2 results - expectations already tempered versus Q1 - and the RBI's next policy decision. The rupee briefly cracked 96 a dollar on Tuesday before RBI action and index-rebalancing inflows stabilised it; HDFC Securities sees resistance at 96.30 and support at 95.80."
     }
   ],
 
   reads: [
     {
-      title: "Closing Bell: Nifty Ends Below 22,700 Mark, Hits New 6-Month Low",
-      source: "DSIJ Insights",
-      url: "https://insights.dsij.in/dsijarticledetail/closing-bell-nifty-ends-below-22700-mark-hits-new-6-month-low-59752"
-    },
-    {
-      title: "Stock Market Today Highlights: Stock markets fall for 2nd day as elevated oil prices, foreign fund outflows weigh",
+      title: "Stock markets fall for 2nd day as elevated oil prices, foreign fund outflows weigh",
       source: "Hindu BusinessLine",
       url: "https://www.thehindubusinessline.com/markets/sensex-nifty50-today-stock-market-live-updates-29-september-2026/article71520150.ece"
     },
@@ -126,9 +120,19 @@ const dailyWrapData = {
       url: "https://www.moneycontrol.com/news/business/markets/stock-market-live-updates-nifty50-share-price-sensex-share-price-crude-fii-gift-nifty-rupee-latest-updates-29-09-2026-alpha-liveblog-14040455.html"
     },
     {
-      title: "No respite after Monday blues: Sensex slumps 568 points, Nifty below 22,650; what's dragging the market?",
-      source: "Fortune India",
-      url: "https://www.fortuneindia.com/markets/no-respite-after-monday-blues-sensex-slumps-568-points-nifty-below-22650-whats-dragging-the-market/161708"
+      title: "Closing Bell: Nifty ends above 22,700 mark after hitting new 6-month low",
+      source: "DSIJ Insights",
+      url: "https://insights.dsij.in/dsijarticledetail/closing-bell-nifty-ends-above-22700-mark-after-hitting-new-6-month-low"
+    },
+    {
+      title: "Sensex Closes 242 Points Lower Amid Mixed Global Cues",
+      source: "NDTV",
+      url: "https://www.ndtv.com/business-news/stock-market-sensex-share-market-nifty-live-updates-today-29-september-us-iran-war-oil-prices-12112191"
+    },
+    {
+      title: "September series selloff broadens beyond largecaps, SMIDs join the correction",
+      source: "Moneycontrol",
+      url: "https://www.moneycontrol.com/news/business/markets/september-series-selloff-broadens-beyond-largecaps-smids-join-the-correction-14040627.html"
     },
     {
       title: "5 reasons why market is down today: Sensex, Nifty hit six month lows; India VIX spikes",
@@ -139,11 +143,6 @@ const dailyWrapData = {
       title: "India VIX Surges 6.6% to 14.54 as Nifty Falls Below 22,700",
       source: "HDFC Sky",
       url: "https://hdfcsky.com/news/india-vix-rises-6-6percent-to-14-54-as-oil-us-yields-and-nifty-selling-lift-volatility-september-29-2026"
-    },
-    {
-      title: "Stock Market Crashes Today Live Updates: BSE Sensex tumbles over 600 points, Nifty50 below 22,650",
-      source: "Times of India",
-      url: "https://timesofindia.indiatimes.com/business/india-business/sensex-stock-market-today-29-september-2026-live-updates-nse-bse-gift-nifty-50-top-gainers-losers-mcx-stocks-in-focus-market-news/liveblog/134555297.cms"
     }
   ],
 
