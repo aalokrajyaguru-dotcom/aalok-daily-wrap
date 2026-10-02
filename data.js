@@ -4,7 +4,7 @@ const dailyWrapData = {
     edition: "Market Close — India",
     tagline: "The day on Dalal Street, in one scroll"
   },
-  updatedLabel: "Updated: Thursday, 1 October 2026, 5:30 PM IST",
+  updatedLabel: "Updated: Friday, 2 October 2026, 5:30 PM IST — Markets closed today - Mahatma Gandhi Jayanti",
   asOfLabel: "Closing levels as of market close (3:30 PM IST), Thursday, 1 October 2026",
 
   indices: [
@@ -114,34 +114,29 @@ const dailyWrapData = {
 
   reads: [
     {
-      title: "Taking Stock: Bears tighten grip; Nifty below 22,500, Sensex sheds 571 points",
+      title: "Stock market holiday today on October 2: BSE, NSE to remain closed for Gandhi Jayanti",
       source: "Moneycontrol",
-      url: "https://www.moneycontrol.com/news/business/markets/taking-stock-bears-tighten-grip-nifty-below-22-500-sensex-sheds-571-points-14042771.html"
+      url: "https://www.moneycontrol.com/news/business/markets/stock-market-holiday-today-on-october-2-bse-nse-to-remain-closed-today-for-gandhi-jayanti-14043118.html"
     },
     {
-      title: "Stock Market Highlights, Oct 1: Sensex falls 571 points, Nifty slips 0.88% as auto stocks drag markets",
+      title: "Equities post eighth straight weekly loss as global headwinds intensify",
       source: "The Hindu BusinessLine",
-      url: "https://www.thehindubusinessline.com/markets/sensex-nifty50-stock-market-highlights-1-october-2026/article71528461.ece"
+      url: "https://www.thehindubusinessline.com/markets/equities-post-eighth-straight-weekly-loss-as-global-headwinds-intensify/article71532691.ece"
     },
     {
-      title: "Stock Market Today: Sensex, Nifty Fall 1% as Losing Streak Hits 25 Years",
-      source: "The Indian Express",
-      url: "https://indianexpress.com/article/business/market/indian-stock-markets-worst-losing-streak-25-years-10902435/"
+      title: "Foreign Investors Sell Again: FIIs Pull Out Rs 34,970 Crore As Nifty Falls For 8th Week",
+      source: "ABP Live",
+      url: "https://news.abplive.com/business/mutual-funds/foreign-investors-remain-sellers-fiis-nifty-falls-1869402"
     },
     {
-      title: "Why is Sensex crashing? Rs 9 lakh crore wiped out as Dalal Street heads for worst week in 25 years",
-      source: "The Times of India",
-      url: "https://timesofindia.indiatimes.com/business/india-business/why-is-sensex-crashing-rs-9-lakh-crore-wiped-out-as-dalal-street-heads-for-worst-week-in-25-years/articleshow/134613883.cms"
+      title: "Investors worried over bloodbath as Nifty 50 sees longest weekly losing streak in 25 yrs - Outlook for H2 from experts",
+      source: "Mint",
+      url: "https://www.livemint.com/market/stock-market-news/investors-worried-over-bloodbath-as-nifty-50-sees-longest-weekly-losing-streak-in-25-yrs-outlook-for-h2-from-experts-11790922247662.html"
     },
     {
-      title: "Market wrap: Infosys, HDFC Bank, Bajaj Auto, Maruti Suzuki among top gainers and losers on Nifty and Sensex on Thursday",
-      source: "The Economic Times",
-      url: "https://economictimes.indiatimes.com/markets/stocks/news/market-wrap-infosys-hdfc-bank-bajaj-auto-maruti-suzuki-among-top-gainers-and-losers-on-nifty-and-sensex-on-thursday/articleshow/134617786.cms"
-    },
-    {
-      title: "Top Gainers and Losers on October 1, 2026: Infosys and HDFC Life Gain, While Bajaj Auto Drops Over 7%",
-      source: "Angel One",
-      url: "https://www.angelone.in/news/market-updates/top-gainers-and-losers-on-october-1-2026-infosys-and-hdfc-life-gain-while-bajaj-auto-drops-over-7"
+      title: "Nifty, Bank Nifty, Nifty IT: Technical analysts decode outlook for H2 FY27",
+      source: "Business Standard",
+      url: "https://www.business-standard.com/markets/news/nifty-bank-nifty-nifty-it-technical-analysts-decode-outlook-for-h2-fy27-126100100103_1.html"
     }
   ],
 
