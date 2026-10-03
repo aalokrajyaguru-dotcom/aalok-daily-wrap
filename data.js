@@ -94,15 +94,16 @@ const dailyWrapData = {
   movers: {
     universe: "Nifty 500",
     scope: "week", // "day" on trading days, "week" on Saturdays
+    source: "Nifty 500 weekly movers, week ended 1 Oct 2026 (Trendlyne Nifty 500 screener for gainers; NSE weekly returns for losers)",
     gainers: [
-      { name: "Cupid", changePct: 17.3, cap: "Smallcap", note: "The week's best Nifty 500 performer, up 17.3% - one of a handful of small caps that bucked the broad sell-off" },
-      { name: "Sterlite Technologies", changePct: 16.0, cap: "Smallcap", note: "Second-best weekly gainer, up 16%, on a telecom-equipment bid" },
-      { name: "HFCL", changePct: 13.1, cap: "Smallcap", note: "Up 13.1% for the week" },
-      { name: "MTAR Technologies", changePct: 10.6, cap: "Smallcap", note: "Up 10.6% for the week" },
-      { name: "TD Power Systems", changePct: 6.8, cap: "Smallcap", note: "Up 6.8% for the week" }
+      { name: "Sun TV Network", changePct: 16.9, cap: "Smallcap", note: "Top Nifty 500 weekly gainer, up 16.9% - a mid-smallcap name outside the Nifty 50/Next 50/Midcap 100/Smallcap 100 lists, which is why the full Nifty 500 universe matters" },
+      { name: "Cupid", changePct: 15.7, cap: "Smallcap", note: "Up 15.7% for the week" },
+      { name: "Sterlite Technologies", changePct: 14.1, cap: "Smallcap", note: "Up 14.1% for the week, on a telecom-equipment bid" },
+      { name: "MTAR Technologies", changePct: 13.0, cap: "Smallcap", note: "Up 13.0% for the week" },
+      { name: "HFCL", changePct: 12.8, cap: "Smallcap", note: "Up 12.8% for the week" }
     ],
     losers: [
-      { name: "PB Fintech", changePct: -18.8, cap: "Midcap", note: "Worst Nifty 500 performer this week, down 18.8%, extending its slide after the IRDAI commission-cap consultation" },
+      { name: "PB Fintech", changePct: -18.8, cap: "Midcap", note: "Worst Nifty 500 weekly loser, down 18.8%, extending its slide after the IRDAI commission-cap consultation" },
       { name: "IFCI", changePct: -13.4, cap: "Smallcap", note: "Down 13.4% for the week" },
       { name: "Ola Electric Mobility", changePct: -12.8, cap: "Smallcap", note: "Down 12.8% for the week" },
       { name: "Patanjali Foods", changePct: -12.3, cap: "Midcap", note: "Down 12.3% for the week" },
@@ -182,6 +183,7 @@ const dailyWrapData = {
     working: "Capital employed = Rs 1,55,967 cr − Rs 52,322 cr = Rs 1,03,645 cr (the same as total equity Rs 93,297 cr + non-current liabilities Rs 10,348 cr). Then ROCE = Rs 36,254 cr ÷ Rs 1,03,645 cr × 100 = 34.98%.",
     result: "≈ 35%",
     meaning: "For every Rs 100 of long-term capital it employs, Infosys earns about Rs 35 of operating profit. Asset-light IT businesses that carry almost no debt typically screen well above 25-30%, while capital-heavy sectors (refining, telecom, utilities) often sit in single digits to low teens. Always compare ROCE within the same sector, and check it comfortably beats the company's cost of capital (roughly 11-14% for a stable Indian large-cap) - below that floor, a business is destroying value even if its profit looks large.",
+    crossCheck: "Reconciled with Screener.in, which reports Infosys' FY26 ROCE at 40% - it uses equity + borrowings as capital employed and includes other income; on the strict EBIT basis above it works out to ~35%. Either way it is far above the ~12% cost of capital.",
     source: "Infosys Integrated Annual Report FY26 / investor data sheet (audited consolidated)"
   }
 };

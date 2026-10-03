@@ -367,7 +367,7 @@
   </div>
 </footer>
 
-<script src="data.js?v=20261003c"></script>
+<script src="data.js?v=20261003d"></script>
 <script>
 (function () {
   const d = (typeof dailyWrapData !== "undefined") ? dailyWrapData : null;
@@ -495,6 +495,9 @@
   if (Array.isArray(d.movers.sensexLaggards) && d.movers.sensexLaggards.length) {
     moversNote.push("Laggards: " + d.movers.sensexLaggards.join(", "));
   }
+  if (d.movers.source) {
+    moversNote.push("Source: " + d.movers.source);
+  }
   document.getElementById("movers-note").textContent = moversNote.join(" \u00b7 ");
 
   // ----- watch -----
@@ -538,6 +541,7 @@
       (rt.working ? "<p><strong>Working:</strong> " + esc(rt.working) + "</p>" : "") +
       (rt.result ? "<p><strong>Answer: " + esc(rt.result) + "</strong></p>" : "") +
       (rt.meaning ? "<p>" + esc(rt.meaning) + "</p>" : "") +
+      (rt.crossCheck ? '<p class="idx-week">Cross-check: ' + esc(rt.crossCheck) + "</p>" : "") +
       (rt.source ? '<p class="idx-week">Source: ' + esc(rt.source) + "</p>" : "");
     ratioEl.appendChild(el);
   }
