@@ -343,9 +343,9 @@
   <div class="section-label">The Reading List<span class="rule"></span></div>
   <div class="reads" id="reads-list"></div>
 
-  <!-- GLOSSARY -->
-  <div class="section-label">Jargon Decoder<span class="rule"></span></div>
-  <div id="glossary"></div>
+  <!-- TODAY'S FINANCIAL/ACCOUNTING RATIO -->
+  <div class="section-label">Today's Financial/Accounting Ratio<span class="rule"></span></div>
+  <div id="ratio"></div>
 
 </main>
 
@@ -367,7 +367,7 @@
   </div>
 </footer>
 
-<script src="data.js?v=20261003"></script>
+<script src="data.js?v=20261003b"></script>
 <script>
 (function () {
   const d = (typeof dailyWrapData !== "undefined") ? dailyWrapData : null;
@@ -511,14 +511,30 @@
     rEl.appendChild(a);
   });
 
-  // ----- glossary -----
-  const gEl2 = document.getElementById("glossary");
-  d.glossary.forEach((g) => {
-    const det = document.createElement("details");
-    det.className = "gloss";
-    det.innerHTML = "<summary>" + esc(g.term) + '</summary><div class="def">' + esc(g.meaning || g.def || "") + "</div>";
-    gEl2.appendChild(det);
-  });
+  // ----- today's financial/accounting ratio -----
+  const ratioEl = document.getElementById("ratio");
+  const rt = d.ratio;
+  if (rt && rt.name) {
+    const el = document.createElement("article");
+    el.className = "story";
+    const kicker = (rt.category ? rt.category + " ratio · " : "") + (rt.company || "");
+    const inputs = Array.isArray(rt.inputs) && rt.inputs.length
+      ? "<p><strong>" + esc(rt.inputsLabel || "The numbers we need") + ":</strong><br>" +
+        rt.inputs.map((x) => esc(x.label) + " — <strong>" + esc(x.value) + "</strong>").join("<br>") + "</p>"
+      : "";
+    el.innerHTML =
+      '<span class="kicker">' + esc(kicker) + '</span>' +
+      "<h3>" + esc(rt.name) + "</h3>" +
+      (rt.period ? '<p class="idx-week">' + esc(rt.period) + "</p>" : "") +
+      "<p><strong>Formula:</strong> " + esc(rt.formula || "") + "</p>" +
+      (rt.formulaNote ? '<p class="idx-week">' + esc(rt.formulaNote) + "</p>" : "") +
+      inputs +
+      (rt.working ? "<p><strong>Working:</strong> " + esc(rt.working) + "</p>" : "") +
+      (rt.result ? "<p><strong>Answer: " + esc(rt.result) + "</strong></p>" : "") +
+      (rt.meaning ? "<p>" + esc(rt.meaning) + "</p>" : "") +
+      (rt.source ? '<p class="idx-week">Source: ' + esc(rt.source) + "</p>" : "");
+    ratioEl.appendChild(el);
+  }
 })();
 
 </script>

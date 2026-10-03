@@ -157,18 +157,25 @@ const dailyWrapData = {
     }
   ],
 
-  glossary: [
-    {
-      term: "Offer for Sale (OFS)",
-      meaning: "An IPO mechanism where existing shareholders sell their shares to the public; the company itself raises no money. The NSE IPO is entirely an OFS, so all Rs 22,561 crore of proceeds go to selling shareholders, not the exchange."
-    },
-    {
-      term: "QIB",
-      meaning: "Qualified Institutional Buyer - banks, mutual funds, insurers and other large institutions allowed to bid in IPOs. The QIB portion of the NSE IPO was subscribed 12.68 times, driving the overall 5.7x figure."
-    },
-    {
-      term: "GMP (Grey Market Premium)",
-      meaning: "The unofficial premium at which IPO shares trade before listing. NSE shares were quoting around Rs 55 (about 3%) over the Rs 1,785 upper price band ahead of Thursday's listing - an informal signal, not a guarantee of listing gains."
-    }
-  ]
+  // Today's financial ratio, worked through with one Nifty 500 company's last
+  // audited financial statements. Both the ratio and the company change every day.
+  ratio: {
+    name: "Return on Capital Employed (ROCE)",
+    category: "Profitability",
+    company: "Infosys Ltd",
+    companyNote: "IT services · Nifty 50 / Nifty 500",
+    period: "Latest audited numbers: FY26 (year ended 31 March 2026), consolidated",
+    formula: "ROCE = EBIT ÷ Capital Employed × 100",
+    formulaNote: "EBIT is operating profit (before interest and tax). Capital Employed = Total Assets − Current Liabilities, which is the same as Total Equity + Non-current Liabilities.",
+    inputsLabel: "The three numbers, from Infosys' FY26 audited consolidated statements",
+    inputs: [
+      { label: "EBIT (operating profit)", value: "Rs 36,254 crore" },
+      { label: "Total assets", value: "Rs 1,55,967 crore" },
+      { label: "Current liabilities", value: "Rs 52,322 crore" }
+    ],
+    working: "Capital employed = Rs 1,55,967 cr − Rs 52,322 cr = Rs 1,03,645 cr (the same as total equity Rs 93,297 cr + non-current liabilities Rs 10,348 cr). Then ROCE = Rs 36,254 cr ÷ Rs 1,03,645 cr × 100 = 34.98%.",
+    result: "≈ 35%",
+    meaning: "For every Rs 100 of long-term capital it employs, Infosys earns about Rs 35 of operating profit. Asset-light IT businesses that carry almost no debt typically screen well above 25-30%, while capital-heavy sectors (refining, telecom, utilities) often sit in single digits to low teens. Always compare ROCE within the same sector, and check it comfortably beats the company's cost of capital (roughly 11-14% for a stable Indian large-cap) - below that floor, a business is destroying value even if its profit looks large.",
+    source: "Infosys Integrated Annual Report FY26 / investor data sheet (audited consolidated)"
+  }
 };
