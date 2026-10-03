@@ -298,8 +298,8 @@
   <div class="section-label"><span class="rule" style="order:2"></span>The Scoreboard<span class="rule"></span></div>
   <div class="cards" id="index-cards"></div>
 
-  <!-- WEEK THAT WAS -->
-  <div class="section-label">The Week That Was<span class="rule"></span></div>
+  <!-- THE WRAP: the day's wrap on trading days, the week's wrap on Saturdays -->
+  <div class="section-label"><span id="narrative-label">The Week That Was</span><span class="rule"></span></div>
   <div class="wrap-grid" id="weekly-wrap"></div>
 
   <!-- DAY BY DAY -->
@@ -367,7 +367,7 @@
   </div>
 </footer>
 
-<script src="data.js?v=20261001"></script>
+<script src="data.js?v=20261003"></script>
 <script>
 (function () {
   const d = (typeof dailyWrapData !== "undefined") ? dailyWrapData : null;
@@ -421,19 +421,18 @@
     cardsEl.appendChild(card);
   });
 
-  // ----- weekly wrap -----
+  // ----- the wrap: the day's wrap on trading days, the week's wrap on Saturdays -----
   const wrapEl = document.getElementById("weekly-wrap");
-  const ww = d.weeklyWrap;
-  if (ww && ww.headline) {
+  const narr = d.weeklyWrap || d.dailyWrap;
+  if (narr && narr.headline) {
+    const labelEl = document.getElementById("narrative-label");
+    if (labelEl) labelEl.textContent = narr.label || "The Wrap";
     const el = document.createElement("article");
     el.className = "story";
-    const stats = [];
-    if (ww.niftyFiveSessionPct != null) stats.push("Nifty " + fmtPct(ww.niftyFiveSessionPct));
-    if (ww.sensexFiveSessionPct != null) stats.push("Sensex " + fmtPct(ww.sensexFiveSessionPct));
     el.innerHTML =
-      '<span class="kicker">Weekly Wrap</span>' +
-      "<h3>" + esc(ww.headline) + "</h3><p>" + esc(ww.summary || "") + "</p>" +
-      (stats.length ? '<p class="idx-week" style="margin-top:10px">Five sessions: ' + stats.join(" \u00b7 ") + "</p>" : "");
+      '<span class="kicker">' + esc(narr.kicker || narr.label || "The Wrap") + '</span>' +
+      "<h3>" + esc(narr.headline) + "</h3><p>" + esc(narr.summary || "") + "</p>" +
+      (Array.isArray(narr.stats) && narr.stats.length ? '<p class="idx-week" style="margin-top:10px">' + esc(narr.statsLabel || "Sessions") + ": " + esc(narr.stats.join(" \u00b7 ")) + "</p>" : "");
     wrapEl.appendChild(el);
   }
 

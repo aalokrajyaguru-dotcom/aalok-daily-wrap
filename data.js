@@ -4,7 +4,7 @@ const dailyWrapData = {
     edition: "Market Close — India",
     tagline: "The day on Dalal Street, in one scroll"
   },
-  updatedLabel: "Updated: Friday, 2 October 2026, 5:30 PM IST — Markets closed today - Mahatma Gandhi Jayanti",
+  updatedLabel: "Updated: Saturday, 3 October 2026, 5:30 PM IST — Weekly Wrap (markets closed for the weekend)",
   asOfLabel: "Closing levels as of market close (3:30 PM IST), Thursday, 1 October 2026",
 
   indices: [
@@ -17,38 +17,55 @@ const dailyWrapData = {
       spark: [23140.50, 22780.25, 22716.20, 22620.45, 22421.95] // last 5 closes: 25, 28, 29, 30 Sep, 1 Oct
     },
     {
-      name: "Sensex",
-      close: 71909.70,
-      dayChange: -570.59,
-      dayChangePct: -0.79,
-      weekChangePct: -2.69, // week-to-date vs Fri, 25 Sep close of 73,895.74
-      spark: [73895.74, 72771.72, 72529.07, 72480.29, 71909.70] // last 5 closes: 25, 28, 29, 30 Sep, 1 Oct
+      name: "Nifty Next 50",
+      close: 68981.35,
+      dayChange: -765.60,
+      dayChangePct: -1.10,
+      weekChangePct: -3.90, // week-to-date vs Fri, 25 Sep close of 71,778.65
+      spark: [71778.65, 70309.50, 69460.20, 69746.95, 68981.35], // last 5 closes: 25, 28, 29, 30 Sep, 1 Oct
+      note: "The 'next rung' of large caps fell 1.10% to 68,981.35, a touch harder than the Nifty 50 and now about 8% below its 52-week high as foreign selling hit the index heavyweights."
     },
     {
-      name: "S&P BSE 150 Midcap",
-      close: null,
-      dayChange: null,
-      dayChangePct: -0.99,
-      weekChangePct: null,
-      spark: null,
-      note: "Midcaps fell in line with, but harder than, the large caps: the S&P BSE 150 MidCap slipped 0.99% and the Nifty Midcap 100 lost 1.01%, while the Nifty Next 50 fell about 1.1%. The BSE100 large-cap index was down 0.95% - the whole size spectrum ended in the red."
+      name: "Nifty Midcap 150",
+      close: 21643.85,
+      dayChange: -223.65,
+      dayChangePct: -1.02,
+      weekChangePct: -3.54, // week-to-date vs Fri, 25 Sep close of 22,437.00
+      spark: [22437.00, 22071.30, 21853.30, 21867.50, 21643.85], // last 5 closes: 25, 28, 29, 30 Sep, 1 Oct
+      note: "Midcaps fell in line with, but harder than, the large caps - down 1.02% to 21,643.85 and roughly 8.5% below their August record. Breadth was weak: only 38 of the 150 advanced."
     },
     {
-      name: "S&P BSE 250 Smallcap",
-      close: null,
-      dayChange: null,
-      dayChangePct: -1.23,
-      weekChangePct: null,
+      name: "Nifty Smallcap 250",
+      close: 17589.05,
+      dayChange: -209.75,
+      dayChangePct: -1.18,
+      weekChangePct: -3.14, // week-to-date vs Fri, 25 Sep close of 18,158.90
+      spark: [18158.90, 17863.20, 17747.25, 17798.80, 17589.05], // last 5 closes: 25, 28, 29, 30 Sep, 1 Oct
+      note: "The worst-hit size bucket: smallcaps slid 1.18% to 17,589.05 as breadth turned grim - 291 NSE stocks touched fresh 52-week lows against just 78 at highs, and 199 hit the lower circuit versus 95 at the upper circuit."
+    },
+    {
+      name: "BSE SME Index",
+      close: 120363.48,
+      dayChange: -1621.81,
+      dayChangePct: -1.33,
+      weekChangePct: null, // 25 Sep close for the S&P BSE SME IPO index could not be verified
       spark: null,
-      note: "Smallcaps were the worst-hit size bucket: the S&P BSE 250 SmallCap dropped 1.23% and the Nifty Smallcap 100 lost 0.97%. Breadth was grim - 291 NSE stocks touched fresh 52-week lows against just 78 at 52-week highs, and 199 hit the lower circuit versus 95 at the upper circuit."
+      note: "The S&P BSE SME IPO index, which tracks newly listed small and medium enterprises, slid 1.33% to 1,20,363.48 - still within about 2% of its 52-week high after a strong September run."
     }
   ],
 
+  // The narrative that leads the page. On trading days this is the DAY's wrap (dailyWrap);
+  // on Saturdays it is the WEEK's wrap (weeklyWrap). weeklyWrap takes precedence when present;
+  // set whichever is not in use to null.
+  dailyWrap: null, // Saturday edition - the week's wrap sits in weeklyWrap below
+
   weeklyWrap: {
+    label: "The Week That Was",
+    kicker: "Weekly Wrap",
     headline: "Dalal Street's worst week in 25 years: an eighth straight weekly loss as autos and heavyweights crack, IT the lone refuge and the Nifty stops just above its 52-week low",
-    niftyFiveSessionPct: -2.78,   // vs 24 Sep close of 23,063.10
-    sensexFiveSessionPct: -2.27,  // vs 24 Sep close of 73,580.54
-    summary: "Thursday closed out the market's worst week in 25 years: the Nifty fell 198.50 points (-0.88%) to 22,421.95 and the Sensex 570.59 points (-0.79%) to 71,909.70, capping an eighth consecutive weekly loss - the longest such streak since 2001. The sell-off was led by the heavyweights and the auto pack: Bajaj Auto (-7.62%) was the worst Nifty stock after a weak September sales print, with Maruti Suzuki (-4.86%), M&M (-3.1%), Eicher Motors (-3.2%), Shriram Finance (-3.84%) and Tata Steel (-3.4%) all down sharply, while Adani Ports, ITC, HUL, L&T and UltraTech added to the drag. The BSE 150 Midcap (-0.99%) and BSE 250 Smallcap (-1.23%) fell harder than the benchmarks, and only 1,023 of 3,707 NSE stocks advanced. IT was the lone pocket of strength - the Nifty IT index gained 2.17% to 28,304, with Infosys (+4.11%), HDFC Life (+2.49%) and HDFC Bank (+1.76%) the top Nifty gainers - after softer-than-expected US August inflation eased rate worries. India VIX jumped 7% to 14.44, a three-month high, and the Nifty closed just 1.07% above its 52-week low of 22,182.55. The macro backdrop stayed hostile: FIIs pulled out more than Rs 26,000 crore this week (including Rs 20,128 crore in the last two sessions alone, taking 2026 outflows to a record ~$27.8 billion), the 10-year US Treasury yield touched 5.31% - its highest since 2007 - Brent held near $97-100 after a 14% September surge, and the rupee slid to a two-month low of 96.3150. Markets are shut on Friday for Gandhi Jayanti; the October series now turns on Q2 earnings, US inflation data and the RBI's next move."
+    summary: "The week closed out the market's worst in 25 years: the Nifty fell 3.10% over the holiday-shortened week and the Sensex 2.69%, capping an eighth consecutive weekly loss - the longest such streak since 2001. Thursday's session alone took the Nifty down 198.50 points (-0.88%) to 22,421.95 and the Sensex 570.59 points (-0.79%) to 71,909.70. The sell-off was led by the heavyweights and the auto pack: Bajaj Auto (-7.62%) was the worst Nifty stock after a weak September sales print, with Maruti Suzuki (-4.86%), M&M (-3.1%), Eicher Motors (-3.2%), Shriram Finance (-3.84%) and Tata Steel (-3.4%) all down sharply, while Adani Ports, ITC, HUL, L&T and UltraTech added to the drag. The Nifty Midcap 150 (-3.54% for the week) and Nifty Smallcap 250 (-3.14%) fell harder than the benchmarks, and on Thursday only 1,023 of 3,707 NSE stocks advanced. IT was the lone pocket of strength - the Nifty IT index gained 2.17% on Thursday (and about 0.5% for the week), with Infosys (+4.11%), HDFC Life (+2.49%) and HDFC Bank (+1.76%) the top Nifty gainers - after softer-than-expected US August inflation eased rate worries. India VIX jumped 7% to 14.44, a three-month high, and the Nifty closed just 1.07% above its 52-week low of 22,182.55. The macro backdrop stayed hostile: FIIs pulled out more than Rs 26,000 crore this week (taking 2026 outflows to a record ~$27.8 billion), the 10-year US Treasury yield touched 5.31% - its highest since 2007 - Brent held near $97-100 after a 14% September surge, and the rupee slid to a two-month low of 96.3150. Markets are shut on Friday for Gandhi Jayanti; the October series now turns on Q2 earnings, US inflation data and the RBI's next move.",
+    stats: ["Nifty -3.10%", "Sensex -2.69%"],
+    statsLabel: "Five sessions"
   },
 
   dayByDay: [
