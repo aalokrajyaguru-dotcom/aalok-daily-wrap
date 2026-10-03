@@ -138,36 +138,36 @@ const dailyWrapData = {
 
   reads: [
     {
-      title: "Stock market holiday today on October 2: BSE, NSE to remain closed for Gandhi Jayanti",
-      source: "Moneycontrol",
-      url: "https://www.moneycontrol.com/news/business/markets/stock-market-holiday-today-on-october-2-bse-nse-to-remain-closed-today-for-gandhi-jayanti-14043118.html"
+      title: "Indian benchmark shares post longest weekly losing run in 25 years",
+      source: "Reuters (via Business Recorder)",
+      url: "https://www.brecorder.com/news/40442172/indian-benchmark-shares-post-longest-weekly-losing-run-in-25-years"
     },
     {
-      title: "Equities post eighth straight weekly loss as global headwinds intensify",
+      title: "Stock market sell off: Nifty, Sensex log 8th straight weekly loss; key levels & top triggers now",
+      source: "Business Today",
+      url: "https://www.businesstoday.in/markets/trending-stocks/story/stock-market-sell-off-nifty-sensex-log-8th-straight-weekly-loss-key-levels-top-triggers-now-559247-2026-10-02"
+    },
+    {
+      title: "Weekly market wrap: NIFTY50, SENSEX falls up to 3% marking 8th week of loss; Bajaj Auto, Max Health among top losers",
+      source: "Upstox",
+      url: "https://upstox.com/news/market-news/stocks/weekly-market-wrap-nifty-50-sensex-falls-up-to-3-marking-8th-week-of-loss-bajaj-auto-max-health-among-top-losers/article-201225/"
+    },
+    {
+      title: "Indian Market Weekly Wrap: From Key Macro Drag Factors to Major Weekly Bulk & Block Deals",
+      source: "DSIJ",
+      url: "https://insights.dsij.in/dsijarticledetail/indian-market-weekly-wrap-from-key-macro-drag-factors-to-major-weekly-bulk-block-deals-59815"
+    },
+    {
+      title: "Sensex falls 571 points, Nifty slips 0.88% as auto stocks drag markets",
       source: "The Hindu BusinessLine",
-      url: "https://www.thehindubusinessline.com/markets/equities-post-eighth-straight-weekly-loss-as-global-headwinds-intensify/article71532691.ece"
-    },
-    {
-      title: "Foreign Investors Sell Again: FIIs Pull Out Rs 34,970 Crore As Nifty Falls For 8th Week",
-      source: "ABP Live",
-      url: "https://news.abplive.com/business/mutual-funds/foreign-investors-remain-sellers-fiis-nifty-falls-1869402"
-    },
-    {
-      title: "Investors worried over bloodbath as Nifty 50 sees longest weekly losing streak in 25 yrs - Outlook for H2 from experts",
-      source: "Mint",
-      url: "https://www.livemint.com/market/stock-market-news/investors-worried-over-bloodbath-as-nifty-50-sees-longest-weekly-losing-streak-in-25-yrs-outlook-for-h2-from-experts-11790922247662.html"
-    },
-    {
-      title: "Nifty, Bank Nifty, Nifty IT: Technical analysts decode outlook for H2 FY27",
-      source: "Business Standard",
-      url: "https://www.business-standard.com/markets/news/nifty-bank-nifty-nifty-it-technical-analysts-decode-outlook-for-h2-fy27-126100100103_1.html"
+      url: "https://www.thehindubusinessline.com/markets/sensex-nifty50-stock-market-highlights-1-october-2026/article71528461.ece"
     }
   ],
 
   // Today's financial ratio, worked through with one Nifty 500 company's last
   // audited financial statements. Both the ratio and the company change every day.
   ratio: {
-    name: "Return on Capital Employed (ROCE)",
+    name: "Return on Equity (ROE)",
     category: "Profitability",
     company: "Infosys Ltd",
     companyNote: "IT services · Nifty 50 / Nifty 500",
@@ -176,19 +176,17 @@ const dailyWrapData = {
       label: "Download the Infosys Integrated Annual Report 2025-26 (PDF) and follow along",
       url: "https://www.infosys.com/investors/reports-filings/annual-report/annual/documents/infosys-ar-26.pdf"
     },
-    formula: "ROCE = EBIT ÷ Capital Employed × 100",
-    formulaNote: "EBIT = profit before interest and tax. Capital Employed = Total Assets − Current Liabilities (the same as Total Equity + Non-current Liabilities).",
+    formula: "ROE = Net profit ÷ Total equity × 100",
+    formulaNote: "Net profit is the profit for the year attributable to the owners of the Company (after tax and after non-controlling interests). Total equity is shareholders' funds - the same as equity share capital + other equity - as reported on the consolidated balance sheet.",
     inputsLabel: "The numbers we need, straight from the report",
     inputs: [
-      { label: "Profit before tax", value: "Rs 39,995 crore", page: "p. 318" },
-      { label: "Finance cost", value: "Rs 416 crore", page: "p. 318" },
-      { label: "Total assets", value: "Rs 1,55,967 crore", page: "p. 316" },
-      { label: "Current liabilities", value: "Rs 52,322 crore", page: "p. 317" }
+      { label: "Net profit (attributable to owners)", value: "Rs 29,440 crore", page: "p. 318" },
+      { label: "Total equity (attributable to owners)", value: "Rs 92,852 crore", page: "p. 317" }
     ],
-    working: "Step 1 - EBIT: profit before tax + finance cost = 39,995 + 416 = Rs 40,411 crore (p. 318). Step 2 - capital employed: total assets − current liabilities = 1,55,967 − 52,322 = Rs 1,03,645 crore (p. 316-317; the same as total equity Rs 93,297 cr + non-current liabilities Rs 10,348 cr). Step 3 - ROCE = 40,411 ÷ 1,03,645 × 100 = 39.0%.",
-    result: "≈ 39%",
-    meaning: "For every Rs 100 of long-term capital Infosys employs, it earns about Rs 39 of operating profit. Asset-light IT businesses that carry almost no debt typically screen well above 25-30%, while capital-heavy sectors (refining, telecom, utilities) often sit in single digits to low teens. Always compare ROCE within the same sector, and check it comfortably beats the company's cost of capital (roughly 11-14% for a stable Indian large-cap) - below that floor a business is destroying value even if its profit looks large.",
-    crossCheck: "Screener.in reports Infosys' FY26 ROCE at 40%; the small gap is convention (whether the one-off Labour Codes charge of Rs 1,289 cr and other income are folded in). Either way it is far above the ~12% cost of capital.",
-    source: "Infosys Integrated Annual Report 2025-26 - Consolidated Balance Sheet (pp. 316-317) and Consolidated Statement of Profit and Loss (p. 318)"
+    working: "Step 1 - net profit attributable to owners of the Company = Rs 29,440 crore (p. 318; total net profit including non-controlling interests is Rs 29,474 crore). Step 2 - total equity attributable to owners = Rs 92,852 crore (p. 317; total equity including non-controlling interests is Rs 93,297 crore). Step 3 - ROE = 29,440 ÷ 92,852 × 100 = 31.7%.",
+    result: "≈ 31.7%",
+    meaning: "For every Rs 100 of shareholders' equity Infosys carries, it earns about Rs 32 of profit after tax. ROE is the return an owner earns on the book value of their stake, so it is the cleanest single gauge of profitability from the shareholder's point of view. Asset-light, nearly debt-free IT services firms typically screen above 20-25%, while capital-heavy sectors (refining, telecom, utilities) often sit in single digits. But a high ROE can also be manufactured by heavy borrowing rather than a good business - so always read it next to debt. Infosys carries almost none (debt-to-equity of about 0.10x), so its ~32% is quality, not leverage. Compare ROE within the same sector, and check it comfortably clears the company's cost of equity (roughly 12-14% for a stable Indian large-cap).",
+    crossCheck: "Screener.in reports Infosys' FY26 ROE at 31.9% and TheScreener at 31.71%; the small gap is convention (closing vs average equity, and whether non-controlling interests are folded in). Either way it is far above the ~12% cost of equity.",
+    source: "Infosys Integrated Annual Report 2025-26 - Consolidated Balance Sheet (p. 317) and Consolidated Statement of Profit and Loss (p. 318)"
   }
 };
