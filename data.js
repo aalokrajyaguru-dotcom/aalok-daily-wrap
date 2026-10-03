@@ -48,7 +48,7 @@ const dailyWrapData = {
       close: 120363.48,
       dayChange: -1621.81,
       dayChangePct: -1.33,
-      weekChangePct: null, // 25 Sep close for the S&P BSE SME IPO index could not be verified
+      weekChangePct: -0.73, // week-to-date vs Fri, 25 Sep close of 1,21,243.82
       spark: null,
       note: "The S&P BSE SME IPO index, which tracks newly listed small and medium enterprises, slid 1.33% to 1,20,363.48 - still within about 2% of its 52-week high after a strong September run."
     }
@@ -92,15 +92,21 @@ const dailyWrapData = {
   ],
 
   movers: {
+    universe: "Nifty 500",
+    scope: "week", // "day" on trading days, "week" on Saturdays
     gainers: [
-      { name: "Infosys", changePct: 4.11, cap: "Largecap", note: "Top Nifty gainer, closing at Rs 1,035, as IT rallied on softer US inflation data; Mphasis and Coforge rose about 4% each and the Nifty IT index (+2.17%) was the only sector in the green" },
-      { name: "HDFC Life Insurance", changePct: 2.49, cap: "Largecap", note: "Second-best Nifty gainer at Rs 534.20, leading an insurance rebound even as SBI Life (+1.5%) and HDFC Bank (+1.76%) also advanced" },
-      { name: "Schneider Electric Infrastructure", changePct: 6.19, cap: "Midcap", note: "Top gainer across the BSE 500, bucking the capital-goods sell-off; IDBI Bank (+5.56%) and Welspun Living (+5.03%) were the next best broader-market performers" }
+      { name: "Cupid", changePct: 17.3, cap: "Smallcap", note: "The week's best Nifty 500 performer, up 17.3% - one of a handful of small caps that bucked the broad sell-off" },
+      { name: "Sterlite Technologies", changePct: 16.0, cap: "Smallcap", note: "Second-best weekly gainer, up 16%, on a telecom-equipment bid" },
+      { name: "HFCL", changePct: 13.1, cap: "Smallcap", note: "Up 13.1% for the week" },
+      { name: "MTAR Technologies", changePct: 10.6, cap: "Smallcap", note: "Up 10.6% for the week" },
+      { name: "TD Power Systems", changePct: 6.8, cap: "Smallcap", note: "Up 6.8% for the week" }
     ],
     losers: [
-      { name: "Bajaj Auto", changePct: -7.62, cap: "Largecap", note: "Worst Nifty 50 stock, closing at Rs 10,045 after a disappointing September two-wheeler sales print; also the top large-cap loser in the BSE 500" },
-      { name: "Maruti Suzuki", changePct: -4.86, cap: "Largecap", note: "Closed at Rs 11,386 as the entire auto pack was hammered; M&M (-3.1%) and Eicher Motors (-3.2%) also featured among the biggest Nifty losers" },
-      { name: "PB Fintech", changePct: -7.69, cap: "Midcap", note: "Top loser across the BSE 500, plunging on profit-taking and valuation concerns; CPCL (-6.35%) was the worst smallcap performer" }
+      { name: "PB Fintech", changePct: -18.8, cap: "Midcap", note: "Worst Nifty 500 performer this week, down 18.8%, extending its slide after the IRDAI commission-cap consultation" },
+      { name: "IFCI", changePct: -13.4, cap: "Smallcap", note: "Down 13.4% for the week" },
+      { name: "Ola Electric Mobility", changePct: -12.8, cap: "Smallcap", note: "Down 12.8% for the week" },
+      { name: "Patanjali Foods", changePct: -12.3, cap: "Midcap", note: "Down 12.3% for the week" },
+      { name: "Swiggy", changePct: -11.0, cap: "Midcap", note: "Down 11% for the week" }
     ],
     sensexWinners: ["Infosys", "HDFC Bank", "TCS", "HCL Technologies", "Kotak Mahindra Bank"],
     sensexLaggards: ["Bajaj Auto", "Maruti Suzuki", "UltraTech Cement", "Eternal", "Bharat Electronics"]

@@ -325,11 +325,11 @@
   <div class="section-label">Stocks On The Move<span class="rule"></span></div>
   <div class="movers-grid">
     <div class="mover-panel gain">
-      <h3 class="up">Today's Gainers</h3>
+      <h3 class="up" id="gainers-heading">Today's Gainers</h3>
       <div class="chips" id="gainer-chips"></div>
     </div>
     <div class="mover-panel loss">
-      <h3 class="down">Today's Losers</h3>
+      <h3 class="down" id="losers-heading">Today's Losers</h3>
       <div class="chips" id="loser-chips"></div>
     </div>
   </div>
@@ -367,7 +367,7 @@
   </div>
 </footer>
 
-<script src="data.js?v=20261003b"></script>
+<script src="data.js?v=20261003c"></script>
 <script>
 (function () {
   const d = (typeof dailyWrapData !== "undefined") ? dailyWrapData : null;
@@ -467,7 +467,13 @@
     secEl.appendChild(el);
   });
 
-  // ----- movers -----
+  // ----- movers: top Nifty 500 gainers/losers (weekly on Saturdays, daily otherwise) -----
+  const scopeWord = (d.movers.scope === "week") ? "This Week's" : "Today's";
+  const uniSuffix = d.movers.universe ? " (" + d.movers.universe + ")" : "";
+  const gHeading = document.getElementById("gainers-heading");
+  const lHeading = document.getElementById("losers-heading");
+  if (gHeading) gHeading.textContent = scopeWord + " Top Gainers" + uniSuffix;
+  if (lHeading) lHeading.textContent = scopeWord + " Top Losers" + uniSuffix;
   const gEl = document.getElementById("gainer-chips");
   d.movers.gainers.forEach((m) => {
     const c = document.createElement("span");
