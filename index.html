@@ -367,7 +367,7 @@
   </div>
 </footer>
 
-<script src="data.js?v=20261003d"></script>
+<script src="data.js?v=20261003e"></script>
 <script>
 (function () {
   const d = (typeof dailyWrapData !== "undefined") ? dailyWrapData : null;
@@ -529,12 +529,13 @@
     const kicker = (rt.category ? rt.category + " ratio · " : "") + (rt.company || "");
     const inputs = Array.isArray(rt.inputs) && rt.inputs.length
       ? "<p><strong>" + esc(rt.inputsLabel || "The numbers we need") + ":</strong><br>" +
-        rt.inputs.map((x) => esc(x.label) + " — <strong>" + esc(x.value) + "</strong>").join("<br>") + "</p>"
+        rt.inputs.map((x) => esc(x.label) + " — <strong>" + esc(x.value) + "</strong>" + (x.page ? ' <span style="color:var(--text-dim);font-size:12px">(' + esc(x.page) + ")</span>" : "")).join("<br>") + "</p>"
       : "";
     el.innerHTML =
       '<span class="kicker">' + esc(kicker) + '</span>' +
       "<h3>" + esc(rt.name) + "</h3>" +
       (rt.period ? '<p class="idx-week">' + esc(rt.period) + "</p>" : "") +
+      (rt.report && rt.report.url ? '<p><a href="' + esc(rt.report.url) + '" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600">' + esc(rt.report.label || "Download the annual report") + " →</a></p>" : "") +
       "<p><strong>Formula:</strong> " + esc(rt.formula || "") + "</p>" +
       (rt.formulaNote ? '<p class="idx-week">' + esc(rt.formulaNote) + "</p>" : "") +
       inputs +

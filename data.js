@@ -171,19 +171,24 @@ const dailyWrapData = {
     category: "Profitability",
     company: "Infosys Ltd",
     companyNote: "IT services · Nifty 50 / Nifty 500",
-    period: "Latest audited numbers: FY26 (year ended 31 March 2026), consolidated",
+    period: "Every figure is from Infosys' Integrated Annual Report 2025-26 (FY26), audited consolidated financial statements. The report's printed page numbers run 30 ahead of the PDF page (printed p. 318 = PDF p. 288).",
+    report: {
+      label: "Download the Infosys Integrated Annual Report 2025-26 (PDF) and follow along",
+      url: "https://www.infosys.com/investors/reports-filings/annual-report/annual/documents/infosys-ar-26.pdf"
+    },
     formula: "ROCE = EBIT ÷ Capital Employed × 100",
-    formulaNote: "EBIT is operating profit (before interest and tax). Capital Employed = Total Assets − Current Liabilities, which is the same as Total Equity + Non-current Liabilities.",
-    inputsLabel: "The three numbers, from Infosys' FY26 audited consolidated statements",
+    formulaNote: "EBIT = profit before interest and tax. Capital Employed = Total Assets − Current Liabilities (the same as Total Equity + Non-current Liabilities).",
+    inputsLabel: "The numbers we need, straight from the report",
     inputs: [
-      { label: "EBIT (operating profit)", value: "Rs 36,254 crore" },
-      { label: "Total assets", value: "Rs 1,55,967 crore" },
-      { label: "Current liabilities", value: "Rs 52,322 crore" }
+      { label: "Profit before tax", value: "Rs 39,995 crore", page: "p. 318" },
+      { label: "Finance cost", value: "Rs 416 crore", page: "p. 318" },
+      { label: "Total assets", value: "Rs 1,55,967 crore", page: "p. 316" },
+      { label: "Current liabilities", value: "Rs 52,322 crore", page: "p. 317" }
     ],
-    working: "Capital employed = Rs 1,55,967 cr − Rs 52,322 cr = Rs 1,03,645 cr (the same as total equity Rs 93,297 cr + non-current liabilities Rs 10,348 cr). Then ROCE = Rs 36,254 cr ÷ Rs 1,03,645 cr × 100 = 34.98%.",
-    result: "≈ 35%",
-    meaning: "For every Rs 100 of long-term capital it employs, Infosys earns about Rs 35 of operating profit. Asset-light IT businesses that carry almost no debt typically screen well above 25-30%, while capital-heavy sectors (refining, telecom, utilities) often sit in single digits to low teens. Always compare ROCE within the same sector, and check it comfortably beats the company's cost of capital (roughly 11-14% for a stable Indian large-cap) - below that floor, a business is destroying value even if its profit looks large.",
-    crossCheck: "Reconciled with Screener.in, which reports Infosys' FY26 ROCE at 40% - it uses equity + borrowings as capital employed and includes other income; on the strict EBIT basis above it works out to ~35%. Either way it is far above the ~12% cost of capital.",
-    source: "Infosys Integrated Annual Report FY26 / investor data sheet (audited consolidated)"
+    working: "Step 1 - EBIT: profit before tax + finance cost = 39,995 + 416 = Rs 40,411 crore (p. 318). Step 2 - capital employed: total assets − current liabilities = 1,55,967 − 52,322 = Rs 1,03,645 crore (p. 316-317; the same as total equity Rs 93,297 cr + non-current liabilities Rs 10,348 cr). Step 3 - ROCE = 40,411 ÷ 1,03,645 × 100 = 39.0%.",
+    result: "≈ 39%",
+    meaning: "For every Rs 100 of long-term capital Infosys employs, it earns about Rs 39 of operating profit. Asset-light IT businesses that carry almost no debt typically screen well above 25-30%, while capital-heavy sectors (refining, telecom, utilities) often sit in single digits to low teens. Always compare ROCE within the same sector, and check it comfortably beats the company's cost of capital (roughly 11-14% for a stable Indian large-cap) - below that floor a business is destroying value even if its profit looks large.",
+    crossCheck: "Screener.in reports Infosys' FY26 ROCE at 40%; the small gap is convention (whether the one-off Labour Codes charge of Rs 1,289 cr and other income are folded in). Either way it is far above the ~12% cost of capital.",
+    source: "Infosys Integrated Annual Report 2025-26 - Consolidated Balance Sheet (pp. 316-317) and Consolidated Statement of Profit and Loss (p. 318)"
   }
 };
