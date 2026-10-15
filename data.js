@@ -4,54 +4,54 @@ const dailyWrapData = {
     edition: "Market Close — India",
     tagline: "The day on Dalal Street, in one scroll"
   },
-  updatedLabel: "Updated: Wednesday, 14 October 2026, 5:30 PM IST — Daily Wrap",
-  asOfLabel: "Closing levels as of market close (3:30 PM IST), Wednesday, 14 October 2026",
+  updatedLabel: "Updated: Thursday, 15 October 2026, 5:30 PM IST — Daily Wrap",
+  asOfLabel: "Closing levels as of market close (3:30 PM IST), Thursday, 15 October 2026",
 
   indices: [
     {
       name: "Nifty 50",
-      close: 22622.70,
-      dayChange: -99.25,
-      dayChangePct: -0.44,
-      weekChangePct: 0.45, // week-to-date vs prior Friday, 9 Oct close of 22,520.45
-      spark: [22231.80, 22520.45, 22363.35, 22721.95, 22622.70], // last 5 closes: 8 Oct, 9 Oct, 12 Oct, 13 Oct, 14 Oct
-      note: "The benchmark gave back part of Tuesday's 359-point surge, closing 99.25 points (-0.44%) lower at 22,622.70 as profit-booking, a rebound in Brent crude to about $106-107 a barrel and persistent foreign outflows outweighed strength in IT and energy. The index swung between an intraday high of 22,757.95 and a low of 22,558.95, closing off its low. Breadth stayed positive on the NSE (2,564 advances vs 1,805 declines) even as the headline index slipped, with 34 of the 50 Nifty constituents ending lower. Nestle India (+3.69%), Tata Consumer Products (+2.91%), Infosys (+2.44%), TCS (+2.11%) and Coal India (+2.08%) led the gainers; Shriram Finance, HDFC Life, Bajaj Finance, Bajaj Finserv and SBI Life Insurance were the biggest losers."
+      close: 22997.35,
+      dayChange: 374.65,
+      dayChangePct: 1.66,
+      weekChangePct: 2.12, // week-to-date vs prior Friday, 9 Oct close of 22,520.45
+      spark: [22520.45, 22363.35, 22721.95, 22622.70, 22997.35], // last 5 closes: 9 Oct, 12 Oct, 13 Oct, 14 Oct, 15 Oct
+      note: "The benchmark posted its biggest single-day gain in about four months, surging 374.65 points (+1.66%) to 22,997.35 and reclaiming the 23,000 mark intraday (high 23,056.40, low 22,637.40), as a sell-off in global AI-linked technology stocks and hotter-than-expected US inflation burnished India's relative appeal and pulled money into domestic large-caps. IT, private banks and autos led: Tech Mahindra (+4.75%), ICICI Bank (+3.80%), Reliance Industries (+3.44%), Bharti Airtel (+3.31%) and HCLTech topped the gainers, while Nestle India (-7.76%), Trent and Adani Enterprises fell. Breadth was poor — 980 NSE stocks rose against 1,912 that declined — because the rally was confined to heavyweight large-caps."
     },
     {
       name: "Nifty Next 50",
-      close: 68999.30,
-      dayChange: 71.35,
-      dayChangePct: 0.10,
-      weekChangePct: 1.22, // week-to-date vs prior Friday, 9 Oct close of 68,166.70
-      spark: [67614.50, 68166.70, 68351.70, 68927.95, 68999.30], // last 5 closes: 8 Oct, 9 Oct, 12 Oct, 13 Oct, 14 Oct
-      note: "The 'next rung' of large caps held up better than the headline index, edging up 71.35 points (+0.10%) to 68,999.30, helped by consumer and select financial names even as the Nifty 50 slipped."
+      close: 68654.20,
+      dayChange: -345.10,
+      dayChangePct: -0.50,
+      weekChangePct: 0.72, // week-to-date vs prior Friday, 9 Oct close of 68,166.70
+      spark: [68166.70, 68351.70, 68927.95, 68999.30, 68654.20], // last 5 closes: 9 Oct, 12 Oct, 13 Oct, 14 Oct, 15 Oct
+      note: "The 'next rung' of large caps was left behind by the headline surge, slipping about 0.50% to 68,654.20 as the day's buying concentrated in Nifty 50 heavyweights. Feeds differ marginally on the exact close (some quote 68,671.60, -0.47%); both put the index in the red on a day the Sensex rose 2.11%."
     },
     {
       name: "Nifty Midcap 150",
-      close: 21820.40,
-      dayChange: -9.00,
-      dayChangePct: -0.04,
-      weekChangePct: 1.01, // week-to-date vs prior Friday, 9 Oct close of 21,603.25
-      spark: [21311.50, 21603.25, 21620.50, 21829.40, 21820.40], // last 5 closes: 8 Oct, 9 Oct, 12 Oct, 13 Oct, 14 Oct
-      note: "Midcaps closed almost unchanged: the Nifty Midcap 150 slipped just 9 points (-0.04%) to 21,820.40, a near-flat finish that masked sharp stock-level moves. JSW Energy (+6.47%) was the index's top gainer while Meesho (down about 5%) was the biggest drag; 64 of 149 constituents advanced against 85 decliners."
+      close: 21756.35,
+      dayChange: -64.05,
+      dayChangePct: -0.29,
+      weekChangePct: 0.71, // week-to-date vs prior Friday, 9 Oct close of 21,603.25
+      spark: [21603.25, 21620.50, 21829.40, 21820.40, 21756.35], // last 5 closes: 9 Oct, 12 Oct, 13 Oct, 14 Oct, 15 Oct
+      note: "Midcaps dipped 64.05 points (-0.29%) to 21,756.35 as the rally stayed concentrated in the large-cap indices. The index swung between an intraday high of 21,889.65 and a low of 21,718.35, with 87 of its constituents ending lower against 61 gainers — a mirror image of the Nifty 50's advance."
     },
     {
       name: "Nifty Smallcap 250",
-      close: 17886.30,
-      dayChange: 52.85,
-      dayChangePct: 0.30,
-      weekChangePct: 1.77, // week-to-date vs prior Friday, 9 Oct close of 17,574.85
-      spark: [17488.30, 17574.85, 17772.80, 17833.45, 17886.30], // last 5 closes: 8 Oct, 9 Oct, 12 Oct, 13 Oct, 14 Oct
-      note: "Small caps bucked the trend, the Nifty Smallcap 250 rising about 0.30% to 17,886.30 as Transformers & Rectifiers (+~16%), Vedanta Power and IDBI Bank added the most points to the index. The narrower Nifty Smallcap 100, by contrast, fell 0.32%, a reminder that the small-cap advance was concentrated in a handful of stocks."
+      close: 17627.05,
+      dayChange: -205.30,
+      dayChangePct: -1.15,
+      weekChangePct: 0.30, // week-to-date vs prior Friday, 9 Oct close of 17,574.85
+      spark: [17574.85, 17772.80, 17833.45, 17832.35, 17627.05], // last 5 closes: 9 Oct, 12 Oct, 13 Oct, 14 Oct, 15 Oct
+      note: "Small caps were the day's clear underperformers, the Nifty Smallcap 250 sliding about 1.15% to 17,627.05 even as the Sensex jumped 2.11% — a stark divergence that underlined how narrow Thursday's rally was. The narrower Nifty Smallcap 100 fell 1.31% to 19,131.70, and Yes Bank (-14.53%) and IDBI Bank (-7.68%) were among the heaviest drags."
     },
     {
       name: "BSE SME Index",
-      close: 123211.97,
-      dayChange: 924.07,
-      dayChangePct: 0.76,
-      weekChangePct: 1.25, // week-to-date vs prior Friday, 9 Oct close of 1,21,686.21
-      spark: [121076.38, 121686.21, 122178.64, 122287.90, 123211.97], // last 5 closes: 8 Oct, 9 Oct, 12 Oct, 13 Oct, 14 Oct
-      note: "The S&P BSE SME IPO index rose about 0.76% to 1,23,211.97, holding close to its 52-week high of 1,23,353.65, as the SME platform stayed firm while the main-board benchmarks slipped."
+      close: 122743.81,
+      dayChange: -468.16,
+      dayChangePct: -0.38,
+      weekChangePct: 0.87, // week-to-date vs prior Friday, 9 Oct close of 1,21,686.21
+      spark: [121686.21, 122178.64, 122287.90, 123211.97, 122743.81], // last 5 closes: 9 Oct, 12 Oct, 13 Oct, 14 Oct, 15 Oct
+      note: "The S&P BSE SME IPO index eased about 0.4% to roughly 1,22,744, cooling after touching a 52-week high of 1,23,353.65, as the SME platform followed small caps lower. Intraday readings ranged widely (about 1,22,346 to 1,23,162), so treat the closing level as approximate."
     }
   ],
 
@@ -61,115 +61,116 @@ const dailyWrapData = {
   dailyWrap: {
     label: "The Day That Was",
     kicker: "Daily Wrap",
-    headline: "Profit-booking halts the rally: Nifty slips 99 points to 22,623 and the Sensex 252 points as crude nears $107, even as IT, energy and FMCG hold up",
-    summary: "A day after its sharpest gain since June, the market paused. The Nifty 50 closed 99.25 points, or 0.44%, lower at 22,622.70 and the Sensex fell 251.89 points, or 0.34%, to 72,781.89, as investors booked profits after Tuesday's 1,109-point Sensex surge, a rebound in Brent crude to around $106-107 a barrel revived inflation and import-bill worries, and foreign portfolio investors kept selling. The Nifty opened flat, briefly rose to an intraday high of about 22,758, then slid to a low of 22,558.95 before closing off the low; the Sensex touched a low of 72,578.75. It was a day of two halves on the sector board: IT, energy, FMCG and oil & gas gained while pharma, financial services, auto and metal fell. The Nifty IT index added 1.14% to 30,171.00, extending Tuesday's 5.2% jump, with Infosys (+2.44%), TCS (+2.11%) and Tech Mahindra (+~2%) leading; the Nifty Energy index rose 1.47% to 36,503.50 on Aegis Logistics (+6.98%), JSW Energy (+6.47%) and Adani Energy Solutions (+5.17%), and FMCG added 1.21% as Nestle India (+3.69%) and Tata Consumer Products (+2.91%) topped the Nifty gainers. On the losing side, the Nifty Pharma index fell 1.30% to 25,736.95 (Divis Laboratories -2.92%, Dr Reddy's -2.37%, Sun Pharma -1.64%) and financials came under pressure, with Shriram Finance (-3.85%), HDFC Life (-2.85%), Bajaj Finance, Bajaj Finserv and SBI Life Insurance the weakest Nifty names. In the Nifty 500, Transformers & Rectifiers surged about 16% on a strong September-quarter (net profit up ~135% year on year), Vedanta Power and IDBI Bank jumped, and Tata Elxsi rose on results, while Meesho, LIC Housing Finance, Polycab India (on an insolvency-related court order), Bank of Baroda (named in a $15 billion lawsuit) and Shriram Finance were the day's biggest fallers. India VIX rose about 3.5% to 14.61 as nerves returned, and the rupee firmed to about 95 to the dollar. The broader market was mixed — the Nifty Midcap 150 was flat (-0.04%), the Nifty Smallcap 250 rose about 0.30% while the Smallcap 100 fell 0.32% — and NSE breadth stayed positive (2,564 advances vs 1,805 declines). September wholesale inflation, meanwhile, hit a series high of 11.39%.",
-    stats: ["Nifty -0.44%", "Sensex -0.34%"],
+    headline: "Bumper rally: Sensex vaults 1,534 points to 74,316 and Nifty reclaims 22,997 as IT, private banks and autos surge on a global AI sell-off and softer crude — but small caps fall 1.3%",
+    summary: "Indian equities staged their strongest single-day rally in about four months on Thursday. The Sensex soared 1,533.72 points, or 2.11%, to 74,315.61 and the Nifty 50 jumped 374.65 points, or 1.66%, to 22,997.35, closing near the day's high and reclaiming the 23,000 mark intraday for the first time since late September. The trigger was global: a sell-off in technology-heavy overseas markets, fuelled by worries over stretched artificial-intelligence valuations and a hotter-than-expected US inflation print, made India's large-cap tech look relatively attractive, and money rotated into domestic heavyweights. Falling crude (Brent down over 2% to about $103.9 a barrel), a fifth straight session of rupee gains (up 12 paise to 95.05) and softer bond yields added to the cheer. The Nifty IT index led the sector board, up 1.82% to 30,719.80, extending its three-session climb to roughly 8.4% after strong TCS and HCLTech results, while private banks (+1.89%), services (+1.83%), autos (+1.67%) and financials (+1.60%) followed. Among Nifty 50 names, Tech Mahindra (+4.75%), ICICI Bank (+3.80%), Reliance Industries (+3.44%), Bharti Airtel (+3.31%) and HCLTech led the gainers. The rally, though, was narrow and top-heavy. Nestle India tumbled 7.76% after its September-quarter print, Trent and Adani Enterprises slipped, the Nifty PSU Bank index fell 1.55% and the Nifty FMCG index lost 1.06%. Critically, the broader market moved the other way: the Nifty Smallcap 250 fell about 1.15% and the Nifty Midcap 150 0.29%, and on the NSE just 980 stocks advanced against 1,912 that declined, with the median stock down 0.72%. In the Nifty 500, Gallantt Ispat (+10.65%), RITES (+6.73%) and Tata Communications (+6.32%) led, while Yes Bank (-14.53%), Nestle India (-7.76%) and IDBI Bank (-7.68%) fell hardest. India VIX cooled 4.58% to 13.96. The message from Thursday: a genuine large-cap rebound, but one that has not yet widened into the broader market.",
+    stats: ["Nifty +1.66%", "Sensex +2.11%"],
     statsLabel: "Day"
   },
 
   weeklyWrap: null, // trading day — the day's wrap sits in dailyWrap above
 
   dayByDay: [
-    { date: "2026-10-08", label: "Thu 8 Oct", niftyClose: 22231.80, niftyChangePct: -1.64, sensexChangePct: -1.44, note: "Bloodbath on expiry day: the Sensex crashed 1,045 points to 71,593.24 and the Nifty sank 1.64% to 22,231.80, hitting a fresh 52-week low of 22,179.90 intraday, as Brent jumped over 4% to above $104 a barrel, the RBI's hawkish stance weighed and FIIs sold for a ninth straight session (~Rs 57,000 crore). Every Nifty sector ended red — metal -3.55%, realty -3.16%, media -2.79%, auto -2.49%, pharma -2.32% — with IT the only bright spot: Infosys (+0.50%), Tech Mahindra (+0.34%) and Axis Bank (+0.20%) were the sole Nifty 50 gainers, while Adani Enterprises (-5.36%), JSW Steel (-4.46%) and ITC (-4.03%) fell hardest. BSE breadth was 1,018 advances vs 3,412 declines, mid and small caps dropped over 2% each, India VIX spiked 10.37% to 15.33, and about Rs 10 lakh crore of wealth was wiped out. TCS reported Q2 results after the close." },
     { date: "2026-10-09", label: "Fri 9 Oct", niftyClose: 22520.45, niftyChangePct: 1.30, sensexChangePct: 1.23, note: "Relief rally: the Sensex rebounded 879.09 points (+1.23%) to 72,472.33 and the Nifty jumped 288.65 points (+1.30%) to 22,520.45, snapping a two-day slide and regaining nearly 80% of Thursday's fall. IT led after TCS's Q2 beat (net profit +15% YoY to Rs 13,884 crore), the Nifty IT index surging 3.02%, while cooling crude (Brent ~$103), softer bond yields and a firmer rupee helped. Every Nifty sector closed green barring Oil & Gas — FMCG +2.20%, PSU Bank +1.63%, Auto +1.42%, Financials +1.36%. Apollo Hospitals (+4.72%), ITC (+4.31%), Eicher Motors (+4.17%), TCS (+4.60%) and Adani Ports led; BSE (-1.43%), Reliance (-0.65%) and JSW Steel (-0.61%) lagged. NSE breadth was 2,524 advances vs 1,864 declines, India VIX fell 6.07% to 14.35, and the rebound ended the Nifty's eight-week losing streak." },
     { date: "2026-10-12", label: "Mon 12 Oct", niftyClose: 22363.35, niftyChangePct: -0.70, sensexChangePct: -0.76, note: "The benchmarks gave up early gains and closed lower, the Sensex down 547.65 points to 71,924.68 and the Nifty down 157.10 points to 22,363.35, after opening higher on easing crude. Selling was broad — ITC, Tech Mahindra and Avenue Supermarts (-4.32%) were among the biggest drags, with Apollo Hospitals (-3.15%) the sharpest Nifty faller, while Dr Reddy's (+2.71%) and Bajaj Auto (+2.62%) led the gainers. Interestingly the broader market held up better than the benchmarks: small caps rose about 1.4% and mid caps about 0.1%. India VIX rose 6.07% to 15.25, the rupee firmed about 1% to 95.77 after the RBI's forex measures, and FIIs sold a net Rs 1,708 crore even as DIIs bought Rs 3,045 crore. September CPI came in hotter than expected at 5.54%." },
     { date: "2026-10-13", label: "Tue 13 Oct", niftyClose: 22721.95, niftyChangePct: 1.60, sensexChangePct: 1.54, note: "Sharp recovery: the Nifty posted its best single-day gain since 12 June, up 358.60 points (+1.60%) to 22,721.95 — closing at the day's high after an intraday low of 22,288 — and the Sensex added 1,109.10 points (+1.54%) to 73,033.78. IT led a broad rally after HCL Technologies' strong September-quarter results, the Nifty IT index surging 5.22% (best in 17 months) as HCLTech rose 8.42% and TCS 6.79%, with Finance Minister Nirmala Sitharaman's LTCG/STCG remarks adding to the optimism. 46 of the 50 Nifty stocks closed higher; Realty (+2.46%), Consumer Durables (+1.56%) and Financials (+1.46%) followed IT, and Pharma (-0.01%) was the lone laggard. In the Nifty 500, Bandhan Bank (+~9.2%) and RBL Bank (-~7.1%) were the day's biggest mover and loser. Mid and small caps lagged (Midcap 100 +1.06%, Smallcap 250 +0.34%) and India VIX fell about 7.4% to 14.12." },
-    { date: "2026-10-14", label: "Wed 14 Oct", niftyClose: 22622.70, niftyChangePct: -0.44, sensexChangePct: -0.34, note: "Profit-booking after Tuesday's surge: the Nifty 50 fell 99.25 points (-0.44%) to 22,622.70 and the Sensex 251.89 points (-0.34%) to 72,781.89, as crude rebounded to about $106-107 a barrel, foreign outflows persisted and investors turned cautious ahead of US inflation data. The session was split — IT (+1.14%), Energy (+1.47%), FMCG (+1.21%) and Oil & Gas advanced, while Pharma (-1.30%), Financial Services (-1.21%), Auto (-0.93%) and Metal (-0.32%) fell. Nestle India (+3.69%), Tata Consumer Products (+2.91%), Infosys (+2.44%), TCS (+2.11%) and Coal India (+2.08%) led the Nifty gainers; Shriram Finance (-3.85%), HDFC Life (-2.85%), Bajaj Finance, Bajaj Finserv and SBI Life Insurance led the losers. In the Nifty 500, Transformers & Rectifiers jumped about 16% on a strong Q2, with Vedanta Power and IDBI Bank also up sharply, while Meesho, LIC Housing Finance, Polycab India, Bank of Baroda and Shriram Finance fell the most. Midcaps were flat (Midcap 150 -0.04%), the Smallcap 250 rose about 0.30%, India VIX rose about 3.5% to 14.61, and September WPI inflation hit a series high of 11.39%." }
+    { date: "2026-10-14", label: "Wed 14 Oct", niftyClose: 22622.70, niftyChangePct: -0.44, sensexChangePct: -0.34, note: "Profit-booking after Tuesday's surge: the Nifty 50 fell 99.25 points (-0.44%) to 22,622.70 and the Sensex 251.89 points (-0.34%) to 72,781.89, as crude rebounded to about $106-107 a barrel, foreign outflows persisted and investors turned cautious ahead of US inflation data. The session was split — IT (+1.14%), Energy (+1.47%), FMCG (+1.21%) and Oil & Gas advanced, while Pharma (-1.30%), Financial Services (-1.21%), Auto (-0.93%) and Metal (-0.32%) fell. Nestle India (+3.69%), Tata Consumer Products (+2.91%), Infosys (+2.44%), TCS (+2.11%) and Coal India (+2.08%) led the Nifty gainers; Shriram Finance (-3.85%), HDFC Life (-2.85%), Bajaj Finance, Bajaj Finserv and SBI Life Insurance led the losers. In the Nifty 500, Transformers & Rectifiers jumped about 16% on a strong Q2, with Vedanta Power and IDBI Bank also up sharply, while Meesho, LIC Housing Finance, Polycab India, Bank of Baroda and Shriram Finance fell the most. Midcaps were flat (Midcap 150 -0.04%), the Smallcap 250 rose about 0.30%, India VIX rose about 3.5% to 14.61, and September WPI inflation hit a series high of 11.39%." },
+    { date: "2026-10-15", label: "Thu 15 Oct", niftyClose: 22997.35, niftyChangePct: 1.66, sensexChangePct: 2.11, note: "Bumper rally: the Sensex vaulted 1,533.72 points (+2.11%) to 74,315.61 and the Nifty 50 374.65 points (+1.66%) to 22,997.35, its best day in about four months, as a global sell-off in AI-linked technology stocks and hot US inflation made India's large-caps relatively attractive. IT (+1.82% to 30,719.80), private banks (+1.89%), services (+1.83%), autos (+1.67%) and financials (+1.60%) led; Brent fell over 2% to about $103.9 and the rupee rose 12 paise to 95.05, a fifth straight gain. Tech Mahindra (+4.75%), ICICI Bank (+3.80%), Reliance (+3.44%) and Bharti Airtel (+3.31%) topped the Nifty gainers; Nestle India (-7.76%), Trent and Adani Enterprises fell, and PSU Bank (-1.55%) and FMCG (-1.06%) lagged. But the rally was narrow: the Smallcap 250 fell about 1.15% and the Midcap 150 0.29%, NSE breadth was 980 advances vs 1,912 declines, and India VIX cooled 4.58% to 13.96." }
   ],
 
   sectors: [
-    { name: "Nifty Energy", changePct: 1.47, note: "The day's top sector, up 1.47% to 36,503.50, as Aegis Logistics (+6.98%), JSW Energy (+6.47%) and Adani Energy Solutions (+5.17%) surged with crude prices" },
-    { name: "Nifty FMCG", changePct: 1.21, note: "Defensive FMCG added 1.21% as Nestle India (+3.69%) and Tata Consumer Products (+2.91%) topped the Nifty gainer list and Hindustan Unilever rose about 1%" },
-    { name: "Nifty IT", changePct: 1.14, note: "IT extended Tuesday's 5.2% rally, adding 1.14% to 30,171.00, as Infosys (+2.44%), TCS (+2.11%) and Tech Mahindra (+~2%) kept the sector in favour ahead of results" },
-    { name: "Nifty Oil & Gas", changePct: 0.89, note: "Oil & gas rose about 0.9%, helped by ONGC (+1.3%) and higher crude, even as the rise in Brent stoked inflation worries for the broader market" },
-    { name: "Nifty Infrastructure", changePct: 0.26, note: "Infrastructure edged up about 0.3%, with capital-goods names such as BHEL (+4.89%) and L&T-related engineering stocks holding firm" },
-    { name: "Nifty Media", changePct: -0.05, note: "Media ended essentially flat at -0.05%, one of the few sectors to sit out the day's swings" },
-    { name: "Nifty Realty", changePct: -0.20, note: "Realty slipped about 0.2% as rate-sensitive names gave back part of Tuesday's 2.46% gain" },
-    { name: "Nifty Bank", changePct: -0.30, note: "The Bank Nifty fell about 0.30% to 55,316.00, with private banks easing alongside auto and metal even as IT stayed strong" },
-    { name: "Nifty Metal", changePct: -0.32, note: "Metal declined about 0.32%, under pressure from profit-booking after its recent gains" },
-    { name: "Nifty Auto", changePct: -0.93, note: "Autos were among the weakest sectors, down about 0.93%, with Mahindra & Mahindra (-2.47%) and other cyclicals under pressure" },
-    { name: "Nifty Financial Services", changePct: -1.21, note: "Financial services ex-bank fell about 1.21%, the biggest drag on the index, as Shriram Finance (-3.85%), HDFC Life (-2.85%), Bajaj Finance and Bajaj Finserv slid" },
-    { name: "Nifty Pharma", changePct: -1.30, note: "The day's worst sector for a second straight session, down 1.30% to 25,736.95, as Divis Laboratories (-2.92%), Dr Reddy's (-2.37%), Sun Pharma (-1.64%), Mankind Pharma and Cipla fell" }
+    { name: "Nifty Private Bank", changePct: 1.89, note: "The day's top sector, up 1.89% to 27,679.30, as ICICI Bank (+3.80%) and HDFC Bank (+2.51%) rallied on the rotation into heavyweight financials ahead of their quarterly earnings over the weekend, even as Yes Bank (-14.53%) and RBL Bank (-3.07%) slid" },
+    { name: "Nifty Services Sector", changePct: 1.83, note: "Services added 1.83% to 29,995.85, helped by the strength in technology and telecom names such as Bharti Airtel (+3.31%)" },
+    { name: "Nifty IT", changePct: 1.82, note: "IT led the sector board, up 1.82% to 30,719.80 and taking its three-session rise to about 8.4%, as Tech Mahindra (+4.75%), HCLTech (+2.58%), TCS (+2.28%) and Infosys (+2.03%) extended the rally after strong TCS and HCLTech results and ahead of Wipro's and Tech Mahindra's own prints" },
+    { name: "Nifty Auto", changePct: 1.67, note: "Autos rebounded 1.67% to 25,576.40 as Maruti Suzuki (+2.01%) and Mahindra & Mahindra (+1.89%) recovered after Wednesday's fall" },
+    { name: "Nifty Financial Services", changePct: 1.60, note: "Financial services gained 1.60%, riding the same rotation into banks and non-bank financials that lifted the private-bank index" },
+    { name: "Nifty Oil & Gas", changePct: 1.41, note: "Oil & gas rose 1.41% even as crude fell, with Hindustan Petroleum (+5.27%) among the Nifty 500's biggest gainers" },
+    { name: "Nifty Infrastructure", changePct: 1.23, note: "Infrastructure added about 1.2% to 8,685.90, with capital-goods and engineering names such as RITES (+6.73%) drawing strong buying" },
+    { name: "Nifty Bank", changePct: 0.89, note: "The Bank Nifty rose 0.89% to 55,810.50, a more modest gain than private banks as state-run lenders lagged and Canara Bank fell about 5% after its Q2 results" },
+    { name: "Nifty Realty", changePct: 0.72, note: "Realty edged up 0.72% to 828.70, a muted finish for a rate-sensitive sector on a risk-on day" },
+    { name: "Nifty Metal", changePct: 0.20, note: "Metal was barely changed, up about 0.2%, as the day's gains bypassed the cyclicals" },
+    { name: "Nifty FMCG", changePct: -1.06, note: "The day's biggest sectoral casualty among defensives, down 1.06% to 44,791.65, as Nestle India crashed 7.76% after its September-quarter results and dragged the index lower" },
+    { name: "Nifty Media", changePct: -1.27, note: "Media fell about 1.3%, one of the few sectors to sit out the large-cap rally" },
+    { name: "Nifty PSU Bank", changePct: -1.55, note: "The day's worst sector, down 1.55% to 8,041.20, as public-sector lenders were sold into strength — Canara Bank fell about 5% post-results and Punjab National Bank slid over 2%" }
   ],
 
   movers: {
     universe: "Nifty 500",
     scope: "day", // "day" on trading days, "week" on Saturdays
-    source: "Nifty 500 daily gainers and losers for Wednesday, 14 Oct 2026 (Kotak Neo's and Dhan's Nifty 500 / Nifty Smallcap 250 gainer lists, CNBC-TV18's Nifty 500 movers, Moneycontrol's price-action wrap, 5paisa's and MarketsMojo's stock movers, and TBTflow's 14 Oct closing tape for the NSE F&O names; readings vary slightly between feeds — e.g. Transformers & Rectifiers' gain is quoted between roughly 14% and 17% and Meesho's fall between about 5.2% and 5.9% depending on the source)",
+    source: "Nifty 500 daily gainers and losers for Thursday, 15 Oct 2026 (TradingJumbo's Nifty 500 movers list, Dhan's and Kotak Neo's Nifty 500 gainer screens, Flash Finance's 15:50 IST top-500 list, CNBC-TV18's Nifty 500 movers note, Capital Market's 'A'-group gainers and xflot's 15 Oct closing tape for the NSE names; readings vary between feeds — e.g. Gallantt Ispat's gain is quoted between roughly 8.9% and 11.3%, and Tata Communications' between about 5.5% and 6.3%, depending on the source and the time of capture)",
     gainers: [
-      { name: "Transformers & Rectifiers India", changePct: 16.00, cap: "Smallcap", note: "The day's runaway Nifty 500 gainer after a blockbuster September quarter — consolidated net profit up about 135% year on year to Rs 79.8 crore and revenue up 60.7% to Rs 739.4 crore, with margins expanding; sources quote the day's gain between roughly 14% and 17%" },
-      { name: "Vedanta Power", changePct: 12.62, cap: "Smallcap", note: "Among the top small-cap gainers, up about 12.6%, as the recently demerged Vedanta power entity drew strong buying" },
-      { name: "IDBI Bank", changePct: 8.44, cap: "Smallcap", note: "Jumped about 8.4% on heavy volumes ahead of its September-quarter results and on expectations of a strong print" },
-      { name: "Vedanta Oil & Gas", changePct: 7.58, cap: "Smallcap", note: "Rose about 7.6% as energy and oil-linked names rallied with crude" },
-      { name: "Tata Elxsi", changePct: 6.83, cap: "Midcap", note: "Gained about 6.8% after its Q2 results — revenue up 15% year on year to Rs 1,055.7 crore and EBITDA margin improving to 21.9%, with broad-based growth across its verticals" }
+      { name: "Gallantt Ispat", changePct: 10.65, cap: "Smallcap", note: "The day's runaway Nifty 500 gainer, up about 10.7%, reversing two days of decline on heavy volumes (roughly 2.8 crore shares traded against a one-month average near 0.5 crore); sources quote the day's gain between roughly 8.9% and 11.3%" },
+      { name: "RITES", changePct: 6.73, cap: "Smallcap", note: "Jumped about 6.7% to Rs 214.27 as the engineering and consultancy PSU drew strong buying after a weak run (the stock was down over 14% in the past year)" },
+      { name: "Tata Communications", changePct: 6.32, cap: "Midcap", note: "Surged about 6.3% to Rs 1,763.70 after reporting a consolidated net profit of Rs 341 crore for the July-September quarter, up 86% year on year from Rs 183 crore, making it the top gainer on the Nifty Midcap 100" },
+      { name: "Hindustan Petroleum", changePct: 5.27, cap: "Largecap", note: "Rose about 5.3% to Rs 348.50 as oil-marketing names rallied with the fall in crude and the broader risk-on mood" },
+      { name: "HDFC Asset Management", changePct: 5.14, cap: "Largecap", note: "Added about 5.1% to Rs 2,415.00, recovering some of the ground lost after its Q2 profit fell 10% to Rs 750 crore" }
     ],
     losers: [
-      { name: "Meesho", changePct: -5.21, cap: "Midcap", note: "The worst Nifty 500 performer, down about 5.2%, as investors booked profits after a sharp recent run following its 'Mega Blockbuster' sale update" },
-      { name: "LIC Housing Finance", changePct: -5.14, cap: "Midcap", note: "Fell about 5.1% on profit-booking after its recent rally, with elevated crude and rate worries adding to pressure on housing-finance names" },
-      { name: "Polycab India", changePct: -4.60, cap: "Largecap", note: "Slipped about 4.6% after the NCLAT stayed an NCLT order that had admitted an insolvency plea against the company over an alleged Rs 2.79 crore operational debt" },
-      { name: "Bank of Baroda", changePct: -3.96, cap: "Largecap", note: "Fell about 4% after businessman B R Shetty, founder of NMC Healthcare, filed a $15 billion damages suit against the bank and 25 others" },
-      { name: "Shriram Finance", changePct: -3.85, cap: "Largecap", note: "The weakest Nifty 50 name, down about 3.9%, giving back part of Tuesday's 6.31% jump that had followed reports of a stake increase by MUFG" }
+      { name: "Yes Bank", changePct: -14.53, cap: "Midcap", note: "The day's worst Nifty 500 performer, crashing about 14.5% to Rs 18.12 on huge volumes (about 66.8 crore shares) amid a sharp re-rating of the lender" },
+      { name: "Nestle India", changePct: -7.76, cap: "Largecap", note: "The weakest Nifty 50 name, tumbling 7.76% to Rs 1,275.80 after its September-quarter results disappointed and dragged the FMCG index down with it" },
+      { name: "IDBI Bank", changePct: -7.68, cap: "Smallcap", note: "Fell about 7.7% to Rs 83.45 as investors reacted to the Union Cabinet approving the strategic sale of a 60.72% stake in the lender to Canada-based Fairfax Financial at a discount" },
+      { name: "Mangalore Refinery & Petrochemicals", changePct: -7.07, cap: "Smallcap", note: "Slipped about 7.1% as the refining stock gave back part of a sharp recent run" },
+      { name: "Chennai Petroleum", changePct: -5.92, cap: "Midcap", note: "Fell about 5.9% on profit-booking after a strong year in which the stock had risen more than 70%" }
     ],
-    sensexWinners: ["Nestle India", "Infosys", "Tata Consultancy Services"],
-    sensexLaggards: ["Bajaj Finance", "Bajaj Finserv", "Mahindra & Mahindra"]
+    sensexWinners: ["Tech Mahindra", "ICICI Bank", "Reliance Industries"],
+    sensexLaggards: ["Nestle India", "Adani Enterprises", "Trent"]
   },
 
   watch: [
     {
-      title: "Q2 FY27 earnings: Wipro, Tech Mahindra and Nestlé India report on 15 October",
-      detail: "After TCS's and HCL Technologies' strong September-quarter prints drove last week's IT rebound, the next batch of results lands on 15 October — Wipro, Tech Mahindra and Nestlé India. Deal wins, margins and FY27 growth guidance, especially any pickup in AI-led spending by overseas banking and retail clients, will decide whether the IT rally becomes a durable trend or a one-day pop. HDFC Bank, Jio Financial Services and Bajaj Housing Finance also report through 15-17 October."
+      title: "Q2 FY27 earnings: HDFC Bank and ICICI Bank report over the weekend",
+      detail: "Thursday's rally ran ahead of the results season's biggest names. Nestle India, Wipro and Tech Mahindra reported on 15 October; HDFC Bank, ICICI Bank and Jio Financial Services follow over the weekend, with Bajaj Housing Finance and others through 17 October. Deal wins, margins and FY27 growth guidance — especially any pickup in AI-led spending by overseas banking and retail clients — will decide whether the IT and financials rally becomes a durable trend or a one-day pop."
     },
     {
-      title: "Wholesale inflation at a series high — and US CPI in focus",
-      detail: "September wholesale price inflation accelerated to 11.39%, its highest in the new series, from 9.92% in August, with fuel and power inflation at 25.9%. Combined with September retail inflation of 5.54%, it keeps the RBI's 'calibrated tightening' stance in play. Investors are also waiting on US consumer-price data for clues on the Federal Reserve's rate path, which is feeding directly into global bond yields and the rupee."
+      title: "Dussehra holiday: markets shut on Tuesday, 20 October",
+      detail: "The NSE and BSE will be closed on Tuesday, 20 October for Dussehra — the next trading holiday on the 2026 calendar. With a long weekend approaching, volumes may thin and positions may be trimmed. Diwali-Balipratipada (10 November), Guru Nanak Jayanti (24 November) and Christmas (25 December) are the other closures left in 2026, and Muhurat trading will be held on Sunday, 8 November."
     },
     {
       title: "Crude oil and the rupee",
-      detail: "Brent rebounded to around $106-107 a barrel on Middle East supply worries, reviving concerns over India's import bill, inflation and current-account pressure and weighing on cyclicals on Wednesday. The rupee, though, has firmed to about 95 to the dollar, helped by the RBI's forex-derivative measures. Watch whether crude retreats and whether the rupee's stabilisation holds."
+      detail: "Brent fell over 2% to about $103.9 a barrel on Thursday, easing the import-bill and inflation worries that had weighed on the market earlier in the week, while the rupee rose 12 paise to 95.05, a fifth straight session of gains. Watch whether crude keeps retreating and whether the rupee's stabilisation holds — both feed directly into the outlook for cyclicals, autos and oil-marketing companies."
     },
     {
       title: "Foreign outflows versus the domestic cushion",
-      detail: "FPIs have kept selling, and Wednesday's fall was again attributed partly to foreign outflows, while domestic institutions keep absorbing the supply on the back of strong mutual-fund inflows. That divergence remains the market's key support. A durable rally needs foreign selling to slow; a rebound carried only by domestic buying and short-covering can fade."
+      detail: "Thursday's rally was built partly on hopes that India could regain favour with foreign investors after the global AI-led sell-off. FPIs have been net sellers for weeks, though, and the day's advance came without confirmed foreign buying. A durable rally needs foreign selling to slow; a rebound carried only by domestic buying and short-covering can fade. Watch the daily FII/DII numbers."
     },
     {
-      title: "Can the Nifty break out of 22,180-22,850?",
-      detail: "The Nifty closed at 22,622.70 and remains boxed in a 22,180-22,850 range after Tuesday's spike was partly reversed. A decisive close above 22,850 would open the way towards 23,000 and higher; 22,180-22,200 is the support the bulls need to defend. The index still trades below key moving averages, so the move needs follow-through before it can be read as a trend reversal."
+      title: "Can the rally broaden beyond large caps?",
+      detail: "The Sensex's 2.11% jump came with the Nifty Smallcap 250 down about 1.15% and just 980 NSE stocks advancing against 1,912 declining. The Nifty 50 closed at 22,997.35, near resistance at 23,050-23,150; a decisive close above that band would open the way higher, while 22,750-22,900 is near-term support. For the move to read as a genuine trend reversal rather than a narrow large-cap bounce, mid and small caps need to start participating."
     }
   ],
 
   reads: [
     {
-      title: "Stock Market Closing Today, Oct 14: Sensex falls 251 pts, Nifty below 22,650; check top gainers and losers",
+      title: "Stock Market Close: Sensex surges 1,534 pts, Nifty at 22,997 as crude falls 2%; IT, auto shine",
+      source: "Business Standard",
+      url: "https://www.business-standard.com/markets/news/stock-market-live-october-15-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-q2-results-ipo-today-126101500089_1.html"
+    },
+    {
+      title: "Sensex closes 1,500 points higher, Nifty nears 23,000; RIL up 4%",
+      source: "India Today",
+      url: "https://www.indiatoday.in/business/market/story/market-closing-sensex-closes-1500-points-higher-nifty-nears-23000-ril-up-4-3017947-2026-10-15"
+    },
+    {
+      title: "Stock Market Closing Today, Oct 15: Sensex zooms 1534 pts, Nifty ends near 23,000; factors behind Thursday's rally",
       source: "ET Now",
-      url: "https://www.etnownews.com/markets/stock-market-closing-today-oct-14-sensex-falls-251-pts-nifty-below-22650-check-top-gainers-and-losers-article-156338583"
+      url: "https://www.etnownews.com/markets/stock-market-closing-today-oct-15-sensex-zooms-1534-pts-nifty-near-23000-factors-behind-thursdays-rally-check-top-gainers-and-losers-article-156345174"
     },
     {
-      title: "Closing Bell: Sensex Falls 252 Points, Nifty 50 Slips Below 22,650 as Crude Oil Nears $106",
-      source: "DSIJ",
-      url: "https://insights.dsij.in/dsijarticledetail/closing-bell-sensex-falls-252-points-nifty-50-slips-below-22650-as-crude-oil-nears-106"
+      title: "Stock Market Highlights, Oct 15: Sensex jumps over 1,500 points, Nifty nears 23,000; rupee extends gains",
+      source: "The Hindu BusinessLine",
+      url: "https://www.thehindubusinessline.com/markets/sensex-nifty50-stock-market-highlights-15-october-2026/article71583334.ece"
     },
     {
-      title: "IT, Energy Stocks Gain; Markets Slip on Crude, FPI Outflows",
-      source: "HDFC Sky",
-      url: "https://hdfcsky.com/news/sectoral-snapshot-today-october-14-2026-it-energy-fmcg-stocks-gain-pharma-financials-auto-metal-shares-drag"
-    },
-    {
-      title: "Nifty ends below 22,650 mark; Pharma shares tumble for 2nd day",
-      source: "Capital Market",
-      url: "https://www.capitalmarket.com/markets/news/quick-session-news/nifty-ends-below-22-650-mark;-pharma-shares-tumble-for-2nd-day/1736753"
-    },
-    {
-      title: "Nifty 500: Transformers and Rectifiers surge 15% on Q2 result, BoB falls 3%; Check others",
-      source: "CNBC-TV18",
-      url: "https://www.cnbctv18.com/market/stocks/nifty-500-share-price-transformers-rectifiers-tata-elxsi-bharat-coking-polycab-bank-of-baroda-mmtc-q2-results-20011376.htm"
+      title: "Top gainers and losers, Oct 15: Tech Mahindra jumps 4.7%, RIL gains 3%; Nestle India tanks 8%",
+      source: "Upstox",
+      url: "https://upstox.com/news/market-news/stocks/top-gainers-and-losers-oct-15-tech-mahindra-jumps-4-7-ril-gains-3-nestle-india-tanks-8-check-full-list/article-201925/"
     }
   ],
 
   // Today's financial ratio, worked through with one Nifty 500 company's last
   // audited financial statements. The ratio rotates every day; the company stays Infosys Ltd.
   ratio: {
-    name: "Current Ratio",
-    category: "Liquidity / Solvency",
+    name: "Working Capital",
+    category: "Liquidity / Balance Sheet",
     company: "Infosys Ltd",
     companyNote: "IT services · Nifty 50 / Nifty 500",
     period: "Every figure is from Infosys' Integrated Annual Report 2025-26 (FY26), audited consolidated financial statements (IFRS, in rupees). The report's printed page numbers run 30 ahead of the PDF page number (printed p. 318 = PDF p. 288).",
@@ -177,17 +178,17 @@ const dailyWrapData = {
       label: "Download the Infosys Integrated Annual Report 2025-26 (PDF) and follow along",
       url: "https://www.infosys.com/investors/reports-filings/annual-report/annual/documents/infosys-ar-26.pdf"
     },
-    formula: "Current Ratio = Total current assets ÷ Total current liabilities",
-    formulaNote: "The current ratio measures whether a company can pay the bills that fall due within a year using the assets it can turn into cash within a year. The numerator, total current assets, bundles everything the company expects to convert to cash inside twelve months — here cash and equivalents, current investments, trade receivables, unbilled revenue and other current assets. The denominator, total current liabilities, bundles everything it must settle inside twelve months — trade payables, unearned revenue, employee-benefit obligations and other current liabilities. A ratio above 1 means short-term assets comfortably cover short-term obligations; a ratio below 1 is a warning sign. Roughly 1.5 to 2.0 is generally considered healthy, though the 'right' level varies by industry: a software-services firm, which carries no inventory and collects from clients quickly, can run a high ratio without it signalling idle capital. Because Infosys is debt-light and cash-rich, its current ratio is comfortably above 1.",
+    formula: "Working Capital = Total current assets − Total current liabilities",
+    formulaNote: "Working capital is the rupee cushion a company holds to run its day-to-day operations: the current assets it expects to turn into cash within a year (cash, current investments, trade receivables, unbilled revenue and other current assets) minus the current liabilities it must settle within a year (trade payables, unearned revenue, employee-benefit obligations and other current liabilities). It is the current ratio's sibling — where the current ratio expresses the same two figures as a multiple (about 1.98 for Infosys), working capital expresses the gap in absolute rupees. A positive, growing number means the business funds itself comfortably and has spare cash for dividends, buybacks, acquisitions and downturns; a negative number means short-term obligations outrun short-term resources and the company may need to borrow or raise money. For an asset-light, debt-free software-services firm such as Infosys, working capital is large and structurally positive, because it collects from clients quickly, carries no inventory and owes little to lenders.",
     inputsLabel: "The numbers we need, straight from the report",
     inputs: [
       { label: "Total current assets as at March 31, 2026", value: "Rs 1,03,489 crore", page: "p. 317" },
       { label: "Total current liabilities as at March 31, 2026", value: "Rs 52,322 crore", page: "p. 317" }
     ],
-    working: "Step 1 — Total current assets as at March 31, 2026 = Rs 1,03,489 crore (Consolidated Balance Sheet, p. 317). This is the sum of cash and cash equivalents (Rs 22,201 crore), current investments (Rs 12,950 crore), trade receivables (Rs 35,234 crore), unbilled revenue (Rs 15,483 crore) and other current assets (Rs 17,621 crore). Step 2 — Total current liabilities as at March 31, 2026 = Rs 52,322 crore (Consolidated Balance Sheet, p. 317), the sum of trade payables (Rs 4,744 crore), unearned revenue (Rs 11,838 crore), employee-benefit obligations (Rs 3,524 crore) and other current liabilities and provisions (Rs 32,216 crore). Step 3 — Current ratio = 1,03,489 ÷ 52,322 = 1.978, i.e. about 1.98.",
-    result: "1.98 (about 2.0)",
-    meaning: "For every Rs 1 of liabilities due within a year, Infosys held about Rs 1.98 of assets convertible to cash within a year — a comfortable short-term liquidity cushion. Three things are worth noting. First, the ratio is flattered by the balance sheet's cash pile: cash and current investments together are Rs 35,151 crore, roughly two-thirds of the current-liability figure on their own. Second, most of the remaining current assets are trade receivables and unbilled revenue — money owed by clients — which is high-quality for a services firm but still depends on clients paying on time. Third, the largest current liability is not borrowings (Infosys has essentially none) but 'other current liabilities and provisions' and unearned revenue — money the company owes for services not yet delivered, which is a normal, non-cash obligation. A current ratio near 2 tells you Infosys is unlikely to face any short-term funding stress, and it can fund dividends, buybacks and acquisitions out of its own balance sheet.",
-    crossCheck: "Data platforms such as Screener.in and Trendlyne compute the current ratio from the same balance sheet and publish Infosys' figure at roughly 1.9-2.0, consistent with the 1.98 worked through here. The small convention gap comes from classification: the reported IFRS balance sheet groups some items under 'other current assets' and 'other current liabilities and provisions' that Ind-AS presentations (and therefore some data providers) may split differently, and a few platforms use only cash and equivalents (excluding current investments) in the numerator, which lowers the ratio. Whichever convention is used, the conclusion is the same — Infosys carries a strong short-term liquidity position.",
+    working: "Step 1 — Total current assets as at March 31, 2026 = Rs 1,03,489 crore (Consolidated Balance Sheet, p. 317). This is the sum of cash and cash equivalents (Rs 22,201 crore), current investments (Rs 12,950 crore), trade receivables (Rs 35,234 crore), unbilled revenue (Rs 15,483 crore) and other current assets (Rs 17,621 crore). Step 2 — Total current liabilities as at March 31, 2026 = Rs 52,322 crore (Consolidated Balance Sheet, p. 317), the sum of trade payables (Rs 4,744 crore), unearned revenue (Rs 11,838 crore), employee-benefit obligations (Rs 3,524 crore) and other current liabilities and provisions (Rs 32,216 crore). Step 3 — Working capital = 1,03,489 − 52,322 = 51,167. So Infosys' working capital at the end of FY26 was about Rs 51,167 crore.",
+    result: "Rs 51,167 crore",
+    meaning: "Infosys ended FY26 with roughly Rs 51,167 crore of working capital — the surplus of short-term assets over short-term obligations. Three things stand out. First, the cushion is funded almost entirely by cash and investments: cash and equivalents (Rs 22,201 crore) plus current investments (Rs 12,950 crore) alone come to Rs 35,151 crore, about 69% of the entire current-liability figure. Second, the next largest current-asset blocks are trade receivables and unbilled revenue (together Rs 50,717 crore) — money clients owe for work done — which is high-quality for a services firm but still depends on timely collection. Third, the biggest current liability is not borrowing (Infosys carries essentially none) but 'other current liabilities and provisions' and unearned revenue, i.e. money owed for services not yet delivered, a normal non-cash obligation. A working-capital pile of this size tells you Infosys can fund its operations, dividends, buybacks and acquisitions from its own balance sheet without touching lenders, and can absorb a downturn in client spending without stress.",
+    crossCheck: "Data platforms such as Screener.in and Trendlyne derive working capital from the same balance sheet, and publish Infosys' current assets and current liabilities at levels consistent with the Rs 51,167 crore worked through here (their current ratio of roughly 1.9-2.0 implies a similar gap). The small convention gap comes from classification: the reported IFRS balance sheet groups some items under 'other current assets' and 'other current liabilities and provisions' that Ind-AS presentations — and therefore some data providers — may split differently, and a few platforms net off only cash and equivalents (excluding current investments), which shrinks the figure. Whichever convention is used, Infosys' working capital is strongly positive.",
     source: "Infosys Integrated Annual Report 2025-26 — Consolidated Balance Sheet (p. 317)"
   }
 };
