@@ -4,7 +4,7 @@ const dailyWrapData = {
     edition: "Market Close — India",
     tagline: "The day on Dalal Street, in one scroll"
   },
-  updatedLabel: "Updated: Friday, 16 October 2026, 5:30 PM IST — Daily Wrap",
+  updatedLabel: "Updated: Saturday, 17 October 2026, 5:30 PM IST — Weekly Wrap (markets closed for the weekend)",
   asOfLabel: "Closing levels as of market close (3:30 PM IST), Friday, 16 October 2026",
 
   indices: [
@@ -13,61 +13,61 @@ const dailyWrapData = {
       close: 23146.15,
       dayChange: 148.80,
       dayChangePct: 0.65,
-      weekChangePct: 2.78, // week-to-date vs prior Friday, 9 Oct close of 22,520.45
+      weekChangePct: 2.78, // week vs prior Friday, 9 Oct close of 22,520.45
       spark: [22363.35, 22721.95, 22622.70, 22997.35, 23146.15], // last 5 closes: 12 Oct, 13 Oct, 14 Oct, 15 Oct, 16 Oct
-      note: "The benchmark rose for a second straight session, adding 148.80 points (+0.65%) to close at 23,146.15 and holding above the 23,100 mark, as IT stocks led again. The Nifty IT index climbed about 3.9% — its fourth consecutive session of gains — after Tech Mahindra's strong Q2 and a 1:1 bonus recommendation; Tech Mahindra (+~8%), TCS (+~4.6%) and Infosys (+~4.5%) were the top gainers, along with Bharti Airtel and M&M. IndiGo (-1.9%), BSE Ltd (-1.9%), Max Healthcare (-1.4%), Tata Consumer Products (-1.3%) and Jio Financial Services (-1.3%) led the losers. Breadth stayed positive — about 2,221 NSE stocks rose against 1,791 that fell — though the broader market lagged. India VIX closed near 14.0, roughly flat."
+      note: "The benchmark rose 625.70 points, or 2.78%, over the five sessions to 23,146.15 — its second straight weekly gain and its best week since early April — adding 148.80 points (+0.65%) on Friday alone and closing near the day's high. The move was carried almost entirely by technology: the Nifty IT index surged 11.72% for the week, its best in about 18 years. Monday had begun with a 0.70% fall to 22,363.35 as ITC, Tech Mahindra and Avenue Supermarts slid and September CPI came in hot at 5.54%; Tuesday rebounded 1.60% to 22,721.95 on HCLTech's results, Wednesday gave back 0.44%, and Thursday (+1.66%) and Friday (+0.65%) extended the recovery. India VIX eased about 2% over the week to near 14.0."
     },
     {
       name: "Nifty Next 50",
       close: 68988.60,
       dayChange: 317.00,
       dayChangePct: 0.46,
-      weekChangePct: 1.21, // week-to-date vs prior Friday, 9 Oct close of 68,166.70
+      weekChangePct: 1.21, // week vs prior Friday, 9 Oct close of 68,166.70
       spark: [68351.70, 68927.95, 68999.30, 68671.60, 68988.60], // last 5 closes: 12 Oct, 13 Oct, 14 Oct, 15 Oct, 16 Oct
-      note: "The 'next rung' of large caps joined the advance, rising about 0.46% to 68,988.60, though it again lagged the headline indices. Feeds differ on the exact close and on Thursday's base: Yahoo Finance puts Friday's close at 68,988.60 (up from 68,671.60), Kotak Neo quotes 69,019.00 (+0.51%) and 5paisa 68,974.50 (+0.44%); all three agree the index ended modestly higher on a day the Sensex gained 0.56%."
+      note: "The 'next rung' of large caps rose about 1.21% over the week to 68,988.60, comfortably positive but well behind the Nifty 50 as the rally stayed concentrated in the IT heavyweights of the headline index. It added 0.46% on Friday. Feeds differ on the exact level: Yahoo Finance and Anand Rathi put Friday's close at 68,988.60 (up from 68,671.60), while one weekly review quoted a much higher level near 73,000 — inconsistent with its own intra-week high — and is best disregarded. All credible feeds agree the index ended the week modestly higher."
     },
     {
       name: "Nifty Midcap 150",
       close: 21724.50,
       dayChange: -31.85,
       dayChangePct: -0.15,
-      weekChangePct: 0.56, // week-to-date vs prior Friday, 9 Oct close of 21,603.25
+      weekChangePct: 0.56, // week vs prior Friday, 9 Oct close of 21,603.25
       spark: [21620.50, 21829.40, 21820.40, 21756.35, 21724.50], // last 5 closes: 12 Oct, 13 Oct, 14 Oct, 15 Oct, 16 Oct
-      note: "Midcaps slipped about 0.15% to 21,724.50 (open 21,782.85, high 21,785.45, low 21,609.90), sitting out a rally that stayed concentrated in large-cap IT and heavyweights — the second session in a row that the broader market failed to keep pace. Flash Finance puts the close at 21,724.50 (down 31.85 points), while Screener.in quoted the index around 21,706 (-0.23%) later in the session; both agree it was a marginal down day."
+      note: "Midcaps badly lagged a week the benchmarks will remember, rising only about 0.56% to 21,724.50, and they slipped 0.15% on Friday — sitting out a rally that stayed in large-cap IT. Moneycontrol put the Nifty Midcap 100 up about 0.6% for the week and the Financial Express about 0.58%, so the mid-cap space as a whole was roughly flat-to-marginally-up while the Nifty 50 gained 2.78%. IT names (Tata Elxsi, KPIT, Mphasis, L&T Technology Services) were the exceptions; lenders and consumer names dragged."
     },
     {
       name: "Nifty Smallcap 250",
       close: 17637.65,
       dayChange: 10.60,
       dayChangePct: 0.06,
-      weekChangePct: 0.36, // week-to-date vs prior Friday, 9 Oct close of 17,574.85
+      weekChangePct: 0.36, // week vs prior Friday, 9 Oct close of 17,574.85
       spark: [17772.80, 17833.45, 17832.35, 17627.05, 17637.65], // last 5 closes: 12 Oct, 13 Oct, 14 Oct, 15 Oct, 16 Oct
-      note: "Small caps were essentially flat, the Nifty Smallcap 250 edging up about 0.06% to 17,637.65 (open 17,653.60, high 17,692.60, low 17,557.30) with 133 of its constituents up against 116 down — a quiet, mixed session that again diverged from the large-cap advance. Screener.in quoted the index a touch higher at about 17,653 (+0.15%); the two readings bracket a flat close."
+      note: "Small caps were the week's laggards, edging up about 0.36% to 17,637.65 and flat on Friday (+0.06%). The Nifty Smallcap 100 ended the week marginally lower (Reuters put broader small caps down about 0.1%; the Financial Express about -0.12%), with the AI-driven rally skipping the segment — indeed the Smallcap 250 fell about 1.15% on Thursday alone even as the Nifty jumped 1.66%. IT small caps (Tata Elxsi, KPIT, Zensar, Birlasoft) were the standouts; Anant Raj, RBL Bank, Physicswallah, Sai Life Sciences, Reliance Power and Neuland Laboratories fell 5-10%."
     },
     {
       name: "BSE SME Index",
       close: 121957.58,
       dayChange: -228.33,
       dayChangePct: -0.19,
-      weekChangePct: 0.22, // week-to-date vs prior Friday, 9 Oct close of 1,21,686.21
+      weekChangePct: 0.22, // week vs prior Friday, 9 Oct close of 1,21,686.21
       spark: [122178.64, 122287.90, 123211.97, 122185.91, 121957.58], // last 5 closes: 12 Oct, 13 Oct, 14 Oct, 15 Oct, 16 Oct
-      note: "The S&P BSE SME IPO index eased about 0.19% to roughly 1,21,958, cooling from its 14 October peak as the SME platform drifted lower with small caps. It opened at 1,22,127.86 and traded between 1,22,304.74 and 1,21,691.88. (Note: Thursday's SME close is 1,22,185.91 — the figure in the previous edition of this page — so the two-day move is being measured against that base.)"
+      note: "The S&P BSE SME IPO index closed the week up about 0.22% at 1,21,957.58, having touched a week's peak of 1,23,211.97 on Wednesday before drifting lower in the last two sessions (Friday -0.19%). It opened the week at 1,21,803.68 and traded between a weekly low near 1,21,427 and the Wednesday high. The SME platform moved broadly with small caps — a touch higher over the week, but without the IT-led momentum that drove the main indices. (All five daily closes are per BSE Indices and Anand Rathi.)"
     }
   ],
 
   // The narrative that leads the page. On trading days this is the DAY's wrap (dailyWrap);
   // on Saturdays it is the WEEK's wrap (weeklyWrap). weeklyWrap takes precedence when present;
   // set whichever is not in use to null.
-  dailyWrap: {
-    label: "The Day That Was",
-    kicker: "Daily Wrap",
-    headline: "Sensex adds 414 points to 74,729 and Nifty holds above 23,100 as IT extends its rally for a fourth day — Tech Mahindra surges ~8% on a 1:1 bonus — but mid and small caps stay flat",
-    summary: "Indian equities rose for a second straight session on Friday, with the benchmarks again carried by technology. The Sensex gained 413.66 points, or 0.56%, to 74,729.27 and the Nifty 50 added 148.80 points, or 0.65%, to 23,146.15, holding comfortably above the 23,100 mark and closing near the day's high. The Nifty IT index climbed about 3.9%, its fourth consecutive session of gains and a weekly gain of roughly 11.5% — its best week in nearly 18 years — after Tech Mahindra reported a strong September quarter and its board recommended a 1:1 bonus issue. Tech Mahindra was the star, up about 8% (its best single-day move in years); TCS rose about 4.6% and Infosys about 4.5%, with Wipro, KPIT Technologies and Tata Elxsi also up sharply. Bharti Airtel and Mahindra & Mahindra were the other notable large-cap gainers. Sentiment was helped early on by a regulator's reversal of its earlier plan to settle expiring derivatives contracts via a closing auction session, and by the continued fall in US Treasury yields. The rally, though, stayed narrow. FMCG (-0.57%), Oil & Gas (-0.47%) and Realty (-0.42%) slipped, and the broader market barely moved: the Nifty Midcap 150 fell about 0.15% and the Nifty Smallcap 250 was flat (+0.06%), the second session in a row that mid and small caps lagged. IndiGo (-1.9%), BSE Ltd (-1.9%), Max Healthcare (-1.4%), Tata Consumer Products (-1.3%) and Jio Financial Services (-1.3%) were the weakest Nifty names. Breadth on the NSE stayed positive, with about 2,221 stocks advancing against 1,791 declining. In the Nifty 500, HBL Engineering (+17.02%), Tech Mahindra (+8.11%), Wipro (+6.25%), Authum Investment & Infrastructure (+6.11%) and KPIT Technologies (+5.18%) led, while R R Kabel (-7.92%), CCL Products (-7.20%), Ipca Laboratories (-5.17%), APAR Industries (-5.01%) and Sterling and Wilson Renewable Energy (-4.95%) fell hardest. India VIX closed near 14.0, roughly flat, and the rupee opened stronger at 94.72 against Thursday's close of 95.05, with Brent still elevated around $106 a barrel. The message from Friday: the IT-led recovery is real and has momentum, but it still has not widened into the broader market.",
-    stats: ["Nifty +0.65%", "Sensex +0.56%"],
-    statsLabel: "Day"
-  },
+  dailyWrap: null, // weekend — the week's wrap sits in weeklyWrap below
 
-  weeklyWrap: null, // trading day — the day's wrap sits in dailyWrap above
+  weeklyWrap: {
+    label: "The Week That Was",
+    kicker: "Weekly Wrap",
+    headline: "Sensex leaps 2,257 points (+3.11%) and Nifty 626 points (+2.78%) to 23,146 for the best week since April, as the Nifty IT index rockets 11.7% — its best week in 18 years — on blockbuster Q2 earnings, but mid and small caps sit out the rally",
+    summary: "Indian equities closed the week ended Friday, 16 October 2026 with their strongest gains in six months, the benchmarks advancing for a second straight week on the back of a historic rally in information-technology shares. The Sensex jumped 2,256.94 points, or 3.11%, to 74,729.27 and the Nifty 50 added 625.70 points, or 2.78%, to 23,146.15 — their best week since the first week of April — while the Nifty IT index soared 11.72% to 31,924.10, its biggest weekly gain in about 18 years (since April 2008). The trigger was a global sell-off in AI-infrastructure stocks, which turned investors towards India's beaten-down software-services names just as Q2 FY27 results from TCS, HCL Technologies, Tech Mahindra and Wipro beat expectations on revenue, margins and AI-led deal wins. Tech Mahindra led the market with an 18.2% weekly gain after a strong quarter and a 1:1 bonus recommendation, followed by TCS (+14.3%), Infosys (+13.5%) and HCL Technologies (+13.4%); a rebound in the rupee (to 94.95 a dollar, up 178 paise on the week, helped by the RBI's dollar window for oil marketing companies and tighter hedging norms) and easing crude added to the mood. The rally, however, was narrow and large-cap led: the Nifty Midcap 150 rose only about 0.56% and the Nifty Smallcap 250 about 0.36%, with the Smallcap 100 ending marginally lower, so the broader market badly lagged the headline indices. On the sector board, IT (+11.7%), media (+6.1%), auto (+3.7%), realty (+2.7%) and defence (+2.3%) led, while FMCG (-0.55%), pharma (-0.69%) and healthcare (-1.08%) were the weakest as Nestle India flagged food-inflation pressure. The week began poorly — the Nifty fell 0.70% on Monday as ITC, Tech Mahindra and Avenue Supermarts slid and September CPI came in hot at 5.54% — before Tuesday's 1.60% rebound (the best day since 12 June) on HCLTech's results; Wednesday gave back 0.44%, and Thursday (+1.66%) and Friday (+0.65%) sealed the recovery. India VIX eased about 2% over the week to near 14.0. Foreign investors were net sellers for an eighth straight week (about Rs 8,991 crore), but domestic buying (about Rs 7,813 crore) and a return of foreign buying on Friday (Rs 1,166 crore) cushioned the market, and BSE-listed market capitalisation rose by more than Rs 7 lakh crore.",
+    stats: ["Nifty +2.78%", "Sensex +3.11%"],
+    statsLabel: "Five sessions"
+  },
 
   dayByDay: [
     { date: "2026-10-12", label: "Mon 12 Oct", niftyClose: 22363.35, niftyChangePct: -0.70, sensexChangePct: -0.76, note: "The benchmarks gave up early gains and closed lower, the Sensex down 547.65 points to 71,924.68 and the Nifty down 157.10 points to 22,363.35, after opening higher on easing crude. Selling was broad — ITC, Tech Mahindra and Avenue Supermarts (-4.32%) were among the biggest drags, with Apollo Hospitals (-3.15%) the sharpest Nifty faller, while Dr Reddy's (+2.71%) and Bajaj Auto (+2.62%) led the gainers. Interestingly the broader market held up better than the benchmarks: small caps rose about 1.4% and mid caps about 0.1%. India VIX rose 6.07% to 15.25, the rupee firmed about 1% to 95.77 after the RBI's forex measures, and FIIs sold a net Rs 1,708 crore even as DIIs bought Rs 3,045 crore. September CPI came in hotter than expected at 5.54%." },
@@ -78,121 +78,122 @@ const dailyWrapData = {
   ],
 
   sectors: [
-    { name: "Nifty IT", changePct: 3.87, note: "IT led the sector board for a fourth straight session, up 3.87% to about 31,909.80 and taking its weekly gain to roughly 11.5% — its best week in nearly 18 years — as Tech Mahindra jumped about 8% on a strong Q2 and a 1:1 bonus, with TCS (+~4.6%), Infosys (+~4.5%), Wipro and KPIT Technologies also surging" },
-    { name: "Nifty Media", changePct: 2.05, note: "Media added 2.05% to 1,650.30, one of the day's best-performing pockets, helped by strength in select broadcasting and entertainment names" },
-    { name: "Nifty Services Sector", changePct: 1.45, note: "Services rose 1.45% to 30,429.55, riding the technology and telecom names — Bharti Airtel was among the top Nifty gainers" },
-    { name: "Nifty Metal", changePct: 0.84, note: "Metal gained 0.84% to 12,119.80, with Hindalco and JSW Steel among the stronger large-cap names" },
-    { name: "Nifty PSU Bank", changePct: 0.71, note: "Public-sector banks rebounded 0.71% to 8,098.30, recovering part of Thursday's 1.55% fall" },
-    { name: "Nifty Auto", changePct: 0.70, note: "Autos added 0.70% to 25,755.25, helped by Mahindra & Mahindra (+~2.1%)" },
-    { name: "Nifty Infrastructure", changePct: 0.33, note: "Infrastructure edged up 0.33% to 8,714.15 on mild buying in engineering and capital-goods names" },
-    { name: "Nifty Financial Services", changePct: -0.06, note: "Financial services were little changed, down 0.06%, as the day's money went into technology rather than lenders" },
-    { name: "Nifty Bank", changePct: -0.08, note: "The Bank Nifty slipped 0.08% to 55,764.65, a muted session for lenders (feeds quote the close between roughly 55,690 and 55,844 and the change between -0.21% and +0.13%, i.e. essentially flat)" },
-    { name: "Nifty Private Bank", changePct: -0.12, note: "Private banks eased 0.12% to 27,646.05, giving back a little of Thursday's sharp 1.89% gain" },
-    { name: "Nifty Pharma", changePct: -0.15, note: "Pharma dipped 0.15% to 25,780.35, a quiet day for defensives" },
-    { name: "Nifty Realty", changePct: -0.42, note: "Realty fell 0.42% to 825.25, one of the rate-sensitive sectors to sit out the rally" },
-    { name: "Nifty Oil & Gas", changePct: -0.47, note: "Oil & gas slipped 0.47% to 10,554.95 even as crude stayed elevated near $106 a barrel" },
-    { name: "Nifty FMCG", changePct: -0.57, note: "The day's weakest defensive, FMCG fell 0.57% to 44,534.65 as ITC (-~1.0%) and Hindustan Unilever (-~1.0%) were among the Sensex laggards" },
-    { name: "Nifty Capital Markets", changePct: -1.21, note: "The day's worst sector, down 1.21% to 5,234.55, as capital-market plays such as Angel One (-~4.3%) and BSE Ltd (-1.9%) were sold off" }
+    { name: "Nifty IT", changePct: 11.72, note: "The week's runaway leader, up 11.72% to 31,924.10 — its biggest weekly gain in about 18 years, since April 2008. A global sell-off in AI-infrastructure stocks pushed money towards India's software-services names, and Q2 FY27 results from TCS, HCLTech, Tech Mahindra and Wipro beat expectations, with management pointing to growing AI-led revenue. The index has now recovered roughly half of its 2026 losses." },
+    { name: "Nifty India Digital", changePct: 6.11, note: "Up 6.11% to 8,670.15, carried along by the technology-led rally and the same AI-revenue optimism that lifted the IT index." },
+    { name: "Nifty Media", changePct: 6.11, note: "Added about 6.1% to 1,648.25 — the second-best performing sector — helped by strength in broadcasting and entertainment names, with Media rallying 2.05% on Friday alone." },
+    { name: "Nifty Auto", changePct: 3.65, note: "Rose about 3.7% to 25,768.50 as Bajaj Auto rebounded 6.4% from its September-sales slide and festive-season demand hopes supported M&M, Eicher Motors and Hero MotoCorp." },
+    { name: "Nifty India Railways PSU", changePct: 3.29, note: "Gained about 3.3% to 2,601.85 on buying in railway capital-goods names." },
+    { name: "Nifty Realty", changePct: 2.74, note: "Up about 2.7% to 825.95, one of the rate-sensitive pockets to benefit as crude eased and bond yields steadied." },
+    { name: "Nifty India Defence", changePct: 2.26, note: "Advanced about 2.3% to 9,210.60, continuing to draw order-book optimism." },
+    { name: "Nifty Cement", changePct: 2.09, note: "Added about 2.1% to 13,596.10, helped by expectations of infrastructure and housing demand." },
+    { name: "Nifty Oil & Gas", changePct: 2.04, note: "Rose about 2.0% to 10,556.75 even as crude stayed elevated near $105 a barrel, with oil-marketing names helped by the RBI's dollar window." },
+    { name: "Nifty Infrastructure", changePct: 1.76, note: "Edged up about 1.8% to 8,725.60 on mild buying in engineering and capital-goods names." },
+    { name: "Nifty Private Bank", changePct: 1.76, note: "Gained about 1.8% to 27,700.55, helped by Thursday's sharp 1.89% move, though lenders largely took a back seat to IT for the week." },
+    { name: "Nifty Financial Services", changePct: 1.68, note: "Rose about 1.7% to 25,387.10 as financials followed the market higher into the weekend." },
+    { name: "Nifty PSU Bank", changePct: -0.39, note: "Slipped about 0.4% to 8,094.95, one of the few sectors to end the week lower despite a 0.67% rebound on Friday." },
+    { name: "Nifty FMCG", changePct: -0.55, note: "Fell about 0.55% to 44,616.15 as Nestle India flagged food and commodity inflation, dragging the defensive pack lower even as the market rallied." },
+    { name: "Nifty Pharma", changePct: -0.69, note: "Down about 0.7% to 25,781.65, under pressure through the week as money rotated out of defensives into technology." },
+    { name: "Nifty Healthcare", changePct: -1.08, note: "The week's weakest sector, down about 1.1% to 15,683.55, with Max Healthcare and Apollo Hospitals extending their slide." }
   ],
 
   movers: {
     universe: "Nifty 500",
-    scope: "day", // "day" on trading days, "week" on Saturdays
-    source: "Nifty 500 daily gainers and losers for Friday, 16 Oct 2026 (TradingJumbo's Nifty 500 movers screen, captured 3:06 pm IST; Moneycontrol's NIFTY 500 top-gainers list; ET Money's and Quantsapp's NSE gainers/losers lists; Capital Market's 'A'-group losers note at 14:45 IST; CNBC-TV18's Nifty 500 note; and Flash Finance's 15:50 IST top-500 readings; because the TradingJumbo screen was captured about 25 minutes before the close, readings vary between feeds — e.g. R R Kabel's fall is quoted between roughly -7.1% and -8.3%, and Ipca Laboratories' between about -4.2% and -5.2%, depending on the source and the time of capture)",
+    scope: "week", // "day" on trading days, "week" on Saturdays
+    source: "Nifty 500 weekly gainers and losers for the week ended Friday, 16 Oct 2026, over the full Nifty 500 universe (Nifty 50 + Nifty Next 50 + Nifty Midcap 150 + Nifty Smallcap 250). Weekly percentage moves cross-checked across Angel One's Nifty IT weekly review (12-16 Oct), the Navia weekly roundup, CNBC-TV18's and Moneycontrol's weekly wraps, the Financial Express weekly review, MarketsMojo weekly stock notes (RBL Bank, Anant Raj), and Upstox's NSE-based five-session returns; the Nifty IT-index constituents are the source of the big IT gains and the small/mid-cap laggards sit in the Midcap 150 and Smallcap 250 legs of the index. Where feeds round differently (e.g. Tech Mahindra's weekly gain is quoted between +17.5% and +18.22%), the more precise figure is used and the range noted.",
     gainers: [
-      { name: "HBL Engineering", changePct: 17.02, cap: "Smallcap", note: "The day's runaway Nifty 500 gainer, up about 17% to Rs 831.40 on heavy volumes (about 3.66 crore shares); Moneycontrol's morning screen had it up about 13% and it accelerated through the session" },
-      { name: "Tech Mahindra", changePct: 8.11, cap: "Largecap", note: "Surged about 8% to Rs 1,783.80 after its September-quarter results beat on dollar revenue and deal wins and the board recommended a 1:1 bonus issue and a Rs 15 dividend; it was the top Sensex and Nifty 50 gainer (feeds quote the day's gain between about 7.4% and 8.5%)" },
-      { name: "Wipro", changePct: 6.25, cap: "Largecap", note: "Rose about 6.25% to Rs 184.93, extending the IT rally ahead of and around its own quarterly print" },
-      { name: "Authum Investment & Infrastructure", changePct: 6.11, cap: "Smallcap", note: "Climbed about 6.1% to Rs 574.40 on relatively light volumes (about 4.9 lakh shares), a sharp move in a non-index mid/small-cap financial" },
-      { name: "KPIT Technologies", changePct: 5.18, cap: "Midcap", note: "Added about 5.2% to Rs 553.25, one of the strongest auto-tech names on a day when IT and technology services led" }
+      { name: "Tata Elxsi", changePct: 23.01, cap: "Smallcap", note: "The Nifty 500's biggest weekly gainer, up 23.01% to Rs 3,850.10 from Rs 3,130.00 a week earlier, as the design-and-engineering arm rode the IT rally — it rose 4.06% on Friday alone (some feeds quote the Friday close at Rs 3,845)" },
+      { name: "Tech Mahindra", changePct: 18.22, cap: "Largecap", note: "Surged 18.22% over the week to Rs 1,790.00 after its September-quarter results beat on dollar revenue and deal wins and the board recommended a 1:1 bonus issue and a Rs 15 dividend; the top Nifty 50 and Sensex gainer for the week (feeds quote the weekly gain between +17.5% and +18.22%)" },
+      { name: "KPIT Technologies", changePct: 15.87, cap: "Smallcap", note: "Climbed 15.87% to Rs 555.00 from Rs 479.00, one of the strongest auto-tech names as IT and technology services led the week" },
+      { name: "Tata Consultancy Services (TCS)", changePct: 14.33, cap: "Largecap", note: "Rose 14.33% to Rs 2,465.00 from Rs 2,156.00, extending a rally that began with its 8 October Q2 results ($9.6 billion of deal wins, AI now over 10% of revenue) — up nearly 19% since that print" },
+      { name: "L&T Technology Services", changePct: 13.59, cap: "Midcap", note: "The best mid-cap IT performer, up 13.59% to Rs 3,714.60 from Rs 3,270.10, leading the Nifty Midcap 150 IT pack (Infosys +13.46%, Wipro +13.43% and HCLTech +13.42% followed close behind)" }
     ],
     losers: [
-      { name: "R R Kabel", changePct: -7.92, cap: "Midcap", note: "The day's worst Nifty 500 performer, down about 7.9% to Rs 2,397.80 on heavy volumes; other feeds quote the fall between about -7.1% and -8.3% depending on the capture time" },
-      { name: "CCL Products (India)", changePct: -7.20, cap: "Smallcap", note: "Tumbled about 7.2% to Rs 1,007.30 after its September-quarter results — despite net profit up 29% YoY — marking its biggest single-day fall since 2020" },
-      { name: "Ipca Laboratories", changePct: -5.17, cap: "Midcap", note: "Fell about 5.2% to Rs 1,814.10; ET Money quoted a smaller fall of about -4.2%, so treat the magnitude as approximate" },
-      { name: "APAR Industries", changePct: -5.01, cap: "Midcap", note: "Slipped about 5% to Rs 16,066.00, giving back part of a strong recent run in the cables and speciality-fluids maker" },
-      { name: "Sterling and Wilson Renewable Energy", changePct: -4.95, cap: "Smallcap", note: "Fell about 4.95% to Rs 166.30, among the weakest small caps on the day" }
+      { name: "Anant Raj", changePct: -10.44, cap: "Smallcap", note: "The Nifty 500's worst weekly performer, down 10.44%, as the real-estate small cap gave back recent gains; MarketsMojo flagged valuation and momentum concerns" },
+      { name: "RBL Bank", changePct: -9.43, cap: "Midcap", note: "Fell 9.43% over the week to Rs 378.00 from Rs 417.35, tumbling 7.55% on Tuesday alone amid heavy put-option activity and a valuation downgrade, even as its September quarter was strong" },
+      { name: "Nestle India", changePct: -5.06, cap: "Largecap", note: "Down 5.06% for the week despite a 36% jump in quarterly profit, after the FMCG major flagged rising food and commodity inflation; it slid 7.76% on Thursday alone" },
+      { name: "Max Healthcare Institute", changePct: -4.28, cap: "Largecap", note: "Fell 4.28% as healthcare and hospitals stayed under pressure through the week" },
+      { name: "InterGlobe Aviation (IndiGo)", changePct: -3.02, cap: "Largecap", note: "Slipped 3.02% for the week — the worst Nifty performer on Friday (-1.9%) after the government told the Supreme Court that aviation air-fare rules had been finalised, with crude near $105 adding to cost worries" }
     ],
     sensexWinners: ["Tech Mahindra", "TCS", "Infosys"],
-    sensexLaggards: ["IndiGo (InterGlobe Aviation)", "Reliance Industries", "ITC"]
+    sensexLaggards: ["IndiGo (InterGlobe Aviation)", "Larsen & Toubro", "ITC"]
   },
 
   watch: [
     {
-      title: "Q2 FY27 earnings: the IT prints are in, the lenders are next",
-      detail: "Tech Mahindra, Wipro, Infosys and TCS have now reported, and the IT index's ~11.5% weekly surge shows how much the market has paid for strong numbers and AI-led deal wins. The baton now passes to banks and financials, where HDFC Bank, ICICI Bank and others report in the coming sessions. Deal wins, margins and FY27 growth guidance — especially any pickup in AI-led spending by overseas banking and retail clients — will decide whether the IT and financials rally becomes a durable trend or a one-day pop."
+      title: "Q2 FY27 earnings: the IT prints are in, the banks are next",
+      detail: "TCS, HCL Technologies, Tech Mahindra, Wipro and Infosys have now reported, and the IT index's 11.7% weekly surge shows how much the market paid for strong numbers and AI-led deal wins. The baton now passes to the lenders: HDFC Bank, Axis Bank and ICICI Bank report in the coming sessions. Deal wins, margins, NPA trends and FY27 credit-growth guidance will decide whether the IT-led recovery broadens or fades."
     },
     {
       title: "Dussehra holiday: markets shut on Tuesday, 20 October",
       detail: "The NSE and BSE will be closed on Tuesday, 20 October for Dussehra — the next trading holiday on the 2026 calendar. With a long weekend approaching, volumes may thin and positions may be trimmed. Diwali-Balipratipada (10 November), Guru Nanak Jayanti (24 November) and Christmas (25 December) are the other closures left in 2026, and Muhurat trading will be held on Sunday, 8 November."
     },
     {
-      title: "Can the IT-led rally broaden beyond large caps?",
-      detail: "For a second session the Sensex and Nifty advanced while the Nifty Midcap 150 fell about 0.15% and the Nifty Smallcap 250 was flat. The Nifty 50 closed at 23,146.15, just above the 23,050-23,150 resistance band; a decisive close above it would open the way higher, with 22,900-23,000 as near-term support. For the move to read as a genuine trend reversal rather than a narrow IT-led bounce, mid and small caps need to start participating — watch whether the broader indices follow next week."
+      title: "Jio Platforms' record IPO opens on 21 October",
+      detail: "Reliance Industries' digital arm Jio Platforms launches its initial public offering on 21 October and closes on 23 October, offering 27 crore fresh shares at Rs 1,065-1,119 each — about Rs 30,213 crore at the top end, which would make it India's largest-ever public issue (Hyundai Motor India's Rs 27,870-crore IPO in 2024 is the current record). Watch how the issue absorbs market liquidity and what it does to the telecom and broader market sentiment."
     },
     {
-      title: "Crude oil and the rupee",
-      detail: "Brent stayed elevated around $106 a barrel on Friday amid supply worries, while the rupee opened stronger at 94.72 against Thursday's close of 95.05 — a sixth straight session of gains — helped by the RBI's measures. Watch whether crude retreats and whether the rupee's stabilisation holds: both feed directly into the outlook for cyclicals, autos, oil-marketing companies and the import bill."
+      title: "RBI MPC minutes and the calibrated-tightening debate",
+      detail: "The RBI's monetary policy minutes are due mid-week and should shed light on the 4-2 split over the shift to a calibrated-tightening stance, after the central bank raised the daily CRR-maintenance requirement and opened a special dollar window for oil-marketing companies. September CPI (5.54%) and a record-high WPI print have revived fears of further tightening, so the tone of the minutes matters for bonds, banks and rate-sensitives."
     },
     {
-      title: "Foreign outflows versus the domestic cushion",
-      detail: "Friday's advance came again without confirmed foreign buying, and FPIs have been net sellers for weeks (they sold a net Rs 5,285 crore on Thursday, with DIIs buying Rs 3,319 crore). A durable rally needs foreign selling to slow; a rebound carried only by domestic buying and short-covering can fade. Watch the daily FII/DII numbers and whether the global AI-led sell-off abates."
+      title: "Can the rally broaden, and does foreign money return?",
+      detail: "The week's advance was narrow: the Nifty 50 gained 2.78% while the Nifty Midcap 150 rose only 0.56% and the Smallcap 100 ended marginally lower. For the move to read as a durable trend rather than an IT-led bounce, mid and small caps need to join in. Also watch FII flows — foreign investors were net sellers for an eighth straight week (about Rs 8,991 crore) but turned net buyers on Friday (Rs 1,166 crore); a sustained return, alongside a stable rupee and softer crude, would give the rally a firmer footing."
     }
   ],
 
   reads: [
     {
-      title: "Stock Market Close: Sensex gains for 2nd day, rises 414 pts, Nifty at 23,146; IT index zooms 4%",
-      source: "Business Standard",
-      url: "https://www.business-standard.com/markets/news/stock-market-live-october-16-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-q2-results-ipo-today-126101600083_1.html"
-    },
-    {
-      title: "Stock Market Highlights, Oct 16: Sensex gains 413 pts, Nifty ends at 23,146 led by IT stocks",
-      source: "The Hindu BusinessLine",
-      url: "https://www.thehindubusinessline.com/markets/sensex-nifty50-today-stock-market-highlights-16-october-2026/article71587755.ece"
-    },
-    {
-      title: "Closing Bell: Nifty above 23,100, Sensex gains 413 pts led by IT, media and metal stocks",
-      source: "Moneycontrol",
-      url: "https://www.moneycontrol.com/news/business/markets/stock-market-live-updates-nifty50-share-price-sensex-share-price-crude-fii-gift-nifty-rupee-latest-updates-16-10-2026-alpha-liveblog-14053420.html"
-    },
-    {
-      title: "Nifty 500: Karur Vysya hits record high, CCL Products fall 7% on Q2 results; Check others",
+      title: "Market wrap: Nifty IT surges 11.5% for biggest weekly gain in nearly 18 years",
       source: "CNBC-TV18",
-      url: "https://www.cnbctv18.com/market/stocks/nifty-500-share-price-karur-vysya-bank-tech-mahindra-ccl-products-persistent-systems-lt-finance-q2-results-20013219.htm"
+      url: "https://www.cnbctv18.com/market/market-wrap-nifty-it-surges-11-5-pc-for-biggest-weekly-gain-in-nearly-18-years-20013672.htm"
     },
     {
-      title: "Closing Bell: Sensex rises 414 points, Nifty gains 149 points as IT stocks rally; Tech Mahindra jumps nearly 8%",
-      source: "Zee Business",
-      url: "https://www.zeebiz.com/market-news/news-closing-bell-sensex-rises-414-points-nifty-gains-149-points-as-it-stocks-rally-tech-mahindra-jumps-nearly-8-404073"
+      title: "Market posts strongest weekly rally since April as IT stocks lead",
+      source: "Moneycontrol",
+      url: "https://www.moneycontrol.com/news/photos/business/markets/market-posts-strongest-weekly-rally-since-april-as-it-stocks-lead-14054255.html"
+    },
+    {
+      title: "IT lifts Nifty to second weekly gain as global AI rotation fuels tech rally",
+      source: "The Hindu BusinessLine",
+      url: "https://www.thehindubusinessline.com/markets/it-lifts-nifty-to-second-weekly-gain-as-global-ai-rotation-fuels-tech-rally/article71592201.ece"
+    },
+    {
+      title: "Indices log best weekly gain in six months",
+      source: "The Financial Express",
+      url: "https://www.financialexpress.com/market/indices-log-best-weekly-gain-in-six-months-4363441/"
+    },
+    {
+      title: "Barometers rally for week on growth optimism despite inflation concerns",
+      source: "Capital Market",
+      url: "https://www.capitalmarket.com/markets/news/the-week-that-was-news/markets-rally-for-week-on-growth-optimism-despite-inflation-concerns/1737351"
     }
   ],
 
   // Today's financial ratio, worked through with one Nifty 500 company's last
-  // audited financial statements. The ratio rotates every day; the company stays Infosys Ltd.
+  // audited financial statements. The ratio rotates every week; the company stays Infosys Ltd.
   ratio: {
-    name: "Debt-to-Equity",
-    category: "Solvency / Leverage",
+    name: "Return on Equity",
+    category: "Profitability / Returns",
     company: "Infosys Ltd",
     companyNote: "IT services · Nifty 50 / Nifty 500",
-    period: "Every figure is from Infosys' Integrated Annual Report 2025-26 (FY26), audited consolidated financial statements (IFRS, in rupees). The report's printed page numbers run 30 ahead of the PDF page number (printed p. 318 = PDF p. 288).",
+    period: "Every figure is from Infosys' Integrated Annual Report 2025-26 (FY26), audited consolidated financial statements (IFRS, in rupees). The report's printed page numbers run 30 ahead of the PDF page number, so in the PDF the pages are 30 lower than the printed numbers you see in the report (printed p. 318 = PDF p. 288, printed p. 317 = PDF p. 287).",
     report: {
       label: "Download the Infosys Integrated Annual Report 2025-26 (PDF) and follow along",
       url: "https://www.infosys.com/investors/reports-filings/annual-report/annual/documents/infosys-ar-26.pdf"
     },
-    formula: "Debt-to-Equity = Total debt ÷ Total equity",
-    formulaNote: "Debt-to-equity measures how much a company is financed by borrowing versus by its owners' money. 'Debt' means interest-bearing obligations — term loans, bonds, working-capital borrowings and, under IFRS, lease liabilities — and 'equity' is the shareholders' stake (share capital plus reserves, plus any non-controlling interests). A ratio below 1 means the owners fund more of the business than the lenders; a ratio above 1 means lenders do. The lower the number, the less the company depends on debt, the smaller its fixed interest bill, and the better it can weather a downturn. For an asset-light, cash-rich software-services firm such as Infosys, which has no borrowings at all, the ratio is tiny — the only 'debt' on the books is lease liabilities for its offices, so debt-to-equity here is really a test of how close the company is to being financed entirely by its own money.",
+    formula: "Return on Equity = Net profit (attributable to owners) ÷ Average equity (attributable to owners)",
+    formulaNote: "Return on equity measures how much profit a company earns on the money its shareholders have left in the business. 'Net profit' is the profit left after every cost, interest and tax — and here we use the share that belongs to the owners of the company (not the slice owed to minority shareholders in subsidiaries). 'Equity' is the shareholders' stake: share capital plus reserves and retained earnings. Because equity changes through the year (profit adds to it, dividends and buybacks take away from it), the fair base is the average of the opening and closing balances rather than either one alone — which is exactly how Infosys itself computes 'return on net worth' in its Management's Discussion and Analysis. A high ROE means the company converts each rupee of owners' money into a lot of profit; a low ROE means the opposite. For a cash-rich, debt-free firm such as Infosys, ROE is driven almost entirely by profitability, not by leverage.",
     inputsLabel: "The numbers we need, straight from the report",
     inputs: [
-      { label: "Non-current lease liabilities as at March 31, 2026", value: "Rs 6,016 crore", page: "p. 317" },
-      { label: "Current lease liabilities as at March 31, 2026", value: "Rs 3,160 crore", page: "p. 317" },
-      { label: "Total equity as at March 31, 2026 (equity attributable to owners Rs 92,852 crore + non-controlling interests Rs 445 crore)", value: "Rs 93,297 crore", page: "p. 317" },
-      { label: "Borrowings (term loans, bonds, working-capital debt) as at March 31, 2026", value: "Nil — Infosys carries no borrowings", page: "p. 317" }
+      { label: "Net profit attributable to owners of the Company for FY26 (year ended March 31, 2026)", value: "Rs 29,440 crore", page: "p. 318" },
+      { label: "Equity attributable to owners of the Company as at March 31, 2026", value: "Rs 92,852 crore", page: "p. 317" },
+      { label: "Equity attributable to owners of the Company as at March 31, 2025 (opening balance)", value: "Rs 95,818 crore", page: "p. 317" },
+      { label: "Non-controlling interests (shown separately; not part of owners' equity used here)", value: "Rs 445 crore at March 31, 2026", page: "p. 317" }
     ],
-    working: "Step 1 — Identify total debt. The Consolidated Balance Sheet (p. 317) shows no borrowings line at all: Infosys funds itself entirely from its own cash. The only interest-bearing obligation is lease liabilities, which appear twice — Rs 6,016 crore under non-current liabilities and Rs 3,160 crore under current liabilities (both p. 317). Total debt = 6,016 + 3,160 = 9,176. Step 2 — Identify total equity. The same balance sheet (p. 317) shows equity attributable to owners of the Company of Rs 92,852 crore plus non-controlling interests of Rs 445 crore, for total equity of Rs 93,297 crore. Step 3 — Debt-to-Equity = 9,176 ÷ 93,297 = 0.098. So Infosys' debt-to-equity at the end of FY26 was about 0.10 — roughly 10 paise of debt for every rupee of owners' money.",
-    result: "0.10 (about 10%)",
-    meaning: "Infosys ended FY26 almost entirely financed by its own money: about 10 paise of debt for every rupee of equity. Three things stand out. First, the 'debt' is not borrowing at all — Infosys carries no term loans, bonds or working-capital debt, so the entire Rs 9,176 crore is lease liabilities (the accounting value of its office and facility leases), which is a far softer obligation than a bank loan. Second, the denominator is large and high-quality: Rs 93,297 crore of equity built from years of retained profit, even after the company returned Rs 18,000 crore to shareholders through a buyback and paid Rs 48 a share in dividends during FY26. Third, a ratio this low means a tiny fixed charge: Infosys' finance cost for the year was only Rs 416 crore against Rs 36,254 crore of operating profit, so its interest cover is enormous. In plain terms, the company can fund its operations, dividends, buybacks and acquisitions from its own balance sheet, can absorb a downturn in client spending without reaching for lenders, and would be among the last large caps to be troubled by a rise in interest rates.",
-    crossCheck: "Data platforms such as Screener.in and Trendlyne derive debt-to-equity from the same balance sheet. Screener.in shows Infosys' debt-to-equity at roughly 0.00 because it counts only borrowings — and Infosys has none — so it effectively excludes IFRS-16 lease liabilities; Trendlyne, which does fold lease liabilities into 'debt', lands close to the ~0.10 worked through here. That is the convention gap: whether leases are treated as debt. The reported IFRS consolidated balance sheet (p. 317) is unambiguous — no borrowings, only lease liabilities — so the honest range for Infosys' debt-to-equity in FY26 is 0.00 (borrowings only) to about 0.10 (including leases). Either way, Infosys is effectively debt-free.",
-    source: "Infosys Integrated Annual Report 2025-26 — Consolidated Balance Sheet (p. 317)"
+    working: "Step 1 — Take the net profit that belongs to the owners. The Consolidated Statement of Comprehensive Income (p. 318) reports net profit for FY26 of Rs 29,474 crore in total, of which Rs 29,440 crore is attributable to owners of the Company and the rest to non-controlling interests; we use Rs 29,440 crore. Step 2 — Take the equity base. The Consolidated Balance Sheet (p. 317) shows equity attributable to owners of Rs 92,852 crore at March 31, 2026 and Rs 95,818 crore a year earlier. Average equity = (95,818 + 92,852) ÷ 2 = 94,335. Step 3 — Return on Equity = 29,440 ÷ 94,335 = 0.312. So Infosys earned about 31.2% on its average shareholders' equity in FY26 — roughly 31 paise of profit for every rupee the owners had in the business.",
+    result: "31.2%",
+    meaning: "Infosys generated a return of about 31.2% on the average money its owners had left in the company in FY26 — a high figure for a large, mature business, and one that stands out because it is achieved without financial engineering. Three things explain it. First, margins are strong: the company earned an operating profit of Rs 36,254 crore on revenue of Rs 1,78,650 crore, a 20.3% operating margin, leaving Rs 29,440 crore of net profit after tax. Second, there is almost no debt to amplify the number: Infosys carries no borrowings at all, so the return comes from the business itself, not from borrowing to shrink the equity base. Third, the equity base is deliberately kept lean by returning cash to shareholders — Infosys completed an Rs 18,000-crore buyback and paid Rs 48 a share in dividends during FY26, which reduces equity and lifts ROE, even as retained profit keeps rebuilding it. In plain terms, a 31% ROE tells an owner that the company is a powerful compounding machine: it earns far more on the capital it keeps than a typical business, and it hands back the surplus rather than hoarding it. The caveat is that a high ROE achieved partly through buybacks and dividends is less 'cheap' than one achieved purely from profit growth — so it is worth reading alongside growth in revenue and profit.",
+    crossCheck: "Infosys itself publishes this measure: the FY26 highlights state a return on equity of 31.6%, and the Management's Discussion and Analysis shows 'return on net worth' (net profit ÷ average net worth) of 31.2% on a consolidated basis for FY26, up from 29.0% in FY25 — the small gap between 31.6% and 31.2% is simply the base used (closing equity gives the 31.6% headline; average equity gives the 31.2% worked through here). Screener.in and Trendlyne, which derive ROE from the same audited statements, both land in the 30-32% band for Infosys in FY26. Any way it is computed, the picture is the same: Infosys earns around 31 rupees of profit for every 100 rupees of shareholders' money.",
+    source: "Infosys Integrated Annual Report 2025-26 — Consolidated Statement of Comprehensive Income (printed p. 318) and Consolidated Balance Sheet (printed p. 317); 'Return on net worth' per Management's Discussion and Analysis, and FY26 highlights"
   }
 };
