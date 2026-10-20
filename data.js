@@ -4,7 +4,7 @@ const dailyWrapData = {
     edition: "Market Close — India",
     tagline: "The day on Dalal Street, in one scroll"
   },
-  updatedLabel: "Updated: Monday, 19 October 2026, 5:30 PM IST — Daily Wrap (markets closed tomorrow, Tuesday 20 Oct, for Dussehra)",
+  updatedLabel: "Updated: Tuesday, 20 October 2026, 5:30 PM IST — Markets closed today - Dussehra (NSE/BSE shut; trading resumes Wednesday, 21 October)",
   asOfLabel: "Closing levels as of market close (3:30 PM IST), Monday, 19 October 2026",
 
   indices: [
@@ -143,57 +143,57 @@ const dailyWrapData = {
 
   reads: [
     {
-      title: "Stock Market Today: Sensex, Nifty close over 1% lower; private bank, IT stocks push markets lower",
-      source: "The Hindu BusinessLine",
-      url: "https://www.thehindubusinessline.com/markets/sensex-nifty50-today-stock-market-highlights-19th-october-2026/article71600731.ece"
+      title: "Banking stocks, high oil prices drag Indian markets lower",
+      source: "The Economic Times",
+      url: "https://economictimes.indiatimes.com/markets/stocks/news/banking-stocks-high-oil-prices-drag-indian-markets-lower/articleshow/135058914.cms"
     },
     {
-      title: "Sensex, Nifty end in red as private banks, IT stocks drag markets",
-      source: "India Today",
-      url: "https://www.indiatoday.in/business/market/story/market-close-sensex-ends-876-points-lower-nifty-below-22900-axis-yes-bank-down-3020712-2026-10-19"
-    },
-    {
-      title: "Sensex tanks 1,020 pts intraday: Bank stocks, FPI selling among key factors",
+      title: "Stock market holiday: BSE, NSE shut for trading today due to Dussehra",
       source: "Business Standard",
-      url: "https://www.business-standard.com/markets/news/sensex-crashes-765-pts-intraday-bank-stocks-fpi-selling-among-key-factors-126101900390_1.html"
+      url: "https://www.business-standard.com/markets/news/stock-market-holiday-bse-nse-shut-for-trading-today-due-to-dussehra-126101900660_1.html"
     },
     {
-      title: "Top gainers and losers, October 19: Axis Bank tumbles 4%, TMPV, Infosys fall 3%, JSW Steel rises 2%",
-      source: "Upstox",
-      url: "https://upstox.com/news/market-news/stocks/top-gainers-and-losers-october-19-axis-bank-tumbles-4-tmpv-infosys-fall-3-jsw-steel-rises-2/article-202096/"
+      title: "Dussehra 2026: Stock market holiday today or not? NSE, BSE to remain open or closed on 20 Oct Tuesday?",
+      source: "Mint",
+      url: "https://www.livemint.com/market/stock-market-news/dussehra-2026-stock-market-holiday-today-or-not-nse-bse-to-remain-open-or-closed-on-20-oct-tuesday-exchange-calendar-11792456900292.html"
     },
     {
-      title: "Nifty 500: PNB jumps up to 7%; Urban Company plunges 7%, Axis Bank falls up to 5% on Q2 result",
+      title: "Nifty Outlook for October 21: Higher oil prices dampen index recovery; focus back at lower levels",
       source: "CNBC-TV18",
-      url: "https://www.cnbctv18.com/market/stocks/nifty500-stocks-share-price-pnb-karur-vysya-gabriel-india-urban-company-federal-bank-axis-bank-q2-result-20014665.htm"
+      url: "https://www.cnbctv18.com/market/trade-setup-nifty-prediction-outlook-october-21-jio-platforms-ipo-banks-higher-crude-key-levels-20015526.htm"
+    },
+    {
+      title: "The Week Ahead: Jio Platforms IPO, RBI MPC Minutes, Q2 Results, US PMI Data In Focus",
+      source: "NDTV Profit",
+      url: "https://www.ndtvprofit.com/markets/the-week-ahead-jio-platforms-ipo-rbi-mpc-minutes-q2-results-us-pmi-data-in-focus-12201460"
     }
   ],
 
   // Today's financial ratio, worked through with one Nifty 500 company's last
   // audited financial statements. The ratio rotates every day; the company stays Infosys Ltd.
   ratio: {
-    name: "Current Ratio",
-    category: "Liquidity",
+    name: "Operating Margin",
+    category: "Profitability",
     company: "Infosys Ltd",
     companyNote: "IT services · Nifty 50 / Nifty 500",
-    period: "Every figure is from Infosys' Integrated Annual Report 2025-26 (FY26), audited consolidated financial statements (IFRS, in rupees). The report's printed page numbers run 30 ahead of the PDF page number, so in the PDF the pages are 30 lower than the printed numbers you see in the report (printed p. 317 = PDF p. 287, printed p. 318 = PDF p. 288).",
+    period: "Every figure is from Infosys' Integrated Annual Report 2025-26 (FY26), audited consolidated financial statements (IFRS, in rupees). The report's printed page numbers run 30 ahead of the PDF page number, so in the PDF the pages are 30 lower than the printed numbers you see in the report (printed p. 318 = PDF p. 288, printed p. 317 = PDF p. 287).",
     report: {
       label: "Download the Infosys Integrated Annual Report 2025-26 (PDF) and follow along",
       url: "https://www.infosys.com/investors/reports-filings/annual-report/annual/documents/infosys-ar-26.pdf"
     },
-    formula: "Current Ratio = Total current assets ÷ Total current liabilities",
-    formulaNote: "The current ratio measures whether a company can pay the bills that fall due within a year. 'Current assets' are the things it expects to turn into cash inside twelve months — cash, short-term investments, money owed by customers (trade receivables), work done but not yet billed and other short-term assets. 'Current liabilities' are the obligations due inside the same window — money owed to suppliers (trade payables), revenue collected in advance, employee-benefit obligations and other short-term liabilities. Dividing the first by the second tells you how many rupees of near-term resources stand behind every rupee of near-term obligation. A ratio above 1 means the company can cover its short-term dues from short-term assets; around 2 is conventionally seen as comfortable, though too high a number can also mean idle cash rather than efficiency. Because it uses only balance-sheet items, the current ratio is a quick, year-end snapshot of liquidity.",
+    formula: "Operating Margin = Operating profit ÷ Revenue (× 100)",
+    formulaNote: "The operating margin measures how much profit a company keeps from each rupee of sales before interest and taxes — it is the core profitability of the business itself, stripped of how it is financed or taxed. 'Operating profit' (also called EBIT, earnings before interest and taxes) is what is left of revenue after the direct cost of delivering the service (cost of sales, such as employee and sub-contractor costs) and the operating overheads (selling & marketing and administrative expenses), but before other income, finance cost and tax. Divide operating profit by revenue and you get the share of every revenue rupee that the operations turn into profit. A high, stable margin is the hallmark of a pricing-power business; a falling margin usually means cost pressure, wage inflation or price cuts. Unlike the current ratio (a balance-sheet, year-end liquidity snapshot), operating margin is a flow measure read off the income statement for the whole year.",
     inputsLabel: "The numbers we need, straight from the report",
     inputs: [
-      { label: "Total current assets as at March 31, 2026", value: "Rs 1,03,489 crore", page: "p. 317" },
-      { label: "Total current liabilities as at March 31, 2026", value: "Rs 52,322 crore", page: "p. 317" },
-      { label: "Total current assets as at March 31, 2025 (prior year)", value: "Rs 97,099 crore", page: "p. 317" },
-      { label: "Total current liabilities as at March 31, 2025 (prior year)", value: "Rs 42,850 crore", page: "p. 317" }
+      { label: "Revenue for the year ended March 31, 2026", value: "Rs 1,78,650 crore", page: "p. 318" },
+      { label: "Operating profit for the year ended March 31, 2026", value: "Rs 36,254 crore", page: "p. 318" },
+      { label: "Revenue for the year ended March 31, 2025 (prior year)", value: "Rs 1,62,990 crore", page: "p. 318" },
+      { label: "Operating profit for the year ended March 31, 2025 (prior year)", value: "Rs 34,424 crore", page: "p. 318" }
     ],
-    working: "Step 1 — Take the current assets. The Consolidated Balance Sheet (printed p. 317) shows total current assets of Rs 1,03,489 crore at March 31, 2026, made up largely of cash and cash equivalents of Rs 22,201 crore, current investments of Rs 12,950 crore, trade receivables of Rs 35,234 crore, unbilled revenue of Rs 15,483 crore and other current assets of Rs 17,621 crore. Step 2 — Take the current liabilities. The same page shows total current liabilities of Rs 52,322 crore, chiefly trade payables of Rs 4,744 crore, unearned revenue of Rs 11,838 crore, employee-benefit obligations of Rs 3,524 crore and other current liabilities and provisions of Rs 32,216 crore. Step 3 — Current Ratio = 1,03,489 ÷ 52,322 = 1.98. So Infosys held about Rs 1.98 of current assets for every rupee of current liabilities at the end of FY26 — effectively 2:1. Step 4 — Run the same arithmetic on the prior year: 97,099 ÷ 42,850 = 2.27, i.e. the ratio slipped from about 2.3 to about 2.0 over the year because current liabilities grew faster than current assets.",
-    result: "1.98×",
-    meaning: "Infosys entered FY27 with roughly Rs 1.98 of current assets for every rupee of current liabilities — essentially a 2:1 cushion, which is a strong liquidity position for a business of its size. The comfort comes from the asset side: about Rs 35,000 crore of the current assets sit in cash, cash equivalents and current investments, so the company could clear its entire short-term obligations from cash and near-cash alone. Two things explain the small year-on-year dip from 2.3 to 2.0. First, current liabilities jumped 22% — from Rs 42,850 crore to Rs 52,322 crore — driven mainly by 'other current liabilities and provisions' and by unearned revenue (money clients have paid in advance), which rises as the order book grows. Second, current assets grew more slowly, by about 7%, because a large part of the year's cash generation was returned to shareholders rather than piled onto the balance sheet — Infosys completed an Rs 18,000-crore buyback and paid Rs 48 a share in dividends during FY26. In plain terms, a current ratio near 2 tells a lender or supplier that Infosys can comfortably meet everything it owes within the year; the mild decline is a sign of generous cash returns and a growing advance-billing book, not of any liquidity strain.",
-    crossCheck: "Infosys itself publishes this measure: the Management's Discussion and Analysis lists a consolidated current ratio of 2.0 times for FY26, down from 2.3 times in FY25 — matching the 1.98 worked through here, with the company simply rounding to one decimal. Screener.in and Trendlyne, which derive the ratio from the same audited balance sheet, both put Infosys' current ratio at about 2.0 for FY26. The convention gap worth noting is definitional: some screeners report a 'quick' or acid-test ratio that strips out inventories and prepaid items, which for Infosys barely changes the number because an IT-services balance sheet carries no inventory at all.",
-    source: "Infosys Integrated Annual Report 2025-26 — Consolidated Balance Sheet (IFRS), printed p. 317 (PDF p. 287); current ratio of 2.0 times per the Management's Discussion and Analysis, Key Financial Ratios"
+    working: "Step 1 — Take the revenue. The Consolidated Statement of Comprehensive Income (printed p. 318) shows total revenues of Rs 1,78,650 crore for the year ended March 31, 2026, up 9.6% from Rs 1,62,990 crore in FY25. Step 2 — Take the operating profit. The same statement shows operating profit of Rs 36,254 crore in FY26, against Rs 34,424 crore in FY25; it is gross profit (Rs 53,915 crore) less selling & marketing expenses (Rs 9,077 crore) and administrative expenses (Rs 8,584 crore), i.e. before other income of Rs 4,157 crore and finance cost of Rs 416 crore. Step 3 — Operating Margin = 36,254 ÷ 1,78,650 = 20.29%, i.e. about 20.3 paise of operating profit for every rupee of revenue. Step 4 — Run the same arithmetic on the prior year: 34,424 ÷ 1,62,990 = 21.12%. So the margin narrowed by about 0.8 percentage points, from roughly 21.1% to 20.3%, even as revenue grew 9.6% — because operating profit rose only 5.3%.",
+    result: "20.3%",
+    meaning: "Infosys converted about 20.3 paise of every rupee of revenue into operating profit in FY26 — the core earning power of the business before interest and tax. That is a strong margin for a global IT-services firm, but it slipped about 0.8 percentage points from 21.1% in FY25, and the reason matters. Revenue grew 9.6% to Rs 1,78,650 crore, yet operating profit rose only 5.3% to Rs 36,254 crore, so costs grew faster than sales. Two things did the damage. First, a one-off: the Government of India's new Labour Codes, notified in November 2025, forced Infosys to top up its gratuity and leave liabilities by Rs 1,289 crore, and that entire charge hit FY26 operating profit. Second, the underlying mix: on-site wage costs, sub-contractor costs and the return of discretionary spending pushed the cost of sales up. Strip out the one-off Labour Codes charge and Infosys' operating margin is about 21.0% — almost exactly where it was a year earlier. So the honest read is that the headline margin fell largely on a one-time accounting event, and the company's underlying operating efficiency was broadly steady — but with revenue growth of only 3.1% in constant currency, there is little cushion if pricing or wage costs turn adverse.",
+    crossCheck: "Infosys itself reports the number: its FY26 results release and the Management's Discussion and Analysis in the Integrated Annual Report put the consolidated IFRS operating margin at 20.3% for FY26, down from 21.1% in FY25, and give an 'adjusted' operating margin of 21.0% for FY26 after excluding the Rs 1,289-crore Labour Codes provision — both matching the arithmetic worked through here (20.29% reported, and 21.0% adjusted). Screener.in and Trendlyne, which derive the ratio from the same audited consolidated statements, likewise show Infosys' operating margin in the low-20s for FY26. The convention gap worth noting is one of definition: some data providers quote an EBITDA margin, which adds back depreciation and amortisation (Rs 4,902 crore in FY26) to operating profit and therefore prints a few points higher than the operating margin used here, while others quote a 'net' margin (net profit ÷ revenue), which is lower because it is struck after other income, interest and tax.",
+    source: "Infosys Integrated Annual Report 2025-26 — Consolidated Statement of Comprehensive Income (IFRS), printed p. 318 (PDF p. 288); operating margin of 20.3% and adjusted operating margin of 21.0% per the Management's Discussion and Analysis, Key Financial Ratios"
   }
 };
