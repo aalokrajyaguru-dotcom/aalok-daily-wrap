@@ -24,6 +24,19 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem("dw-theme");
+    if (t !== "dark" && t !== "light") {
+      t = (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ? "dark" : "light";
+    }
+    document.documentElement.setAttribute("data-theme", t);
+  } catch (e) {
+    document.documentElement.setAttribute("data-theme", "light");
+  }
+})();
+</script>
 <style>
   :root {
     --bg: #faf7f2;
@@ -45,26 +58,28 @@
     --font-display: "Instrument Serif", Georgia, serif;
     --font-body: "IBM Plex Sans", "Segoe UI", sans-serif;
     --font-mono: "JetBrains Mono", "Courier New", monospace;
+    --shadow: rgba(20, 40, 63, 0.10);
     --maxw: 1100px;
+    color-scheme: light;
   }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #10161f;
-      --surface: #171f2b;
-      --surface-dim: #1c2635;
-      --border: rgba(212, 167, 58, 0.18);
-      --ink: #ede8dd;
-      --text: #d8d5cc;
-      --text-dim: #8b95a3;
-      --navy: #d4a73a;
-      --navy-deep: #f0e2b8;
-      --gold: #d4a73a;
-      --gold-dim: rgba(212, 167, 58, 0.10);
-      --green: #3ecf8e;
-      --green-dim: rgba(62, 207, 142, 0.10);
-      --red: #f0716a;
-      --red-dim: rgba(240, 113, 106, 0.10);
-    }
+  :root[data-theme="dark"] {
+    --bg: #10161f;
+    --surface: #171f2b;
+    --surface-dim: #1c2635;
+    --border: rgba(212, 167, 58, 0.18);
+    --ink: #ede8dd;
+    --text: #d8d5cc;
+    --text-dim: #8b95a3;
+    --navy: #d4a73a;
+    --navy-deep: #f0e2b8;
+    --gold: #d4a73a;
+    --gold-dim: rgba(212, 167, 58, 0.10);
+    --green: #3ecf8e;
+    --green-dim: rgba(62, 207, 142, 0.10);
+    --red: #f0716a;
+    --red-dim: rgba(240, 113, 106, 0.10);
+    --shadow: rgba(0, 0, 0, 0.45);
+    color-scheme: dark;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -117,6 +132,44 @@
   .byline { font-family: var(--font-mono); font-size: 12px; color: var(--text-dim); }
   .byline b { color: var(--ink); font-weight: 500; }
 
+  /* ---------- MASTHEAD TOOLS: theme switch + visit counter ---------- */
+  .mast-tools {
+    display: flex; justify-content: flex-end; align-items: center;
+    gap: 18px; flex-wrap: wrap; padding: 10px 2px 0;
+  }
+  .theme-switch {
+    display: inline-flex; align-items: center; gap: 9px; cursor: pointer;
+    font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--text-dim);
+    transition: color 0.15s ease;
+  }
+  .theme-switch:hover { color: var(--ink); }
+  .theme-switch input { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+  .ts-track {
+    position: relative; flex: 0 0 auto; width: 44px; height: 22px; border-radius: 999px;
+    background: var(--surface-dim); border: 1px solid var(--border);
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+  .ts-thumb {
+    position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: 50%;
+    background: var(--text-dim); transition: transform 0.2s ease, background 0.2s ease;
+  }
+  .theme-switch input:checked + .ts-track { background: var(--gold-bright); border-color: var(--gold); }
+  .theme-switch input:checked + .ts-track .ts-thumb { transform: translateX(22px); background: #0f1520; }
+  .theme-switch input:focus-visible + .ts-track { outline: 2px solid var(--gold-bright); outline-offset: 2px; }
+  .visit-stats {
+    display: flex; flex-direction: column; gap: 1px; text-align: right;
+    font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.04em;
+    color: var(--text-dim); line-height: 1.4;
+    border-left: 1px solid var(--border); padding-left: 18px;
+  }
+  .visit-stats[hidden] { display: none; }
+  .visit-stats .vs-num { color: var(--ink); font-weight: 700; font-size: 12.5px; font-variant-numeric: tabular-nums; }
+  @media (max-width: 560px) {
+    .mast-tools { justify-content: space-between; width: 100%; }
+    .visit-stats { border-left: none; padding-left: 0; }
+  }
+
   /* ---------- SECTION LABELS ---------- */
   .section-label {
     display: flex; align-items: center; gap: 10px;
@@ -131,19 +184,28 @@
   .section-label .rule { flex: 1; height: 1px; background: var(--border); }
 
   /* ---------- DASHBOARD CARDS ---------- */
-  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; }
   .idx-card {
     background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
     padding: 18px 18px 14px; position: relative; overflow: hidden;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
   }
-  .idx-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(20, 40, 63, 0.10); }
+  .idx-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px var(--shadow); }
   .idx-card.hero { background: linear-gradient(150deg, var(--surface), var(--surface-dim)); border-top: 3px solid var(--gold-bright); }
-  .idx-name { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-dim); }
+  .idx-name { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-dim); padding-right: 62px; }
   .idx-value { font-family: var(--font-mono); font-size: 26px; font-weight: 700; color: var(--ink); margin: 6px 0 2px; font-variant-numeric: tabular-nums; }
   .idx-delta { font-family: var(--font-mono); font-size: 13px; font-weight: 500; }
   .up { color: var(--green); } .down { color: var(--red); } .flat { color: var(--text-dim); }
   .idx-week { font-size: 12px; color: var(--text-dim); margin-top: 2px; font-family: var(--font-mono); }
+  .idx-returns {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px;
+    margin-top: 9px; padding-top: 8px; border-top: 1px dashed var(--border);
+    font-family: var(--font-mono);
+  }
+  .idx-returns > div { display: flex; flex-direction: column; gap: 1px; }
+  .idx-returns .rlab { font-size: 9.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-dim); }
+  .idx-returns .rval { font-size: 12px; font-weight: 500; font-variant-numeric: tabular-nums; }
+  .returns-note { font-family: var(--font-mono); font-size: 11px; line-height: 1.55; color: var(--text-dim); margin-top: 10px; }
   .idx-note { font-size: 12px; color: var(--text-dim); margin-top: 10px; border-top: 1px dashed var(--border); padding-top: 8px; line-height: 1.45; }
   .idx-spark { position: absolute; right: 12px; top: 14px; opacity: 0.9; }
   @media (max-width: 480px) { .idx-spark { display: none; } }
@@ -229,7 +291,7 @@
     padding: 16px 18px; transition: transform 0.15s ease, box-shadow 0.15s ease;
     text-decoration: none; color: inherit; display: block;
   }
-  .read:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(20,40,63,0.10); }
+  .read:hover { transform: translateY(-2px); box-shadow: 0 8px 24px var(--shadow); }
   .read .r-title { font-family: var(--font-display); font-size: 18px; line-height: 1.3; color: var(--ink); }
   .read .r-src { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); display: block; margin-top: 8px; }
   .read:hover .r-title { text-decoration: underline; text-decoration-color: var(--gold-bright); text-decoration-thickness: 2px; text-underline-offset: 3px; }
@@ -262,10 +324,13 @@
   /* ---------- ENTRANCE ---------- */
   @keyframes fadeUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
   .cards .idx-card, .wrap-grid .story, .watch-item, .read { animation: fadeUp 0.5s ease both; }
-  .cards .idx-card:nth-child(2), .wrap-grid .story:nth-child(2) { animation-delay: 0.06s; }
-  .cards .idx-card:nth-child(3) { animation-delay: 0.12s; }
-  .cards .idx-card:nth-child(4) { animation-delay: 0.18s; }
-  .cards .idx-card:nth-child(5) { animation-delay: 0.24s; }
+  .cards .idx-card:nth-child(2), .wrap-grid .story:nth-child(2) { animation-delay: 0.04s; }
+  .cards .idx-card:nth-child(3) { animation-delay: 0.08s; }
+  .cards .idx-card:nth-child(4) { animation-delay: 0.12s; }
+  .cards .idx-card:nth-child(5) { animation-delay: 0.16s; }
+  .cards .idx-card:nth-child(6) { animation-delay: 0.20s; }
+  .cards .idx-card:nth-child(7) { animation-delay: 0.24s; }
+  .cards .idx-card:nth-child(8) { animation-delay: 0.28s; }
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation: none !important; transition: none !important; }
   }
@@ -289,6 +354,17 @@
       <span class="asof" id="asof-line"></span>
       <span class="byline">Curated by <b>Aalok Rajyaguru</b></span>
     </div>
+    <div class="mast-tools">
+      <label class="theme-switch">
+        <span class="ts-label">Dark mode</span>
+        <input type="checkbox" id="theme-toggle" role="switch" aria-label="Toggle dark mode">
+        <span class="ts-track" aria-hidden="true"><span class="ts-thumb"></span></span>
+      </label>
+      <div class="visit-stats" id="visit-stats" hidden>
+        <div><span class="vs-num" id="visits-today">&mdash;</span> <span class="vs-lab">visits today</span></div>
+        <div><span class="vs-num" id="visits-total">&mdash;</span> <span class="vs-lab">total views</span></div>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -297,6 +373,7 @@
   <!-- DASHBOARD -->
   <div class="section-label"><span class="rule" style="order:2"></span>The Scoreboard<span class="rule"></span></div>
   <div class="cards" id="index-cards"></div>
+  <p class="returns-note" id="returns-note"></p>
 
   <!-- THE WRAP: the day's wrap on trading days, the week's wrap on Saturdays -->
   <div class="section-label"><span id="narrative-label">The Week That Was</span><span class="rule"></span></div>
@@ -377,17 +454,18 @@
   const ENT = { "&": E + "amp;", "<": E + "lt;", ">": E + "gt;", '"': E + "quot;", "'": E + "#39;" };
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ENT[c]);
 
-  // ----- masthead -----
-  document.getElementById("site-name").textContent = d.site.name;
-  document.getElementById("site-tagline").textContent = d.site.tagline || "";
-  document.getElementById("updated-label").textContent = d.updatedLabel || "";
-  document.getElementById("asof-label").textContent = d.asOfLabel || "";
-  document.getElementById("asof-line").textContent = "\u2014 " + (d.asOfLabel || "") + " \u2014";
-
   const fmtPct = (p) => (p == null ? "\u2014" : (p > 0 ? "+" : "") + p.toFixed(2) + "%");
   const fmtPts = (p) => (p == null ? "\u2014" : (p > 0 ? "+" : "") + p.toFixed(2) + " pts");
   const fmtClose = (v) => (v == null ? "\u2014" : v.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
   const cls = (p) => (p == null ? "flat" : p > 0.001 ? "up" : p < -0.001 ? "down" : "flat");
+
+  // day change in the card's own unit: points for an index, plain rupees for gold and USD/INR
+  function fmtDelta(ix) {
+    if (ix.dayChange == null) return "\u2014";
+    if ((ix.unit || "pts") === "pts") return fmtPts(ix.dayChange);
+    return (ix.dayChange > 0 ? "+" : "") +
+      ix.dayChange.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  }
 
   // ----- sparkline -----
   function spark(values, w, h) {
@@ -405,149 +483,238 @@
       '<polyline points="' + pts + '" fill="none" stroke="' + color + '" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/></svg>';
   }
 
-  // ----- index cards -----
-  const cardsEl = document.getElementById("index-cards");
-  d.indices.forEach((ix, i) => {
-    const card = document.createElement("div");
-    card.className = "idx-card" + (i === 0 ? " hero" : "");
-    card.innerHTML =
-      '<div class="idx-name">' + esc(ix.name) + "</div>" +
-      '<div class="idx-value">' + fmtClose(ix.close) + "</div>" +
-      '<div class="idx-delta ' + cls(ix.dayChangePct) + '">' + fmtPct(ix.dayChangePct) +
-        ' <span style="font-size:11.5px;opacity:0.8">(' + fmtPts(ix.dayChange) + ")</span></div>" +
-      '<div class="idx-week">Week: <span class="' + cls(ix.weekChangePct) + '">' + fmtPct(ix.weekChangePct) + "</span></div>" +
-      (ix.note ? '<div class="idx-note">' + esc(ix.note) + "</div>" : "") +
-      (Array.isArray(ix.spark) && ix.spark.length > 1 ? '<div class="idx-spark">' + spark(ix.spark, 72, 26) + "</div>" : "");
-    cardsEl.appendChild(card);
-  });
+  const CONTAINERS = ["index-cards", "weekly-wrap", "day-by-day", "sector-list",
+    "gainer-chips", "loser-chips", "watch-list", "reads-list", "ratio"];
 
-  // ----- the wrap: the day's wrap on trading days, the week's wrap on Saturdays -----
-  const wrapEl = document.getElementById("weekly-wrap");
-  const narr = d.weeklyWrap || d.dailyWrap;
-  if (narr && narr.headline) {
-    const labelEl = document.getElementById("narrative-label");
-    if (labelEl) labelEl.textContent = narr.label || "The Wrap";
-    const el = document.createElement("article");
-    el.className = "story";
-    el.innerHTML =
-      '<span class="kicker">' + esc(narr.kicker || narr.label || "The Wrap") + '</span>' +
-      "<h3>" + esc(narr.headline) + "</h3><p>" + esc(narr.summary || "") + "</p>" +
-      (Array.isArray(narr.stats) && narr.stats.length ? '<p class="idx-week" style="margin-top:10px">' + esc(narr.statsLabel || "Sessions") + ": " + esc(narr.stats.join(" \u00b7 ")) + "</p>" : "");
-    wrapEl.appendChild(el);
-  }
+  function renderAll() {
+    CONTAINERS.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = "";
+    });
 
-  // ----- day by day -----
-  const tbody = document.getElementById("day-by-day");
-  d.dayByDay.forEach((r) => {
-    const tr = document.createElement("tr");
-    if (r.niftyClose == null) {
-      tr.className = "holiday";
-      tr.innerHTML = '<td class="day">' + esc(r.label || r.date || "") + '</td><td colspan="5"><span class="tnote">' + esc(r.note || "") + "</span></td>";
-    } else {
-      tr.innerHTML =
-        '<td class="day">' + esc(r.label || r.date || "") + "</td>" +
-        '<td class="num">' + fmtClose(r.niftyClose) + '</td><td class="num ' + cls(r.niftyChangePct) + '">' + fmtPct(r.niftyChangePct) + "</td>" +
-        '<td class="num">\u2014</td><td class="num ' + cls(r.sensexChangePct) + '">' + fmtPct(r.sensexChangePct) + "</td>" +
-        "<td>" + esc(r.note || "") + "</td>";
+    // ----- masthead -----
+    document.getElementById("site-name").textContent = d.site.name;
+    document.getElementById("site-tagline").textContent = d.site.tagline || "";
+    document.getElementById("updated-label").textContent = d.updatedLabel || "";
+    document.getElementById("asof-label").textContent = d.asOfLabel || "";
+    document.getElementById("asof-line").textContent = "\u2014 " + (d.asOfLabel || "") + " \u2014";
+
+    // ----- index cards -----
+    const cardsEl = document.getElementById("index-cards");
+    d.indices.forEach((ix, i) => {
+      const card = document.createElement("div");
+      card.className = "idx-card" + (i === 0 ? " hero" : "");
+      const rt = ix.returns || {};
+      card.innerHTML =
+        '<div class="idx-name">' + esc(ix.name) + "</div>" +
+        '<div class="idx-value">' + fmtClose(ix.close) + "</div>" +
+        '<div class="idx-delta ' + cls(ix.dayChangePct) + '">' + fmtPct(ix.dayChangePct) +
+          ' <span style="font-size:11.5px;opacity:0.8">(' + fmtDelta(ix) + ")</span></div>" +
+        '<div class="idx-week">Week: <span class="' + cls(ix.weekChangePct) + '">' + fmtPct(ix.weekChangePct) + "</span></div>" +
+        '<div class="idx-returns">' +
+          '<div><span class="rlab">1Y</span><span class="rval ' + cls(rt.oneY) + '">' + fmtPct(rt.oneY) + "</span></div>" +
+          '<div><span class="rlab">3Y</span><span class="rval ' + cls(rt.threeY) + '">' + fmtPct(rt.threeY) + "</span></div>" +
+          '<div><span class="rlab">5Y</span><span class="rval ' + cls(rt.fiveY) + '">' + fmtPct(rt.fiveY) + "</span></div>" +
+        "</div>" +
+        (ix.note ? '<div class="idx-note">' + esc(ix.note) + "</div>" : "") +
+        (Array.isArray(ix.spark) && ix.spark.length > 1 ? '<div class="idx-spark">' + spark(ix.spark, 72, 26) + "</div>" : "");
+      cardsEl.appendChild(card);
+    });
+    const noteEl = document.getElementById("returns-note");
+    if (noteEl) noteEl.textContent = d.returnsBasis || "";
+
+    // ----- the wrap: the day's wrap on trading days, the week's wrap on Saturdays -----
+    const wrapEl = document.getElementById("weekly-wrap");
+    const narr = d.weeklyWrap || d.dailyWrap;
+    if (narr && narr.headline) {
+      const labelEl = document.getElementById("narrative-label");
+      if (labelEl) labelEl.textContent = narr.label || "The Wrap";
+      const el = document.createElement("article");
+      el.className = "story";
+      el.innerHTML =
+        '<span class="kicker">' + esc(narr.kicker || narr.label || "The Wrap") + "</span>" +
+        "<h3>" + esc(narr.headline) + '</h3><p>' + esc(narr.summary || "") + "</p>" +
+        (Array.isArray(narr.stats) && narr.stats.length ? '<p class="idx-week" style="margin-top:10px">' + esc(narr.statsLabel || "Sessions") + ": " + esc(narr.stats.join(" \u00b7 ")) + "</p>" : "");
+      wrapEl.appendChild(el);
     }
-    tbody.appendChild(tr);
-  });
 
-  // ----- sectors -----
-  const secEl = document.getElementById("sector-list");
-  d.sectors.forEach((s) => {
-    const up = s.changePct != null && s.changePct >= 0;
-    const el = document.createElement("div");
-    el.className = "sector " + (up ? "up-row" : "down-row");
-    const lead = s.changePct == null ? "" : fmtPct(s.changePct) + (s.note ? " \u2014 " : "");
-    el.innerHTML =
-      '<div class="sname">' + esc(s.name) + "</div>" +
-      '<div class="sdir ' + (up ? "up" : "down") + '">' + (up ? "\u25B2" : "\u25BC") + "</div>" +
-      '<div class="snote">' + lead + esc(s.note || "") + "</div>";
-    secEl.appendChild(el);
-  });
+    // ----- day by day -----
+    const tbody = document.getElementById("day-by-day");
+    d.dayByDay.forEach((r) => {
+      const tr = document.createElement("tr");
+      if (r.niftyClose == null) {
+        tr.className = "holiday";
+        tr.innerHTML = '<td class="day">' + esc(r.label || r.date || "") + '</td><td colspan="5"><span class="tnote">' + esc(r.note || "") + "</span></td>";
+      } else {
+        tr.innerHTML =
+          '<td class="day">' + esc(r.label || r.date || "") + "</td>" +
+          '<td class="num">' + fmtClose(r.niftyClose) + '</td><td class="num ' + cls(r.niftyChangePct) + '">' + fmtPct(r.niftyChangePct) + "</td>" +
+          '<td class="num">\u2014</td><td class="num ' + cls(r.sensexChangePct) + '">' + fmtPct(r.sensexChangePct) + "</td>" +
+          "<td>" + esc(r.note || "") + "</td>";
+      }
+      tbody.appendChild(tr);
+    });
 
-  // ----- movers: top Nifty 500 gainers/losers (weekly on Saturdays, daily otherwise) -----
-  const scopeWord = (d.movers.scope === "week") ? "This Week's" : "Today's";
-  const uniSuffix = d.movers.universe ? " (" + d.movers.universe + ")" : "";
-  const gHeading = document.getElementById("gainers-heading");
-  const lHeading = document.getElementById("losers-heading");
-  if (gHeading) gHeading.textContent = scopeWord + " Top Gainers" + uniSuffix;
-  if (lHeading) lHeading.textContent = scopeWord + " Top Losers" + uniSuffix;
-  const gEl = document.getElementById("gainer-chips");
-  d.movers.gainers.forEach((m) => {
-    const c = document.createElement("span");
-    c.className = "chip";
-    c.textContent = m.name + " " + fmtPct(m.changePct);
-    gEl.appendChild(c);
-  });
-  const lEl = document.getElementById("loser-chips");
-  d.movers.losers.forEach((m) => {
-    const c = document.createElement("span");
-    c.className = "chip red";
-    c.textContent = m.name + " " + fmtPct(m.changePct);
-    lEl.appendChild(c);
-  });
-  const moversNote = [];
-  if (Array.isArray(d.movers.sensexWinners) && d.movers.sensexWinners.length) {
-    moversNote.push("Sensex leaders: " + d.movers.sensexWinners.join(", "));
+    // ----- sectors -----
+    const secEl = document.getElementById("sector-list");
+    d.sectors.forEach((s) => {
+      const up = s.changePct != null && s.changePct >= 0;
+      const el = document.createElement("div");
+      el.className = "sector " + (up ? "up-row" : "down-row");
+      const lead = s.changePct == null ? "" : fmtPct(s.changePct) + (s.note ? " \u2014 " : "");
+      el.innerHTML =
+        '<div class="sname">' + esc(s.name) + "</div>" +
+        '<div class="sdir ' + (up ? "up" : "down") + '">' + (up ? "\u25B2" : "\u25BC") + "</div>" +
+        '<div class="snote">' + lead + esc(s.note || "") + "</div>";
+      secEl.appendChild(el);
+    });
+
+    // ----- movers -----
+    const scopeWord = (d.movers.scope === "week") ? "This Week's" : "Today's";
+    const uniSuffix = d.movers.universe ? " (" + d.movers.universe + ")" : "";
+    const gHeading = document.getElementById("gainers-heading");
+    const lHeading = document.getElementById("losers-heading");
+    if (gHeading) gHeading.textContent = scopeWord + " Top Gainers" + uniSuffix;
+    if (lHeading) lHeading.textContent = scopeWord + " Top Losers" + uniSuffix;
+    const gEl = document.getElementById("gainer-chips");
+    d.movers.gainers.forEach((m) => {
+      const c = document.createElement("span");
+      c.className = "chip";
+      c.textContent = m.name + " " + fmtPct(m.changePct);
+      gEl.appendChild(c);
+    });
+    const lEl = document.getElementById("loser-chips");
+    d.movers.losers.forEach((m) => {
+      const c = document.createElement("span");
+      c.className = "chip red";
+      c.textContent = m.name + " " + fmtPct(m.changePct);
+      lEl.appendChild(c);
+    });
+    const moversNote = [];
+    if (Array.isArray(d.movers.sensexWinners) && d.movers.sensexWinners.length) {
+      moversNote.push("Sensex leaders: " + d.movers.sensexWinners.join(", "));
+    }
+    if (Array.isArray(d.movers.sensexLaggards) && d.movers.sensexLaggards.length) {
+      moversNote.push("Laggards: " + d.movers.sensexLaggards.join(", "));
+    }
+    if (d.movers.source) {
+      moversNote.push("Source: " + d.movers.source);
+    }
+    document.getElementById("movers-note").textContent = moversNote.join(" \u00b7 ");
+
+    // ----- watch -----
+    const wEl = document.getElementById("watch-list");
+    d.watch.forEach((t) => {
+      const el = document.createElement("div");
+      el.className = "watch-item";
+      const p = document.createElement("p");
+      p.innerHTML = "<strong>" + esc(t.title) + "</strong><br>" + esc(t.detail || "");
+      el.appendChild(p);
+      wEl.appendChild(el);
+    });
+
+    // ----- reads -----
+    const rEl = document.getElementById("reads-list");
+    d.reads.forEach((r) => {
+      const a = document.createElement("a");
+      a.className = "read"; a.href = r.url; a.target = "_blank"; a.rel = "noopener";
+      a.innerHTML = '<div class="r-title">' + esc(r.title) + '</div><span class="r-src">' + esc(r.source) + "</span>";
+      rEl.appendChild(a);
+    });
+
+    // ----- today's financial/accounting ratio -----
+    const ratioEl = document.getElementById("ratio");
+    const rt = d.ratio;
+    if (rt && rt.name) {
+      const el = document.createElement("article");
+      el.className = "story";
+      const kicker = (rt.category ? rt.category + " ratio \u00b7 " : "") + (rt.company || "");
+      const inputs = Array.isArray(rt.inputs) && rt.inputs.length
+        ? "<p><strong>" + esc(rt.inputsLabel || "The numbers we need") + ":</strong><br>" +
+          rt.inputs.map((x) => esc(x.label) + " \u2014 <strong>" + esc(x.value) + "</strong>" + (x.page ? ' <span style="color:var(--text-dim);font-size:12px">(' + esc(x.page) + ")</span>" : "")).join("<br>") + "</p>"
+        : "";
+      el.innerHTML =
+        '<span class="kicker">' + esc(kicker) + "</span>" +
+        "<h3>" + esc(rt.name) + "</h3>" +
+        (rt.period ? '<p class="idx-week">' + esc(rt.period) + "</p>" : "") +
+        (rt.report && rt.report.url ? '<p><a href="' + esc(rt.report.url) + '" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600">' + esc(rt.report.label || "Download the annual report") + " \u2192</a></p>" : "") +
+        "<p><strong>Formula:</strong> " + esc(rt.formula || "") + "</p>" +
+        (rt.formulaNote ? '<p class="idx-week">' + esc(rt.formulaNote) + "</p>" : "") +
+        inputs +
+        (rt.working ? "<p><strong>Working:</strong> " + esc(rt.working) + "</p>" : "") +
+        (rt.result ? "<p><strong>Answer: " + esc(rt.result) + "</strong></p>" : "") +
+        (rt.meaning ? "<p>" + esc(rt.meaning) + "</p>" : "") +
+        (rt.crossCheck ? '<p class="idx-week">Cross-check: ' + esc(rt.crossCheck) + "</p>" : "") +
+        (rt.source ? '<p class="idx-week">Source: ' + esc(rt.source) + "</p>" : "");
+      ratioEl.appendChild(el);
+    }
   }
-  if (Array.isArray(d.movers.sensexLaggards) && d.movers.sensexLaggards.length) {
-    moversNote.push("Laggards: " + d.movers.sensexLaggards.join(", "));
-  }
-  if (d.movers.source) {
-    moversNote.push("Source: " + d.movers.source);
-  }
-  document.getElementById("movers-note").textContent = moversNote.join(" \u00b7 ");
 
-  // ----- watch -----
-  const wEl = document.getElementById("watch-list");
-  d.watch.forEach((t) => {
-    const el = document.createElement("div");
-    el.className = "watch-item";
-    const p = document.createElement("p");
-    p.innerHTML = "<strong>" + esc(t.title) + "</strong><br>" + esc(t.detail || "");
-    el.appendChild(p);
-    wEl.appendChild(el);
-  });
+  renderAll();
 
-  // ----- reads -----
-  const rEl = document.getElementById("reads-list");
-  d.reads.forEach((r) => {
-    const a = document.createElement("a");
-    a.className = "read"; a.href = r.url; a.target = "_blank"; a.rel = "noopener";
-    a.innerHTML = '<div class="r-title">' + esc(r.title) + '</div><span class="r-src">' + esc(r.source) + "</span>";
-    rEl.appendChild(a);
-  });
-
-  // ----- today's financial/accounting ratio -----
-  const ratioEl = document.getElementById("ratio");
-  const rt = d.ratio;
-  if (rt && rt.name) {
-    const el = document.createElement("article");
-    el.className = "story";
-    const kicker = (rt.category ? rt.category + " ratio · " : "") + (rt.company || "");
-    const inputs = Array.isArray(rt.inputs) && rt.inputs.length
-      ? "<p><strong>" + esc(rt.inputsLabel || "The numbers we need") + ":</strong><br>" +
-        rt.inputs.map((x) => esc(x.label) + " — <strong>" + esc(x.value) + "</strong>" + (x.page ? ' <span style="color:var(--text-dim);font-size:12px">(' + esc(x.page) + ")</span>" : "")).join("<br>") + "</p>"
-      : "";
-    el.innerHTML =
-      '<span class="kicker">' + esc(kicker) + '</span>' +
-      "<h3>" + esc(rt.name) + "</h3>" +
-      (rt.period ? '<p class="idx-week">' + esc(rt.period) + "</p>" : "") +
-      (rt.report && rt.report.url ? '<p><a href="' + esc(rt.report.url) + '" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600">' + esc(rt.report.label || "Download the annual report") + " →</a></p>" : "") +
-      "<p><strong>Formula:</strong> " + esc(rt.formula || "") + "</p>" +
-      (rt.formulaNote ? '<p class="idx-week">' + esc(rt.formulaNote) + "</p>" : "") +
-      inputs +
-      (rt.working ? "<p><strong>Working:</strong> " + esc(rt.working) + "</p>" : "") +
-      (rt.result ? "<p><strong>Answer: " + esc(rt.result) + "</strong></p>" : "") +
-      (rt.meaning ? "<p>" + esc(rt.meaning) + "</p>" : "") +
-      (rt.crossCheck ? '<p class="idx-week">Cross-check: ' + esc(rt.crossCheck) + "</p>" : "") +
-      (rt.source ? '<p class="idx-week">Source: ' + esc(rt.source) + "</p>" : "");
-    ratioEl.appendChild(el);
+  // ----- dark mode switch: remembers the choice, re-renders so the sparklines recolour -----
+  const root = document.documentElement;
+  const themeToggle = document.getElementById("theme-toggle");
+  function applyTheme(t) {
+    root.setAttribute("data-theme", t);
+    try { localStorage.setItem("dw-theme", t); } catch (e) {}
+    if (themeToggle) themeToggle.checked = (t === "dark");
+    renderAll();
   }
+  if (themeToggle) {
+    themeToggle.checked = root.getAttribute("data-theme") === "dark";
+    themeToggle.addEventListener("change", function () {
+      applyTheme(themeToggle.checked ? "dark" : "light");
+    });
+  }
+
+  // ----- visitor counter: one view per load, one visitor per browser session per day -----
+  (function () {
+    const statsEl = document.getElementById("visit-stats");
+    if (!statsEl) return;
+    const todayEl = document.getElementById("visits-today");
+    const totalEl = document.getElementById("visits-total");
+    const NS = "aalok-daily-wrap";
+    const now = new Date();
+    const pad = (n) => String(n).padStart(2, "0");
+    const dayKey = "visits-" + now.getFullYear() + pad(now.getMonth() + 1) + pad(now.getDate());
+    const seenKey = "dw-visit-" + dayKey;
+
+    async function bump(key) {
+      try {
+        const r = await fetch("https://abacus.jasoncameron.dev/hit/" + NS + "/" + key, { cache: "no-store" });
+        if (r.ok) {
+          const j = await r.json();
+          if (j && typeof j.value === "number") return j.value;
+        }
+      } catch (e) {}
+      try {
+        const r = await fetch("https://api.counterapi.dev/v1/" + NS + "/" + key + "/up", { cache: "no-store" });
+        if (r.ok) {
+          const j = await r.json();
+          if (j && typeof j.count === "number") return j.count;
+        }
+      } catch (e) {}
+      return null;
+    }
+
+    let seen = null;
+    try { seen = sessionStorage.getItem(seenKey); } catch (e) {}
+    const cached = (seen === null) ? NaN : parseInt(seen, 10);
+    const todayPromise = isNaN(cached) ? bump(dayKey).then((v) => {
+      if (v != null) { try { sessionStorage.setItem(seenKey, String(v)); } catch (e) {} }
+      return v;
+    }) : Promise.resolve(cached);
+
+    Promise.all([todayPromise, bump("total-views")]).then(function (res) {
+      const today = res[0], total = res[1];
+      if (today == null && total == null) return; // stays hidden rather than showing a made-up number
+      if (today != null) todayEl.textContent = today.toLocaleString("en-IN");
+      if (total != null) totalEl.textContent = total.toLocaleString("en-IN");
+      statsEl.hidden = false;
+    }).catch(function () {});
+  })();
 })();
-
 </script>
 </body>
 </html>

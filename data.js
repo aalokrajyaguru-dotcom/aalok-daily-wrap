@@ -6,6 +6,7 @@ const dailyWrapData = {
   },
   updatedLabel: "Updated: Saturday, 7 November 2026, 5:30 PM IST \u2014 Weekly Wrap (markets closed for the weekend)",
   asOfLabel: "Closing levels as of the 6 November 2026 close (3:30 PM IST); every weekly move measured from the 30 October 2026 close",
+  returnsBasis: "1Y returns are absolute; 3Y and 5Y are annualised (CAGR), measured from the closes of 6 November 2025, 6 November 2023 and 5 November 2021. USD/INR returns are the dollar's return against the rupee \u2014 a positive number means the rupee weakened.",
 
   indices: [
     {
@@ -15,6 +16,7 @@ const dailyWrapData = {
       dayChangePct: 2.01,
       weekChangePct: 8.58, // vs the 30 Oct (prior Friday) close of 23,053.10
       spark: [23440.80, 23810.85, 23960.60, 24536.60, 25030.35], // last 5 closes: 2 Nov, 3 Nov, 4 Nov, 5 Nov, 6 Nov
+      returns: { oneY: -1.88, threeY: 8.84, fiveY: 6.74 }, // 1Y absolute; 3Y and 5Y annualised (CAGR)
       note: "The week, not the day, is the story. The index added 1,977.25 points, or 8.58%, over the five sessions to 25,030.35 from the 30 October close of 23,053.10 \u2014 its best week since February 2021 and its highest close in nine months, above 25,000 for the first time since 27 February. Friday alone contributed 493.75 points, or 2.01%: an open at 24,538.20, a low of 24,388.05 and a close at the session high, the seventh consecutive gain and the longest winning streak in three years. 46 of the 50 members ended the week higher, three lower \u2014 Power Grid -1.92%, Infosys -0.30%, TCS -0.16% \u2014 and Apollo Hospitals was flat. The five days ran in sequence: Reliance Industries +13.31% for the week after its September-quarter beat on Monday, a 16% weekly collapse in Brent after the US midterm result, and Rs 22,693 crore of FII buying in November so far, of which Rs 14,975 crore came on 5 November alone, the largest single-day purchase in nearly six years. (NSE's own ind_close_all_06112026.csv carries the 25,030.35 close, +493.75 and +2.01% with a 24,388.05 low; the 8.58% week, the 1,977.25 points and the 23,053.10 base are confirmed identically by Zee Business, Upstox's weekly wrap, ETMoney's 1W column and Oquilia's chaining of NSE closing values.)"
     },
     {
@@ -24,6 +26,7 @@ const dailyWrapData = {
       dayChangePct: -0.15,
       weekChangePct: 5.83, // vs the 30 Oct (prior Friday) close of 67,709.10
       spark: [68962.65, 69624.35, 70795.00, 71768.65, 71657.80], // last 5 closes: 2 Nov, 3 Nov, 4 Nov, 5 Nov, 6 Nov
+      returns: { oneY: 3.40, threeY: 16.58, fiveY: 10.42 }, // 1Y absolute; 3Y and 5Y annualised (CAGR)
       note: "A strong week that still lost to the headline index by 275 basis points: +3,948.70 points, or 5.83%, to 71,657.80 against the Nifty's 8.58%. The card is also the only one of the five that fell on Friday, down 110.85 points or 0.15%, after opening at 71,304.65 and trading as low as 70,641.00. That is a composition story rather than a sentiment one \u2014 this basket carries the industrial and capital-goods names the AI-infrastructure unwind hit hardest, and almost none of the private banks that did Friday's work: Nifty Capital Goods was among the week's two worst sectors at +2.29%. (NSE's ind_close_all_06112026.csv gives 71,657.80, -110.85 and -0.15% with the 70,641 low and 71,304.65 open; the +5.83% and the 3,948.70 points appear identically in ETMoney's 1W column and Oquilia's week table.)"
     },
     {
@@ -33,6 +36,7 @@ const dailyWrapData = {
       dayChangePct: -0.09,
       weekChangePct: 5.81, // vs the 30 Oct (prior Friday) close of 21,047.50
       spark: [21310.75, 21523.35, 21867.30, 22290.40, 22271.15], // last 5 closes: 2 Nov, 3 Nov, 4 Nov, 5 Nov, 6 Nov
+      returns: { oneY: 1.59, threeY: 14.20, fiveY: 13.37 }, // 1Y absolute; 3Y and 5Y annualised (CAGR)
       note: "Flat on Friday \u2014 down 19.25 points, or 0.09%, to 22,271.15 after a week in which it added 1,223.65 points, or 5.81%. That Friday flatness is the honest tell of the week: the index made its high on Thursday at 22,290.40 and gave back only a fifth of a percent while the Nifty rose 2.01%, because the last session's buying went to index-weight financials and not down the ladder. Over the week it beat the Smallcap 250 by 210 basis points and lagged the Nifty by 277. (The 22,271.15 close, the -19.25 and the -0.09% are on NSE's ind_close_all_06112026.csv; the 5.81% week and the 21,047.50 base reconcile across ETMoney's 1W column and Anand Rathi's all-indices table.)"
     },
     {
@@ -42,6 +46,7 @@ const dailyWrapData = {
       dayChangePct: -0.85,
       weekChangePct: 3.71, // vs the 30 Oct (prior Friday) close
       spark: [16991.00, 17061.65, 17398.35, 17535.70, 17386.15], // last 5 closes: 2 Nov, 3 Nov, 4 Nov, 5 Nov, 6 Nov
+      returns: { oneY: 1.90, threeY: 11.97, fiveY: 12.24 }, // 1Y absolute; 3Y and 5Y annualised (CAGR)
       note: "The weakest of the four broad cards and the only one that lost more than half a percent on Friday: -149.55 points, or 0.85%, to 17,386.15, after peaking for the week at 17,535.70 on Thursday. The week's gain of 3.71% is less than half the Nifty's 8.58%, and the reason is visible in the losers list \u2014 MTAR -20.32%, TD Power -19.25% and Sterlite Technologies -12.69% are all this index, all repriced on a single quarter or a single capex narrative. 23 Nifty 500 stocks closed the week at a 52-week low against 34 at a high. (NSE's ind_close_all_06112026.csv gives the 17,386.15 close, -149.55 and -0.85%; the +3.71% week is ETMoney's 1W column, consistent with NSE's own Smallcap 100 at +2.77% for the week.)"
     },
     {
@@ -51,7 +56,40 @@ const dailyWrapData = {
       dayChangePct: 0.11,
       weekChangePct: 3.04, // vs the 30 Oct close of 1,12,571.49
       spark: [112547.00, 113070.91, 113592.99, 115864.00, 115996.69], // last 5 closes: 2 Nov, 3 Nov, 4 Nov, 5 Nov, 6 Nov
+      returns: { oneY: 9.81, threeY: 40.48, fiveY: 69.32 }, // 1Y absolute; 3Y and 5Y annualised (CAGR)
       note: "The S&P BSE SME IPO index closed the week at 115,996.69, up 3,425.20 points or 3.04% from the 30 October close of 112,571.49, and up 132.69 points or 0.11% on Friday from 115,864.00. The shape of the week is worth noting because it inverts the usual story: this index fell 0.02% on Monday while the Nifty rose 1.68%, then did almost all of its work on Thursday (+2.00% to 115,864.00) and Friday, which is the opposite of the previous week's pattern where the small end led. The intraday range on Friday was 115,411.91 to 116,098.59, and the index is still 5.9% below its 52-week high of 123,353.65. (Anand Rathi's BSE SME IPO close history carries all five daily closes and the 112,571.49 base; Livemint, Angel One, 5paisa and Dhan each carry the 115,996.69 close, +132.69 and +0.11% with the same day's range.)"
+    },
+    {
+      name: "Gold MCX (\u20b9/10gm)",
+      unit: "\u20b9",
+      close: 142167.00,
+      dayChange: -1928.00,
+      dayChangePct: -1.34,
+      weekChangePct: 2.66, // vs the 30 Oct close of 1,38,485
+      returns: { oneY: 14.05, threeY: 31.08, fiveY: 23.74 }, // 1Y absolute; 3Y and 5Y annualised (CAGR)
+      spark: [140186.00, 139452.00, 143234.00, 144095.00, 142167.00], // last 5 closes: 2 Nov, 3 Nov, 4 Nov, 5 Nov, 6 Nov
+      note: "MCX December gold futures settled at Rs 1,42,167 per 10 grams on 6 November, down Rs 1,928 or 1.34% from Thursday's Rs 1,44,095, after opening at Rs 1,42,161 and ranging between Rs 1,41,200 and Rs 1,42,886. The week still ended up Rs 3,682, or 2.66%, from the 30 October close of Rs 1,38,485 \u2014 the contract did its real work on 4 November (+2.71% to Rs 1,43,234) and 5 November (+0.60% to Rs 1,44,095) as the dollar slid and December Fed-hike bets firmed, then gave a third of it back on Dhanteras as buyers booked profit. In dollar terms spot gold had its best week in over two months, up about 5.9%; the rupee's 1% gain over the same week trimmed the MCX move. (Emkay's end-of-day table for the December contract carries all five closes and the 1,38,485 base; HDFC Sky and IANS both report Friday's settlement at Rs 1,42,224\u20131,42,364 with the same Rs 1,41,200 low.)"
+    },
+    {
+      name: "S&P 500",
+      close: 7376.86,
+      dayChange: 23.13,
+      dayChangePct: 0.31,
+      weekChangePct: -2.68, // vs the 30 Oct close of 7,580.07
+      returns: { oneY: 8.54, threeY: 19.17, fiveY: 9.44 }, // 1Y absolute; 3Y and 5Y annualised (CAGR)
+      spark: [7541.40, 7568.92, 7688.62, 7353.73, 7376.86], // last 5 closes: 2 Nov, 3 Nov, 4 Nov, 5 Nov, 6 Nov
+      note: "The S&P 500 closed at 7,376.86 on Friday, up 23.13 points or 0.31%, but lost 203.21 points or 2.68% for the week \u2014 its worst week since June and a fourth straight weekly decline. Friday's shape was a rebound that faded: an open at 7,377.65, a high of 7,444.20 (up 1.23% on the day) and a close 67.34 points below that high, as October payrolls came in at 165,000 against 65,000 expected and the market moved to a roughly 78% chance of a December rate hike. Chips did the lifting \u2014 the semiconductor ETF SMH +3.62%, AMD +11.04%, Nvidia +2.78% \u2014 while the Dow fell 237.33 points to 51,285.73. (Yahoo Finance, AP and MarketWatch all carry the 7,376.86 close, +23.13 and +0.31%; Morningstar's Dow Jones data talk carries the -2.68% week and the 203.21 points.)"
+    },
+    {
+      name: "USD / INR",
+      unit: "\u20b9",
+      close: 93.90,
+      dayChange: -0.57,
+      dayChangePct: -0.60,
+      weekChangePct: -1.01, // vs the 30 Oct close of 94.8551
+      returns: { oneY: 6.02, threeY: 4.10, fiveY: 4.82 }, // the dollar's return against the rupee: a positive number means the rupee weakened
+      spark: [94.9000, 94.7400, 94.5400, 94.4750, 93.9000], // last 5 closes: 2 Nov, 3 Nov, 4 Nov, 5 Nov, 6 Nov
+      note: "The rupee closed at 93.90 a dollar on Friday, up 57 paise from Thursday's 94.47 and its strongest close in six and a half months, after trading between 93.82 and 94.5150. For the week it gained 1.01% from the 30 October close of 94.8551. Three things did it: foreign portfolio money returning to Indian equities, crude collapsing more than 12% over the week, and a softer dollar after the US midterm result. Read the sign carefully on a currency card \u2014 a falling number means a stronger rupee, so a negative move here is a gain for anyone holding rupees, and the 1Y/3Y/5Y figures below are the dollar's return against the rupee, not the rupee's return. (Hindu BusinessLine carries 93.90, +57 paise and the 93.82/94.5150 range; PTI and IANS carry 93.89 and 93.91 provisional; Yahoo Finance's series gives the 94.8551 30 October base.)"
     }
   ],
 
