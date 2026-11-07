@@ -230,6 +230,17 @@
   .answer h4{color:var(--gold)} .answer p{font-size:17px;font-weight:600;color:var(--ink)}
   .ratio p.body{margin-top:14px;font-size:14.5px}
 
+  /* ---------- install banner ---------- */
+  .install{display:flex;align-items:center;gap:10px 14px;flex-wrap:wrap;padding:12px 14px 12px 16px;margin-top:14px;
+    border-color:var(--gold-bright);background:var(--gold-dim)}
+  .install[hidden]{display:none}
+  .install p{flex:1;min-width:210px;font-size:13.5px;line-height:1.5;color:var(--ink)}
+  .install .btn{margin:0;border:1px solid var(--gold-bright);background:var(--gold-bright);color:#10161f;cursor:pointer}
+  .install .btn:hover{filter:brightness(1.08)}
+  .install .btn[hidden]{display:none}
+  .install .x{width:30px;height:30px;border-radius:50%;border:none;background:transparent;color:var(--text-dim);font-size:20px;line-height:1;flex:none}
+  .install .x:hover{background:var(--bar);color:var(--ink)}
+
   /* ---------- footer, toast, states ---------- */
   footer{margin-top:56px;border-top:3px solid var(--ink);padding:22px 0 56px}
   .foot-note{font-size:12.5px;color:var(--text-dim);max-width:640px} .foot-note b{color:var(--ink)}
@@ -263,6 +274,14 @@
     <nav class="snav" id="nav" aria-label="Sections"></nav>
   </div>
 </header>
+
+<div class="wrap">
+  <div class="card install" id="install" hidden>
+    <p id="install-text"></p>
+    <button class="btn" id="install-btn" type="button" hidden>Install app</button>
+    <button class="x" id="install-x" type="button" aria-label="Dismiss">&times;</button>
+  </div>
+</div>
 
 <main class="wrap" id="app">
   <div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div>
@@ -729,6 +748,46 @@
   });
   if (mq && mq.addEventListener) mq.addEventListener("change", applyTheme);
   applyTheme();
+
+  /* ----------------------------------------------------------------- install */
+  var installBox = document.getElementById("install"), installText = document.getElementById("install-text");
+  var installBtn = document.getElementById("install-btn"), installX = document.getElementById("install-x");
+  var deferredPrompt = null;
+  var standalone = (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches) || window.navigator.standalone === true;
+  var installDismissed = false;
+  try { installDismissed = localStorage.getItem("dw-install-dismissed") === "1"; } catch (e) {}
+  var ua = navigator.userAgent || "";
+  var isIOS = /iphone|ipad|ipod/i.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+
+  function hideInstall() { installBox.hidden = true; }
+  function showInstall(mode) {
+    if (standalone || installDismissed) return;
+    if (mode === "prompt") {
+      installText.textContent = "Install The Daily Wrap on this device for one-tap access, even offline.";
+      installBtn.hidden = false;
+    } else {
+      installText.textContent = "Add The Daily Wrap to your home screen: tap the Share button in Safari, then \u201cAdd to Home Screen\u201d.";
+      installBtn.hidden = true;
+    }
+    installBox.hidden = false;
+  }
+  window.addEventListener("beforeinstallprompt", function (e) {
+    e.preventDefault(); deferredPrompt = e; showInstall("prompt");
+  });
+  window.addEventListener("appinstalled", function () {
+    deferredPrompt = null; hideInstall(); toast("Installed \u2014 look for The Daily Wrap among your apps");
+  });
+  installBtn.addEventListener("click", function () {
+    if (!deferredPrompt) return;
+    var dp = deferredPrompt; deferredPrompt = null;
+    dp.prompt();
+    dp.userChoice.then(function () { hideInstall(); }).catch(function () { hideInstall(); });
+  });
+  installX.addEventListener("click", function () {
+    installDismissed = true; hideInstall();
+    try { localStorage.setItem("dw-install-dismissed", "1"); } catch (e) {}
+  });
+  if (isIOS && !standalone) showInstall("ios");
 
   /* -------------------------------------------------------------------- boot */
   refreshBtn.addEventListener("click", function () { load(true); });

@@ -165,6 +165,15 @@
   }
   .visit-stats[hidden] { display: none; }
   .visit-stats .vs-num { color: var(--ink); font-weight: 700; font-size: 12.5px; font-variant-numeric: tabular-nums; }
+  .get-app {
+    display: inline-flex; align-items: center; gap: 7px; text-decoration: none;
+    font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink); padding: 5px 12px; border-radius: 999px;
+    border: 1px solid var(--gold-bright); background: var(--gold-dim);
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  .get-app:hover { background: var(--gold-bright); color: #10161f; }
+  .get-app svg { width: 13px; height: 13px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
   @media (max-width: 560px) {
     .mast-tools { justify-content: space-between; width: 100%; }
     .visit-stats { border-left: none; padding-left: 0; }
@@ -355,6 +364,10 @@
       <span class="byline">Curated by <b>Aalok Rajyaguru</b></span>
     </div>
     <div class="mast-tools">
+      <a class="get-app" href="app/" title="Install The Daily Wrap as an app on your phone or computer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/></svg>
+        Get the app
+      </a>
       <label class="theme-switch">
         <span class="ts-label">Dark mode</span>
         <input type="checkbox" id="theme-toggle" role="switch" aria-label="Toggle dark mode">
