@@ -4,7 +4,7 @@ const dailyWrapData = {
     edition: "Market Close \u2014 India",
     tagline: "The day on Dalal Street, in one scroll"
   },
-  updatedLabel: "Updated: Monday, 9 November 2026, 5:30 PM IST \u2014 Market Close (next session is Wednesday, 11 November, after the Diwali-Balipratipada holiday)",
+  updatedLabel: "Updated: Tuesday, 10 November 2026, 5:30 PM IST \u2014 Markets closed today - Diwali-Balipratipada; trading resumes Wednesday, 11 November",
   asOfLabel: "Closing levels as of the 9 November 2026 close (3:30 PM IST); every day move measured from the 8 November Muhurat session close, every weekly move from the 6 November close",
   returnsBasis: "1Y returns are absolute; 3Y and 5Y are annualised (CAGR), point-to-point from the closes nearest 6 November 2025, 6 November 2023 and 5 November 2021, measured to the 6 November 2026 close and carried forward unchanged from Saturday's edition \u2014 they are not recomputed for a single session's close. USD/INR returns are the dollar's return against the rupee \u2014 a positive number means the rupee weakened.",
 
@@ -283,68 +283,48 @@ const dailyWrapData = {
 
   reads: [
     {
-      title: "Stock markets end higher amid easing crude oil prices, buying in banks",
-      source: "The Hindu / PTI",
-      url: "https://www.thehindu.com/business/markets/stock-markets-end-higher-amid-easing-crude-oil-prices-buying-in-banks/article71682332.ece"
+      title: "Markets closed today for Diwali-Balipratipada, trading to resume on November 11",
+      source: "The Hindu BusinessLine",
+      url: "https://www.thehindubusinessline.com/markets/markets-closed-today-for-diwali-balipratipada-trading-to-resume-on-november-11/article71684945.ece"
     },
     {
-      title: "Sensex ends 107 pts higher, Nifty above 25,000; PSU banks surge 3.7%, IT slides 1.2%",
+      title: "Market rally on Wednesday? Gift Nifty surges 300 pts on rising FII inflows, falling Brent crude prices",
+      source: "Business Today",
+      url: "https://www.businesstoday.in/markets/stocks/story/market-rally-on-wednesday-gift-nifty-surges-300-pts-on-rising-fii-inflows-falling-brent-crude-prices-566704-2026-11-10"
+    },
+    {
+      title: "A rally built on global hope: Why investors should remain selective",
+      source: "Moneycontrol (Opinion)",
+      url: "https://www.moneycontrol.com/news/opinion/a-rally-built-on-global-hope-why-investors-should-remain-selective-14075946.html"
+    },
+    {
+      title: "Sensex, Nifty 50 rise over 6% in past 5 sessions: More rally from tomorrow or profit booking will dent returns hopes?",
+      source: "Mint",
+      url: "https://www.livemint.com/market/stock-market-news/sensex-nifty-50-rise-over-6-in-past-5-sessions-more-rally-from-tomorrow-or-profit-booking-will-dent-returns-hopes-11794292057445.html"
+    },
+    {
+      title: "Dalal Street Week Ahead: Q2 earnings, US & India inflation, FII flow, oil prices among 10 key factors to watch",
       source: "Moneycontrol",
-      url: "https://www.moneycontrol.com/news/business/markets/stock-market-live-updates-nifty50-share-price-sensex-share-price-crude-fii-gift-nifty-rupee-latest-updates-09-11-2026-liveblog-alpha-liveblog-14075064.html"
-    },
-    {
-      title: "Market wrap, Nov 9: SENSEX rises 107 pts, NIFTY50 ends at 25,044 as PSU Bank, pharma stocks rally; SBI leads gains",
-      source: "Upstox",
-      url: "https://upstox.com/news/market-news/stocks/market-wrap-nov-9-sensex-rises-107-pts-nifty-50-ends-at-25-044-as-psu-bank-pharma-stocks-rally-sbi-leads-gains/article-203225/"
-    },
-    {
-      title: "Market Close Report Today, November 9, 2026: Nifty, Sensex Post Modest Gains As Diwali Party Pauses For Breath",
-      source: "HDFC Sky",
-      url: "https://hdfcsky.com/news/market-close-report-today-november-9-2026-nifty-sensex-post-modest-gains-as-diwali-party-pauses-for-breath"
-    },
-    {
-      title: "Muhurat Trading: Sensex, Nifty break 9-year Diwali streak; why the rally fizzled",
-      source: "Financial Express",
-      url: "https://www.financialexpress.com/market/muhurat-tradingsensex-nifty-break-9-year-diwali-streak-why-the-rally-fizzled-4379715/"
+      url: "https://www.moneycontrol.com/news/business/markets/dalal-street-week-ahead-q2-earnings-us-india-inflation-fii-flow-oil-prices-among-10-key-factors-to-watch-14075029.html"
     }
   ],
 
   ratio: {
-    name: "Return on Equity (ROE)",
-    category: "Profitability / shareholder returns",
+    name: "Book Value per Share (BVPS)",
+    category: "Per-share / valuation",
     company: "Infosys Ltd",
     companyNote: "IT services \u00b7 Nifty 50 / Nifty 500",
-    period: "Every figure is from Infosys' Integrated Annual Report 2025-26 (FY26), the audited consolidated financial statements prepared under Indian Accounting Standards (Ind AS), in rupees crore. The report's printed page numbers run 30 ahead of the PDF page number, so in the PDF every page cited below is 30 lower than the printed number you see in the report (printed p. 318 = PDF p. 288, printed p. 317 = PDF p. 287, printed p. 320 = PDF p. 290); every page cited below is the printed page number.",
+    period: "Every figure is from Infosys' Integrated Annual Report 2025-26 (FY26), the audited consolidated financial statements prepared under Indian Accounting Standards (Ind AS), in rupees crore except per-share data. The report's printed page numbers run 30 ahead of the PDF page number, so in the PDF every page cited below is 30 lower than the printed number you see in the report (printed p. 317 = PDF p. 287, printed p. 318 = PDF p. 288, printed p. 320 = PDF p. 290); every page cited below is the printed page number. The balance-sheet date is 31 March 2026.",
     report: {
       label: "Download the Infosys Integrated Annual Report 2025-26 (PDF) and follow along",
       url: "https://www.infosys.com/investors/reports-filings/annual-report/annual/documents/infosys-ar-26.pdf"
     },
-    formula: "Return on Equity = Profit for the year attributable to the owners of the Company ÷ average total equity attributable to the owners, where the average is the mean of the opening balance at 31 March 2025 and the closing balance at 31 March 2026. Both come off the same two statements: the Consolidated Statement of Profit and Loss gives the numerator, the Consolidated Balance Sheet gives the denominator. The answer is a percentage: how many paise of profit the business earned this year for every rupee the shareholders have left in it.",
-    formulaNote: "ROE is the one ratio every Indian screen publishes and almost none of them agree on, and Infosys is the perfect company to see why: the same audited statements produce 31.2%, 31.6% and 31.9% depending on three choices, none of them wrong. The first is which profit. The company earned Rs 29,474 crore, of which Rs 29,440 crore belongs to the owners and Rs 34 crore to non-controlling interests \u2014 so a numerator that uses total profit is pairing a number that includes other people's money with a denominator that does not. The second is which equity. ROE is a return on capital over a period, so the honest denominator is the average of the equity you started with and the equity you ended with; a closing-balance ROE flatters any company whose equity shrank during the year, and Infosys' equity shrank by Rs 2,966 crore because an Rs 18,000 crore buyback completed in FY26. The third is whether to strip the exceptional item: FY26 carries a Rs 1,289 crore one-off charge for the Labour Codes notified on 21 November 2025, which cut profit before tax by that amount and cut tax by Rs 318 crore, so underlying profit was about Rs 971 crore higher than reported. Work all three and you get a range of roughly 31.1% to 32.3% for the same year of the same company \u2014 which is why this page shows the arithmetic rather than a single decimal.",
+    formula: "Book Value per Share = total equity attributable to the owners of the Company at the balance-sheet date ÷ the number of equity shares outstanding at that date. Both halves come off the same page: the Consolidated Balance Sheet gives the equity, and the equity share capital line on that page, divided by the Rs 5 face value, gives the share count. The answer is in rupees per share \u2014 what would be left for each share if the company paid off every liability and handed the remainder to its owners.",
+    formulaNote: "Book value is the least fashionable ratio on this page and the one that most often decides whether a value investor looks twice. It is the accounting net worth of the business per share, and for an IT services company it is close to useless as a valuation floor, because almost everything Infosys earns with walks out of the door every evening \u2014 there is no plant, no land and no inventory behind the number, only receivables, cash and goodwill. What it is genuinely good for is direction, and Infosys shows all three of the conventions that make screens disagree. First, which equity: Rs 92,852 crore belongs to the owners of the Company, Rs 445 crore belongs to non-controlling interests, and a screen that divides by the Rs 93,297 crore total is measuring a slightly different thing. Second, which share count: book value is a snapshot, so it takes the shares outstanding on the balance-sheet date \u2014 not the weighted average of about 411 crore shares used for earnings per share, which is higher because the buyback completed part-way through the year. Third, and the interesting one, the direction. A company that returns more capital than it earns shrinks its book value even while it grows its profit, and Infosys did exactly that: Rs 18,000 crore of buyback and a Rs 48 dividend against Rs 29,440 crore of profit. Book value per share fell 0.7% in FY26 while earnings per share rose 11.0%. That divergence, rather than the level, is what the number is telling you.",
     inputsLabel: "The numbers we need, straight from the report",
     inputs: [
       {
-        label: "Profit for the year, FY26 \u2014 after tax, before it is split between owners and non-controlling interests",
-        value: "Rs 29,474 crore",
-        page: "p. 318"
-      },
-      {
-        label: "Profit attributable to the owners of the Company, FY26 \u2014 the numerator used here",
-        value: "Rs 29,440 crore",
-        page: "p. 318"
-      },
-      {
-        label: "Profit attributable to non-controlling interests, FY26 \u2014 the Rs 34 crore that is not the owners'",
-        value: "Rs 34 crore",
-        page: "p. 318"
-      },
-      {
-        label: "Profit attributable to the owners of the Company, FY25 \u2014 the prior year, for direction",
-        value: "Rs 26,713 crore",
-        page: "p. 318"
-      },
-      {
-        label: "Equity share capital, 31 March 2026 \u2014 404.7 crore shares of Rs 5 each",
+        label: "Equity share capital, 31 March 2026 \u2014 Rs 2,024 crore at Rs 5 a share, which is 404.8 crore shares left after the buyback",
         value: "Rs 2,024 crore",
         page: "p. 317"
       },
@@ -354,12 +334,27 @@ const dailyWrapData = {
         page: "p. 317"
       },
       {
-        label: "Total equity attributable to owners, 31 March 2026 \u2014 2,024 + 90,828, the closing denominator",
+        label: "Total equity attributable to the owners of the Company, 31 March 2026 \u2014 2,024 + 90,828, the numerator",
         value: "Rs 92,852 crore",
         page: "p. 317"
       },
       {
-        label: "Equity share capital, 31 March 2025 \u2014 before the buyback cancelled shares",
+        label: "Non-controlling interests, 31 March 2026 \u2014 the Rs 445 crore that is not the owners' and stays out of the numerator",
+        value: "Rs 445 crore",
+        page: "p. 317"
+      },
+      {
+        label: "Total equity including non-controlling interests, 31 March 2026 \u2014 the looser alternative numerator",
+        value: "Rs 93,297 crore",
+        page: "p. 317"
+      },
+      {
+        label: "Face value per equity share \u2014 the divisor that turns share capital into a share count",
+        value: "Rs 5",
+        page: "p. 317"
+      },
+      {
+        label: "Equity share capital, 31 March 2025 \u2014 414.6 crore shares, before the buyback cancelled any",
         value: "Rs 2,073 crore",
         page: "p. 317"
       },
@@ -369,45 +364,25 @@ const dailyWrapData = {
         page: "p. 317"
       },
       {
-        label: "Total equity attributable to owners, 31 March 2025 \u2014 2,073 + 93,745, the opening denominator",
+        label: "Total equity attributable to the owners, 31 March 2025 \u2014 2,073 + 93,745, the prior-year numerator",
         value: "Rs 95,818 crore",
         page: "p. 317"
       },
       {
-        label: "Non-controlling interests, 31 March 2026 and 31 March 2025 \u2014 the Rs 445 crore and Rs 385 crore that sit outside the owners' equity",
-        value: "Rs 445 crore / Rs 385 crore",
-        page: "p. 317"
-      },
-      {
-        label: "Total equity including non-controlling interests, 31 March 2026 \u2014 the denominator Infosys itself uses",
-        value: "Rs 93,297 crore",
-        page: "p. 317"
-      },
-      {
-        label: "Exceptional item: impact of the Labour Codes notified on 21 November 2025, charged in FY26",
-        value: "Rs 1,289 crore",
-        page: "p. 318"
-      },
-      {
-        label: "Tax effect of that exceptional item \u2014 current tax is Rs 363 crore lower than FY25 partly because of it; the company states Rs 318 crore",
-        value: "Rs 318 crore",
-        page: "p. 318"
-      },
-      {
-        label: "Buyback of equity shares completed during FY26, at Rs 1,800 a share \u2014 why owners' equity fell despite a profitable year",
-        value: "Rs 18,000 crore",
+        label: "Shares extinguished in the FY26 buyback \u2014 Rs 18,000 crore at Rs 1,800 a share, which is why the share count fell 2.4%",
+        value: "10 crore shares",
         page: "p. 320"
       },
       {
-        label: "Infosys' own published return on equity for FY26, and the 29.0% it reports for FY25",
-        value: "31.6% (FY26) / 29.0% (FY25)",
-        page: "pp. 50-51"
+        label: "Profit attributable to the owners of the Company, FY26 \u2014 not in the formula, but the number book value is being compared against",
+        value: "Rs 29,440 crore",
+        page: "p. 318"
       }
     ],
-    working: "Step 1 \u2014 Rebuild the closing denominator from its two printed lines (p. 317) rather than trusting a subtotal: equity share capital Rs 2,024 crore + other equity Rs 90,828 crore = Rs 92,852 crore attributable to the owners. Step 2 \u2014 Do the same for the opening balance (p. 317): Rs 2,073 crore + Rs 93,745 crore = Rs 95,818 crore. Step 3 \u2014 Average the two: (92,852 + 95,818) ÷ 2 = Rs 94,335 crore. Step 4 \u2014 Take the numerator the balance sheet matches: profit attributable to the owners Rs 29,440 crore (p. 318), not the Rs 29,474 crore total. Step 5 \u2014 Divide: 29,440 ÷ 94,335 = 0.3121, or 31.21%. Step 6 \u2014 Now do it the other two ways so you can see the range. Total-equity version: total profit Rs 29,474 crore ÷ average total equity ((93,297 + 96,203) ÷ 2 = Rs 94,750 crore) = 31.11%. Infosys' own version: Rs 29,474 crore ÷ the closing total equity of Rs 93,297 crore = 31.59%, which is the 31.6% the company prints on pp. 50-51. Step 7 \u2014 Strip the one-off: the Labour Codes charge cut profit before tax by Rs 1,289 crore and tax by Rs 318 crore, so underlying profit was about Rs 971 crore higher at roughly Rs 30,445 crore, and 30,445 ÷ 94,335 = 32.27%. Step 8 \u2014 Set the direction of travel. Owners' equity fell Rs 2,966 crore (95,818 → 92,852) in a year the company earned Rs 29,440 crore, because Rs 18,000 crore went out in the buyback (p. 320) and the dividend took most of the rest; profit rose 10.2% on revenue up 9.6% (Rs 1,78,650 crore from Rs 1,62,990 crore, p. 318). A shrinking denominator and a growing numerator is why ROE improved 2.6 percentage points to 31.6% on the company's own basis.",
-    result: "31.2% on average equity attributable to owners; 31.6% on Infosys' closing-equity basis; 32.3% before the Rs 1,289 crore Labour Codes charge",
-    meaning: "31% is a business that doubles the owners' money in about two and a half years without paying out a rupee, and it is the number that explains why Infosys trades at 14-15 times earnings rather than at the market's multiple: the market is not paying for growth, it is paying for a very high return on a very small capital base. Three things are worth holding on to. First, this ROE is partly manufactured by capital return \u2014 Rs 18,000 crore of buyback and a Rs 48 dividend per share took equity down 3.1% while profit rose 10.2%, so a quarter of the improvement is arithmetic rather than performance. Second, the capital base is tiny relative to the business: Rs 1,78,650 crore of revenue is run on Rs 92,852 crore of equity because an IT services firm owns almost nothing except people and receivables, which is why every asset-light comparison of ROE between an IT company and a manufacturer is close to meaningless. Third, the number is stable to the point of being boring \u2014 31.6% in FY26, 29.0% in FY25, 32.1% in FY24, and Screener's five-year average at 31% \u2014 and stability at that level is the actual investment case. Watch the denominator, not the numerator: another buyback would lift ROE without adding a rupee of profit, and a large acquisition would cut it for a year or two even if the deal were good.",
-    crossCheck: "Reconciled three ways. First, internally: 2,024 + 90,828 = 92,852 and 2,073 + 93,745 = 95,818 are both rebuilt from the report's own printed lines, and 29,440 + 34 = 29,474 ties the owners' profit back to the total. Second, against the company's own disclosure: Infosys prints 31.6% for FY26 and 29.0% for FY25 on the Financial Capital pages (pp. 50-51), and says it improved 2.6 percentage points \u2014 which is exactly what 29,474 ÷ 93,297 = 31.59% reproduces, so the company's convention is closing total equity over total profit, not the average-equity method used here. Third, against two independent screens on 9 November 2026: Screener.in shows ROE of 31.9% with a three-year average of 31% and a five-year average of 31%, and Alphave shows 31.2% for FY26 against 29.1% for FY25. The 31.2% computed here matches Alphave to the decimal because both use average equity attributable to owners; Screener's 31.9% is about 70 basis points higher, which is the closing-balance-versus-average convention and, on a year when equity fell 3.1%, exactly the direction and rough size of gap you would predict. No provider's figure contradicts the arithmetic; they differ only on which equity they divide by.",
-    source: "Infosys Ltd, Integrated Annual Report 2025-26, Consolidated Financial Statements under Ind AS for the year ended 31 March 2026: Consolidated Balance Sheet, printed p. 317 (PDF p. 287) for equity share capital, other equity, total equity attributable to owners, non-controlling interests and total equity at both 31 March 2026 and 31 March 2025; Consolidated Statement of Profit and Loss, printed p. 318 (PDF p. 288) for revenue, profit for the year, the split between owners and non-controlling interests, the Rs 1,289 crore Labour Codes exceptional item and its tax effect; Consolidated Statement of Changes in Equity, printed p. 320 (PDF p. 290) for the Rs 18,000 crore buyback; Financial Capital, printed pp. 50-51 for the company's own 31.6% ROE and the 2.6 percentage point improvement. Cross-checked against Screener.in's consolidated ROE of 31.9% and Alphave's 31.2% for 9 November 2026."
+    working: "Step 1 \u2014 Count the shares from the capital line, not from a website (p. 317): equity share capital Rs 2,024 crore ÷ Rs 5 face value = 404.8 crore equity shares outstanding at 31 March 2026. Step 2 \u2014 Build the numerator from its two printed lines rather than trusting a subtotal (p. 317): Rs 2,024 crore + Rs 90,828 crore = Rs 92,852 crore attributable to the owners. Step 3 \u2014 Divide: 92,852 ÷ 404.8 = Rs 229.38, so Rs 229.4 of book value per share. Step 4 \u2014 Do the prior year the same way so you can see the movement is real and not an artefact (p. 317): Rs 2,073 crore + Rs 93,745 crore = Rs 95,818 crore, and Rs 2,073 crore ÷ Rs 5 = 414.6 crore shares, so 95,818 ÷ 414.6 = Rs 231.1. Step 5 \u2014 Check the change: 229.4 against 231.1 is down Rs 1.7, or 0.7%. The share count fell 2.4% (414.6 to 404.8 crore) because 10 crore shares were cancelled in the Rs 18,000 crore buyback at Rs 1,800 (p. 320), and owners' equity fell 3.1% (95,818 to 92,852) because the buyback and the dividend took out more than the year's Rs 29,440 crore of profit (p. 318) added back. Equity fell faster than the share count, so book value per share fell. Step 6 \u2014 Run the looser version for comparison: total equity including non-controlling interests Rs 93,297 crore ÷ 404.8 = Rs 230.5, about a rupee higher, which is the size of the convention gap. Step 7 \u2014 Put it against the market: at the 9 November 2026 close of Rs 1,154 the shares trade at 1,154 ÷ 229.4 = 5.0 times book, against about 5.5 times at the 31 March 2026 year-end price implied by Infosys' own per-share table (17.5 times earnings on Rs 71.58 of earnings per share, or roughly Rs 1,253 a share).",
+    result: "Rs 229.4 of book value per share at 31 March 2026, against Rs 231.1 a year earlier \u2014 down 0.7% in a year in which earnings per share rose 11.0%; the stock trades at 5.0 times that book value at the 9 November 2026 close of Rs 1,154",
+    meaning: "Five times book for a company whose book is mostly cash and receivables looks expensive until you remember that the assets that generate Infosys' revenue are not on the balance sheet at all \u2014 they are 3,00,000-plus people, the client relationships they hold and the delivery platforms they run, none of which a balance sheet is allowed to capitalise. That is why price-to-book has never been the right lens for an IT services firm and why the ratio is worth learning mainly to know when to ignore it. What it does tell you here is subtler and more useful. Book value per share fell in FY26 not because the business did badly \u2014 profit rose 10.2% and revenue 9.6% \u2014 but because the company chose to hand back Rs 18,000 crore in a buyback and Rs 48 a share in dividends against Rs 29,440 crore of profit, so owners' equity shrank by Rs 2,966 crore. A shrinking book with a growing profit is the arithmetic behind the 31.6% return on equity Infosys reports, and it is a deliberate policy, not an accident: the capital allocation policy targets returning about 85% of free cash flow over five years. Two things to watch. The first is that buybacks at Rs 1,800 a share when the stock now trades near Rs 1,154 destroy book value per share for the shareholders who stay \u2014 the company paid well above today's price to retire those 10 crore shares, and that shows up here as a fall in book value. The second is goodwill: Rs 229 a share is only as solid as the acquisitions underneath it, and any large deal would lift book value while lowering the returns on it. Treat the level as a footnote and the direction as the signal.",
+    crossCheck: "Four independent checks, three of which reconcile. First, against the company: Infosys' own Three Year Overview (IFRS) \u2014 Per Share Data and Ratios page publishes Book Value of Rs 229 for FY26, Rs 231 for FY25 and Rs 213 for FY24. Our Rs 229.4 and Rs 231.1 match the first two to the rupee, which also confirms the share counts, since those two years are the ones either side of the buyback. Second, against a broker: Motilal Oswal's 23 April 2026 results update carries BV per share of Rs 229.5 for FY26, a rupee above ours and inside rounding on the share count. Third, against a data provider: Eulerpool shows Rs 230.77 as of June 2026, again within about 1%. Fourth, against Screener.in on 9 November 2026, which shows Book Value of Rs 244 \u2014 roughly 6% above ours and the one figure we could not reproduce from the audited consolidated statements. We have kept the report-derived Rs 229.4 and flagged the gap rather than adopt a number we cannot trace to a page; a Rs 15 difference on 404.8 crore shares is about Rs 6,000 crore of equity, far more than the Rs 445 crore of non-controlling interests, so it is not simply the total-equity convention. Note also that Screener's Stock P/E of 14.8 and dividend yield of 4.16% are struck on the current Rs 1,154 price, not on the 31 March 2026 balance-sheet date, which is why they will not tie to the 17.5 times year-end P/E in Infosys' own per-share table.",
+    source: "Infosys Ltd, Integrated Annual Report 2025-26, Consolidated Financial Statements under Ind AS for the year ended 31 March 2026: Consolidated Balance Sheet, printed p. 317 (PDF p. 287) for equity share capital, other equity, total equity attributable to owners, non-controlling interests and total equity at both 31 March 2026 and 31 March 2025, and for the Rs 5 face value; Consolidated Statement of Profit and Loss, printed p. 318 (PDF p. 288) for profit attributable to the owners of the Company; Consolidated Statement of Changes in Equity, printed p. 320 (PDF p. 290) for the Rs 18,000 crore buyback at Rs 1,800 a share. Cross-checked against Infosys' Three Year Overview (IFRS) \u2014 Per Share Data and Ratios page (Book Value Rs 229 / Rs 231 / Rs 213 for FY26 / FY25 / FY24), Motilal Oswal's 23 April 2026 results update (BV per share Rs 229.5), Eulerpool (Rs 230.77) and Screener.in on 9 November 2026 (Rs 244, unreconciled and flagged above)."
   }
 };
