@@ -4,50 +4,50 @@ const dailyWrapData = {
     edition: "Market Close \u2014 India",
     tagline: "The day on Dalal Street, in one scroll"
   },
-  updatedLabel: "Updated: Tuesday, 10 November 2026, 5:30 PM IST \u2014 Markets closed today - Diwali-Balipratipada; trading resumes Wednesday, 11 November",
-  asOfLabel: "Closing levels as of the 9 November 2026 close (3:30 PM IST); every day move measured from the 8 November Muhurat session close, every weekly move from the 6 November close",
+  updatedLabel: "Updated: Wednesday, 11 November 2026, 5:30 PM IST",
+  asOfLabel: "Closing levels as of the 11 November 2026 close (3:30 PM IST); every day move measured from the 9 November close \u2014 the market was shut on Tuesday, 10 November for Diwali-Balipratipada \u2014 and every weekly move from the 6 November close",
   returnsBasis: "1Y returns are absolute; 3Y and 5Y are annualised (CAGR), point-to-point from the closes nearest 6 November 2025, 6 November 2023 and 5 November 2021, measured to the 6 November 2026 close and carried forward unchanged from Saturday's edition \u2014 they are not recomputed for a single session's close. USD/INR returns are the dollar's return against the rupee \u2014 a positive number means the rupee weakened.",
 
   indices: [
     {
       name: "Nifty 50",
-      close: 25044.65,
-      dayChange: 58.25,
-      dayChangePct: 0.23,
-      weekChangePct: 0.06, // vs the 6 Nov (prior Friday) close of 25,030.35
-      spark: [23960.60, 24536.60, 25030.35, 24986.40, 25044.65], // last 5 closes: 4 Nov, 5 Nov, 6 Nov, 8 Nov (Muhurat), 9 Nov
+      close: 25255.05,
+      dayChange: 210.40,
+      dayChangePct: 0.84,
+      weekChangePct: 0.90, // vs the 6 Nov (prior Friday) close of 25,030.35
+      spark: [24536.60, 25030.35, 24986.40, 25044.65, 25255.05], // last 5 closes: 5 Nov, 6 Nov, 8 Nov (Muhurat), 9 Nov, 11 Nov \u2014 10 Nov was a holiday
       returns: { oneY: -1.88, threeY: 8.84, fiveY: 6.92 }, // 1Y absolute; 3Y and 5Y annualised, measured to the 6 Nov 2026 close
-      note: "A session that was down 206 points at its worst and still closed at an eight-month high. The index opened at 25,076.40, slid to 24,838.75 as the Diwali-week profit-taking met the IT sell-off, then recovered to settle at 25,044.65, up 58.25 points or 0.23% \u2014 its highest close since 27 February 2026 and its second straight session above 25,000. Against the 6 November close of 25,030.35 the week-to-date is just +0.06%, which is the honest read of a day like this: the market defended a level rather than extended a rally that had already added 8.58% in the previous week. 21 of the 50 members rose and 28 fell, and the arithmetic was done by the banks \u2014 SBI +2.56% to Rs 1,042, HDFC Bank +1.75% to Rs 797.80, ICICI Bank +1.53% to Rs 1,589 and L&T +1.82% to Rs 4,185 \u2014 against Tata Steel -2.81% to Rs 184.85, HCL Technologies -2.64% to Rs 1,404 and Infosys -1.89% to Rs 1,149.50. (NSE's own index file carries 25,044.65, +58.25 and +0.23% with a 24,838.75 low and a 25,076.40 open; the same four numbers appear in Upstox's wrap, HDFC Sky's close report, PTI via The Hindu and researchandinvest's 9 Nov table.)"
+      note: "The ninth straight gain, and the first time since February that the index has closed two sessions in a row above 25,000. The Nifty opened at 25,337.80 \u2014 a 293-point gap on Monday's 25,044.65 \u2014 ran to 25,424.35 in the first hour, gave most of it back to a 25,095.35 low, and settled at 25,255.05, up 210.40 points or 0.84%. That is the highest close since 26 February 2026. The shape is the story: a gap-up that was 70% surrendered is a day of distribution into strength rather than accumulation, and the technical read from two brokers is the same one \u2014 HDFC Securities calls 25,400-25,500 strong overhead resistance and puts support at 24,800-24,700, while LKP Securities calls the index overbought and expects a retracement towards 25,000-24,800. The closing auction added to the noise: Moneycontrol recorded the Nifty at an indicative 25,600 before the 3:30 pm print came in at 25,255. Against the 6 November close the week-to-date is +0.90%, and against 1 October the index is up 8.6% in six trading sessions. (NSE's own index file carries 25,255.05, +210.40 and +0.84% with a 25,424.35 high and a 25,095.35 low; the same four numbers appear in PTI via The Hindu, Business Standard, Moneycontrol, India Today, Zee Business, ET Now and researchandinvest's 11 Nov index table.)"
     },
     {
       name: "Nifty Next 50",
-      close: 72789.45,
-      dayChange: 797.75,
-      dayChangePct: 1.11,
-      weekChangePct: 1.58, // vs the 6 Nov (prior Friday) close of 71,657.80
-      spark: [70795.00, 71768.65, 71657.80, 71991.70, 72789.45], // last 5 closes: 4 Nov, 5 Nov, 6 Nov, 8 Nov (Muhurat), 9 Nov
+      close: 73486.20,
+      dayChange: 696.75,
+      dayChangePct: 0.96,
+      weekChangePct: 2.55, // vs the 6 Nov (prior Friday) close of 71,657.80
+      spark: [71768.65, 71657.80, 71991.70, 72789.45, 73486.20], // last 5 closes: 5 Nov, 6 Nov, 8 Nov (Muhurat), 9 Nov, 11 Nov
       returns: { oneY: 3.40, threeY: 16.58, fiveY: 10.70 }, // 1Y absolute; 3Y and 5Y annualised, measured to the 6 Nov 2026 close
-      note: "The best of the five cards and the day's real surprise: +797.75 points, or 1.11%, to 72,789.45, closing on its session high of 72,802.50 after a low of 71,864.15. It beat the Nifty by 88 basis points on a day the Nifty barely moved, and it has now gained 1.58% since the 6 November close against the Nifty's 0.06% \u2014 the first time in a fortnight that the second rung of the market has led. The composition explains it: this basket carries Union Bank of India (+5.60%), Punjab National Bank (+5.27%) and the other state lenders that did Monday's work, and almost none of the IT names that lost 1.2%. It had already outperformed in Sunday's Muhurat session (+0.47% against the Nifty's -0.18%), so the two sessions together read as money rotating down from the index heavyweights rather than leaving. (researchandinvest's 9 Nov index table carries 72,789.45, +1.11%, the 72,802.50 high and the 71,991.70 previous close; NSE's 8 November file carries the 71,991.70 base and the Muhurat gain, and Upstox's wrap confirms the broader market closed higher while the benchmarks stalled.)"
+      note: "Second-best of the five cards and the second session running in which the rung below the Nifty has led it: +696.75 points, or 0.96%, to 73,486.20, having traded 73,099.05 to 73,771.55. Over the week it is +2.55% against the Nifty's +0.90%, so the rotation down the market has now persisted through the Diwali break rather than ending with it. The composition explains it again: this basket holds Bank of Baroda (+5.77% to Rs 275 on the day), Punjab National Bank (+4.77% to Rs 138.48), IRFC (+3.83%) and Motherson (+4.81%), and it holds no meaningful IT weight. Note the index is 1.9% below its 52-week high of 75,000.40 \u2014 it was there on 11 November 2026 with the whole of November's foreign bid still arriving. (researchandinvest's 11 Nov index table and Goodreturns' NSE sector watch both carry 73,486.20, +0.96%, the 73,771.55 high and the 72,789.45 previous close; Anand Rathi's 11:44 am snapshot carried 73,655.20 and +1.19%, an intraday print rather than a close.)"
     },
     {
       name: "Nifty Midcap 150",
-      close: 22408.55,
-      dayChange: 80.70,
-      dayChangePct: 0.36,
-      weekChangePct: 0.62, // vs the 6 Nov (prior Friday) close of 22,271.15
-      spark: [21867.30, 22290.40, 22271.15, 22327.85, 22408.55], // last 5 closes: 4 Nov, 5 Nov, 6 Nov, 8 Nov (Muhurat), 9 Nov
+      close: 22597.95,
+      dayChange: 189.40,
+      dayChangePct: 0.85,
+      weekChangePct: 1.47, // vs the 6 Nov (prior Friday) close of 22,271.15
+      spark: [22290.40, 22271.15, 22327.85, 22408.55, 22597.95], // last 5 closes: 5 Nov, 6 Nov, 8 Nov (Muhurat), 9 Nov, 11 Nov
       returns: { oneY: 1.59, threeY: 14.20, fiveY: 13.62 }, // 1Y absolute; 3Y and 5Y annualised, measured to the 6 Nov 2026 close
-      note: "Up 80.70 points, or 0.36%, to 22,408.55 \u2014 and the tell is in the shape rather than the size: the index closed exactly at its session high of 22,408.55 after trading as low as 22,184.85, so the mid-cap ladder was bought into the close rather than sold. It beat the Nifty by 13 basis points and lagged the Next 50 by 75, which is what a day led by large PSU banks and a handful of mid-cap lenders looks like: IREDA +7.47% to Rs 119.65, GSK Pharmaceuticals +6.71% to Rs 2,710, Union Bank +5.60% and Jubilant Foodworks -4.99% to Rs 428.50 inside the same index. Note the divergence to watch: Nifty Midcap 100 rose 0.55% and Midcap 50 0.53% on the same day, so the smaller half of this 150-stock index did less work than the top. (researchandinvest's 9 Nov table for 22,408.55, +0.36%, the 22,408.55 high and the 22,327.85 previous close; NSE's 8 November file carries the Muhurat close of 22,327.85, +0.25%, and News18's close report carries the Midcap 150's 0.36%.)"
+      note: "Up 189.40 points, or 0.85%, to 22,597.95 \u2014 fractionally ahead of the Nifty's 0.84% and the first session in a fortnight in which the mid-cap ladder did not lag. It ran 22,504.80 to 22,692.15, so the close is 94 points under the high: bought early, sold into the afternoon, held the gain. The internal split is worth noting because it inverts Monday's: Nifty Midcap 50 rose 0.93% and Midcap 100 0.81%, while this 150-stock index did 0.85% \u2014 for once the smaller names did not drag. The movers inside it were the day's theme in miniature: Kalyan Jewellers +8.63% to Rs 663.75, FACT +8.67% to Rs 813.25 and Coromandel International +5.95% to Rs 1,991 on the consumer and chemicals bid, against Cochin Shipyard -6.82% to Rs 1,202 and Vijaya Diagnostic -3.69%. (researchandinvest's 11 Nov table for 22,597.95, +0.85%, the 22,692.15 high, the 22,504.80 low and the 22,408.55 previous close; Moneycontrol and Business Standard carry the Midcap 100 at +0.81% and capitalmarket.com carried the Midcap 150 at +0.63% at 2:25 pm, an intraday print.)"
     },
     {
       name: "Nifty Smallcap 250",
-      close: 17577.00,
-      dayChange: -17.10,
-      dayChangePct: -0.10,
-      weekChangePct: 1.10, // vs the 6 Nov (prior Friday) close of 17,386.15
-      spark: [17398.35, 17535.70, 17386.15, 17594.10, 17577.00], // last 5 closes: 4 Nov, 5 Nov, 6 Nov, 8 Nov (Muhurat), 9 Nov
+      close: 17798.15,
+      dayChange: 221.15,
+      dayChangePct: 1.26,
+      weekChangePct: 2.37, // vs the 6 Nov (prior Friday) close of 17,386.15
+      spark: [17535.70, 17386.15, 17594.10, 17577.00, 17798.15], // last 5 closes: 5 Nov, 6 Nov, 8 Nov (Muhurat), 9 Nov, 11 Nov
       returns: { oneY: 1.90, threeY: 11.97, fiveY: 12.42 }, // 1Y absolute; 3Y and 5Y annualised, measured to the 6 Nov 2026 close
-      note: "The only one of the five cards that fell: -17.10 points, or 0.10%, to 17,577.00, from a 17,594.10 Muhurat close, having run between 17,434.95 and 17,588.70. Read it against the session before it, because the two together are the story \u2014 the index rose 1.20% on Sunday while the Nifty fell 0.18%, and gave back a tenth of that on Monday, so over the two sessions it is still up 1.09%. The internal split is the interesting part: Nifty Smallcap 100 managed +0.10% and Smallcap 50 +0.46% on the same day, so the smallest names in this 250-stock pool \u2014 R R Kabel -6.90%, Finolex Cables -5.85%, Sterlite Technologies -5.00%, HFCL -4.63% \u2014 dragged the wider index under water. Three of those four are cables and telecom equipment, repriced for a third consecutive session. (researchandinvest's 9 Nov table for 17,577.00, -0.10% and the day range; NSE's 8 November file for the 17,594.10 base and the +1.20% Muhurat move; Upstox's wrap for the Smallcap 100 at +0.10%.)"
+      note: "The day's best of the five cards, and the reversal of Monday's pattern: +221.15 points, or 1.26%, to 17,798.15, from a 17,680.95 low to a 17,883.40 high. Over the week it is +2.37%, second only to the Next 50. The detail that matters is the nesting \u2014 Smallcap 50 rose 1.46% and Smallcap 100 1.59%, both faster than this wider 250-stock pool at 1.26%, which means the smallest tail of the index lagged the leaders on the day even as the index itself rose. That is a healthier shape than Monday's, when the tail dragged the index under water while the 100 rose. Nine of the ten biggest gainers in the whole Nifty 500 universe were small caps. (researchandinvest's 11 Nov index table for 17,798.15, +1.26%, the 17,883.40 high, the 17,680.95 low and the 17,577.00 previous close; Moneycontrol and Business Standard both carry the Smallcap 100 at +1.59% and Upstox's wrap calls the Smallcap 100 the day's outstanding index.)"
     },
     {
       name: "BSE SME Index",
@@ -55,18 +55,18 @@ const dailyWrapData = {
       dayChange: null,
       dayChangePct: null,
       weekChangePct: null,
-      spark: [113070.91, 113592.99, 115864.00, 115996.69, 117740.39], // 3 Nov, 4 Nov, 5 Nov, 6 Nov, 8 Nov (Muhurat) \u2014 today's close unverified, so the spark ends at the last confirmed close
+      spark: [113592.99, 115864.00, 115996.69, 117740.39, 116940.52], // 4 Nov, 5 Nov, 6 Nov, 8 Nov (Muhurat), 9 Nov \u2014 today's close unverified, so the spark ends at the last confirmed close
       returns: { oneY: 9.81, threeY: 40.48, fiveY: 70.41 }, // 1Y absolute; 3Y and 5Y annualised, measured to the 6 Nov 2026 close
-      note: "Deliberately left blank rather than guessed. The S&P BSE SME IPO index closed Sunday's Muhurat session at 1,17,740.39, up 1,743.70 points or 1.50% \u2014 the strongest of any index on the day and a second consecutive session of more than 1.5%. Monday then opened at 1,17,985.02 and traded down: 5paisa printed 1,17,316.97 (-0.36%) at 12:12 pm, Angel One 1,17,273.19 (-0.40%) at 12:29 pm and Dhan 1,17,478.38 (-0.22%) at 11:02 am, all on a day range of 1,17,118.19 to 1,17,986.78, with 54 constituents up and 48 down at that point. None of those is a close, and no provider reachable at 5:30 pm had published a post-close print \u2014 BSE Indices' own series still ended at 8 November, Anand Rathi's closing-price table still ended at 8 November, and ICICI Direct's page still carried 6 November. So the card shows no level for today, the spark runs to the last confirmed close, and the level will be filled in on the next edition. What can be said without guessing: the index is 4.5% below its 52-week high of 1,23,353.65 and roughly 59% above its 52-week low of 73,866.86, and it has now risen in five of the last six sessions."
+      note: "Left blank rather than guessed, for the second edition running, and Monday's missing print is now filled in: BSE Indices' own series and Anand Rathi's closing-price table both carry 1,16,940.52 for 9 November, down 799.87 points or 0.68% from the Muhurat close of 1,17,740.39 \u2014 which is what Monday's intraday snapshots had pointed to and what the last edition could not confirm. Wednesday then opened at 1,16,928.75 and traded up: 5paisa printed 1,17,888.83 (+0.81%) at 12:40 pm, Angel One 1,17,858.63 (+0.79%) at 1:16 pm and Dhan 1,17,925.66 (+0.84%) at 11:43 am, on a day range of 1,16,847.48 to 1,18,074.61, with 72 of the 163 constituents up and 49 down at that point. None of those is a close, and no provider reachable at 5:30 pm had published a post-close print \u2014 BSE Indices' chart series still ended at 9 November. So the card shows no level for today, the spark runs to the last confirmed close, and the level will be filled in on the next edition. What can be said without guessing: the index is 4.5% below its 52-week high of 1,23,353.65 and 59% above its 52-week low of 73,866.86, and it has now risen in six of the last eight sessions."
     }
   ],
 
   dailyWrap: {
     label: "The Day That Was",
     kicker: "Daily Wrap",
-    headline: "Down 206 points at the low and up 58 at the close: the Nifty ends at 25,044.65 and the Sensex at 81,106.65 as PSU banks surge 3.73% and IT gives back 1.22% \u2014 an eight-month high bought on negative breadth",
-    summary: "The rally paused without breaking. The Nifty opened at 25,076.40, fell to 24,838.75 by the afternoon \u2014 206 points under Friday's close \u2014 and then recovered to settle at 25,044.65, up 58.25 points or 0.23%, its highest close since 27 February 2026. The Sensex ran from 80,519.31 to 81,339.41 and closed at 81,106.65, up 107.25 points or 0.13%. The work was done by the state lenders: Nifty PSU Bank jumped 3.73% to 8,905.35 on Union Bank of India +5.60%, Punjab National Bank +5.27%, Bank of India +4.5% and Indian Bank +4.3%, with SBI +2.56% to Rs 1,042 leading the Nifty 50. Nifty Bank added 1.51% to 59,741.25, closing at its high, and Pharma rose 1.65% to 28,896.10 on GSK Pharmaceuticals +6.71% and Gland Pharma +5.41%. IT was the day's problem: Nifty IT fell 1.22% to 32,468.95 as Infosys -1.89% to Rs 1,149.50, HCL Technologies -2.64% to Rs 1,404 and Tech Mahindra -1.80% tracked the AI-infrastructure sell-off that has hit Wall Street, and Nifty Metal lost 0.46% with Tata Steel -2.81% to Rs 184.85. Inside the Nifty 50, 21 stocks rose and 28 fell; behind SBI came Trent +2.02%, Nestle India +1.91%, NTPC +1.87%, L&T +1.82% and HDFC Bank +1.75%. Breadth was negative on every provider's count \u2014 1,922 advances against 2,316 declines on NSE's provisional file, or 1,629 against 1,959 on Upstox's \u2014 which is the honest caveat on a close like this: the recovery was bought in the index's heaviest lenders, not across the market. The broader market still edged up, with the Next 50 the best of the lot at +1.11% and the Smallcap 250 the only faller at -0.10%. India VIX dropped 5.48% to 17.42, its first meaningful fall of the month. The macro backdrop stayed friendly: Brent slipped about 1% to $97.46, the rupee closed at 93.93 after touching a six-month high of 93.69, and foreign investors have bought more than $4.1 billion of Indian equities in November, the strongest month since September 2024. There is no session on Tuesday \u2014 NSE and BSE are shut for Diwali-Balipratipada and reopen on Wednesday, 11 November.",
-    stats: ["Nifty +0.23%", "Sensex +0.13%"],
+    headline: "Nifty ends at 25,255.05 and the Sensex at 81,879.40 as PSU banks jump 2.94% and autos 2.14% \u2014 a ninth straight gain, but 170 points of the opening gap handed back",
+    summary: "The first session after the Diwali break opened like a continuation and closed like a decision deferred. The Nifty gapped up to 25,337.80 from Monday's 25,044.65, touched 25,424.35 within the first hour, then spent the rest of the day giving it back to close at 25,255.05, up 210.40 points or 0.84% \u2014 still its highest close since 26 February 2026 and a ninth consecutive gain. The Sensex ran from 80,939.40 to an intraday 82,520.40, a 1,413.75-point move, and settled at 81,879.40, up 772.75 points or 0.95%. The leadership was domestic and cyclical and it was broad: Nifty PSU Bank +2.94% to 9,167.20, Nifty Auto +2.14% to 28,523.30, Nifty Chemicals +2.10% to 28,562.80, Nifty Bank +1.76% to 60,792.40, Private Bank +1.14%, FMCG +1.13%, Oil & Gas +1.03%, Financial Services +1.02%, Metal +0.96% and Infrastructure +0.93%. Only four sectors fell, and the four are the same four that have been failing for a fortnight: Nifty IT -0.53% to 32,295.60, Realty -0.42% to 893.95, Pharma -0.41% to 28,776.45 and Healthcare -0.32%. Inside the Nifty 50 the arithmetic was done by Mahindra & Mahindra +5.30% to Rs 3,465, InterGlobe Aviation +4.33% to Rs 5,665 and Trent +2.59%, against Adani Ports -1.84% to Rs 1,907, Tech Mahindra -1.50%, Nestle India -1.44% and ICICI Bank -1.38% to Rs 1,566.30. Unlike Monday, breadth agreed with the index: 2,756 stocks advanced, 1,555 declined and 162 were unchanged on Moneycontrol's tally, and every one of the five broad cards rose, the Smallcap 250 best at +1.26% and the Nifty 500 at +0.90% to 23,779.30. India VIX edged up 0.80% to 17.56 even as the index rose, which is the honest caveat on the day. The fuel was the same fuel: foreign portfolio investors have bought Rs 53,739 crore of Indian equities between 2 and 9 November, the biggest monthly inflow since September 2024, and Brent crude sat at $92.94 \u2014 24% below the $118 of 30 October \u2014 while the rupee closed 24 paise stronger at 93.69. Moody's raised its FY27 India GDP forecast to 7% from 6.5% and Bernstein lifted its December Nifty target to 26,100 from 25,000. Thursday brings India's CPI print, and 25,400-25,500 is the level both brokers now name.",
+    stats: ["Nifty +0.84%", "Sensex +0.95%"],
     statsLabel: "Day"
   },
 
@@ -74,20 +74,12 @@ const dailyWrapData = {
 
   dayByDay: [
     {
-      date: "2026-11-04",
-      label: "Wed 4 Nov",
-      niftyClose: 23960.6,
-      niftyChangePct: 0.63,
-      sensexChangePct: 0.5,
-      note: "The fifth straight gain and the widest one: the Nifty closed at 23,960.60, up 149.75 points, having been down to 23,696.15 in the morning, and the Sensex added 383.55 to 77,301.40. Media +5.15% on Saregama's 14.91% post-results jump, Realty +2.85%, Metal +2.80% and Consumer Durables +2.04% led, and for the first time this week the Midcap 150 (+1.60%) and Smallcap 250 (+1.97%) beat the Nifty. IT was the only loser at -1.50%, with TCS -2.52% and Infosys -2.89%. NSE breadth 2,720 advances to 884 declines; VIX -3.24% to 15.21; Brent -0.73% to $102.80."
-    },
-    {
       date: "2026-11-05",
       label: "Thu 5 Nov",
       niftyClose: 24536.6,
       niftyChangePct: 2.4,
       sensexChangePct: 2.6,
-      note: "The biggest single-day gain in seven months, and the sixth straight advance \u2014 the longest winning run since November 2025. The Nifty opened at 24,378.05, dipped to 24,296.30 and closed at 24,536.60, up 576.00 points or 2.40%, its highest close since early August; the Sensex ran from 78,910.94 to a 79,465.03 high and settled at 79,310.01, up 2,008.61 points or 2.60%. The trigger was overnight: Brent slid below $100 a barrel as Democrats swept the US midterms and hopes of a West Asia settlement hardened, US equities rallied, and foreign money kept arriving. The leadership was entirely financial and cyclical \u2014 Nifty Capital Markets +4.24%, Auto +4.14% to 27,601.75, Financial Services +4.01%, Realty +3.52% to 895.90, Private Bank +3.44%, Bank +3.33% to 57,773.65 and PSU Bank +3.13%, with Consumer Durables and IT +2.42% to 32,837.85 behind them. Only two sectors fell: Energy -0.52% to 36,884.45 on Reliance giving back part of Monday's 11.6% and Media -0.84%, while Chemicals was the day's worst basket on an equal-weighted basis. Bajaj Finance was the Sensex's best at +7.65%, with M&M +5.59%, Maruti +5.48%, IndusInd Bank +5.35% and ICICI Bank +5.33%; NTPC, Bharat Electronics, Adani Ports, ITC and Bharti Airtel (-0.52%) lagged. The broader market joined in but lagged the headline: Next 50 +1.38% to 71,768.65, Midcap 150 +1.93% to 22,290.40, Smallcap 250 +0.79% to 17,535.70, Midcap 100 +1.87%, Smallcap 100 +0.56%, Nifty 500 +2.00% to 23,224.70, and the BSE SME IPO index +1.99% to 1,15,864.00. Breadth on BSE was 2,868 advances against 1,384 declines and 169 unchanged; 126 of the 159 SME constituents rose. BSE-listed market capitalisation crossed Rs 501 lakh crore for the first time, adding roughly Rs 7.7 lakh crore of investor wealth in a session (newsdrum puts the gain at Rs 8.2 lakh crore). FIIs were net buyers of Rs 7,830.40 crore of equities on NSDL's numbers, against Rs 7,284.03 crore on NSE's provisional file; the rupee settled at 94.46-94.48 a dollar against 94.64 on Wednesday. India VIX closed at 15.58, up about 2.6% \u2014 it did not fall with the rally, which is the one internal contradiction in the session and the reason several strategists spent the afternoon warning about consolidation; Kotak Neo's tape printed 15.89 at the same moment, so treat the VIX level as approximate. Brent was $96.12 a barrel, up 1.59% on the day after the overnight slide."
+      note: "The biggest single-day gain in seven months, and the sixth straight advance \u2014 the longest winning run since November 2025. The Nifty opened at 24,378.05, dipped to 24,296.30 and closed at 24,536.60, up 576.00 points or 2.40%, its highest close since early August; the Sensex ran from 78,910.94 to a 79,465.03 high and settled at 79,310.01, up 2,008.61 points or 2.60%. The trigger was overnight: Brent slid below $100 a barrel as Democrats swept the US midterms and hopes of a West Asia settlement hardened, US equities rallied, and foreign money kept arriving. The leadership was entirely financial and cyclical \u2014 Nifty Capital Markets +4.24%, Auto +4.14% to 27,601.75, Financial Services +4.01%, Realty +3.52% to 895.90, Private Bank +3.44%, Bank +3.33% to 57,773.65 and PSU Bank +3.13%, with Consumer Durables and IT +2.42% to 32,837.85 behind them. Only two sectors fell: Energy -0.52% to 36,884.45 on Reliance giving back part of Monday's 11.6% and Media -0.84%, while Chemicals was the day's worst basket on an equal-weighted basis. Bajaj Finance was the Sensex's best at +7.65%, with M&M +5.59%, Maruti +5.48%, IndusInd Bank +5.35% and ICICI Bank +5.33%; NTPC, Bharat Electronics, Adani Ports, ITC and Bharti Airtel (-0.52%) lagged. The broader market joined in but lagged the headline: Next 50 +1.38% to 71,768.65, Midcap 150 +1.93% to 22,290.40, Smallcap 250 +0.79% to 17,535.70, Midcap 100 +1.87%, Smallcap 100 +0.56%, Nifty 500 +2.00% to 23,224.70, and the BSE SME IPO index +1.99% to 1,15,864.00. Breadth on BSE was 2,868 advances against 1,384 declines and 169 unchanged; 126 of the 159 SME constituents rose. BSE-listed market capitalisation crossed Rs 501 lakh crore for the first time, adding roughly Rs 7.7 lakh crore of investor wealth in a session (newsdrum puts the gain at Rs 8.2 lakh crore). FIIs were net buyers of Rs 7,830.40 crore of equities on NSDL's numbers, against Rs 7,284.03 crore on NSE's provisional file; the rupee settled at 94.46-94.48 a dollar and Brent closed 0.73% lower at $102.80."
     },
     {
       date: "2026-11-06",
@@ -111,278 +103,247 @@ const dailyWrapData = {
       niftyClose: 25044.65,
       niftyChangePct: 0.23,
       sensexChangePct: 0.13,
-      note: "The recovery, and what it was made of. The Nifty opened at 25,076.40, fell to 24,838.75 in the afternoon, and closed at 25,044.65, up 58.25 points or 0.23%; the Sensex ran from 80,519.31 to 81,339.41 and settled at 81,106.65, up 107.25 points or 0.13%. Both are the highest closes since 27 February 2026, and both came on negative breadth. The buying was concentrated in the public sector banks: Nifty PSU Bank +3.73% to 8,905.35 \u2014 Union Bank of India +5.60% to Rs 197, Punjab National Bank +5.27% to Rs 132.17, Bank of India +4.5%, Indian Bank +4.3% \u2014 with Nifty Bank +1.51% to 59,741.25 at its high, Pharma +1.65% to 28,896.10, Consumer Durables +0.92%, Realty +0.77% to 897.70, Financial Services +0.75% to 27,384.90 and Private Bank +0.74% to 29,608.15. IT was the drag at -1.22% to 32,468.95: Infosys -1.89% to Rs 1,149.50, HCL Technologies -2.64% to Rs 1,404, Tech Mahindra -1.80% to Rs 1,796.90, Mphasis -2.7%; Metal -0.46% with Tata Steel -2.81% to Rs 184.85; FMCG -0.15% with ITC -1.45% to Rs 279.35. In the Nifty 50, 21 rose and 28 fell. The broader market was mixed rather than weak: Next 50 +1.11% to 72,789.45, Midcap 150 +0.36% to 22,408.55, Midcap 100 +0.55%, Smallcap 100 +0.10%, Smallcap 250 -0.10% to 17,577.00 and Nifty 500 +0.33% to 23,567.00. Breadth was negative on every count \u2014 1,922 advances to 2,316 declines and 205 unchanged on one NSE tally, 1,629 to 1,959 and 110 unchanged on Upstox's \u2014 and India VIX fell 5.48% to 17.42 after opening at 18.43 and ranging 16.77-18.44. Brent slipped about 1% to $97.46 a barrel, the rupee closed at 93.93 to the dollar (93.9275 on Reuters' print) after a six-month high of 93.69, and the provisional FII/DII figures for the day were not out at the time of this edition; the November month-to-date FII purchase stood at Rs 38,971 crore, or more than $4.1 billion, the strongest since September 2024. The next session is Wednesday, 11 November."
+      note: "The recovery, and what it was made of. The Nifty opened at 25,076.40, fell to 24,838.75 in the afternoon, and closed at 25,044.65, up 58.25 points or 0.23%; the Sensex ran from 80,519.31 to 81,339.41 and settled at 81,106.65, up 107.25 points or 0.13%. Both are the highest closes since 27 February 2026, and both came on negative breadth. The buying was concentrated in the public sector banks: Nifty PSU Bank +3.73% to 8,905.35 \u2014 Union Bank of India +5.60% to Rs 197, Punjab National Bank +5.27% to Rs 132.17, Bank of India +4.5%, Indian Bank +4.3% \u2014 with Nifty Bank +1.51% to 59,741.25 at its high, Pharma +1.65% to 28,896.10, Consumer Durables +0.92%, Realty +0.77% to 897.70, Financial Services +0.75% to 27,384.90 and Private Bank +0.74% to 29,608.15. IT was the drag at -1.22% to 32,468.95: Infosys -1.89% to Rs 1,149.50, HCL Technologies -2.64% to Rs 1,404, Tech Mahindra -1.80% to Rs 1,796.90, Mphasis -2.7%; Metal -0.46% with Tata Steel -2.81% to Rs 184.85; FMCG -0.15% with ITC -1.45% to Rs 279.35. In the Nifty 50, 21 rose and 28 fell. The broader market was mixed rather than weak: Next 50 +1.11% to 72,789.45, Midcap 150 +0.36% to 22,408.55, Midcap 100 +0.55%, Smallcap 100 +0.10%, Smallcap 250 -0.10% to 17,577.00 and Nifty 500 +0.33% to 23,567.00. Breadth was negative on every count \u2014 1,922 advances to 2,316 declines and 205 unchanged on one NSE tally, 1,629 to 1,959 and 110 unchanged on Upstox's \u2014 and India VIX fell 5.48% to 17.42 after opening at 18.43 and ranging 16.77-18.44. Brent slipped about 1% to $97.46 a barrel, the rupee closed at 93.93 to the dollar after a six-month high of 93.69, and FIIs bought Rs 7,212.22 crore of equities on the day against DII selling of Rs 7,172 crore, their eighth straight session of net selling. The next session was the Muhurat hour's successor on Wednesday, 11 November, after the Tuesday holiday."
+    },
+    {
+      date: "2026-11-11",
+      label: "Wed 11 Nov",
+      niftyClose: 25255.05,
+      niftyChangePct: 0.84,
+      sensexChangePct: 0.95,
+      note: "The gap that became a grind, and the broadest breadth of the month. The Nifty opened at 25,337.80 on Monday's 25,044.65, hit 25,424.35 in the first hour, slipped to 25,095.35, and closed at 25,255.05, up 210.40 points or 0.84% \u2014 a ninth consecutive regular-session gain, excluding the red Muhurat hour, and the highest close since 26 February 2026. The Sensex ran from 80,939.40 to 82,520.40 \u2014 a 1,413.75-point range \u2014 and settled at 81,879.40, up 772.75 points or 0.95%. The buying was domestic and cyclical: PSU Bank +2.94% to 9,167.20 with Bank of Baroda +5.77% to Rs 275, PNB +4.77% to Rs 138.48, Bank of India +3.86% and Federal Bank +5.09% to Rs 361.60; Auto +2.14% to 28,523.30 on M&M +5.30% to Rs 3,465, Eicher and Motherson +4.81%; Chemicals +2.10% to 28,562.80 on FACT +8.67%, Navin Fluorine +5.97%, Coromandel +5.95%, Gujarat Fluorochemicals +5.46% and Deepak Fertilisers +6.11%; Bank +1.76% to 60,792.40; FMCG +1.13%; Metal +0.96% with Tata Steel +2.01%; Infrastructure +0.93%. Four sectors fell and they are the four that have been failing all fortnight: IT -0.53% to 32,295.60 on Tech Mahindra -1.50%, HCL Tech -1.04% and Mphasis -2.65%, Realty -0.42% to 893.95 with Oberoi -1.73%, Lodha -1.72% and DLF -1.64%, Pharma -0.41% and Healthcare -0.32% with Divi's -1.72% and Aurobindo -1.50%. Breadth finally agreed with the index: 2,756 advances against 1,555 declines and 162 unchanged. Every broad card rose \u2014 Next 50 +0.96% to 73,486.20, Midcap 150 +0.85% to 22,597.95, Smallcap 250 +1.26% to 17,798.15, Smallcap 100 +1.59%, Midcap 100 +0.81%, Nifty 500 +0.90% to 23,779.30 \u2014 and India VIX rose 0.80% to 17.56 while the index rose. Brent was $92.94, up 1.58% on the day but 24% below the $118 of 30 October after a two-month low of $89.16; the rupee closed 24 paise stronger at 93.69; and FPI inflows for November reached Rs 53,739 crore between 2 and 9 November, the strongest month since September 2024. Moody's lifted its FY27 India GDP forecast to 7% from 6.5% and Bernstein raised its December Nifty target to 26,100 from 25,000. (NSE's index file, PTI via The Hindu and Business Standard, Moneycontrol, India Today, Zee Business, capitalmarket.com's post-session wrap and researchandinvest's 11 Nov tables carry the closes, the ranges and the sector percentages.)"
     }
   ],
 
   sectors: [
     {
       name: "Nifty PSU Bank",
-      changePct: 3.73,
-      note: "The day's engine, up 3.73% to 8,905.35 and by far the widest sector move of the session: Union Bank of India +5.60% to Rs 197, Punjab National Bank +5.27% to Rs 132.17, Bank of India +4.5%, Indian Bank +4.3% and State Bank of India +2.56% to Rs 1,042, with SBI the single largest contributor to the Nifty's 58-point gain. This is catch-up rather than discovery \u2014 the index rose only 4.59% last week while Nifty Private Bank added 9.06% and Nifty Bank 8.04%, so the state lenders were the cheapest way to own the foreign bid that has put $4.1 billion into Indian equities this month. (HDFC Sky's close report, News18 and Moneycontrol all carry 3.7%; researchandinvest's 9 Nov sector table carries 8,905.35 and +3.73%; the individual stock moves are Moneycontrol's and researchandinvest's.)"
-    },
-    {
-      name: "Nifty Pharma",
-      changePct: 1.65,
-      note: "Second at 1.65% to 28,896.10, the defensive that finally behaved like one: GSK Pharmaceuticals +6.71% to Rs 2,710, Gland Pharma +5.41% to Rs 3,302.40 and Sai Life Sciences +5.32% to Rs 1,836.80 led, and Nifty Healthcare added 1.33%. The timing matters \u2014 pharma rose on the day IT fell 1.22%, which is what a rotation out of the global-trade sectors and into the domestic-defensive ones looks like. Note the caveat: the index traded as high as 29,224.85 and gave back 329 points into the close, so the buying faded. (News18 and HDFC Sky carry 1.65% and 1.6%; researchandinvest's table carries 28,896.10, +1.65%, the 29,224.85 high and the 28,427.75 previous close.)"
-    },
-    {
-      name: "Nifty Bank",
-      changePct: 1.51,
-      note: "Third at 1.51% to 59,741.25, and it closed exactly at its session high \u2014 the cleanest bullish print of the day \u2014 after a low of 58,877.85. The private banks supplied the weight (HDFC Bank +1.75% to Rs 797.80, ICICI Bank +1.53% to Rs 1,589) and the PSU banks supplied the beta. Two sessions of arithmetic: the index is now up 8.04% over the last week and 1.5% today, and BSE Bankex rose 1.41% to 67,235.21 on the same day, so the two exchanges agree on the size of the move. (researchandinvest's 9 Nov table for 59,741.25, +1.51%, the 59,741.25 high and the 58,850.65 previous close; HDFC Sky, News18 and Moneycontrol for the 1.51%.)"
-    },
-    {
-      name: "Nifty Consumer Durables",
-      changePct: 0.92,
-      note: "Fourth at 0.92%, and the quiet confirmation that the Diwali-consumption trade is still being paid for: this was the third-best sector of the previous week at +10.08% and it held its gains on a day the market's breadth was negative. Crude below $100 is the input-cost line for paints, adhesives and appliances, and it stayed below $100. (News18's close report carries 0.92% and HDFC Sky 0.9%; the previous week's 10.08% is from the sector table in Saturday's edition.)"
-    },
-    {
-      name: "Nifty Realty",
-      changePct: 0.77,
-      note: "Fifth at 0.77% to 897.70, having traded 882.60 to 897.85. Realty was the second-best sector of last week at +10.17% and has now added another 0.77%, which is unusual \u2014 rate-sensitive, high-beta sectors normally give back a fifth of a 10% week on the first red-breadth day. The bid held because the inputs held: crude down 1%, the rupee at 93.93 and no change to the rate expectation. (researchandinvest's 9 Nov table for 897.70, +0.77% and the day range; HDFC Sky and News18 for 0.8% and 0.77%.)"
-    },
-    {
-      name: "Nifty Financial Services",
-      changePct: 0.75,
-      note: "Sixth at 0.75% to 27,384.90, with an intraday high of 27,468.00 and a low of 27,134.15. The composite is the cleanest read on where the money went: the lenders rose, the insurers and asset managers did not do much, and the index's gain is roughly half of Nifty Bank's. Last week it was the market's best sector at +10.41%. (researchandinvest's table for 27,384.90 and +0.75%; HDFC Sky and News18 for 0.7% and 0.75%.)"
-    },
-    {
-      name: "Nifty Private Bank",
-      changePct: 0.74,
-      note: "Seventh at 0.74% to 29,608.15, well behind the PSU banks' 3.73% \u2014 the exact inverse of last week, when private banks added 9.06% and the state lenders 4.59%. HDFC Bank +1.75% and ICICI Bank +1.53% did the work; the index closed 58 points below its high of 29,666.60. (researchandinvest's table for 29,608.15, +0.74% and the range; News18 for 0.74%.)"
-    },
-    {
-      name: "Nifty Media",
-      changePct: 0.48,
-      note: "Eighth at 0.48% to 1,707.20 after last week's +2.41%. Media is small, high-beta and full of the loss-making new-age names, so a 0.48% gain on a negative-breadth day is not a signal of anything except that the sector was not where the selling was. (researchandinvest's 9 Nov table for 1,707.20 and +0.48%; HDFC Sky for 0.5%.)"
-    },
-    {
-      name: "Nifty Energy",
-      changePct: 0.38,
-      note: "Ninth at 0.38% to 37,164.95, and this is the number to watch next: crude fell about 1% to $97.46 and the index that is most levered to it still rose, because Reliance and the gas distributors are buyers of crude rather than sellers. It closed at its high of 37,167.30. Last week the sector added 5.46%. (researchandinvest's table for 37,164.95, +0.38% and the high; NSE's sector file for the level.)"
+      changePct: 2.94,
+      note: "The day's engine for the second session running, up 2.94% to 9,167.20, and the widest sector move of the day by 80 basis points: Bank of Baroda +5.77% to Rs 275, Punjab National Bank +4.77% to Rs 138.48, Bank of India +3.86% to Rs 150.60, Indian Overseas Bank and Union Bank behind them. The index has now gained 14.00% in a month on capitalmarket.com's count, and the pattern is consistent \u2014 the state lenders lead on the days the foreign bid is strongest, because they are the cheapest and highest-beta way to own it. Bank of Baroda was also the largest single contributor to the Nifty's 210-point gain. (capitalmarket.com's post-session wrap carries 9,167.20 and +2.94%; Zee Business, India Today, Business Standard and newspoint all carry 2.94% and the same level; the individual stock moves are researchandinvest's and tbtflow's.)"
     },
     {
       name: "Nifty Auto",
-      changePct: 0.30,
-      note: "Tenth at 0.30% to 27,925.90, closing at its high after a 27,592.05 low, and a long way from last week's +9.40%. The domestic-cyclical trade has stopped leading; it has not reversed. (researchandinvest's table for 27,925.90, +0.30% and the range; HDFC Sky for 0.3%.)"
+      changePct: 2.14,
+      note: "Second at 2.14% to 28,523.30, and the day's most consequential move because it was made by the heaviest single stock in the market's best-performing hands: Mahindra & Mahindra +5.30% to Rs 3,465.00, Eicher Motors in the leaders, Samvardhana Motherson +4.81% to Rs 169.69, Force Motors +5.49% to Rs 19,872 and Ramkrishna Forgings +7.19% to Rs 764.70 in the small-cap tail. Reuters attributes it to festival-season sales optimism and easing US-Iran tensions; the simpler read is that crude at $92.94 is a direct input-cost cut for a sector that sells to a domestic buyer. (Zee Business, India Today, capitalmarket.com and Moneycontrol all carry 2.14% and 28,523.30; the stock moves are researchandinvest's Nifty 500 table and tbtflow's tape.)"
     },
     {
-      name: "Nifty Infrastructure",
-      changePct: 0.23,
-      note: "Eleventh at 0.23% to 9,462.90, with L&T +1.82% to Rs 4,185 doing most of the work inside a basket whose capital-goods names were the day's worst performers elsewhere in the market \u2014 R R Kabel -6.90%, Finolex Cables -5.85%, TD Power -6.26%. That split is the sector's whole story this fortnight. (researchandinvest's table for 9,462.90 and +0.23%; Goodreturns' NSE sector watch carries the same 9,462.90 and +0.23%.)"
+      name: "Nifty Chemicals",
+      changePct: 2.10,
+      note: "Third at 2.10% to 28,562.80 \u2014 the quiet outlier of the day, and the sector with the most uniform internals: FACT +8.67% to Rs 813.25 was the single best stock in the whole Nifty 500, with Deepak Fertilisers +6.11%, Navin Fluorine +5.97% to Rs 9,659, Coromandel International +5.95% to Rs 1,991, Gujarat Fluorochemicals +5.46%, Aarti Industries +5.10% and Privi Speciality the lone faller at -3.49%. Fertilisers, fluorochemicals and specialty intermediates all moved together, which is what a subsidy-and-feedstock story looks like rather than a single stock's result. (Zee Business and India Today both carry 2.10% and 28,562.80; the stock moves are researchandinvest's Nifty 500 gainers and losers tables.)"
+    },
+    {
+      name: "Nifty Bank",
+      changePct: 1.76,
+      note: "Fourth at 1.76% to 60,792.40, and note the inversion inside it: the PSU banks rose 2.94% while the private banks managed 1.14%, the exact opposite of last week when private banks added 9.06% and the state lenders 4.59%. ICICI Bank actually fell 1.38% to Rs 1,566.30 and was one of the Nifty's five worst stocks, so the composite's gain came from HDFC Bank, Axis Bank, Federal Bank +5.09% and the PSUs. The index opened at 60,524.70 and ran to 61,394.30 before closing 600 points under that high. (Goodreturns' NSE sector watch carries 60,792.40, +1.76%, the 61,394.30 high and the 59,741.25 previous close; capitalmarket.com, Zee Business and newspoint all carry 1.76%.)"
+    },
+    {
+      name: "Nifty Private Bank",
+      changePct: 1.14,
+      note: "Fifth at 1.14% to 29,946.20, half the PSU index's move and a long way from last week's 9.06%. The tell is ICICI Bank: the stock that did the most arithmetic on 6 November (-1.38% to Rs 1,566.30 on Wednesday) was one of the Nifty's five worst, so the private-bank gain is HDFC Bank, Axis and the smaller names carrying a heavyweight that went ex-dividend or was simply sold. (Zee Business and India Today carry 1.14% and 29,946.20; Moneycontrol's Nifty 50 losers table carries ICICI Bank at -1.43% intraday and -1.38% at the close.)"
     },
     {
       name: "Nifty FMCG",
-      changePct: -0.15,
-      note: "Twelfth and the first loser, at -0.15% to 46,660.65, after Nestle India +1.91% and Trent +2.02% \u2014 the index fell anyway because ITC dropped 1.45% to Rs 279.35 and the sector's heavyweights are ITC, Hindustan Unilever and the tobacco-to-foods complex. It had risen 7.28% last week. (researchandinvest's table for 46,660.65 and -0.15%; News18 and HDFC Sky for -0.15% and -0.1%; ITC's fall is Moneycontrol's.)"
+      changePct: 1.13,
+      note: "Sixth at 1.13% to 47,188.55 \u2014 and a genuine reversal, because this was the sector that fell 0.15% on Monday when ITC dropped 1.45%. ITC was among Moneycontrol's Nifty gainers this time, Nestle India gave back 1.44% to Rs 1,283.90, and Trent +2.59% to Rs 3,209.60 did the heavy lifting from the consumer side. A defensive basket rising 1.13% on a risk-on day is not a rotation signal; it is the Diwali consumption trade being paid for a second week. (Zee Business and India Today both carry 1.13% and 47,188.55; the stock moves are Moneycontrol's closing tables.)"
+    },
+    {
+      name: "Nifty Oil & Gas",
+      changePct: 1.03,
+      note: "Seventh at 1.03% to 11,451.05, and the counter-intuitive one: Brent rose 1.58% to $92.94 on the day and the sector that buys crude still went up, because Hindustan Petroleum +3.73% to Rs 400.15 and the marketing companies are beneficiaries of a fall from $118 to $93 that has not yet been fully passed through at the pump. Read the level, not the day: crude is 24% below its 30 October high and that is the single largest input to this sector's margin. (Zee Business and newspoint carry 1.03% and 11,451.05; HPCL's move is researchandinvest's.)"
+    },
+    {
+      name: "Nifty Financial Services",
+      changePct: 1.02,
+      note: "Eighth at 1.02% to 27,663.40, roughly half of Nifty Bank's 1.76% and a third of the PSU banks' 2.94%. That gap is the composition: this composite carries the insurers and asset managers, and it was the capital-market names rather than the lenders that did the work \u2014 ICICI Prudential AMC +4.79% to Rs 3,113, CDSL +3.76% to Rs 1,407, IIFL Finance +6.26% to Rs 666.25 and Five-Star Business Finance +4.60%. (Zee Business carries 1.02% and 27,663.40; India Today cites the narrower Financial Services 25/50 index at +0.82%, which is a different basket; the stock moves are researchandinvest's.)"
     },
     {
       name: "Nifty Metal",
-      changePct: -0.46,
-      note: "Thirteenth at -0.46% to 12,664.65, with Tata Steel -2.81% to Rs 184.85 the worst stock in the Nifty 50 and the index's biggest single drag. Metals had added 7.58% last week on the crude-and-dollar move; a 1% fall in Brent on Monday was not enough to extend it, and China's demand story gave nothing. (researchandinvest's table for 12,664.65, -0.46% and the 12,554.15 low; HDFC Sky and News18 for -0.5% and -0.46%.)"
+      changePct: 0.96,
+      note: "Ninth at 0.96% to 12,786.15, and a full reversal of Monday's -0.46% in which Tata Steel was the worst stock in the Nifty 50. Tata Steel was a leader this time at +2.01%, with Jindal Stainless +3.88% to Rs 717.85 and Jindal Saw the day's only metal name in the losers at -1.44%. Metals have now risen in five of the last six sessions and are the second-best sector of the month after financials. (Zee Business and India Today both carry 0.96% and 12,786.15; the stock moves are researchandinvest's.)"
+    },
+    {
+      name: "Nifty Infrastructure",
+      changePct: 0.93,
+      note: "Tenth at 0.93% to 9,550.50, from a 9,484.00 low to a 9,597.35 high. The internals are the interesting part: the railway and defence PSUs did the work \u2014 RVNL +3.82% to Rs 209.40, Railtel +3.82% to Rs 258.27, Titagarh Rail +4.01%, Engineers India +3.96% and BEML +6.05% to Rs 2,112 \u2014 while the cable and capital-goods names that led Monday's fall were still mixed, with TD Power the exception at +6.69% to Rs 609.90 after three straight sessions of losses. (Goodreturns' NSE sector watch carries 9,550.50, +0.93%, the 9,597.35 high and the 9,462.90 previous close; the stock moves are researchandinvest's.)"
+    },
+    {
+      name: "Nifty Consumer Durables",
+      changePct: 0.73,
+      note: "Eleventh at 0.73%, and it would have been the day's best sector but for one stock: Kalyan Jewellers rose 8.63% to Rs 663.75 and was the second-best stock in the Nifty 500, while LG Electronics India fell 2.97% to Rs 1,740.60 inside the same index. The Diwali-consumption basket has now risen in four of the last five sessions. (India Today carries 0.73%; the two stock moves are researchandinvest's Nifty 500 gainers and losers tables.)"
+    },
+    {
+      name: "Nifty Healthcare",
+      changePct: -0.32,
+      note: "Twelfth and the first faller, at -0.32% \u2014 a small move that hides a wide spread underneath: Vijaya Diagnostic -3.69% to Rs 1,423.80, Rubicon Research -2.73%, Onesource Specialty Pharma -2.24%, Abbott India -2.14% to Rs 26,110 and Divi's Laboratories -1.72% to Rs 11,367, against Sai Life Sciences +4.45% to Rs 1,918.60 and Cohance Lifesciences +4.61%. When the losers outnumber the winners inside a healthcare basket on a day the market rose 0.84%, the money is going somewhere else. (India Today and Zee Business both carry -0.32%; the stock moves are researchandinvest's.)"
+    },
+    {
+      name: "Nifty Pharma",
+      changePct: -0.41,
+      note: "Thirteenth at -0.41% to 28,776.45, giving back part of Monday's 1.65%. Divi's -1.72%, Aurobindo -1.50% to Rs 1,827.50, Zydus Lifesciences -1.35%, Narayana Hrudayalaya -1.34% and Aster DM -1.27% against GSK Pharmaceuticals and the small-cap specialty names. Pharma has now alternated up and down for six sessions, which is what a sector does when it is being used as a funding source rather than a destination. (Zee Business and India Today both carry -0.41% and 28,776.45; the stock moves are researchandinvest's.)"
+    },
+    {
+      name: "Nifty Realty",
+      changePct: -0.42,
+      note: "Fourteenth at -0.42% to 893.95, and the day's most surprising faller because every input improved: crude down 24% from its October high, the rupee 24 paise stronger at 93.69 and the rate expectation unchanged. The stocks say otherwise \u2014 Oberoi Realty -1.73% to Rs 1,744.30, Lodha -1.72% to Rs 1,174.50 and DLF -1.64% to Rs 742.65, three of the four heaviest names in the index, all down together. After +10.17% last week, this is the first distribution. (Goodreturns' NSE sector watch carries 893.95, -0.42%, the 904.50 high and the 897.70 previous close; India Today and Moneycontrol both carry -0.42%; the stock moves are researchandinvest's.)"
     },
     {
       name: "Nifty IT",
-      changePct: -1.22,
-      note: "Last at -1.22% to 32,468.95, and the only sector that fell by more than half a percent. Infosys -1.89% to Rs 1,149.50, HCL Technologies -2.64% to Rs 1,404, Tech Mahindra -1.80% to Rs 1,796.90 and Mphasis -2.7% \u2014 four of the five biggest Nifty losers were this index. The cause is external: the AI-infrastructure sell-off on Wall Street has now run for a fortnight, and Indian IT is the one part of this market that prices it directly. The sector gained just 1.14% in a week the Nifty rose 8.58%, and has now given back 1.22% in a session; it is the clearest example in this market of a sector that is cheap for a reason rather than by accident. (researchandinvest's table for 32,468.95, -1.22% and the 32,151.80 low; HDFC Sky, News18 and Moneycontrol all carry -1.2%; the individual falls are Moneycontrol's and Upstox's.)"
+      changePct: -0.53,
+      note: "Last at -0.53% to 32,295.60, and the only sector to fall in both of the last two sessions. Tech Mahindra -1.50% to Rs 1,782.80, HCL Technologies -1.04% to Rs 1,394.20, Mphasis -2.65% to Rs 2,390, Zensar -2.18%, Birlasoft -1.69% and Coforge -1.44% \u2014 against a rare green print from Netweb Technologies at +8.22% to Rs 4,154.50. The cause remains external and it is now the defining irony of this rally: the same global money leaving AI-linked US equities is arriving in Indian financials, so the one Indian sector levered to AI capex is the one sector the inflow does not lift. The index opened at 32,741.50, ran to 32,787.25 and closed 491 points under that high. (Goodreturns' NSE sector watch carries 32,295.60, -0.53%, the 32,787.25 high, the 32,068 low and the 32,468.90 previous close; Zee Business, India Today, Moneycontrol and Business Standard all carry -0.53% or -0.5%; the stock moves are researchandinvest's and tbtflow's.)"
     }
   ],
 
   movers: {
     universe: "Nifty 500",
     scope: "day",
-    source: "NIFTY 500 single-session price returns for 9 November 2026, taken from researchandinvest's full-universe movers table built on the day's NSE closing prices, and cross-read against Upstox's Nifty 50 / Midcap 100 / Smallcap 100 gainers-and-losers lists, Moneycontrol's Nifty 50 closing table and Investing.com's session summary. The universe is the full 500 \u2014 Nifty 50, Nifty Next 50, Nifty Midcap 150 and Nifty Smallcap 250 together \u2014 so a name outside the headline sub-indices still ranks, and the cap tags follow index membership (Nifty Next 50 and Nifty 50 are tagged Largecap, Midcap 150 Midcap, Smallcap 250 Smallcap). Honest limitation: two providers print different magnitudes for the same stock \u2014 researchandinvest has R R Kabel at -6.90% and TD Power at -6.26% while Upstox's Smallcap 100 list has them at -7.4% and -6.4% \u2014 which is a difference of adjusted-close convention rather than of fact, and the direction and ordering are identical in both. Breadth context: on NSE's provisional tally 1,922 stocks advanced and 2,316 declined with 205 unchanged, so a day with ten double-digit-worthy movers was a day with more decliners than advancers.",
+    source: "NIFTY 500 single-session price returns for 11 November 2026, taken from researchandinvest's full-universe gainers and losers tables built on the day's NSE closing prices, and cross-read against tbtflow's own five-minute tape (top ten gainers and losers on the 214 NSE F&O cash names), Upstox's Nifty 50 and Midcap 100 lists and Moneycontrol's Nifty 50 closing table. The universe is the full 500 \u2014 Nifty 50, Nifty Next 50, Nifty Midcap 150 and Nifty Smallcap 250 together \u2014 so a name outside the headline sub-indices still ranks. Cap tags follow the NSE member files: FACT, Kalyan Jewellers and Cochin Shipyard are on NSE's Nifty Midcap 150 constituent list and are tagged Midcap, while the names absent from that list and from the Nifty Next 50 file are tagged Smallcap. Honest limitation: two providers print different magnitudes for the same stock \u2014 Upstox has M&M at +3.92% and IndiGo at +3.76% while researchandinvest and tbtflow both have +5.30% and +4.33% off the closing-auction print \u2014 which is a difference of when the close is struck rather than of fact, and the direction and ordering are identical in all three. Breadth context: 2,756 stocks advanced and 1,555 declined with 162 unchanged, so this was a day when the top of the movers table and the breadth line agreed.",
     gainers: [
       {
-        name: "Data Patterns (India)",
+        name: "Fertilisers and Chemicals Travancore",
         changePct: 8.67,
-        cap: "Smallcap",
-        note: "The Nifty 500's biggest gainer of the day, up 8.67% to Rs 4,025.00 \u2014 and the most interesting thing about it is what it says about the rotation. Data Patterns is defence electronics, the highest-multiple corner of the capital-goods complex, and it rose 8.67% on a day Nifty Capital Goods was one of the market's weakest baskets and three cable makers fell 5-7%. That is stock-specific buying, not a sector bid: the name had been sold through last week's AI-and-capex unwind and Monday's move is a partial recovery inside a falling sector. (researchandinvest's 9 Nov Nifty 500 gainers table for the +8.67% and the Rs 4,025 close; Upstox's Smallcap 100 gainers list independently puts it at +8.6% as the day's best smallcap.)"
-      },
-      {
-        name: "IREDA",
-        changePct: 7.47,
         cap: "Midcap",
-        note: "Second at 7.47% to Rs 119.65, and the purest expression of Monday's trade: the Indian Renewable Energy Development Agency is a lender, it sits in the Nifty Midcap 150, and it rose almost exactly twice as much as the PSU Bank index because it is a high-beta financial with a small float. It was the second-best gainer on the Midcap 100 as well, and it is the only name on either list that combines the day's two themes \u2014 the financial bid and the domestic-infrastructure book. (researchandinvest's Nifty 500 gainers table for +7.47% and Rs 119.65; Upstox's Midcap 100 list for +7.4%.)"
+        note: "The Nifty 500's biggest gainer of the day, up 8.67% to Rs 813.25 on 40.6 lakh shares, and the reason Nifty Chemicals was the third-best sector at +2.10%. FACT is the oldest fertiliser name on the exchange \u2014 a PSU in the Nifty Midcap 150 whose earnings are levered to the subsidy mechanism and to naphtha and gas costs \u2014 and it rose in a session when every other fertiliser and specialty chemical in the index rose too: Deepak Fertilisers +6.11%, Coromandel +5.95%, Gujarat Fluorochemicals +5.46%. That pattern says the buying was a sector bid, not a stock story. It closed 23% below its 52-week high of Rs 1,058.60. (researchandinvest's 11 Nov Nifty 500 gainers table for +8.67%, Rs 813.25 and the 40.6 lakh volume; NSE's ind_niftymidcap150list.csv confirms the index membership the cap tag is based on.)"
       },
       {
-        name: "Glaxosmithkline Pharmaceuticals",
-        changePct: 6.71,
+        name: "Kalyan Jewellers India",
+        changePct: 8.63,
         cap: "Midcap",
-        note: "Third at 6.71% to Rs 2,710.00, and the reason Nifty Pharma managed 1.65% while the market's breadth was negative. GSK Pharma is the largest pure-play MNC pharma in the Nifty Midcap 150 and a low-float, high-price stock, which is exactly the profile that moves hardest when institutional money rotates into a defensive. No company-specific news was needed: the sector rose, the stock rose three times as much. (researchandinvest's Nifty 500 gainers table for +6.71% and Rs 2,710; NSE's own Nifty Midcap 150 constituent file confirms the index membership that the cap tag here is based on.)"
+        note: "Second at 8.63% to Rs 663.75 on 6.46 crore shares \u2014 more than four times FACT's turnover \u2014 and the single stock that made Consumer Durables a gainer. Kalyan is the Nifty Midcap 150's largest listed jeweller by turnover, and a move this size in it on this volume is a re-rating of the Diwali-to-wedding season demand read rather than a stock-specific event. It closed within 4% of its 52-week high of Rs 689.00, having traded at Rs 327.05 at the low a year ago. (researchandinvest's Nifty 500 gainers table for +8.63%, Rs 663.75 and the 6.46 crore volume; tbtflow's tape independently has it at +8.63% off a Rs 611.00 previous close; NSE's Nifty Midcap 150 constituent file confirms membership.)"
       },
       {
-        name: "Union Bank of India",
-        changePct: 5.60,
-        cap: "Largecap",
-        note: "Fourth at 5.60% to Rs 197.00, and the biggest single reason Nifty PSU Bank rose 3.73%. Union Bank is the high-beta state lender \u2014 smaller than SBI, more sensitive to a re-rating of the sector's net interest margin, and the first place money goes when foreigners buy the PSU bank trade. It rose more than twice as much as SBI's 2.56% on the same day, which is the definition of beta inside a sector move. (researchandinvest's Nifty 500 gainers table for +5.60% and Rs 197; Moneycontrol's Nifty 50 closing table and News18's sector report carry the PSU Bank index at +3.73% with SBI at +2.56%.)"
-      },
-      {
-        name: "Sansera Engineering",
-        changePct: 5.42,
+        name: "Netweb Technologies India",
+        changePct: 8.22,
         cap: "Smallcap",
-        note: "Fifth at 5.42% to Rs 4,653.40, an auto-ancillary that makes precision-forged components \u2014 and note how it got there: Nifty Auto rose only 0.30% on the day, so this is a 5.4% move in a flat sector, which means the buying was stock-specific rather than thematic. Sansera sits in the Nifty Smallcap 250, the one broad card that fell on Monday (-0.10%), so it beat its own index by 552 basis points. (researchandinvest's Nifty 500 gainers table for +5.42% and Rs 4,653.40; NSE's Nifty Midcap 150 constituent file is the check that it is not in that index, which places it in the Smallcap 250.)"
+        note: "Third at 8.22% to Rs 4,154.50, and the anomaly of the day: a high-performance-computing and AI-server maker rising 8.22% on a session in which Nifty IT fell 0.53% and five of the six IT names in the Nifty 500 losers table were down. Netweb is not an IT-services exporter \u2014 it sells GPU and HPC hardware into Indian sovereign AI and enterprise demand \u2014 so its revenue line benefits from the capex that is hurting the services names. That is the whole point of its inclusion here: a 500-stock universe contains both sides of a trade that a 50-stock index flattens into one. (researchandinvest's Nifty 500 gainers table for +8.22% and Rs 4,154.50; its absence from NSE's Nifty Midcap 150 and Nifty Next 50 member files places it in the Smallcap 250.)"
+      },
+      {
+        name: "Sun TV Network",
+        changePct: 7.21,
+        cap: "Smallcap",
+        note: "Fourth at 7.21% to Rs 653.90 on 30.0 lakh shares, closing within 3% of its 52-week high of Rs 673.95. Sun TV is a south-India broadcasting and cable franchise with almost no debt and a heavy dividend history, and it moved with the rest of the media complex on a day Nifty Media added 0.69% \u2014 the stock beat its sector by 650 basis points, which is what happens when the sector index is weighted towards loss-making new-age names and the money goes to the profitable old one. (researchandinvest's Nifty 500 gainers table for +7.21% and Rs 653.90; its absence from NSE's Midcap 150 and Next 50 member files places it in the Smallcap 250.)"
+      },
+      {
+        name: "Ramkrishna Forgings",
+        changePct: 7.19,
+        cap: "Smallcap",
+        note: "Fifth at 7.19% to Rs 764.70, closing within 1% of its 52-week high of Rs 772.80 \u2014 and the cleanest read on the day's auto theme, because this is a forged-components supplier to commercial vehicles and rail, not a carmaker. Nifty Auto rose 2.14% on M&M and Eicher; Ramkrishna rose 7.19%, more than three times its sector, which is the beta of a small-cap supplier to a large-cap end market. (researchandinvest's Nifty 500 gainers table for +7.19% and Rs 764.70; its absence from NSE's Midcap 150 and Next 50 member files places it in the Smallcap 250.)"
       }
     ],
     losers: [
       {
-        name: "R R Kabel",
-        changePct: -6.90,
-        cap: "Smallcap",
-        note: "The Nifty 500's worst stock of the day, down 6.90% to Rs 1,969.40, and the third consecutive session in which the cables complex has been repriced. R R Kabel makes wires and cables for construction and power \u2014 a high-multiple industrial bought for volume growth \u2014 and the quarter that broke the trade is still being marked. Upstox prints -7.4% for the same session, which is a convention difference on the adjusted close rather than a disagreement about the direction. (researchandinvest's 9 Nov Nifty 500 losers table for -6.90% and Rs 1,969.40; Upstox's Smallcap 100 losers list for -7.4%.)"
+        name: "Cochin Shipyard",
+        changePct: -6.82,
+        cap: "Midcap",
+        note: "The Nifty 500's worst stock of the day, down 6.82% to Rs 1,202.00 on 85.1 lakh shares, from a Rs 1,290.00 previous close \u2014 and the single name that took Nifty Infrastructure's shine off. Cochin Shipyard is a defence-and-commercial shipbuilder in the Nifty Midcap 150 whose order book and margins re-rated violently through 2025; it has now given back 35% from its 52-week high of Rs 1,842.80 and sits 9% above its 52-week low. Note the divergence: the railway PSUs rose 4% on the same day, so this is not a PSU sell-off, it is a shipbuilding one. (researchandinvest's 11 Nov Nifty 500 losers table for -6.82%, Rs 1,202.00 and the 85.1 lakh volume; tbtflow's tape independently has it at -6.82% off a Rs 1,290.00 previous close; Upstox's Midcap 100 list carries the same -6.82%; NSE's Nifty Midcap 150 constituent file confirms membership.)"
       },
       {
-        name: "TD Power Systems",
-        changePct: -6.26,
+        name: "Prime Focus",
+        changePct: -5.38,
         cap: "Smallcap",
-        note: "Second at -6.26% to Rs 571.65, and a name that has now fallen in three straight sessions \u2014 it was the Nifty 500's second-worst stock of last week at -19.25%, and Monday's 6.26% takes the fortnight's fall past 24%. TD Power makes generators for industrial and export customers; the order-book story that re-rated it has been replaced by a margin story, and the market is still deciding what the right multiple is. (researchandinvest's Nifty 500 losers table for -6.26% and Rs 571.65; Upstox's Smallcap 100 list for -6.4%; the prior week's -19.25% is in Saturday's edition.)"
+        note: "Second at -5.38% to Rs 264.55 on 47.7 lakh shares, and the counterpoint to Sun TV's 7.21%: two media names, 1,260 basis points apart on the same day. Prime Focus is the visual-effects and post-production business behind DNEG \u2014 a global, dollar-earning, high-fixed-cost operation \u2014 and it trades on the Hollywood and streaming production cycle rather than on Indian advertising. Nifty Media rose 0.69%; this fell 5.38%. (researchandinvest's Nifty 500 losers table for -5.38% and Rs 264.55; its absence from NSE's Midcap 150 and Next 50 member files places it in the Smallcap 250.)"
       },
       {
-        name: "Finolex Cables",
-        changePct: -5.85,
+        name: "Gallantt Ispat",
+        changePct: -4.72,
         cap: "Smallcap",
-        note: "Third at -5.85% to Rs 1,232.40 \u2014 the second cable maker in the bottom three, which is the point. When two of the three worst stocks in a 500-stock universe make the same product, the move is about the product's margin, not about the two companies: copper costs, a competitive tender market and a quarter that disappointed are repricing the whole complex at once. (researchandinvest's Nifty 500 losers table for -5.85% and Rs 1,232.40.)"
+        note: "Third at -4.72% to Rs 518.35, and a puzzle worth flagging: Nifty Metal rose 0.96% and Tata Steel, Jindal Stainless and Jindal Saw all rose, but Gallantt \u2014 a Gorakhpur-based steel and ferro-alloy producer \u2014 fell 4.72% to close 1.3% above its 52-week low of Rs 496.25. A stock trading at the floor of its range while its sector rises is telling you something stock-specific is being priced, and the market has not yet said what. (researchandinvest's Nifty 500 losers table for -4.72% and Rs 518.35; its absence from NSE's Midcap 150 and Next 50 member files places it in the Smallcap 250.)"
       },
       {
-        name: "Tata Teleservices (Maharashtra)",
-        changePct: -5.25,
+        name: "Vijaya Diagnostic Centre",
+        changePct: -3.69,
         cap: "Smallcap",
-        note: "Fourth at -5.25% to Rs 39.33. TTML is a low-priced, low-float residual of the Tata telecom story with no operating business of consequence, and it trades on flows rather than fundamentals \u2014 which is why it appears in these lists in both directions and why a 5% move in it says nothing about the market. (researchandinvest's Nifty 500 losers table for -5.25% and Rs 39.33.)"
+        note: "Fourth at -3.69% to Rs 1,423.80 on a thin 2.3 lakh shares, and the largest single drag on Nifty Healthcare's -0.32%. Vijaya runs a diagnostics chain concentrated in Telangana and Andhra Pradesh; the stock had run 68% off its 52-week low of Rs 848.00 before this session and now sits 11% under its high of Rs 1,593.60. A 3.7% fall on 2.3 lakh shares is a liquidity event, not a verdict. (researchandinvest's Nifty 500 losers table for -3.69% and Rs 1,423.80; its absence from NSE's Midcap 150 and Next 50 member files places it in the Smallcap 250.)"
       },
       {
-        name: "Sterlite Technologies",
-        changePct: -5.00,
+        name: "Privi Speciality Chemicals",
+        changePct: -3.49,
         cap: "Smallcap",
-        note: "Fifth at exactly -5.00% to Rs 670.95, and the third telecom-equipment name in the bottom five alongside HFCL at -4.63%. Sterlite makes optical fibre and has been one of the most volatile names in the Nifty 500 all fortnight \u2014 it fell 12.69% in the week to 6 November and is now down another 5% \u2014 because its earnings are levered to a global fibre-price cycle that has not turned. (researchandinvest's Nifty 500 losers table for -5.00% and Rs 670.95; Upstox's Smallcap 100 list for -5.0% and HFCL at -4.8%.)"
+        note: "Fifth at -3.49% to Rs 3,370.20, and the one faller inside a sector that rose 2.10% \u2014 which makes it the most informative name on either list. Privi makes aroma chemicals, a specialty niche whose raw material is crude-linked; on a day when every fertiliser, fluorochemical and agrochemical name in the Nifty 500 rose between 5% and 8%, the market chose this one to sell. It is 11% below its 52-week high of Rs 3,785.30. (researchandinvest's Nifty 500 losers table for -3.49% and Rs 3,370.20; its absence from NSE's Midcap 150 and Next 50 member files places it in the Smallcap 250.)"
       }
     ]
   },
 
   watch: [
     {
-      title: "There is no Tuesday session \u2014 the market reopens on Wednesday, 11 November",
-      detail: "NSE and BSE are shut on Tuesday, 10 November, for Diwali-Balipratipada, across equity, equity derivatives and the securities lending and borrowing segment. It is the second of November's two weekday holidays, after which the only remaining closure this month is 24 November for Guru Nanak Jayanti. What matters is not the holiday but the reopen: two days of no trading after a session in which the index was bought at its lows and sold at its highs means Wednesday's first hour carries the whole of Monday afternoon's unresolved question \u2014 whether the 245-point recovery was real buying or a closing-auction squeeze."
+      title: "25,400-25,500 is the wall, and the index has now hit it twice in one session",
+      detail: "The Nifty touched 25,424.35 in the first hour and closed 169 points below it, and both of the day's published technical notes name the same band. HDFC Securities' Nagaraj Shetti reads the day as a small red candle with a gap-up open that was almost fully filled, calls 25,400-25,500 strong overhead resistance and says renewed upside needs a close above 25,500 to open 26,000, with support at 24,800-24,700. LKP Securities' Vatsal Bhuva calls the index overbought and expects a retracement towards 25,000-24,800 with 25,500 as immediate resistance. Religare's Ajit Mishra puts the buy zone at 24,800-25,000, the invalidation at 24,600 and the upside target at 25,500-25,750. Three brokers, one level. The next decisive close is above 25,500 or below 24,800, and nothing in between settles anything."
     },
     {
-      title: "The $4.1 billion question: does the foreign bid survive a two-day break",
-      detail: "Foreign portfolio investors have bought more than $4.1 billion of Indian equities in November, the strongest month since September 2024, and Rs 38,971 crore of it on NSDL's numbers to 8 November. Monday's gains were made almost entirely by the stocks that flow buys first \u2014 the PSU banks, the large private banks, the index heavyweights \u2014 while 2,316 stocks fell against 1,922 that rose. That is what a flow-driven rally looks like from the inside, and the tell for the rest of the month is whether the advances-declines line flips positive on a day the index rises less than half a percent."
+      title: "Thursday's CPI print is the rupee's next test, and the rupee is the whole trade",
+      detail: "India's consumer price inflation data is due on 12 November and it is the one scheduled event that can move the thing everything else rests on. HDFC Securities' Dilip Parmar notes the rupee gained on softer crude, strong FII inflows and an absence of central bank intervention, but that a rebounding dollar after Tuesday's US inflation figures capped the move, and puts resistance at 94.10 with support at 93.50. The rupee closed at 93.69 on Wednesday, 24 paise stronger than Monday's 93.93, and is now near a six-month high. GTRI expects Rs 92-93 if the favourable trends hold. A hot Indian print would push the currency back through 94 and take the financials \u2014 the sector that has done all the work this month \u2014 down with it."
     },
     {
-      title: "IT has become the market's one genuinely global exposure",
-      detail: "Nifty IT fell 1.22% on Monday while every other large sector except Metal rose, and it has now gained 1.14% in a week in which the Nifty added 8.58%. The cause is the AI-infrastructure unwind on Wall Street, which has run for a fortnight and which hits Indian IT directly because the same foreign money that is leaving AI capex is arriving in Indian financials. Infosys at Rs 1,149.50 and HCL Technologies at Rs 1,404 are the two to watch: both fell more than 2.5% on Monday, and a third session of that would say the rotation is a de-rating rather than a pause."
+      title: "The foreign bid is real, large and hedged",
+      detail: "FPIs bought Rs 53,739 crore of Indian equities between 2 and 9 November, the strongest month since September 2024, and roughly $6 billion by Reuters' count. Two caveats belong next to that number. First, 2026 is still a record year of outflows at Rs 2.41 lakh crore, so this is a reversal of a small part of a large hole. Second, FIIs remain net short about 90,741 index futures contracts, which means a meaningful slice of the cash buying is hedged rather than directional. That is the structure of a rotation out of AI-heavy US equities, not a verdict on Indian earnings \u2014 and it can reverse as fast as the Nasdaq stabilises. Watch the daily FII/DII line, not the monthly total."
     },
     {
-      title: "Crude below $100 and a rupee at 93.93 are the two inputs under everything",
-      detail: "Brent settled about 1% lower at $97.46 a barrel and the rupee closed at 93.93 to the dollar after touching a six-month high of 93.69, and those two numbers are the reason Nifty PSU Bank could rise 3.73% and Nifty Auto could hold its 9.4% week. Both are now near the edge of their recent ranges: the rupee's support sits at 93.50 and its resistance at 94.30 on HDFC Securities' levels, and crude has held under $100 for five sessions. A reversal in either would take the financials and the domestic cyclicals down first, because that is where the money went on the strength of them."
+      title: "Crude at $92.94 is 24% below its October high and everything else is downstream of it",
+      detail: "Brent rose 1.58% to $92.94 on Wednesday but that is the noise; the signal is that it was $118 a barrel on 30 October and hit a two-month low of $89.16 in the previous session after US officials played down further military action against Iran. India imports about 90% of its crude, so this is simultaneously the rupee's support, the input-cost cut behind Nifty Auto's 2.14% and Nifty Chemicals' 2.10%, and the reason the RBI has room. The risk is symmetric and named: renewed escalation involving Iran takes crude back through $100 and unwinds the financial and cyclical leadership in the same week. Bernstein's raised December Nifty target of 26,100 rests explicitly on 'the Iran war being effectively over'."
     },
     {
-      title: "The cables and capital-goods tail is still being marked, session by session",
-      detail: "R R Kabel -6.90%, Finolex Cables -5.85%, TD Power -6.26%, Sterlite Technologies -5.00%, HFCL -4.63% \u2014 five of the ten biggest movers in the Nifty 500 on Monday, all in the same corner of the market, and all falling in a session where the index rose. This is the third session of that repricing and it is not finished, because the mechanism is a change in the multiple the market will pay for order-book growth, and multiples do not reset in a week. Any remaining Q2 print in cables, wires, capital goods or building materials is a binary event rather than an earnings event."
+      title: "IT and realty have now fallen in both sessions since the Diwali break, and only one of them is explicable",
+      detail: "Nifty IT fell 0.53% and Nifty Realty 0.42% on Wednesday, after -1.22% and +0.77% on Monday. IT's fall has a clear external cause \u2014 the AI-infrastructure unwind on Wall Street \u2014 and it is the direct mirror image of the flow that is lifting Indian financials, which makes it the one part of this market that can fall while the index rises. Realty's fall has no such explanation: crude is down 24%, the rupee is at a six-month high and rates are unchanged, yet Oberoi, Lodha and DLF all fell between 1.6% and 1.8% together after a 10.17% week. If realty falls again on Thursday with the same inputs, the sector is distributing; if IT falls again while the Nasdaq stabilises, the rotation is over."
     }
   ],
 
   reads: [
     {
-      title: "Markets closed today for Diwali-Balipratipada, trading to resume on November 11",
+      title: "Markets surge after Diwali; Nifty crosses 25,350 as FII inflows hit Rs 53,170 crore this month",
       source: "The Hindu BusinessLine",
-      url: "https://www.thehindubusinessline.com/markets/markets-closed-today-for-diwali-balipratipada-trading-to-resume-on-november-11/article71684945.ece"
+      url: "https://www.thehindubusinessline.com/markets/markets-surge-after-diwali-nifty-crosses-25350-as-fii-inflows-hit-53170-crore-this-month/article71688274.ece"
     },
     {
-      title: "Market rally on Wednesday? Gift Nifty surges 300 pts on rising FII inflows, falling Brent crude prices",
-      source: "Business Today",
-      url: "https://www.businesstoday.in/markets/stocks/story/market-rally-on-wednesday-gift-nifty-surges-300-pts-on-rising-fii-inflows-falling-brent-crude-prices-566704-2026-11-10"
-    },
-    {
-      title: "A rally built on global hope: Why investors should remain selective",
-      source: "Moneycontrol (Opinion)",
-      url: "https://www.moneycontrol.com/news/opinion/a-rally-built-on-global-hope-why-investors-should-remain-selective-14075946.html"
-    },
-    {
-      title: "Sensex, Nifty 50 rise over 6% in past 5 sessions: More rally from tomorrow or profit booking will dent returns hopes?",
-      source: "Mint",
-      url: "https://www.livemint.com/market/stock-market-news/sensex-nifty-50-rise-over-6-in-past-5-sessions-more-rally-from-tomorrow-or-profit-booking-will-dent-returns-hopes-11794292057445.html"
-    },
-    {
-      title: "Dalal Street Week Ahead: Q2 earnings, US & India inflation, FII flow, oil prices among 10 key factors to watch",
+      title: "CAS strikes again: Nifty surges over 2% to 25,600 before closing at 25,250; Sensex sees a spike of 375 points",
       source: "Moneycontrol",
-      url: "https://www.moneycontrol.com/news/business/markets/dalal-street-week-ahead-q2-earnings-us-india-inflation-fii-flow-oil-prices-among-10-key-factors-to-watch-14075029.html"
+      url: "https://www.moneycontrol.com/news/business/markets/cas-strikes-again-nifty-surges-over-2-to-25-600-before-closing-at-25-250-sensex-sees-a-spike-of-375-points-14077258.html"
+    },
+    {
+      title: "India's battered rupee finds an unlikely rescue party in cheaper oil and Wall Street's AI rout",
+      source: "The Economic Times",
+      url: "https://economictimes.indiatimes.com/news/economy/indicators/indian-rupee-vs-us-dollar-crude-oil-price-fall-foreign-portfolio-investors-fpi-inflows-wall-street-ai-selloff-gtri-forecast/articleshow/135723013.cms"
+    },
+    {
+      title: "Market Wrap, Nov 11: Sensex, Nifty50 rise 1% as banking stocks rally; Nifty Smallcap 100 outshines, M&M top gainer",
+      source: "Upstox",
+      url: "https://upstox.com/news/market-news/stocks/market-wrap-nov-11-sensex-nifty-50-rise-1-as-banking-stocks-rally-nifty-smallcap-100-outshines-m-and-m-top-gainers/article-203302/"
+    },
+    {
+      title: "Closing Bell: Sensex jumps 773 points, Nifty ends above 25,250; PSU Bank, Auto stocks lead gains \u2014 what drove D-Street rally?",
+      source: "Zee Business",
+      url: "https://www.zeebiz.com/market-news/news-closing-bell-sensex-jumps-773-points-nifty-ends-above-25250-psu-bank-auto-stocks-lead-gains-what-drove-dalal-street-rally-405431"
     }
   ],
 
   ratio: {
-    name: "Book Value per Share (BVPS)",
-    category: "Per-share / valuation",
+    name: "Current Ratio",
+    category: "Liquidity / short-term solvency",
     company: "Infosys Ltd",
     companyNote: "IT services \u00b7 Nifty 50 / Nifty 500",
-    period: "Every figure is from Infosys' Integrated Annual Report 2025-26 (FY26), the audited consolidated financial statements prepared under Indian Accounting Standards (Ind AS), in rupees crore except per-share data. The report's printed page numbers run 30 ahead of the PDF page number, so in the PDF every page cited below is 30 lower than the printed number you see in the report (printed p. 317 = PDF p. 287, printed p. 318 = PDF p. 288, printed p. 320 = PDF p. 290); every page cited below is the printed page number. The balance-sheet date is 31 March 2026.",
+    period: "Every figure is from Infosys' Integrated Annual Report 2025-26 (FY26), the audited consolidated financial statements prepared under Indian Accounting Standards (Ind AS), in rupees crore. The report's printed page numbers run 30 ahead of the PDF page number, so in the PDF every page cited below is 30 lower than the printed number you see in the report (printed p. 317 = PDF p. 287, printed p. 318 = PDF p. 288, printed p. 320 = PDF p. 290); every page cited below is the printed page number. The balance-sheet date is 31 March 2026.",
     report: {
       label: "Download the Infosys Integrated Annual Report 2025-26 (PDF) and follow along",
       url: "https://www.infosys.com/investors/reports-filings/annual-report/annual/documents/infosys-ar-26.pdf"
     },
-    formula: "Book Value per Share = total equity attributable to the owners of the Company at the balance-sheet date ÷ the number of equity shares outstanding at that date. Both halves come off the same page: the Consolidated Balance Sheet gives the equity, and the equity share capital line on that page, divided by the Rs 5 face value, gives the share count. The answer is in rupees per share \u2014 what would be left for each share if the company paid off every liability and handed the remainder to its owners.",
-    formulaNote: "Book value is the least fashionable ratio on this page and the one that most often decides whether a value investor looks twice. It is the accounting net worth of the business per share, and for an IT services company it is close to useless as a valuation floor, because almost everything Infosys earns with walks out of the door every evening \u2014 there is no plant, no land and no inventory behind the number, only receivables, cash and goodwill. What it is genuinely good for is direction, and Infosys shows all three of the conventions that make screens disagree. First, which equity: Rs 92,852 crore belongs to the owners of the Company, Rs 445 crore belongs to non-controlling interests, and a screen that divides by the Rs 93,297 crore total is measuring a slightly different thing. Second, which share count: book value is a snapshot, so it takes the shares outstanding on the balance-sheet date \u2014 not the weighted average of about 411 crore shares used for earnings per share, which is higher because the buyback completed part-way through the year. Third, and the interesting one, the direction. A company that returns more capital than it earns shrinks its book value even while it grows its profit, and Infosys did exactly that: Rs 18,000 crore of buyback and a Rs 48 dividend against Rs 29,440 crore of profit. Book value per share fell 0.7% in FY26 while earnings per share rose 11.0%. That divergence, rather than the level, is what the number is telling you.",
+    formula: "Current Ratio = total current assets \u00f7 total current liabilities, both taken from the same Consolidated Balance Sheet on the same date. The answer is a plain multiple: how many rupees of assets the company expects to convert into cash within twelve months for every one rupee it owes within twelve months. Above 1 means it can pay the year's bills from the year's assets; below 1 means it needs to refinance or sell something longer-dated.",
+    formulaNote: "This is the ratio that taught a generation of investors to ask a second question, because the first answer is always flattering for a services company and always incomplete. Infosys' current assets are Rs 1,03,489 crore against Rs 52,322 crore of current liabilities, so the multiple is 1.98 \u2014 a company that can cover its short-term obligations almost twice over. What that number does not tell you is what the assets are made of. Rs 22,201 crore is cash, Rs 12,950 crore is current investments, and Rs 35,234 crore is trade receivables \u2014 money owed by clients, collectible in 67 days on Infosys' own days-sales-outstanding measure. There is almost no inventory (Rs 474 crore) because the company sells people, not products, which is why its quick ratio equals its current ratio exactly and why the 'acid test' variant of this ratio is meaningless for IT services. The more useful thing here is the direction, and the direction is down: 2.27 to 1.98 in one year, a 12.7% fall, on a balance sheet that carries no borrowings at all. That happened because current liabilities grew 22.1% (Rs 42,850 crore to Rs 52,322 crore) while current assets grew 6.6% (Rs 97,099 crore to Rs 1,03,489 crore). The driver was not debt: it was other current liabilities rising Rs 11,765 crore to Rs 15,779 crore and other financial liabilities Rs 18,138 crore to Rs 21,483 crore \u2014 accrued expenses, unearned revenue and the dividend and buyback payables that a capital-return year creates. A falling current ratio at a debt-free company is a story about payables, not about distress.",
     inputsLabel: "The numbers we need, straight from the report",
     inputs: [
-      {
-        label: "Equity share capital, 31 March 2026 \u2014 Rs 2,024 crore at Rs 5 a share, which is 404.8 crore shares left after the buyback",
-        value: "Rs 2,024 crore",
-        page: "p. 317"
-      },
-      {
-        label: "Other equity (reserves and surplus), 31 March 2026",
-        value: "Rs 90,828 crore",
-        page: "p. 317"
-      },
-      {
-        label: "Total equity attributable to the owners of the Company, 31 March 2026 \u2014 2,024 + 90,828, the numerator",
-        value: "Rs 92,852 crore",
-        page: "p. 317"
-      },
-      {
-        label: "Non-controlling interests, 31 March 2026 \u2014 the Rs 445 crore that is not the owners' and stays out of the numerator",
-        value: "Rs 445 crore",
-        page: "p. 317"
-      },
-      {
-        label: "Total equity including non-controlling interests, 31 March 2026 \u2014 the looser alternative numerator",
-        value: "Rs 93,297 crore",
-        page: "p. 317"
-      },
-      {
-        label: "Face value per equity share \u2014 the divisor that turns share capital into a share count",
-        value: "Rs 5",
-        page: "p. 317"
-      },
-      {
-        label: "Equity share capital, 31 March 2025 \u2014 414.6 crore shares, before the buyback cancelled any",
-        value: "Rs 2,073 crore",
-        page: "p. 317"
-      },
-      {
-        label: "Other equity, 31 March 2025",
-        value: "Rs 93,745 crore",
-        page: "p. 317"
-      },
-      {
-        label: "Total equity attributable to the owners, 31 March 2025 \u2014 2,073 + 93,745, the prior-year numerator",
-        value: "Rs 95,818 crore",
-        page: "p. 317"
-      },
-      {
-        label: "Shares extinguished in the FY26 buyback \u2014 Rs 18,000 crore at Rs 1,800 a share, which is why the share count fell 2.4%",
-        value: "10 crore shares",
-        page: "p. 320"
-      },
-      {
-        label: "Profit attributable to the owners of the Company, FY26 \u2014 not in the formula, but the number book value is being compared against",
-        value: "Rs 29,440 crore",
-        page: "p. 318"
-      }
+      { label: "Total current assets, 31 March 2026 \u2014 the numerator, the sum of the seven current-asset lines", value: "Rs 1,03,489 crore", page: "p. 317" },
+      { label: "Total current liabilities, 31 March 2026 \u2014 the denominator, the sum of the six current-liability lines", value: "Rs 52,322 crore", page: "p. 317" },
+      { label: "Cash and cash equivalents, 31 March 2026 \u2014 the most liquid fifth of the numerator", value: "Rs 22,201 crore", page: "p. 317" },
+      { label: "Current investments, 31 March 2026 \u2014 the second most liquid slice", value: "Rs 12,950 crore", page: "p. 317" },
+      { label: "Trade receivables, 31 March 2026 \u2014 the largest single current asset, and the one that needs collecting", value: "Rs 35,234 crore", page: "p. 317" },
+      { label: "Other current liabilities, 31 March 2026 \u2014 up from Rs 11,765 crore, the biggest single reason the ratio fell", value: "Rs 15,779 crore", page: "p. 317" },
+      { label: "Other financial liabilities (current), 31 March 2026 \u2014 up from Rs 18,138 crore, the second biggest reason", value: "Rs 21,483 crore", page: "p. 317" },
+      { label: "Lease liabilities (current), 31 March 2026 \u2014 the only borrowing-like line in current liabilities, and the one screens strip out", value: "Rs 3,160 crore", page: "p. 317" },
+      { label: "Total current assets, 31 March 2025 \u2014 the prior-year numerator", value: "Rs 97,099 crore", page: "p. 317" },
+      { label: "Total current liabilities, 31 March 2025 \u2014 the prior-year denominator", value: "Rs 42,850 crore", page: "p. 317" },
+      { label: "Revenue from operations, FY26 \u2014 not in the formula, but the context for a liquidity ratio that fell while the business grew 9.6%", value: "Rs 1,78,650 crore", page: "p. 318" }
     ],
-    working: "Step 1 \u2014 Count the shares from the capital line, not from a website (p. 317): equity share capital Rs 2,024 crore ÷ Rs 5 face value = 404.8 crore equity shares outstanding at 31 March 2026. Step 2 \u2014 Build the numerator from its two printed lines rather than trusting a subtotal (p. 317): Rs 2,024 crore + Rs 90,828 crore = Rs 92,852 crore attributable to the owners. Step 3 \u2014 Divide: 92,852 ÷ 404.8 = Rs 229.38, so Rs 229.4 of book value per share. Step 4 \u2014 Do the prior year the same way so you can see the movement is real and not an artefact (p. 317): Rs 2,073 crore + Rs 93,745 crore = Rs 95,818 crore, and Rs 2,073 crore ÷ Rs 5 = 414.6 crore shares, so 95,818 ÷ 414.6 = Rs 231.1. Step 5 \u2014 Check the change: 229.4 against 231.1 is down Rs 1.7, or 0.7%. The share count fell 2.4% (414.6 to 404.8 crore) because 10 crore shares were cancelled in the Rs 18,000 crore buyback at Rs 1,800 (p. 320), and owners' equity fell 3.1% (95,818 to 92,852) because the buyback and the dividend took out more than the year's Rs 29,440 crore of profit (p. 318) added back. Equity fell faster than the share count, so book value per share fell. Step 6 \u2014 Run the looser version for comparison: total equity including non-controlling interests Rs 93,297 crore ÷ 404.8 = Rs 230.5, about a rupee higher, which is the size of the convention gap. Step 7 \u2014 Put it against the market: at the 9 November 2026 close of Rs 1,154 the shares trade at 1,154 ÷ 229.4 = 5.0 times book, against about 5.5 times at the 31 March 2026 year-end price implied by Infosys' own per-share table (17.5 times earnings on Rs 71.58 of earnings per share, or roughly Rs 1,253 a share).",
-    result: "Rs 229.4 of book value per share at 31 March 2026, against Rs 231.1 a year earlier \u2014 down 0.7% in a year in which earnings per share rose 11.0%; the stock trades at 5.0 times that book value at the 9 November 2026 close of Rs 1,154",
-    meaning: "Five times book for a company whose book is mostly cash and receivables looks expensive until you remember that the assets that generate Infosys' revenue are not on the balance sheet at all \u2014 they are 3,00,000-plus people, the client relationships they hold and the delivery platforms they run, none of which a balance sheet is allowed to capitalise. That is why price-to-book has never been the right lens for an IT services firm and why the ratio is worth learning mainly to know when to ignore it. What it does tell you here is subtler and more useful. Book value per share fell in FY26 not because the business did badly \u2014 profit rose 10.2% and revenue 9.6% \u2014 but because the company chose to hand back Rs 18,000 crore in a buyback and Rs 48 a share in dividends against Rs 29,440 crore of profit, so owners' equity shrank by Rs 2,966 crore. A shrinking book with a growing profit is the arithmetic behind the 31.6% return on equity Infosys reports, and it is a deliberate policy, not an accident: the capital allocation policy targets returning about 85% of free cash flow over five years. Two things to watch. The first is that buybacks at Rs 1,800 a share when the stock now trades near Rs 1,154 destroy book value per share for the shareholders who stay \u2014 the company paid well above today's price to retire those 10 crore shares, and that shows up here as a fall in book value. The second is goodwill: Rs 229 a share is only as solid as the acquisitions underneath it, and any large deal would lift book value while lowering the returns on it. Treat the level as a footnote and the direction as the signal.",
-    crossCheck: "Four independent checks, three of which reconcile. First, against the company: Infosys' own Three Year Overview (IFRS) \u2014 Per Share Data and Ratios page publishes Book Value of Rs 229 for FY26, Rs 231 for FY25 and Rs 213 for FY24. Our Rs 229.4 and Rs 231.1 match the first two to the rupee, which also confirms the share counts, since those two years are the ones either side of the buyback. Second, against a broker: Motilal Oswal's 23 April 2026 results update carries BV per share of Rs 229.5 for FY26, a rupee above ours and inside rounding on the share count. Third, against a data provider: Eulerpool shows Rs 230.77 as of June 2026, again within about 1%. Fourth, against Screener.in on 9 November 2026, which shows Book Value of Rs 244 \u2014 roughly 6% above ours and the one figure we could not reproduce from the audited consolidated statements. We have kept the report-derived Rs 229.4 and flagged the gap rather than adopt a number we cannot trace to a page; a Rs 15 difference on 404.8 crore shares is about Rs 6,000 crore of equity, far more than the Rs 445 crore of non-controlling interests, so it is not simply the total-equity convention. Note also that Screener's Stock P/E of 14.8 and dividend yield of 4.16% are struck on the current Rs 1,154 price, not on the 31 March 2026 balance-sheet date, which is why they will not tie to the 17.5 times year-end P/E in Infosys' own per-share table.",
-    source: "Infosys Ltd, Integrated Annual Report 2025-26, Consolidated Financial Statements under Ind AS for the year ended 31 March 2026: Consolidated Balance Sheet, printed p. 317 (PDF p. 287) for equity share capital, other equity, total equity attributable to owners, non-controlling interests and total equity at both 31 March 2026 and 31 March 2025, and for the Rs 5 face value; Consolidated Statement of Profit and Loss, printed p. 318 (PDF p. 288) for profit attributable to the owners of the Company; Consolidated Statement of Changes in Equity, printed p. 320 (PDF p. 290) for the Rs 18,000 crore buyback at Rs 1,800 a share. Cross-checked against Infosys' Three Year Overview (IFRS) \u2014 Per Share Data and Ratios page (Book Value Rs 229 / Rs 231 / Rs 213 for FY26 / FY25 / FY24), Motilal Oswal's 23 April 2026 results update (BV per share Rs 229.5), Eulerpool (Rs 230.77) and Screener.in on 9 November 2026 (Rs 244, unreconciled and flagged above)."
+    working: "Step 1 \u2014 Take the numerator off the Consolidated Balance Sheet as printed, not as summed by hand (p. 317): total current assets Rs 1,03,489 crore. Step 2 \u2014 Take the denominator off the same page (p. 317): total current liabilities Rs 52,322 crore. Step 3 \u2014 Divide: 1,03,489 \u00f7 52,322 = 1.978, so 1.98. Step 4 \u2014 Do the prior year identically (p. 317): 97,099 \u00f7 42,850 = 2.266, so 2.27. Step 5 \u2014 Measure the change: 1.98 against 2.27 is down 0.29, or 12.7%. Step 6 \u2014 Prove the subtotals are the report's and not ours. Current assets: 12,950 + 35,234 + 22,201 + 234 + 15,890 + 1,835 + 15,145 = 1,03,489, which ties to the printed subtotal. Current liabilities: 3,160 + 4,744 + 21,483 + 15,779 + 1,512 + 5,644 = 52,322, which also ties. Then subtract: 1,03,489 \u2212 52,322 = 51,167, which is exactly the 'Net current assets' figure Infosys publishes for FY26 in its Three Year Overview (IFRS) \u2014 Balance Sheet Data \u2014 and 97,099 \u2212 42,850 = 54,249, which is the same table's FY25 figure. That is the cleanest check available: two numbers built from seven and six line items respectively reproduce a third number the company prints independently. Step 7 \u2014 Locate the fall. Current liabilities rose Rs 9,472 crore (+22.1%) against a Rs 6,390 crore (+6.6%) rise in current assets. Of that 9,472: other current liabilities +4,014, other financial liabilities +3,345, lease liabilities +705, income tax liabilities +791, trade payables +580, provisions +37. Not one rupee of it is a borrowing in the ordinary sense. Step 8 \u2014 Run the two convention variants so you can see what a screen does differently. Excluding the Rs 3,160 crore of current lease liabilities from the denominator gives 1,03,489 \u00f7 49,162 = 2.11, which is the 'current ratio excluding leases' that some providers print. And because inventory is only Rs 474 crore, the quick ratio is 1.98 as well \u2014 identical, which is the signature of a services balance sheet.",
+    result: "1.98 at 31 March 2026, against 2.27 at 31 March 2025 \u2014 a 12.7% fall in a year in which revenue grew 9.6% and the balance sheet stayed free of borrowings; excluding current lease liabilities the multiple would be 2.11",
+    meaning: "A current ratio of 1.98 is, on any textbook scale, healthy, and for Infosys it is almost too healthy to be interesting \u2014 the company could pay every rupee it owes within twelve months out of the cash and current investments alone (Rs 35,151 crore against Rs 52,322 crore, so actually about two-thirds of it) and cover the rest from receivables it collects in 67 days. What makes this ratio worth learning on this company is that it demonstrates three things a single number cannot. The first is that liquidity and solvency are different questions: Infosys' debt-to-equity ratio is nil, and it still has Rs 52,322 crore of current liabilities, because a business that employs 3,28,594 people accrues salaries, earns revenue before it delivers it and declares dividends before it pays them. The second is that a ratio can fall for a good reason. The 12.7% decline is the arithmetic of a year in which Infosys returned over Rs 37,500 crore to shareholders \u2014 an Rs 18,000 crore buyback at Rs 1,800 a share and Rs 48 a share of dividends \u2014 which builds a payable and drains an asset at the same time. A current ratio that falls because a company is handing cash back is not the same signal as one that falls because a company cannot pay its suppliers, and only the notes tell you which you are looking at. The third is the trap in the number itself: current assets include Rs 35,234 crore of receivables. If clients slow down, the ratio that looked like 1.98 becomes 1.31 the day those receivables age past a year. That is the question to ask of any liquidity ratio \u2014 not how big it is, but what it is made of, and how fast that part turns into cash.",
+    crossCheck: "Three independent checks, and all three reconcile. First, against the company's own published subtotal: Infosys' Three Year Overview (IFRS) \u2014 Balance Sheet Data reports net current assets of Rs 51,167 crore for FY26 and Rs 54,249 crore for FY25, which are exactly the differences between the current-asset and current-liability subtotals we divided (1,03,489 \u2212 52,322 and 97,099 \u2212 42,850). Two independently printed subtotals reproducing a third is the strongest internal check in the report. Second, against data providers: topstockresearch, smart-investing, Laabh and TrueCAGR all print a current ratio of 1.98 for FY26 and 2.27 for FY25, and stocktitan, TipRanks and Sirius Investors print 1.98 for the latest fiscal year \u2014 seven sources, no disagreement, which is unusual for a ratio and is explained by the fact that this one is pure arithmetic on two printed subtotals with no adjusted-close or TTM convention in it. Third, against the leverage reading: TipRanks prints a debt-to-equity of 9.88% and livemint's balance-sheet table prints total debt of Rs 9,176 crore, which is almost exactly the Rs 6,016 crore of non-current plus Rs 3,160 crore of current lease liabilities (Rs 9,176 crore) \u2014 so the 'debt' a provider sees here is leases, and the Rs 3,160 crore we strip out in Step 8 is precisely the convention gap between our 1.98 and a lease-excluded 2.11. One thing that does not reconcile and should be flagged: Screener.in's own ratio block, as read on 11 November 2026, does not print a current ratio at all in the columns we could see, so it could not be used as a check here; and Topstockresearch's latest-quarter figure for the June 2026 quarter shows 0, which is a data gap on their side rather than a real reading \u2014 a company with Rs 1 lakh crore of current assets does not have a current ratio of zero.",
+    source: "Infosys Ltd, Integrated Annual Report 2025-26, Consolidated Financial Statements under Ind AS for the year ended 31 March 2026: Consolidated Balance Sheet, printed p. 317 (PDF p. 287) for total current assets, total current liabilities and all thirteen component lines at both 31 March 2026 and 31 March 2025 \u2014 investments, trade receivables, cash and cash equivalents, loans, other financial assets, income tax assets and other current assets on the asset side, and lease liabilities, trade payables, other financial liabilities, other current liabilities, provisions and income tax liabilities on the liability side; Consolidated Statement of Profit and Loss, printed p. 318 (PDF p. 288) for revenue from operations. Cross-checked against Infosys' Three Year Overview (IFRS) \u2014 Balance Sheet Data (net current assets Rs 51,167 crore for FY26 and Rs 54,249 crore for FY25), topstockresearch and smart-investing (current ratio 1.98 / 2.27), Laabh and TrueCAGR (1.98 / 2.27), stocktitan and TipRanks (1.98), and livemint's annual balance-sheet table (total debt Rs 9,176 crore, which reconciles to the lease liabilities)."
   }
 };
